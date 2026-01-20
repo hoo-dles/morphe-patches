@@ -1,0 +1,22 @@
+Morphe NOTICE
+=============
+
+This file contains Section 7 notices of the GNU General Public License v3
+as they apply to Morphe code. These notices apply to all code authored by
+Morphe, including any modifications of code that may have originated
+outside this repository, and do not change the terms of the GPLv3 license.
+For the full license text, see the LICENSE file or:
+https://www.gnu.org/licenses/gpl-3.0.html
+
+7c. Project Name Restriction
+----------------------------
+
+This license does not grant permission to use the name "Morphe", or any name, logo, or branding that is confusingly similar, as the name or primary identifying mark of any modified version, fork, or derivative work.
+
+Any redistribution or derivative work must adopt a distinct name and branding that clearly differentiates it from the Morphe project and does not cause confusion as to source or origin.
+
+References to Morphe are permitted solely for descriptive compatibility purposes (e.g., “compatible with Morphe” or “XYZ patches for use with Morphe”), provided that such references:
+
+- Are accurate, factual, and non-misleading;
+- Do not suggest authorship by the Morphe project; and
+- Appear only in a secondary or descriptive context, not as part of the product or project name.

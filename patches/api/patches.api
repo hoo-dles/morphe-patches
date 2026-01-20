@@ -1,0 +1,4 @@
+public final class app/morphe/patches/example/ExamplePatchKt {
+	public static final fun getExamplePatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+

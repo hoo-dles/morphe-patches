@@ -1,0 +1,4 @@
+[versions]
+morphe-patcher = "1.0.1"
+#noinspection GradleDependency
+smali = "b6365a84f4"
