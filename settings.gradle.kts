@@ -1,4 +1,4 @@
-rootProject.name = "morphe-patches-template"
+rootProject.name = "morphe-patches"
 
 pluginManagement {
     repositories {
@@ -19,3 +19,15 @@ pluginManagement {
 plugins {
     id("app.morphe.patches") version "1.0.1"
 }
+
+settings {
+    extensions {
+        defaultNamespace = "app.morphe.extension"
+
+        // Must resolve to an absolute path (not relative),
+        // otherwise the extensions in subfolders will fail to find the proguard config.
+        proguardFiles(rootProject.projectDir.resolve("extensions/proguard-rules.pro").toString())
+    }
+}
+
+include(":patches:stub")
