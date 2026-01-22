@@ -1,4 +1,457 @@
-public final class app/morphe/patches/example/ExamplePatchKt {
-	public static final fun getExamplePatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+public final class app/morphe/patches/all/misc/packagename/ChangePackageNamePatchKt {
+	public static field packageNameOption Lapp/morphe/patcher/patch/Option;
+	public static final fun getChangePackageNamePatch ()Lapp/morphe/patcher/patch/ResourcePatch;
+	public static final fun getPackageNameOption ()Lapp/morphe/patcher/patch/Option;
+	public static final fun setOrGetFallbackPackageName (Ljava/lang/String;)Ljava/lang/String;
+	public static final fun setPackageNameOption (Lapp/morphe/patcher/patch/Option;)V
+}
+
+public final class app/morphe/patches/avocards/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/avocards/premium/GetPremiumBaseFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/avocards/premium/GetPremiumBaseFingerprint;
+}
+
+public final class app/morphe/patches/avocards/premium/GetPremiumUserFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/avocards/premium/GetPremiumUserFingerprint;
+}
+
+public final class app/morphe/patches/avocards/premium/IsPremiumFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/avocards/premium/IsPremiumFingerprint;
+}
+
+public final class app/morphe/patches/avocards/premium/UserEntityCtorFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/avocards/premium/UserEntityCtorFingerprint;
+}
+
+public final class app/morphe/patches/cake/plus/EnablePlusPatchKt {
+	public static final field RETURN_TRUE Ljava/lang/String;
+	public static final fun getEnablePlusPatch ()Lapp/morphe/patcher/patch/RawResourcePatch;
+}
+
+public final class app/morphe/patches/crunchyroll/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/crunchyroll/premium/HasPremiumBenefitFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/crunchyroll/premium/HasPremiumBenefitFingerprint;
+}
+
+public final class app/morphe/patches/dailypay/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/RawResourcePatch;
+}
+
+public final class app/morphe/patches/dailypay/premium/WidgetConfigOnCreateFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/dailypay/premium/WidgetConfigOnCreateFingerprint;
+}
+
+public final class app/morphe/patches/duolingo/misc/debug/BuildTargetFieldFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/duolingo/misc/debug/BuildTargetFieldFingerprint;
+}
+
+public final class app/morphe/patches/duolingo/misc/debug/EnableDebugModePatchKt {
+	public static final fun getEnableDebugModePatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/duolingo/misc/integrity/BasicLoginFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/duolingo/misc/integrity/BasicLoginFingerprint;
+}
+
+public final class app/morphe/patches/duolingo/misc/integrity/DisableLoginIntegrityPatchKt {
+	public static final fun getDisableLoginIntegrityPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/duolingo/misc/integrity/LoginStateFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/duolingo/misc/integrity/LoginStateFingerprint;
+}
+
+public final class app/morphe/patches/duolingo/music/FullSongsPatchKt {
+	public static final fun getUnlockFullSongsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/duolingo/music/MusicCourseFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/duolingo/music/MusicCourseFingerprint;
+}
+
+public final class app/morphe/patches/duolingo/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/duolingo/premium/LoggedInStateFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/duolingo/premium/LoggedInStateFingerprint;
+}
+
+public final class app/morphe/patches/duolingo/premium/PremiumVariant : java/lang/Enum {
+	public static final field MAX Lapp/morphe/patches/duolingo/premium/PremiumVariant;
+	public static final field SUPER Lapp/morphe/patches/duolingo/premium/PremiumVariant;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lapp/morphe/patches/duolingo/premium/PremiumVariant;
+	public static fun values ()[Lapp/morphe/patches/duolingo/premium/PremiumVariant;
+}
+
+public final class app/morphe/patches/duolingo/premium/UserFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/duolingo/premium/UserFingerprint;
+}
+
+public final class app/morphe/patches/duolingo/premium/UserHasGoldFieldUsageFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/duolingo/premium/UserHasGoldFieldUsageFingerprint;
+}
+
+public final class app/morphe/patches/duolingo/premium/UserIsPaidFieldUsageFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/duolingo/premium/UserIsPaidFieldUsageFingerprint;
+}
+
+public final class app/morphe/patches/eggbun/misc/keyboard/KrKeyboardCtorFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/eggbun/misc/keyboard/KrKeyboardCtorFingerprint;
+}
+
+public final class app/morphe/patches/eggbun/misc/keyboard/NativeKeyboardPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/eggbun/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/eggbun/premium/FingerprintsKt {
+	public static final field ACCOUNT_CLASS Ljava/lang/String;
+}
+
+public final class app/morphe/patches/eggbun/premium/GetExpiredFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/eggbun/premium/GetExpiredFingerprint;
+}
+
+public final class app/morphe/patches/eggbun/premium/GetLockedLessonDetailsFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/eggbun/premium/GetLockedLessonDetailsFingerprint;
+}
+
+public final class app/morphe/patches/eggbun/premium/GetLockedLessonRefFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/eggbun/premium/GetLockedLessonRefFingerprint;
+}
+
+public final class app/morphe/patches/eggbun/premium/IsLifetimePremiumFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/eggbun/premium/IsLifetimePremiumFingerprint;
+}
+
+public final class app/morphe/patches/guessthecountry/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/guessthecountry/premium/IsProductInCacheFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/guessthecountry/premium/IsProductInCacheFingerprint;
+}
+
+public final class app/morphe/patches/lingory/misc/notifications/BlockNotificationPermissionsPatchKt {
+	public static final fun getBlockNotificationPermissionsPatch ()Lapp/morphe/patcher/patch/RawResourcePatch;
+}
+
+public final class app/morphe/patches/lingory/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/RawResourcePatch;
+}
+
+public final class app/morphe/patches/myexpenses/pro/EnableProPatchKt {
+	public static final fun getEnableProPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/myexpenses/pro/GetValidUntilFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/myexpenses/pro/GetValidUntilFingerprint;
+}
+
+public final class app/morphe/patches/myexpenses/pro/SetLicenseStatusFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/myexpenses/pro/SetLicenseStatusFingerprint;
+}
+
+public final class app/morphe/patches/pandora/ads/DisableAudioAdsPatchKt {
+	public static final fun getDisableAudioAdsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/pandora/ads/GetIsAdSupportedFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/pandora/ads/GetIsAdSupportedFingerprint;
+}
+
+public final class app/morphe/patches/pandora/ads/RequestAudioAdFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/pandora/ads/RequestAudioAdFingerprint;
+}
+
+public final class app/morphe/patches/pandora/misc/EnableUnlimitedSkipsPatchKt {
+	public static final fun getEnableUnlimitedSkipsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/pandora/misc/SkipLimitBehaviorFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/pandora/misc/SkipLimitBehaviorFingerprint;
+}
+
+public final class app/morphe/patches/primevideo/ads/DoTriggerFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/primevideo/ads/DoTriggerFingerprint;
+}
+
+public final class app/morphe/patches/primevideo/ads/EnterServerInsertedAdBreakStateFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/primevideo/ads/EnterServerInsertedAdBreakStateFingerprint;
+}
+
+public final class app/morphe/patches/primevideo/ads/OnSeekBehindUnwatchedAdFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/primevideo/ads/OnSeekBehindUnwatchedAdFingerprint;
+}
+
+public final class app/morphe/patches/primevideo/ads/OnSeekPastUnwatchedAdFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/primevideo/ads/OnSeekPastUnwatchedAdFingerprint;
+}
+
+public final class app/morphe/patches/primevideo/ads/SkipAdsPatchKt {
+	public static final fun getSkipAdsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/primevideo/misc/extension/ExtensionPatchKt {
+	public static final fun getSharedExtensionPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/primevideo/misc/permissions/RenamePermissionsPatchKt {
+	public static final fun getRenamePermissionsPatch ()Lapp/morphe/patcher/patch/ResourcePatch;
+}
+
+public class app/morphe/patches/shared/misc/extension/ExtensionHook {
+	public fun <init> (Lapp/morphe/patcher/Fingerprint;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
+	public synthetic fun <init> (Lapp/morphe/patcher/Fingerprint;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun invoke (Lapp/morphe/patcher/patch/BytecodePatchContext;Ljava/lang/String;)V
+}
+
+public final class app/morphe/patches/shared/misc/extension/SharedExtensionPatchKt {
+	public static final fun activityOnCreateExtensionHook (Ljava/lang/String;Z)Lapp/morphe/patches/shared/misc/extension/ExtensionHook;
+	public static synthetic fun activityOnCreateExtensionHook$default (Ljava/lang/String;ZILjava/lang/Object;)Lapp/morphe/patches/shared/misc/extension/ExtensionHook;
+	public static final fun sharedExtensionPatch (Ljava/lang/String;[Lapp/morphe/patches/shared/misc/extension/ExtensionHook;)Lapp/morphe/patcher/patch/BytecodePatch;
+	public static final fun sharedExtensionPatch ([Lapp/morphe/patches/shared/misc/extension/ExtensionHook;)Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/shared/misc/gms/GmsCoreSupportPatchKt {
+	public static final fun gmsCoreSupportPatch (Ljava/lang/String;Ljava/lang/String;Lapp/morphe/patcher/Fingerprint;Ljava/util/Set;Lapp/morphe/patcher/Fingerprint;Lapp/morphe/patcher/patch/Patch;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lapp/morphe/patcher/patch/BytecodePatch;
+	public static synthetic fun gmsCoreSupportPatch$default (Ljava/lang/String;Ljava/lang/String;Lapp/morphe/patcher/Fingerprint;Ljava/util/Set;Lapp/morphe/patcher/Fingerprint;Lapp/morphe/patcher/patch/Patch;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lapp/morphe/patcher/patch/BytecodePatch;
+	public static final fun gmsCoreSupportResourcePatch (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lapp/morphe/patcher/patch/ResourcePatch;
+	public static synthetic fun gmsCoreSupportResourcePatch$default (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lapp/morphe/patcher/patch/ResourcePatch;
+}
+
+public final class app/morphe/patches/shared/misc/hermes/HermesPatchKt {
+	public static final field HERMES_BUNDLE_PATH Ljava/lang/String;
+	public static final fun getHERMES_MAGIC ()[B
+	public static final fun hermesPatch (Lkotlin/jvm/functions/Function0;)Lapp/morphe/patcher/patch/RawResourcePatch;
+}
+
+public final class app/morphe/patches/shared/misc/hex/HexPatchBuilder : java/util/Set, kotlin/jvm/internal/markers/KMappedMarker {
+	public fun <init> ()V
+	public fun add (Lapp/morphe/patches/shared/misc/hex/Replacement;)Z
+	public synthetic fun add (Ljava/lang/Object;)Z
+	public fun addAll (Ljava/util/Collection;)Z
+	public final fun asPatternTo (Ljava/lang/String;Ljava/lang/String;)Lkotlin/Pair;
+	public fun clear ()V
+	public fun contains (Lapp/morphe/patches/shared/misc/hex/Replacement;)Z
+	public final fun contains (Ljava/lang/Object;)Z
+	public fun containsAll (Ljava/util/Collection;)Z
+	public fun getSize ()I
+	public final fun inFile (Lkotlin/Pair;Ljava/lang/String;)V
+	public fun isEmpty ()Z
+	public fun iterator ()Ljava/util/Iterator;
+	public fun remove (Ljava/lang/Object;)Z
+	public fun removeAll (Ljava/util/Collection;)Z
+	public fun retainAll (Ljava/util/Collection;)Z
+	public final fun size ()I
+	public fun toArray ()[Ljava/lang/Object;
+	public fun toArray ([Ljava/lang/Object;)[Ljava/lang/Object;
+}
+
+public final class app/morphe/patches/shared/misc/hex/HexPatchBuilderKt {
+	public static final fun hexPatch (ZLkotlin/jvm/functions/Function0;)Lapp/morphe/patcher/patch/RawResourcePatch;
+	public static final fun hexPatch (ZLkotlin/jvm/functions/Function1;)Lapp/morphe/patcher/patch/RawResourcePatch;
+	public static synthetic fun hexPatch$default (ZLkotlin/jvm/functions/Function0;ILjava/lang/Object;)Lapp/morphe/patcher/patch/RawResourcePatch;
+	public static synthetic fun hexPatch$default (ZLkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lapp/morphe/patcher/patch/RawResourcePatch;
+}
+
+public final class app/morphe/patches/shared/misc/hex/Replacement {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+	public fun <init> ([B[BLjava/lang/String;)V
+	public final fun getReplacementBytesPadded ()[B
+}
+
+public final class app/morphe/patches/shared/misc/mapping/ResourceElement {
+	public final fun component1 ()Ljava/lang/String;
+	public final fun component2 ()Ljava/lang/String;
+	public final fun component3 ()J
+	public final fun copy (Ljava/lang/String;Ljava/lang/String;J)Lapp/morphe/patches/shared/misc/mapping/ResourceElement;
+	public static synthetic fun copy$default (Lapp/morphe/patches/shared/misc/mapping/ResourceElement;Ljava/lang/String;Ljava/lang/String;JILjava/lang/Object;)Lapp/morphe/patches/shared/misc/mapping/ResourceElement;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getId ()J
+	public final fun getName ()Ljava/lang/String;
+	public final fun getType ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class app/morphe/patches/shared/misc/mapping/ResourceMappingPatchKt {
+	public static final fun get (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)J
+	public static final fun getResourceMappingPatch ()Lapp/morphe/patcher/patch/ResourcePatch;
+	public static final fun getResourceMappings ()Ljava/util/List;
+}
+
+public final class app/morphe/patches/teuida/misc/extension/ExtensionPatchKt {
+	public static final fun getSharedExtensionsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/teuida/misc/gms/GmsCoreSupportPatchKt {
+	public static final fun getGmsCoreSupportPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/teuida/misc/gms/IsGooglePlayServicesAvailableFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/teuida/misc/gms/IsGooglePlayServicesAvailableFingerprint;
+}
+
+public final class app/morphe/patches/teuida/misc/gms/MainActivityOnCreateFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/teuida/misc/gms/MainActivityOnCreateFingerprint;
+}
+
+public final class app/morphe/patches/teuida/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/teuida/premium/PremiumGetterFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/teuida/premium/PremiumGetterFingerprint;
+}
+
+public final class app/morphe/patches/ttmikstories/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/RawResourcePatch;
+}
+
+public final class app/morphe/patches/webster/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/webster/premium/GetSubscriptionFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/webster/premium/GetSubscriptionFingerprint;
+}
+
+public final class app/morphe/util/BytecodeUtilsKt {
+	public static final fun addInstructionsAtControlFlowLabel (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;ILjava/lang/String;)V
+	public static final fun addInstructionsAtControlFlowLabel (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;ILjava/lang/String;[Lapp/morphe/patcher/util/smali/ExternalLabel;)V
+	public static final fun containsLiteralInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;D)Z
+	public static final fun containsLiteralInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;F)Z
+	public static final fun containsLiteralInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;J)Z
+	public static final fun findFreeRegister (Lcom/android/tools/smali/dexlib2/iface/Method;I[I)I
+	public static final fun findInstructionIndicesReversed (Lcom/android/tools/smali/dexlib2/iface/Method;Lcom/android/tools/smali/dexlib2/Opcode;)Ljava/util/List;
+	public static final fun findInstructionIndicesReversed (Lcom/android/tools/smali/dexlib2/iface/Method;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
+	public static final fun findInstructionIndicesReversedOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;Lcom/android/tools/smali/dexlib2/Opcode;)Ljava/util/List;
+	public static final fun findInstructionIndicesReversedOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;Lkotlin/jvm/functions/Function1;)Ljava/util/List;
+	public static final fun findMutableMethodOf (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableClass;Lcom/android/tools/smali/dexlib2/iface/Method;)Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;
+	public static final fun forEachLiteralValueInstruction (Lapp/morphe/patcher/patch/BytecodePatchContext;JLkotlin/jvm/functions/Function2;)V
+	public static final fun indexOfFirstInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;ILcom/android/tools/smali/dexlib2/Opcode;)I
+	public static final fun indexOfFirstInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;ILkotlin/jvm/functions/Function1;)I
+	public static final fun indexOfFirstInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;Lcom/android/tools/smali/dexlib2/Opcode;)I
+	public static synthetic fun indexOfFirstInstruction$default (Lcom/android/tools/smali/dexlib2/iface/Method;ILcom/android/tools/smali/dexlib2/Opcode;ILjava/lang/Object;)I
+	public static synthetic fun indexOfFirstInstruction$default (Lcom/android/tools/smali/dexlib2/iface/Method;ILkotlin/jvm/functions/Function1;ILjava/lang/Object;)I
+	public static final fun indexOfFirstInstructionOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;ILcom/android/tools/smali/dexlib2/Opcode;)I
+	public static final fun indexOfFirstInstructionOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;ILkotlin/jvm/functions/Function1;)I
+	public static final fun indexOfFirstInstructionOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;Lcom/android/tools/smali/dexlib2/Opcode;)I
+	public static synthetic fun indexOfFirstInstructionOrThrow$default (Lcom/android/tools/smali/dexlib2/iface/Method;ILcom/android/tools/smali/dexlib2/Opcode;ILjava/lang/Object;)I
+	public static synthetic fun indexOfFirstInstructionOrThrow$default (Lcom/android/tools/smali/dexlib2/iface/Method;ILkotlin/jvm/functions/Function1;ILjava/lang/Object;)I
+	public static final fun indexOfFirstInstructionReversed (Lcom/android/tools/smali/dexlib2/iface/Method;Lcom/android/tools/smali/dexlib2/Opcode;)I
+	public static final fun indexOfFirstInstructionReversed (Lcom/android/tools/smali/dexlib2/iface/Method;Ljava/lang/Integer;Lcom/android/tools/smali/dexlib2/Opcode;)I
+	public static final fun indexOfFirstInstructionReversed (Lcom/android/tools/smali/dexlib2/iface/Method;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;)I
+	public static synthetic fun indexOfFirstInstructionReversed$default (Lcom/android/tools/smali/dexlib2/iface/Method;Ljava/lang/Integer;Lcom/android/tools/smali/dexlib2/Opcode;ILjava/lang/Object;)I
+	public static synthetic fun indexOfFirstInstructionReversed$default (Lcom/android/tools/smali/dexlib2/iface/Method;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)I
+	public static final fun indexOfFirstInstructionReversedOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;Lcom/android/tools/smali/dexlib2/Opcode;)I
+	public static final fun indexOfFirstInstructionReversedOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;Ljava/lang/Integer;Lcom/android/tools/smali/dexlib2/Opcode;)I
+	public static final fun indexOfFirstInstructionReversedOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;)I
+	public static synthetic fun indexOfFirstInstructionReversedOrThrow$default (Lcom/android/tools/smali/dexlib2/iface/Method;Ljava/lang/Integer;Lcom/android/tools/smali/dexlib2/Opcode;ILjava/lang/Object;)I
+	public static synthetic fun indexOfFirstInstructionReversedOrThrow$default (Lcom/android/tools/smali/dexlib2/iface/Method;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)I
+	public static final fun indexOfFirstLiteralInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;D)I
+	public static final fun indexOfFirstLiteralInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;F)I
+	public static final fun indexOfFirstLiteralInstruction (Lcom/android/tools/smali/dexlib2/iface/Method;J)I
+	public static final fun indexOfFirstLiteralInstructionOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;D)I
+	public static final fun indexOfFirstLiteralInstructionOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;F)I
+	public static final fun indexOfFirstLiteralInstructionOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;J)I
+	public static final fun indexOfFirstLiteralInstructionReversed (Lcom/android/tools/smali/dexlib2/iface/Method;D)I
+	public static final fun indexOfFirstLiteralInstructionReversed (Lcom/android/tools/smali/dexlib2/iface/Method;F)I
+	public static final fun indexOfFirstLiteralInstructionReversed (Lcom/android/tools/smali/dexlib2/iface/Method;J)I
+	public static final fun indexOfFirstLiteralInstructionReversedOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;D)I
+	public static final fun indexOfFirstLiteralInstructionReversedOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;F)I
+	public static final fun indexOfFirstLiteralInstructionReversedOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;J)I
+	public static final fun indexOfFirstResourceId (Lcom/android/tools/smali/dexlib2/iface/Method;Ljava/lang/String;)I
+	public static final fun indexOfFirstResourceIdOrThrow (Lcom/android/tools/smali/dexlib2/iface/Method;Ljava/lang/String;)I
+	public static final fun injectHideViewCall (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;IILjava/lang/String;Ljava/lang/String;)V
+	public static final fun returnEarly (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;B)V
+	public static final fun returnEarly (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;C)V
+	public static final fun returnEarly (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;D)V
+	public static final fun returnEarly (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;F)V
+	public static final fun returnEarly (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;I)V
+	public static final fun returnEarly (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;J)V
+	public static final fun returnEarly (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;Ljava/lang/String;)V
+	public static final fun returnEarly (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;S)V
+	public static final fun returnEarly (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;Z)V
+	public static synthetic fun returnEarly$default (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;ZILjava/lang/Object;)V
+	public static final fun returnLate (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;B)V
+	public static final fun returnLate (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;C)V
+	public static final fun returnLate (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;D)V
+	public static final fun returnLate (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;F)V
+	public static final fun returnLate (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;I)V
+	public static final fun returnLate (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;J)V
+	public static final fun returnLate (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;S)V
+	public static final fun returnLate (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;Z)V
+	public static final fun transformMethods (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableClass;Lkotlin/jvm/functions/Function1;)V
+	public static final fun traverseClassHierarchy (Lapp/morphe/patcher/patch/BytecodePatchContext;Lapp/morphe/patcher/util/proxy/mutableTypes/MutableClass;Lkotlin/jvm/functions/Function1;)V
+}
+
+public final class app/morphe/util/ResourceGroup {
+	public fun <init> (Ljava/lang/String;[Ljava/lang/String;)V
+	public final fun getResourceDirectoryName ()Ljava/lang/String;
+	public final fun getResources ()[Ljava/lang/String;
+}
+
+public final class app/morphe/util/ResourceUtilsKt {
+	public static final fun asSequence (Lorg/w3c/dom/NodeList;)Lkotlin/sequences/Sequence;
+	public static final fun childElementsSequence (Lorg/w3c/dom/Node;)Lkotlin/sequences/Sequence;
+	public static final fun copyResources (Lapp/morphe/patcher/patch/ResourcePatchContext;Ljava/lang/String;[Lapp/morphe/util/ResourceGroup;)V
+	public static final fun copyXmlNode (Ljava/lang/String;Lapp/morphe/patcher/util/Document;Lapp/morphe/patcher/util/Document;)Ljava/lang/AutoCloseable;
+	public static final fun doRecursively (Lorg/w3c/dom/Node;Lkotlin/jvm/functions/Function1;)V
+	public static final fun forEachChildElement (Lorg/w3c/dom/Node;Lkotlin/jvm/functions/Function1;)V
+	public static final fun insertFirst (Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)V
+	public static final fun iterateXmlNodeChildren (Lapp/morphe/patcher/patch/ResourcePatchContext;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+}
+
+public final class app/morphe/util/UtilsKt {
+	public static final fun byteArrayOf (Ljava/lang/String;)[B
+	public static final fun toHexString (Z)Ljava/lang/String;
+	public static final fun toInt ([BZ)I
+	public static synthetic fun toInt$default ([BZILjava/lang/Object;)I
+}
+
+public final class app/morphe/util/resource/ArrayResource : app/morphe/util/resource/BaseResource {
+	public static final field Companion Lapp/morphe/util/resource/ArrayResource$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/util/List;)V
+	public final fun getItems ()Ljava/util/List;
+	public fun serialize (Lorg/w3c/dom/Document;Lkotlin/jvm/functions/Function1;)Lorg/w3c/dom/Element;
+}
+
+public final class app/morphe/util/resource/ArrayResource$Companion {
+	public final fun fromNode (Lorg/w3c/dom/Node;)Lapp/morphe/util/resource/ArrayResource;
+}
+
+public abstract class app/morphe/util/resource/BaseResource {
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getName ()Ljava/lang/String;
+	public final fun getTag ()Ljava/lang/String;
+	public fun hashCode ()I
+	public fun serialize (Lorg/w3c/dom/Document;Lkotlin/jvm/functions/Function1;)Lorg/w3c/dom/Element;
+	public static synthetic fun serialize$default (Lapp/morphe/util/resource/BaseResource;Lorg/w3c/dom/Document;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lorg/w3c/dom/Element;
+}
+
+public final class app/morphe/util/resource/StringResource : app/morphe/util/resource/BaseResource {
+	public static final field Companion Lapp/morphe/util/resource/StringResource$Companion;
+	public fun <init> (Ljava/lang/String;Ljava/lang/String;)V
+	public final fun getValue ()Ljava/lang/String;
+	public fun serialize (Lorg/w3c/dom/Document;Lkotlin/jvm/functions/Function1;)Lorg/w3c/dom/Element;
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class app/morphe/util/resource/StringResource$Companion {
+	public final fun fromNode (Lorg/w3c/dom/Node;)Lapp/morphe/util/resource/StringResource;
 }
 
