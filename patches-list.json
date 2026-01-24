@@ -1,0 +1,305 @@
+{
+  "version": "v1.0.0",
+  "patches": [
+    {
+      "name": "Block Permissions Request",
+      "description": "Blocks the request of notification permissions on load of app.",
+      "use": true,
+      "dependencies": [
+        "RawResourcePatch"
+      ],
+      "compatiblePackages": {
+        "org.languageapp.lingory": [
+          "1.2.75"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Change package name",
+      "description": "Appends \".morphe\" to the package name by default. Changing the package name of the app can lead to unexpected issues.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": null,
+      "options": [
+        {
+          "key": "packageName",
+          "title": "Package name",
+          "description": "The name of the package to rename the app to.",
+          "required": true,
+          "type": "kotlin.String",
+          "default": "Default",
+          "values": {
+            "Default": "Default"
+          }
+        },
+        {
+          "key": "updatePermissions",
+          "title": "Update permissions",
+          "description": "Update compatibility receiver permissions. Enabling this can fix installation errors, but this can also break features in certain apps.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        },
+        {
+          "key": "updateProviders",
+          "title": "Update providers",
+          "description": "Update provider names declared by the app. Enabling this can fix installation errors, but this can also break features in certain apps.",
+          "required": false,
+          "type": "kotlin.Boolean",
+          "default": false,
+          "values": null
+        }
+      ]
+    },
+    {
+      "name": "Disable Login Integrity",
+      "description": "Removes Play Integrity device attestation from login request.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.duolingo": null
+      },
+      "options": []
+    },
+    {
+      "name": "Disable audio ads",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.pandora.android": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Plus",
+      "description": "Enable Plus membership (not all features are available).",
+      "use": true,
+      "dependencies": [
+        "RawResourcePatch"
+      ],
+      "compatiblePackages": {
+        "me.mycake": [
+          "6.4.0"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.avocards": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables client-side only premium features. Most functionality is absent as it is verified on the server.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.crunchyroll.crunchyroid": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": null,
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "kr.co.yjteam.dailypay": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.duolingo": null
+      },
+      "options": [
+        {
+          "key": "premiumVariant",
+          "title": "Type",
+          "description": "Choose which type of premium Duolingo subscription to enable.",
+          "required": true,
+          "type": "kotlin.String",
+          "default": "SUPER",
+          "values": {
+            "Duolingo Super": "SUPER",
+            "Duolingo MAX": "MAX"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Enable Premium",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "kr.eggbun.eggconvo": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.qbis.guessthecountry": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": null,
+      "use": true,
+      "dependencies": [
+        "RawResourcePatch"
+      ],
+      "compatiblePackages": {
+        "org.languageapp.lingory": [
+          "1.2.75"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables premium paid subscription.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "net.teuida.teuida": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": null,
+      "use": true,
+      "dependencies": [
+        "RawResourcePatch"
+      ],
+      "compatiblePackages": {
+        "app.ttmikstories.android": [
+          "1.16.0"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.merriamwebster": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Pro",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "org.totschnig.myexpenses": [
+          "3.9.8"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable debug mode",
+      "description": "Enables hidden debug menu in settings.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.duolingo": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable unlimited skips",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.pandora.android": null
+      },
+      "options": []
+    },
+    {
+      "name": "Force Native Keyboard",
+      "description": "When typing in normal lessons, Eggbun forces you to use their own on-screen keyboard. This patches forces the use of the default OS keyboard.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "kr.eggbun.eggconvo": null
+      },
+      "options": []
+    },
+    {
+      "name": "GmsCore support",
+      "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
+      "use": true,
+      "dependencies": [
+        "ResourcePatch",
+        "ResourcePatch",
+        "BytecodePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "net.teuida.teuida": null
+      },
+      "options": []
+    },
+    {
+      "name": "Rename shared permissions",
+      "description": "Rename certain permissions shared across Amazon apps. Applying this patch can fix installation errors, but can also break features in certain apps.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.amazon.avod.thirdpartyclient": null
+      },
+      "options": []
+    },
+    {
+      "name": "Skip ads",
+      "description": "Automatically skips video stream ads.",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.amazon.avod.thirdpartyclient": [
+          "3.0.430.1747"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Unlock licensed songs",
+      "description": "Allows playing the full version of licensed music instead of the 30-second preview.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.duolingo": null
+      },
+      "options": []
+    }
+  ]
+}

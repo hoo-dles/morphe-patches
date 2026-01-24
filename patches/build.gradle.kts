@@ -19,8 +19,26 @@ kotlin {
 }
 
 dependencies {
+    // Used by JsonGenerator.
+    implementation(libs.gson)
+
     // Required due to smali, or build fails. Can be removed once smali is bumped.
     implementation(libs.guava)
 
     compileOnly(project(":patches:stub"))
+}
+
+tasks {
+    register<JavaExec>("generatePatchesList") {
+        description = "Build patch with patch list"
+
+        dependsOn(build)
+
+        classpath = sourceSets["main"].runtimeClasspath
+        mainClass.set("app.morphe.util.PatchListGeneratorKt")
+    }
+    // Used by gradle-semantic-release-plugin.
+    publish {
+        dependsOn("generatePatchesList")
+    }
 }
