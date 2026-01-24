@@ -7,7 +7,7 @@ internal object MorpheUtilsPatchesVersionFingerprint : Fingerprint(
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC),
     returnType = "Ljava/lang/String;",
     parameters = listOf(),
-    custom = { method, classDef ->
+    custom = { method, _ ->
         method.name == "getPatchesReleaseVersion" && method.definingClass == EXTENSION_CLASS_DESCRIPTOR
     }
 )
