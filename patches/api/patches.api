@@ -398,6 +398,10 @@ public final class app/morphe/util/BytecodeUtilsKt {
 	public static final fun traverseClassHierarchy (Lapp/morphe/patcher/patch/BytecodePatchContext;Lapp/morphe/patcher/util/proxy/mutableTypes/MutableClass;Lkotlin/jvm/functions/Function1;)V
 }
 
+public final class app/morphe/util/PatchListGeneratorKt {
+	public static synthetic fun main ([Ljava/lang/String;)V
+}
+
 public final class app/morphe/util/ResourceGroup {
 	public fun <init> (Ljava/lang/String;[Ljava/lang/String;)V
 	public final fun getResourceDirectoryName ()Ljava/lang/String;
