@@ -163,6 +163,14 @@ public final class app/morphe/patches/myexpenses/pro/SetLicenseStatusFingerprint
 	public static final field INSTANCE Lapp/morphe/patches/myexpenses/pro/SetLicenseStatusFingerprint;
 }
 
+public final class app/morphe/patches/myfitnesspal/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/myfitnesspal/premium/GetPremiumPlusFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/myfitnesspal/premium/GetPremiumPlusFingerprint;
+}
+
 public final class app/morphe/patches/pandora/ads/DisableAudioAdsPatchKt {
 	public static final fun getDisableAudioAdsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
