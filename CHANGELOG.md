@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/hoo-dles/morphe-patches/compare/v1.0.0...v1.1.0) (2026-01-25)
+
+
+### Features
+
+* **MyFitnessPal:** Add `Enable Premium+` patch ([a3cbd45](https://github.com/hoo-dles/morphe-patches/commit/a3cbd45204a33c23ceb7ad49056075b0d3c0b6bd))
+
 # [1.1.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.0.0...v1.1.0-dev.1) (2026-01-24)
 
 
