@@ -163,6 +163,14 @@ public final class app/morphe/patches/myexpenses/pro/SetLicenseStatusFingerprint
 	public static final field INSTANCE Lapp/morphe/patches/myexpenses/pro/SetLicenseStatusFingerprint;
 }
 
+public final class app/morphe/patches/myfitnesspal/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/myfitnesspal/premium/GetPremiumPlusFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/myfitnesspal/premium/GetPremiumPlusFingerprint;
+}
+
 public final class app/morphe/patches/pandora/ads/DisableAudioAdsPatchKt {
 	public static final fun getDisableAudioAdsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
@@ -396,6 +404,10 @@ public final class app/morphe/util/BytecodeUtilsKt {
 	public static final fun returnLate (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;Z)V
 	public static final fun transformMethods (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableClass;Lkotlin/jvm/functions/Function1;)V
 	public static final fun traverseClassHierarchy (Lapp/morphe/patcher/patch/BytecodePatchContext;Lapp/morphe/patcher/util/proxy/mutableTypes/MutableClass;Lkotlin/jvm/functions/Function1;)V
+}
+
+public final class app/morphe/util/PatchListGeneratorKt {
+	public static synthetic fun main ([Ljava/lang/String;)V
 }
 
 public final class app/morphe/util/ResourceGroup {
