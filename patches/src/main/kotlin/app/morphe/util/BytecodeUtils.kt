@@ -922,7 +922,12 @@ fun MutableMethod.returnLate(value: Double) {
 }
 
 private fun MutableMethod.overrideReturnValue(value: String, returnLate: Boolean) {
-    val instructions = when (returnType.first()) {
+    val instructions = if (returnType == "Ljava/lang/String;" || returnType == "Ljava/lang/CharSequence;" ) {
+        """
+            const-string v0, "$value"
+            return-object v0
+        """
+    } else when (returnType.first()) {
         // If return type is an object, always return null.
         'L', '[' -> {
             """
