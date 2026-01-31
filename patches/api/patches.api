@@ -39,6 +39,14 @@ public final class app/morphe/patches/crunchyroll/premium/HasPremiumBenefitFinge
 	public static final field INSTANCE Lapp/morphe/patches/crunchyroll/premium/HasPremiumBenefitFingerprint;
 }
 
+public final class app/morphe/patches/dailypay/misc/gms/GmsCoreSupportPatchKt {
+	public static final fun getGmsCoreSupportPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/dailypay/misc/gms/MainActivityOnCreateFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/dailypay/misc/gms/MainActivityOnCreateFingerprint;
+}
+
 public final class app/morphe/patches/dailypay/premium/EnablePremiumPatchKt {
 	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/RawResourcePatch;
 }
@@ -233,8 +241,8 @@ public final class app/morphe/patches/shared/misc/extension/SharedExtensionPatch
 }
 
 public final class app/morphe/patches/shared/misc/gms/GmsCoreSupportPatchKt {
-	public static final fun gmsCoreSupportPatch (Ljava/lang/String;Ljava/lang/String;Lapp/morphe/patcher/Fingerprint;Ljava/util/Set;Lapp/morphe/patcher/Fingerprint;Lapp/morphe/patcher/patch/Patch;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lapp/morphe/patcher/patch/BytecodePatch;
-	public static synthetic fun gmsCoreSupportPatch$default (Ljava/lang/String;Ljava/lang/String;Lapp/morphe/patcher/Fingerprint;Ljava/util/Set;Lapp/morphe/patcher/Fingerprint;Lapp/morphe/patcher/patch/Patch;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lapp/morphe/patcher/patch/BytecodePatch;
+	public static final fun gmsCoreSupportPatch (Ljava/lang/String;Ljava/lang/String;Lapp/morphe/patcher/Fingerprint;Ljava/util/Set;Lapp/morphe/patcher/Fingerprint;Lapp/morphe/patcher/patch/Patch;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lapp/morphe/patcher/patch/BytecodePatch;
+	public static synthetic fun gmsCoreSupportPatch$default (Ljava/lang/String;Ljava/lang/String;Lapp/morphe/patcher/Fingerprint;Ljava/util/Set;Lapp/morphe/patcher/Fingerprint;Lapp/morphe/patcher/patch/Patch;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lapp/morphe/patcher/patch/BytecodePatch;
 	public static final fun gmsCoreSupportResourcePatch (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lapp/morphe/patcher/patch/ResourcePatch;
 	public static synthetic fun gmsCoreSupportResourcePatch$default (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ILjava/lang/Object;)Lapp/morphe/patcher/patch/ResourcePatch;
 }
