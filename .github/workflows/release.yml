@@ -32,7 +32,7 @@ jobs:
       - name: Build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew build generatePatchesList clean
+        run: ./gradlew :patches:buildAndroid generatePatchesList clean
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -62,3 +62,9 @@ jobs:
         with:
           subject-name: 'Patches ${{ steps.release.outputs.new_release_git_tag }}'
           subject-path: patches/build/libs/patches-*.mpp
+
+      - name: Purge jsDelivr Cache
+        run: |
+          for file in patches-bundle.json patches-list.json; do
+            curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@${{ github.ref_name }}/$file"
+          done
