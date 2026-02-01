@@ -20,6 +20,7 @@
 > [!NOTE]
 > Patch requests are always welcome, so feel free to open an issue.
 >
+> If you find this project useful and want to help support its development, consider [donating](.donate/donate.md) :pray:
 
 <br/>
 
