@@ -36,6 +36,7 @@
 | MyExpenses         | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | MyFitnessPal       | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                                               |
 | Pandora            | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                                           |
+| Smart Launcher     | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | Teuida             | `net.teuida.teuida`                | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |
 | TTMIK Stories      | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                                                |
 | World Map Quiz     | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                                                |
