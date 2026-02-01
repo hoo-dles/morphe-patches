@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-01-31T04:30:23",
-  "description": "# [1.2.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-01-31)\n\n\n### Bug Fixes\n\n* **Prime Video:** Static method call of extension was never refactored ([d3b7bb5](https://github.com/hoo-dles/morphe-patches/commit/d3b7bb5fe967d3dd528420b5337f87e91ab7334b))\n\n\n### Features\n\n* **Daily Pay:** Add `MicroG Support` patch ([03cf91b](https://github.com/hoo-dles/morphe-patches/commit/03cf91bdbed45ee93be0dddf3214be62e17b8d05))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.2.0-dev.1/patches-1.2.0-dev.1.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.2.0-dev.1/patches-1.2.0-dev.1.mpp.asc",
-  "version": "1.2.0-dev.1"
+  "created_at": "2026-02-01T03:42:02",
+  "description": "# [1.2.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-02-01)\n\n\n### Features\n\n* **Smart Launcher:** Add `Enable Pro` patch ([7daac70](https://github.com/hoo-dles/morphe-patches/commit/7daac703fb4acdca7b688b05df15f59fd2465d73))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.2.0-dev.2/patches-1.2.0-dev.2.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.2.0-dev.2/patches-1.2.0-dev.2.mpp.asc",
+  "version": "1.2.0-dev.2"
 }
