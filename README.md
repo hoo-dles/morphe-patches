@@ -19,8 +19,7 @@
 
 > [!NOTE]
 > Patch requests are always welcome, so feel free to open an issue.
-> 
-> ![Donate BTC](https://img.shields.io/badge/BTC-Donate-F7931A?style=flat-square&logo=bitcoin&logoSize=auto&link=bitcoin%3A%2F%2F14r3C8YG2jSGEchtfW9pepkL7MEkUrZWYV)
+>
 
 <br/>
 
