@@ -19,12 +19,13 @@
 
 > [!NOTE]
 > Patch requests are always welcome, so feel free to open an issue.
+>
 
 <br/>
 
 | App                | Package                            | Patches                                                                                                                         |
 |--------------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Amazon Prime Video | `com.amazon.avod.thirdpartyclient` | <ul><li>Skip ads _(currently buggy)_</li></ul>                                                                                  |
+| Amazon Prime Video | `com.amazon.avod.thirdpartyclient` | <ul><li>Skip ads</li></ul>                                                                                                      |
 | Avocards           | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                                                |
 | Cake               | `me.mycake`                        | <ul><li>Enable Plus</li></ul>                                                                                                   |
 | Crunchyroll        | `com.crunchyroll.crunchyroid`      | <ul><li>Enable Premium _(limited functionality)_</li></ul>                                                                      |
