@@ -308,6 +308,34 @@ public final class app/morphe/patches/shared/misc/mapping/ResourceMappingPatchKt
 	public static final fun getResourceMappings ()Ljava/util/List;
 }
 
+public final class app/morphe/patches/smartlauncher/misc/signature/DisableSignatureCheckPatchKt {
+	public static final fun getDisableSignatureCheckPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/smartlauncher/misc/signature/SignatureCheckFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/smartlauncher/misc/signature/SignatureCheckFingerprint;
+}
+
+public final class app/morphe/patches/smartlauncher/pro/EnableProPatchKt {
+	public static final fun getEnableProPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/smartlauncher/pro/GetAppFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/smartlauncher/pro/GetAppFingerprint;
+}
+
+public final class app/morphe/patches/smartlauncher/pro/PurchasableItemGetFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/smartlauncher/pro/PurchasableItemGetFingerprint;
+}
+
+public final class app/morphe/patches/smartlauncher/pro/PurchasableItemSetFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/smartlauncher/pro/PurchasableItemSetFingerprint;
+}
+
+public final class app/morphe/patches/smartlauncher/pro/PurchaseItemsCtor : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/smartlauncher/pro/PurchaseItemsCtor;
+}
+
 public final class app/morphe/patches/teuida/misc/extension/ExtensionPatchKt {
 	public static final fun getSharedExtensionsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
