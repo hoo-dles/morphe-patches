@@ -1,5 +1,5 @@
 {
-  "version": "v1.0.0",
+  "version": "1.2.0-dev.2",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -70,6 +70,16 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.pandora.android": null
+      },
+      "options": []
+    },
+    {
+      "name": "Disable signature check",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "ginlemon.flowerfree": null
       },
       "options": []
     },
@@ -211,6 +221,16 @@
       "options": []
     },
     {
+      "name": "Enable Premium+",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.myfitnesspal.android": null
+      },
+      "options": []
+    },
+    {
       "name": "Enable Pro",
       "description": null,
       "use": true,
@@ -219,6 +239,18 @@
         "org.totschnig.myexpenses": [
           "3.9.8"
         ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Pro",
+      "description": null,
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "ginlemon.flowerfree": null
       },
       "options": []
     },
@@ -257,6 +289,22 @@
       "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
       "use": true,
       "dependencies": [
+        "ResourcePatch",
+        "ResourcePatch",
+        "ResourcePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "kr.co.yjteam.dailypay": null
+      },
+      "options": []
+    },
+    {
+      "name": "GmsCore support",
+      "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
+      "use": true,
+      "dependencies": [
+        "ResourcePatch",
         "ResourcePatch",
         "ResourcePatch",
         "BytecodePatch",
