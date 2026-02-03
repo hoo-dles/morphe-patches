@@ -13,6 +13,8 @@ import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.patch.resourcePatch
 import app.morphe.patches.all.misc.packagename.changePackageNamePatch
 import app.morphe.patches.all.misc.packagename.setOrGetFallbackPackageName
+import app.morphe.patches.all.misc.resources.addAppResources
+import app.morphe.patches.all.misc.resources.addResourcesPatch
 import app.morphe.patches.shared.misc.gms.Constants.ACTIONS
 import app.morphe.patches.shared.misc.gms.Constants.AUTHORITIES
 import app.morphe.patches.shared.misc.gms.Constants.PERMISSIONS
@@ -21,6 +23,7 @@ import app.morphe.util.getReference
 import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction21c
+import com.android.tools.smali.dexlib2.iface.Method
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction21c
 import com.android.tools.smali.dexlib2.iface.reference.StringReference
@@ -53,6 +56,7 @@ fun gmsCoreSupportPatch(
     mainActivityOnCreateFingerprint: Fingerprint,
     extensionPatch: Patch<*>,
     gmsCoreSupportResourcePatchFactory: () -> Patch<*>,
+    insertIndexResolver: BytecodePatchContext.(Method) -> Int = { 0 },
     executeBlock: BytecodePatchContext.() -> Unit = {},
     block: BytecodePatchBuilder.() -> Unit = {},
 ) = bytecodePatch(
@@ -62,6 +66,7 @@ fun gmsCoreSupportPatch(
 ) {
 
     dependsOn(
+        addResourcesPatch,
         changePackageNamePatch,
         gmsCoreSupportResourcePatchFactory(),
         extensionPatch,
@@ -165,6 +170,8 @@ fun gmsCoreSupportPatch(
 
         // endregion
 
+        addAppResources("gms")
+
         val packageName = setOrGetFallbackPackageName(toPackageName)
 
         // Transform all strings using all provided transforms, first match wins.
@@ -205,11 +212,13 @@ fun gmsCoreSupportPatch(
         OriginalPackageNameExtensionFingerprint.method.returnEarly(fromPackageName)
 
         // Verify GmsCore is installed and whitelisted for power optimizations and background usage.
-        mainActivityOnCreateFingerprint.method.addInstruction(
-            0,
-            "invoke-static/range { p0 .. p0 }, $EXTENSION_CLASS_DESCRIPTOR->" +
-                    "checkGmsCore(Landroid/app/Activity;)V"
-        )
+        mainActivityOnCreateFingerprint.method.apply {
+            addInstruction(
+                insertIndexResolver(this),
+                "invoke-static/range { p0 .. p0 }, $EXTENSION_CLASS_DESCRIPTOR->" +
+                        "checkGmsCore(Landroid/app/Activity;)V"
+            )
+        }
 
         // Change the vendor of GmsCore in the extension.
         GmsCoreSupportFingerprint.method.returnEarly(GMS_CORE_VENDOR_GROUP_ID!!)

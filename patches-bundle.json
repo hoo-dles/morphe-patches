@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-02-03T05:32:02",
+  "description": "# [1.2.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-02-03)\n\n\n### Features\n\n* **Smart Launcher:** Add `Enable Pro` patch ([8aea109](https://github.com/hoo-dles/morphe-patches/commit/8aea1097a97b6c37dec45502f483c05fab714869))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.2.0-dev.2/patches-1.2.0-dev.2.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.2.0-dev.2/patches-1.2.0-dev.2.mpp.asc",
+  "version": "1.2.0-dev.2"
+}

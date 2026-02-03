@@ -12,84 +12,6 @@ import kotlin.jvm.javaClass
 
 internal val locales = listOf(
     AppLocale("", ""), // Default English locale. Must be first.
-    AppLocale("af-rZA", "af"),
-    AppLocale("am-rET", "am"),
-    AppLocale("ar-rSA", "ar"),
-    AppLocale("as-rIN", "as"),
-    AppLocale("az-rAZ", "az"),
-    AppLocale("be-rBY", "be"),
-    AppLocale("bg-rBG", "bg"),
-    AppLocale("bn-rBD", "bn"),
-    AppLocale("bs-rBA", "bs"),
-    AppLocale("ca-rES", "ca"),
-    AppLocale("cs-rCZ", "cs"),
-    AppLocale("da-rDK", "da"),
-    AppLocale("de-rDE", "de"),
-    AppLocale("el-rGR", "el"),
-    AppLocale("es-rES", "es"),
-    AppLocale("et-rEE", "et"),
-    AppLocale("eu-rES", "eu"),
-    AppLocale("fa-rIR", "fa"),
-    AppLocale("fi-rFI", "fi"),
-    AppLocale("fil-rPH", "tl"),
-    AppLocale("fr-rFR", "fr"),
-    AppLocale("gl-rES", "gl"),
-    AppLocale("gu-rIN", "gu"),
-    AppLocale("hi-rIN", "hi"),
-    AppLocale("hr-rHR", "hr"),
-    AppLocale("hu-rHU", "hu"),
-    AppLocale("hy-rAM", "hy"),
-    AppLocale("in-rID", "in"),
-    AppLocale("is-rIS", "is"),
-    AppLocale("it-rIT", "it"),
-    AppLocale("iw-rIL", "iw"),
-    AppLocale("ja-rJP", "ja"),
-    AppLocale("ka-rGE", "ka"),
-    AppLocale("kk-rKZ", "kk"),
-    AppLocale("km-rKH", "km"),
-    AppLocale("kn-rIN", "kn"),
-    AppLocale("ko-rKR", "ko"),
-    AppLocale("ky-rKG", "ky"),
-    AppLocale("lo-rLA", "lo"),
-    AppLocale("lt-rLT", "lt"),
-    AppLocale("lv-rLV", "lv"),
-    AppLocale("mk-rMK", "mk"),
-    AppLocale("ml-rIN", "ml"),
-    AppLocale("mn-rMN", "mn"),
-    AppLocale("mr-rIN", "mr"),
-    AppLocale("ms-rMY", "ms"),
-    AppLocale("my-rMM", "my"),
-    AppLocale("nb-rNO", "nb"),
-    AppLocale("ne-rNP", "ne"),
-    AppLocale("nl-rNL", "nl"),
-    AppLocale("or-rIN", "or"),
-    AppLocale("pa-rIN", "pa"),
-    AppLocale("pl-rPL", "pl"),
-    AppLocale("pt-rBR", "pt-rBR"),
-    AppLocale("pt-rPT", "pt-rPT"),
-    AppLocale("ro-rRO", "ro"),
-    AppLocale("ru-rRU", "ru"),
-    AppLocale("si-rLK", "si"),
-    AppLocale("sk-rSK", "sk"),
-    AppLocale("sl-rSI", "sl"),
-    AppLocale("sq-rAL", "sq"),
-    AppLocale("sr-rCS", "b+sr+Latn"),
-    AppLocale("sr-rSP", "sr"),
-    AppLocale("sv-rSE", "sv"),
-    AppLocale("sw-rKE", "sw"),
-    AppLocale("ta-rIN", "ta"),
-    AppLocale("te-rIN", "te"),
-    AppLocale("th-rTH", "th"),
-    AppLocale("tr-rTR", "tr"),
-    AppLocale("uk-rUA", "uk"),
-    AppLocale("ur-rIN", "ur"),
-    AppLocale("uz-rUZ", "uz"),
-    AppLocale("vi-rVN", "vi"),
-    AppLocale("zh-rCN", "zh-rCN"),
-    AppLocale("zh-rTW", "zh-rTW"),
-    AppLocale("zu-rZA", "zu"),
-    // Languages not found in YouTube.
-    AppLocale("ga-rIE", "ga", isBuiltInLanguage = false)
 )
 
 internal class AppLocale(
@@ -141,9 +63,7 @@ internal fun addAppResources(appId: String) {
 internal val addResourcesPatch = resourcePatch(
     description = "Add resources such as strings or arrays to the app."
 ) {
-
     val defaultResourcesAdded = mutableSetOf<String>()
-
 
     finalize {
         fun getLogger(): Logger = Logger.getLogger(AppLocale.javaClass.name)
