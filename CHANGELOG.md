@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/hoo-dles/morphe-patches/compare/v1.1.0...v1.2.0) (2026-02-03)
+
+
+### Bug Fixes
+
+* **Prime Video:** Static method call of extension was never refactored ([a6c78a4](https://github.com/hoo-dles/morphe-patches/commit/a6c78a499e2876e95f6c8e603d13476db2c8a42b))
+
+
+### Features
+
+* **Daily Pay:** Add `MicroG Support` patch ([f4a2cfc](https://github.com/hoo-dles/morphe-patches/commit/f4a2cfcad5f996c47f87bca292e3f9cb5e098858))
+* **Smart Launcher:** Add `Enable Pro` patch ([8aea109](https://github.com/hoo-dles/morphe-patches/commit/8aea1097a97b6c37dec45502f483c05fab714869))
+
 # [1.2.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-02-03)
 
 
