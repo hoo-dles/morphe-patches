@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0-dev.1",
+  "version": "1.2.0-dev.2",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -70,6 +70,16 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.pandora.android": null
+      },
+      "options": []
+    },
+    {
+      "name": "Disable signature check",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "ginlemon.flowerfree": null
       },
       "options": []
     },
@@ -229,6 +239,18 @@
         "org.totschnig.myexpenses": [
           "3.9.8"
         ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Pro",
+      "description": null,
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "ginlemon.flowerfree": null
       },
       "options": []
     },
