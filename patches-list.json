@@ -1,5 +1,5 @@
 {
-  "version": "v1.0.0",
+  "version": "1.2.0-dev.1",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -211,6 +211,16 @@
       "options": []
     },
     {
+      "name": "Enable Premium+",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.myfitnesspal.android": null
+      },
+      "options": []
+    },
+    {
       "name": "Enable Pro",
       "description": null,
       "use": true,
@@ -257,6 +267,22 @@
       "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
       "use": true,
       "dependencies": [
+        "ResourcePatch",
+        "ResourcePatch",
+        "ResourcePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "kr.co.yjteam.dailypay": null
+      },
+      "options": []
+    },
+    {
+      "name": "GmsCore support",
+      "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
+      "use": true,
+      "dependencies": [
+        "ResourcePatch",
         "ResourcePatch",
         "ResourcePatch",
         "BytecodePatch",
