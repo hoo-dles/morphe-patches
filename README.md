@@ -33,6 +33,7 @@
 | DAILY PAY          | `kr.co.yjteam.dailypay`            | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |
 | Duolingo           | `com.duolingo`                     | <ul><li>Disable Play Integrity check</li><li>Enable debug mode</li><li>Enable Super/MAX</li><li>Unlock licensed songs</li></ul> |
 | Eggbun             | `kr.eggbun.eggconvo`               | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                                                  |
+| IbisPaint X        | `jp.ne.ibis.ibispaintx.app`        | <ul><li>Enable Prime Membership</li></ul>                                                                                       |
 | Lingory            | `org.languageapp.lingory`          | <ul><li>Enable Premium</li></ul>                                                                                                |
 | Merriam-Webster    | `com.merriamwebster`               | <ul><li>Enable Premium</li></ul>                                                                                                |
 | MyExpenses         | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                                                    |

@@ -151,6 +151,10 @@ public final class app/morphe/patches/guessthecountry/premium/IsProductInCacheFi
 	public static final field INSTANCE Lapp/morphe/patches/guessthecountry/premium/IsProductInCacheFingerprint;
 }
 
+public final class app/morphe/patches/ibispaint/prime/EnablePrimePatchKt {
+	public static final fun getEnablePrimePatch ()Lapp/morphe/patcher/patch/RawResourcePatch;
+}
+
 public final class app/morphe/patches/lingory/misc/notifications/BlockNotificationPermissionsPatchKt {
 	public static final fun getBlockNotificationPermissionsPatch ()Lapp/morphe/patcher/patch/RawResourcePatch;
 }
