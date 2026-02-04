@@ -1,3 +1,17 @@
+# [1.3.0](https://github.com/hoo-dles/morphe-patches/compare/v1.2.0...v1.3.0) (2026-02-03)
+
+
+### Features
+
+* **Ibis Paint:** Add `Enable Prime Membership` patch ([12ad401](https://github.com/hoo-dles/morphe-patches/commit/12ad4014a918f9f84183c2afcdc319d44249fa07))
+
+# [1.3.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.2.0...v1.3.0-dev.1) (2026-02-03)
+
+
+### Features
+
+* **Ibis Paint:** Add `Enable Prime Membership` patch ([12ad401](https://github.com/hoo-dles/morphe-patches/commit/12ad4014a918f9f84183c2afcdc319d44249fa07))
+
 # [1.2.0](https://github.com/hoo-dles/morphe-patches/compare/v1.1.0...v1.2.0) (2026-02-03)
 
 
