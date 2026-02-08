@@ -203,6 +203,22 @@ public final class app/morphe/patches/pandora/misc/SkipLimitBehaviorFingerprint 
 	public static final field INSTANCE Lapp/morphe/patches/pandora/misc/SkipLimitBehaviorFingerprint;
 }
 
+public final class app/morphe/patches/podcastaddict/premium/EnablePremiumPatchKt {
+	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/podcastaddict/premium/HasPremiumFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/podcastaddict/premium/HasPremiumFingerprint;
+}
+
+public final class app/morphe/patches/podcastaddict/premium/IsValidPackageSourceFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/podcastaddict/premium/IsValidPackageSourceFingerprint;
+}
+
+public final class app/morphe/patches/podcastaddict/premium/IsValidSignatureFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/podcastaddict/premium/IsValidSignatureFingerprint;
+}
+
 public final class app/morphe/patches/primevideo/ads/DoTriggerFingerprint : app/morphe/patcher/Fingerprint {
 	public static final field INSTANCE Lapp/morphe/patches/primevideo/ads/DoTriggerFingerprint;
 }
