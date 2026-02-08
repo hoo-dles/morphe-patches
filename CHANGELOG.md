@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/hoo-dles/morphe-patches/compare/v1.3.0...v1.4.0) (2026-02-08)
+
+
+### Features
+
+* **Podcast Addict:** Add `Enable Premium` patch ([7fdeda5](https://github.com/hoo-dles/morphe-patches/commit/7fdeda5899971e0ea7c8d3fd5cdb6292a0d29852))
+
 # [1.4.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.3.0...v1.4.0-dev.1) (2026-02-08)
 
 
