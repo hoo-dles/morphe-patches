@@ -42,6 +42,7 @@
 | Podcast Addict     | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                                                |
 | Smart Launcher     | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | Teuida             | `net.teuida.teuida`                | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |
+| Timbre             | `xeus.timbre`                      | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | TTMIK Stories      | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                                                |
 | World Map Quiz     | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                                                |
 

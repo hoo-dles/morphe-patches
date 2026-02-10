@@ -380,6 +380,14 @@ public final class app/morphe/patches/teuida/premium/PremiumGetterFingerprint : 
 	public static final field INSTANCE Lapp/morphe/patches/teuida/premium/PremiumGetterFingerprint;
 }
 
+public final class app/morphe/patches/timbre/pro/EnableProPatchKt {
+	public static final fun getEnableProPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/timbre/pro/IsUserAProFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/timbre/pro/IsUserAProFingerprint;
+}
+
 public final class app/morphe/patches/ttmikstories/premium/EnablePremiumPatchKt {
 	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/RawResourcePatch;
 }
