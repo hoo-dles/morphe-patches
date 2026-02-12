@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0-dev.1",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -227,6 +227,16 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.merriamwebster": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium Pro",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "pl.solidexplorer2": null
       },
       "options": []
     },

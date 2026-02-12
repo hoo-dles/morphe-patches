@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-02-08T01:29:06",
-  "description": "# [1.4.0](https://github.com/hoo-dles/morphe-patches/compare/v1.3.0...v1.4.0) (2026-02-08)\n\n\n### Features\n\n* **Podcast Addict:** Add `Enable Premium` patch ([7fdeda5](https://github.com/hoo-dles/morphe-patches/commit/7fdeda5899971e0ea7c8d3fd5cdb6292a0d29852))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.4.0/patches-1.4.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.4.0/patches-1.4.0.mpp.asc",
-  "version": "1.4.0"
+  "created_at": "2026-02-11T21:58:11",
+  "description": "# [1.5.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.4.0...v1.5.0-dev.1) (2026-02-11)\n\n\n### Features\n\n* **Solid Explorer:** Add `Enable Pro` patch ([4a19029](https://github.com/hoo-dles/morphe-patches/commit/4a19029882e636ed0aa9bccdc78c55b94db59e59))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.5.0-dev.1/patches-1.5.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.5.0-dev.1/patches-1.5.0-dev.1.mpp.asc",
+  "version": "1.5.0-dev.1"
 }

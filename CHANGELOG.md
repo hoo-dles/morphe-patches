@@ -1,3 +1,10 @@
+# [1.5.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.4.0...v1.5.0-dev.1) (2026-02-11)
+
+
+### Features
+
+* **Solid Explorer:** Add `Enable Pro` patch ([4a19029](https://github.com/hoo-dles/morphe-patches/commit/4a19029882e636ed0aa9bccdc78c55b94db59e59))
+
 # [1.4.0](https://github.com/hoo-dles/morphe-patches/compare/v1.3.0...v1.4.0) (2026-02-08)
 
 
