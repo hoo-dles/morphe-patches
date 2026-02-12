@@ -17,10 +17,15 @@
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/hoo-dles/morphe-patches/release.yml)
 ![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)
 
+### 🤷‍♂️ How do I use this?
+Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch source to Morphe Manager.
+
+<br/>
+
 > [!NOTE]
 > Patch requests are always welcome, so feel free to open an issue.
 >
-> If you find this project useful and want to help support its development, consider [donating](.donate/donate.md) :pray:
+> If you find this project useful and want to help support its development, consider [donating](.donate/donate.md). :pray:
 
 <br/>
 
