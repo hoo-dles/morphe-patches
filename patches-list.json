@@ -1,5 +1,5 @@
 {
-  "version": "1.6.0-dev.1",
+  "version": "1.6.0-dev.2",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -350,6 +350,16 @@
       "options": []
     },
     {
+      "name": "Remove server change delay",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "ch.protonvpn.android": null
+      },
+      "options": []
+    },
+    {
       "name": "Rename shared permissions",
       "description": "Rename certain permissions shared across Amazon apps. Applying this patch can fix installation errors, but can also break features in certain apps.",
       "use": false,
@@ -374,22 +384,22 @@
       "options": []
     },
     {
-      "name": "Unlock Split Tunneling",
-      "description": null,
-      "use": true,
-      "dependencies": [],
-      "compatiblePackages": {
-        "ch.protonvpn.android": null
-      },
-      "options": []
-    },
-    {
       "name": "Unlock licensed songs",
       "description": "Allows playing the full version of licensed music instead of the 30-second preview.",
       "use": false,
       "dependencies": [],
       "compatiblePackages": {
         "com.duolingo": null
+      },
+      "options": []
+    },
+    {
+      "name": "Unlock split tunneling",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "ch.protonvpn.android": null
       },
       "options": []
     }
