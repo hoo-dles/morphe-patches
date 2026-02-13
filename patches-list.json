@@ -1,5 +1,5 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0-dev.1",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -370,6 +370,16 @@
         "com.amazon.avod.thirdpartyclient": [
           "3.0.430.1747"
         ]
+      },
+      "options": []
+    },
+    {
+      "name": "Unlock Split Tunneling",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "ch.protonvpn.android": null
       },
       "options": []
     },
