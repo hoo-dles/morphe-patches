@@ -1,3 +1,17 @@
+# [1.6.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.6.0-dev.1...v1.6.0-dev.2) (2026-02-13)
+
+
+### Features
+
+* **Proton VPN:** Add `Remove server change delay` patch ([19c6921](https://github.com/hoo-dles/morphe-patches/commit/19c6921563609ed150eb618e698aaf306778a495))
+
+# [1.6.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.5.0...v1.6.0-dev.1) (2026-02-13)
+
+
+### Features
+
+* **Proton VPN:** Add `Unlock Split Tunneling` patch ([5257651](https://github.com/hoo-dles/morphe-patches/commit/5257651944e3da19edd64afa9d0859ac5e2d3a77))
+
 # [1.5.0](https://github.com/hoo-dles/morphe-patches/compare/v1.4.0...v1.5.0) (2026-02-12)
 
 

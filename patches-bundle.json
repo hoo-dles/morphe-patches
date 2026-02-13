@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-02-12T03:18:54",
-  "description": "# [1.5.0](https://github.com/hoo-dles/morphe-patches/compare/v1.4.0...v1.5.0) (2026-02-12)\n\n\n### Features\n\n* **Solid Explorer:** Add `Enable Pro` patch ([4a19029](https://github.com/hoo-dles/morphe-patches/commit/4a19029882e636ed0aa9bccdc78c55b94db59e59))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.5.0/patches-1.5.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.5.0/patches-1.5.0.mpp.asc",
-  "version": "1.5.0"
+  "created_at": "2026-02-13T17:37:08",
+  "description": "# [1.6.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.6.0-dev.1...v1.6.0-dev.2) (2026-02-13)\n\n\n### Features\n\n* **Proton VPN:** Add `Remove server change delay` patch ([19c6921](https://github.com/hoo-dles/morphe-patches/commit/19c6921563609ed150eb618e698aaf306778a495))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.6.0-dev.2/patches-1.6.0-dev.2.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.6.0-dev.2/patches-1.6.0-dev.2.mpp.asc",
+  "version": "1.6.0-dev.2"
 }

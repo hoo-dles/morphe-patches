@@ -1,5 +1,5 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0-dev.2",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -350,6 +350,16 @@
       "options": []
     },
     {
+      "name": "Remove server change delay",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "ch.protonvpn.android": null
+      },
+      "options": []
+    },
+    {
       "name": "Rename shared permissions",
       "description": "Rename certain permissions shared across Amazon apps. Applying this patch can fix installation errors, but can also break features in certain apps.",
       "use": false,
@@ -380,6 +390,16 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.duolingo": null
+      },
+      "options": []
+    },
+    {
+      "name": "Unlock split tunneling",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "ch.protonvpn.android": null
       },
       "options": []
     }

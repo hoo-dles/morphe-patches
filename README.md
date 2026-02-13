@@ -45,6 +45,7 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 | MyFitnessPal       | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                                               |
 | Pandora            | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                                           |
 | Podcast Addict     | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                                                |
+| Proton VPN         | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock split tunneling</li></ul>                                                     |
 | Smart Launcher     | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | Solid Explorer     | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                                                     |
 | Teuida             | `net.teuida.teuida`                | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |

@@ -247,6 +247,30 @@ public final class app/morphe/patches/primevideo/misc/permissions/RenamePermissi
 	public static final fun getRenamePermissionsPatch ()Lapp/morphe/patcher/patch/ResourcePatch;
 }
 
+public final class app/morphe/patches/protonvpn/delay/GetLongDelayFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/protonvpn/delay/GetLongDelayFingerprint;
+}
+
+public final class app/morphe/patches/protonvpn/delay/GetShortDelayFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/protonvpn/delay/GetShortDelayFingerprint;
+}
+
+public final class app/morphe/patches/protonvpn/delay/RemoveDelayPatchKt {
+	public static final fun getRemoveChangeServerDelayPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/protonvpn/splittunneling/ApplyRestrictionsFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/protonvpn/splittunneling/ApplyRestrictionsFingerprint;
+}
+
+public final class app/morphe/patches/protonvpn/splittunneling/SplitTunnelingSettingViewStateCtor : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/protonvpn/splittunneling/SplitTunnelingSettingViewStateCtor;
+}
+
+public final class app/morphe/patches/protonvpn/splittunneling/UnlockSplitTunnelingPatchKt {
+	public static final fun getUnlockSplitTunnelingPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
 public class app/morphe/patches/shared/misc/extension/ExtensionHook {
 	public fun <init> (Lapp/morphe/patcher/Fingerprint;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
 	public synthetic fun <init> (Lapp/morphe/patcher/Fingerprint;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
