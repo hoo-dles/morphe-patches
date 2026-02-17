@@ -7,7 +7,7 @@ import app.morphe.util.returnEarly
 @Suppress("unused")
 val enableProPatch = bytecodePatch(
     name = "Enable Pro",
-    description = "Enable pro features (requires to be logged in)."
+    description = "Enables Pro subscription features. Login is required and AI functionality is unavailable."
 ) {
     compatibleWith("cn.wps.moffice_eng")
 
