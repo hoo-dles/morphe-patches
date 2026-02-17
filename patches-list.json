@@ -1,5 +1,5 @@
 {
-  "version": "1.6.0",
+  "version": "1.7.0-dev.1",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -60,6 +60,16 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.duolingo": null
+      },
+      "options": []
+    },
+    {
+      "name": "Disable anti-tamper checks",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "cn.wps.moffice_eng": null
       },
       "options": []
     },
@@ -285,6 +295,18 @@
       ],
       "compatiblePackages": {
         "ginlemon.flowerfree": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Pro",
+      "description": "Enable pro features (requires to be logged in).",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "cn.wps.moffice_eng": null
       },
       "options": []
     },
