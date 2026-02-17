@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/hoo-dles/morphe-patches/compare/v1.6.0...v1.7.0) (2026-02-17)
+
+
+### Features
+
+* **WPS Office:** Add `Enable Pro` patch ([d2ecb17](https://github.com/hoo-dles/morphe-patches/commit/d2ecb17615f606b6b99ec77f24ce9fd6281ff856))
+
 # [1.7.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.6.0...v1.7.0-dev.1) (2026-02-17)
 
 

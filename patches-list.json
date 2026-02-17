@@ -1,5 +1,5 @@
 {
-  "version": "1.7.0-dev.1",
+  "version": "1.7.0",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -300,7 +300,7 @@
     },
     {
       "name": "Enable Pro",
-      "description": "Enable pro features (requires to be logged in).",
+      "description": "Enables Pro subscription features. Login is required and AI functionality is unavailable.",
       "use": true,
       "dependencies": [
         "BytecodePatch"
