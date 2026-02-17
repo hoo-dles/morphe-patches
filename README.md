@@ -51,6 +51,7 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 | Teuida             | `net.teuida.teuida`                | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |
 | TTMIK Stories      | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                                                |
 | World Map Quiz     | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                                                |
+| WPS Office         | `cn.wps.moffice_eng`               | <ul><li>Disable anti-tamper checks</li><li>Enable Pro</li></ul>                                                                 |
 
 <br />
 

@@ -424,6 +424,26 @@ public final class app/morphe/patches/webster/premium/GetSubscriptionFingerprint
 	public static final field INSTANCE Lapp/morphe/patches/webster/premium/GetSubscriptionFingerprint;
 }
 
+public final class app/morphe/patches/wpsoffice/misc/antitamper/DisableAntiTamperPatchKt {
+	public static final fun getDisableAntiTamperPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/wpsoffice/misc/antitamper/SecurityCheck1Fingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/wpsoffice/misc/antitamper/SecurityCheck1Fingerprint;
+}
+
+public final class app/morphe/patches/wpsoffice/misc/antitamper/SecurityCheck2Fingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/wpsoffice/misc/antitamper/SecurityCheck2Fingerprint;
+}
+
+public final class app/morphe/patches/wpsoffice/pro/EnableProPatchKt {
+	public static final fun getEnableProPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/wpsoffice/pro/HasPrivilegeFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/wpsoffice/pro/HasPrivilegeFingerprint;
+}
+
 public final class app/morphe/util/BytecodeUtilsKt {
 	public static final fun addInstructionsAtControlFlowLabel (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;ILjava/lang/String;)V
 	public static final fun addInstructionsAtControlFlowLabel (Lapp/morphe/patcher/util/proxy/mutableTypes/MutableMethod;ILjava/lang/String;[Lapp/morphe/patcher/util/smali/ExternalLabel;)V
