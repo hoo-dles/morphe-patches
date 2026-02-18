@@ -1,3 +1,10 @@
+# [1.8.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.7.0...v1.8.0-dev.1) (2026-02-18)
+
+
+### Features
+
+* **Sofascore:** Add `Disable ads` patch ([ece13fe](https://github.com/hoo-dles/morphe-patches/commit/ece13fe92b12c5b8b0e1d68bb25b97036c907405))
+
 # [1.7.0](https://github.com/hoo-dles/morphe-patches/compare/v1.6.0...v1.7.0) (2026-02-17)
 
 
