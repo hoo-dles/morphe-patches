@@ -6,6 +6,22 @@ public final class app/morphe/patches/all/misc/packagename/ChangePackageNamePatc
 	public static final fun setPackageNameOption (Lapp/morphe/patcher/patch/Option;)V
 }
 
+public final class app/morphe/patches/all/misc/pairip/license/DisableLicenseCheckPatchKt {
+	public static final fun getDisableLicenseCheckPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/all/misc/pairip/license/ProcessLicenseResponseFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/all/misc/pairip/license/ProcessLicenseResponseFingerprint;
+}
+
+public final class app/morphe/patches/all/misc/pairip/license/RepeatedCheckFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/all/misc/pairip/license/RepeatedCheckFingerprint;
+}
+
+public final class app/morphe/patches/all/misc/pairip/license/ValidateLicenseResponseFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/all/misc/pairip/license/ValidateLicenseResponseFingerprint;
+}
+
 public final class app/morphe/patches/avocards/premium/EnablePremiumPatchKt {
 	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
@@ -378,6 +394,26 @@ public final class app/morphe/patches/smartlauncher/pro/PurchasableItemSetFinger
 
 public final class app/morphe/patches/smartlauncher/pro/PurchaseItemsCtor : app/morphe/patcher/Fingerprint {
 	public static final field INSTANCE Lapp/morphe/patches/smartlauncher/pro/PurchaseItemsCtor;
+}
+
+public final class app/morphe/patches/sofascore/ads/DisableAdsPatchKt {
+	public static final fun getDisableAdsPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/sofascore/ads/FingerprintsKt {
+	public static final field CLASS_NAME Ljava/lang/String;
+}
+
+public final class app/morphe/patches/sofascore/ads/GetForceAdsFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/sofascore/ads/GetForceAdsFingerprint;
+}
+
+public final class app/morphe/patches/sofascore/ads/GetForceHideAdsFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/sofascore/ads/GetForceHideAdsFingerprint;
+}
+
+public final class app/morphe/patches/sofascore/ads/GetHasServerAdsFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/sofascore/ads/GetHasServerAdsFingerprint;
 }
 
 public final class app/morphe/patches/solidexplorer/pro/EnableProPatchKt {

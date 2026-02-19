@@ -1,5 +1,5 @@
 {
-  "version": "1.7.0",
+  "version": "1.8.0-dev.2",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -60,6 +60,24 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.duolingo": null
+      },
+      "options": []
+    },
+    {
+      "name": "Disable Pairip license check",
+      "description": "Disables Play Integrity API (Pairip) client-side license check.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": null,
+      "options": []
+    },
+    {
+      "name": "Disable ads",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.sofascore.results": null
       },
       "options": []
     },
