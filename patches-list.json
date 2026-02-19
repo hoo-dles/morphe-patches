@@ -1,5 +1,5 @@
 {
-  "version": "1.8.0-dev.1",
+  "version": "1.8.0-dev.2",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -61,6 +61,14 @@
       "compatiblePackages": {
         "com.duolingo": null
       },
+      "options": []
+    },
+    {
+      "name": "Disable Pairip license check",
+      "description": "Disables Play Integrity API (Pairip) client-side license check.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": null,
       "options": []
     },
     {

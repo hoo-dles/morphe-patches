@@ -1,3 +1,10 @@
+# [1.8.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.8.0-dev.1...v1.8.0-dev.2) (2026-02-19)
+
+
+### Features
+
+* Add common `Disable Pairip license check` patch ([7462cb7](https://github.com/hoo-dles/morphe-patches/commit/7462cb7daf33bc433d1dd996e2f99564fbfd46b0))
+
 # [1.8.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.7.0...v1.8.0-dev.1) (2026-02-18)
 
 
