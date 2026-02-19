@@ -6,6 +6,22 @@ public final class app/morphe/patches/all/misc/packagename/ChangePackageNamePatc
 	public static final fun setPackageNameOption (Lapp/morphe/patcher/patch/Option;)V
 }
 
+public final class app/morphe/patches/all/misc/pairip/license/DisableLicenseCheckPatchKt {
+	public static final fun getDisableLicenseCheckPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
+}
+
+public final class app/morphe/patches/all/misc/pairip/license/ProcessLicenseResponseFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/all/misc/pairip/license/ProcessLicenseResponseFingerprint;
+}
+
+public final class app/morphe/patches/all/misc/pairip/license/RepeatedCheckFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/all/misc/pairip/license/RepeatedCheckFingerprint;
+}
+
+public final class app/morphe/patches/all/misc/pairip/license/ValidateLicenseResponseFingerprint : app/morphe/patcher/Fingerprint {
+	public static final field INSTANCE Lapp/morphe/patches/all/misc/pairip/license/ValidateLicenseResponseFingerprint;
+}
+
 public final class app/morphe/patches/avocards/premium/EnablePremiumPatchKt {
 	public static final fun getEnablePremiumPatch ()Lapp/morphe/patcher/patch/BytecodePatch;
 }
