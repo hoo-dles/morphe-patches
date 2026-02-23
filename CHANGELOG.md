@@ -1,3 +1,12 @@
+# [1.8.0](https://github.com/hoo-dles/morphe-patches/compare/v1.7.0...v1.8.0) (2026-02-23)
+
+
+### Features
+
+* Add common `Disable Pairip license check` patch ([7462cb7](https://github.com/hoo-dles/morphe-patches/commit/7462cb7daf33bc433d1dd996e2f99564fbfd46b0))
+* **Material Island:** Add `Enable Pro` patch ([559ed7a](https://github.com/hoo-dles/morphe-patches/commit/559ed7a0f04c1ad3b47d4919b6ac74e634dd980c))
+* **Sofascore:** Add `Disable ads` patch ([ece13fe](https://github.com/hoo-dles/morphe-patches/commit/ece13fe92b12c5b8b0e1d68bb25b97036c907405))
+
 # [1.8.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.8.0-dev.2...v1.8.0-dev.3) (2026-02-23)
 
 
