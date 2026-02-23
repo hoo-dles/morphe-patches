@@ -40,6 +40,7 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 | Eggbun             | `kr.eggbun.eggconvo`               | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                                                  |
 | IbisPaint X[^1]    | `jp.ne.ibis.ibispaintx.app`        | <ul><li>Enable Prime Membership</li></ul>                                                                                       |
 | Lingory[^1]        | `org.languageapp.lingory`          | <ul><li>Enable Premium</li></ul>                                                                                                |
+| Material Island    | `com.pryshedko.mtisland`           | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | Merriam-Webster    | `com.merriamwebster`               | <ul><li>Enable Premium</li></ul>                                                                                                |
 | MyExpenses         | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | MyFitnessPal       | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                                               |
@@ -47,6 +48,7 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 | Podcast Addict     | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                                                |
 | Proton VPN         | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock split tunneling</li></ul>                                                     |
 | Smart Launcher     | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                                                    |
+| Sofascore          | `com.sofascore.results`            | <ul><li>Disable ads</li></ul>                                                                                                   |
 | Solid Explorer     | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                                                     |
 | Teuida             | `net.teuida.teuida`                | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |
 | TTMIK Stories      | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                                                |
