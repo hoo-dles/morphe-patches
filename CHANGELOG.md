@@ -1,3 +1,10 @@
+# [1.8.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.8.0-dev.2...v1.8.0-dev.3) (2026-02-23)
+
+
+### Features
+
+* **Material Island:** Add `Enable Pro` patch ([559ed7a](https://github.com/hoo-dles/morphe-patches/commit/559ed7a0f04c1ad3b47d4919b6ac74e634dd980c))
+
 # [1.8.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.8.0-dev.1...v1.8.0-dev.2) (2026-02-19)
 
 

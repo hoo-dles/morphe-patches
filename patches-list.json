@@ -1,5 +1,5 @@
 {
-  "version": "1.8.0-dev.2",
+  "version": "1.8.0-dev.3",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -289,6 +289,18 @@
         "jp.ne.ibis.ibispaintx.app": [
           "13.1.19"
         ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Pro",
+      "description": null,
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.pryshedko.mtisland": null
       },
       "options": []
     },
