@@ -41,6 +41,7 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 | IbisPaint X[^1]    | `jp.ne.ibis.ibispaintx.app`        | <ul><li>Enable Prime Membership</li></ul>                                                                                       |
 | Lingory[^1]        | `org.languageapp.lingory`          | <ul><li>Enable Premium</li></ul>                                                                                                |
 | Material Capsule   | `com.pryshedko.mtisland`           | <ul><li>Enable Pro</li></ul>                                                                                                    |
+| Meme Generator     | `com.zombodroid.MemeGenerator`     | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | Merriam-Webster    | `com.merriamwebster`               | <ul><li>Enable Premium</li></ul>                                                                                                |
 | MyExpenses         | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | MyFitnessPal       | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                                               |
