@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-02-23T19:28:23",
-  "description": "# [1.8.0](https://github.com/hoo-dles/morphe-patches/compare/v1.7.0...v1.8.0) (2026-02-23)\n\n\n### Features\n\n* Add common `Disable Pairip license check` patch ([7462cb7](https://github.com/hoo-dles/morphe-patches/commit/7462cb7daf33bc433d1dd996e2f99564fbfd46b0))\n* **Material Island:** Add `Enable Pro` patch ([559ed7a](https://github.com/hoo-dles/morphe-patches/commit/559ed7a0f04c1ad3b47d4919b6ac74e634dd980c))\n* **Sofascore:** Add `Disable ads` patch ([ece13fe](https://github.com/hoo-dles/morphe-patches/commit/ece13fe92b12c5b8b0e1d68bb25b97036c907405))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.8.0/patches-1.8.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.8.0/patches-1.8.0.mpp.asc",
-  "version": "1.8.0"
+  "created_at": "2026-02-24T21:59:05",
+  "description": "# [1.9.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.8.0...v1.9.0-dev.1) (2026-02-24)\n\n\n### Features\n\n* **Meme Generator:** Add `Enable Pro` patch ([c199264](https://github.com/hoo-dles/morphe-patches/commit/c199264234242e684d147edd5d06d5197c289708))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.9.0-dev.1/patches-1.9.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.9.0-dev.1/patches-1.9.0-dev.1.mpp.asc",
+  "version": "1.9.0-dev.1"
 }
