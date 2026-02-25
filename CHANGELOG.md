@@ -1,3 +1,17 @@
+# [1.9.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.9.0-dev.1...v1.9.0-dev.2) (2026-02-25)
+
+
+### Features
+
+* **Busuu:** Add `Enable Premium` patch ([66187a7](https://github.com/hoo-dles/morphe-patches/commit/66187a71996c3244dd7630bab24783aa93862730))
+
+# [1.9.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.8.0...v1.9.0-dev.1) (2026-02-24)
+
+
+### Features
+
+* **Meme Generator:** Add `Enable Pro` patch ([c199264](https://github.com/hoo-dles/morphe-patches/commit/c199264234242e684d147edd5d06d5197c289708))
+
 # [1.8.0](https://github.com/hoo-dles/morphe-patches/compare/v1.7.0...v1.8.0) (2026-02-23)
 
 
