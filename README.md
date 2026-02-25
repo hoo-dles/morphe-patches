@@ -33,14 +33,16 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 |--------------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Amazon Prime Video | `com.amazon.avod.thirdpartyclient` | <ul><li>Skip ads</li></ul>                                                                                                      |
 | Avocards           | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                                                |
+| Busuu              | `com.busuu.android.enc`            | <ul><li>Enable Premium</li></ul>                                                                                                |
 | Cake               | `me.mycake`                        | <ul><li>Enable Plus</li></ul>                                                                                                   |
 | Crunchyroll        | `com.crunchyroll.crunchyroid`      | <ul><li>Enable Premium[^2]</li></ul>                                                                                            |
-| DAILY PAY          | `kr.co.yjteam.dailypay`            | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |
+| DAILY POCKET       | `kr.co.yjteam.dailypay`            | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |
 | Duolingo           | `com.duolingo`                     | <ul><li>Disable Play Integrity check</li><li>Enable debug mode</li><li>Enable Super/MAX</li><li>Unlock licensed songs</li></ul> |
 | Eggbun             | `kr.eggbun.eggconvo`               | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                                                  |
 | IbisPaint X[^1]    | `jp.ne.ibis.ibispaintx.app`        | <ul><li>Enable Prime Membership</li></ul>                                                                                       |
 | Lingory[^1]        | `org.languageapp.lingory`          | <ul><li>Enable Premium</li></ul>                                                                                                |
-| Material Island    | `com.pryshedko.mtisland`           | <ul><li>Enable Pro</li></ul>                                                                                                    |
+| Material Capsule   | `com.pryshedko.mtisland`           | <ul><li>Enable Pro</li></ul>                                                                                                    |
+| Meme Generator     | `com.zombodroid.MemeGenerator`     | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | Merriam-Webster    | `com.merriamwebster`               | <ul><li>Enable Premium</li></ul>                                                                                                |
 | MyExpenses         | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | MyFitnessPal       | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                                               |
