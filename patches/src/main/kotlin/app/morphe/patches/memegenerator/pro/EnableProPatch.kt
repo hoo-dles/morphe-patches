@@ -15,6 +15,6 @@ val enableProPatch = bytecodePatch(
         CheckSignatures2Fingerprint.method.returnBoxedBooleanEarly(true)
 
         IsFreeFingerprint.method.returnBoxedBooleanEarly(false)
-        IsCacheLicenseValid.method.returnEarly(true)
+        IsCacheLicenseValidFingerprint.method.returnEarly(true)
     }
 }

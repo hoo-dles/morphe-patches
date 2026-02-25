@@ -11,7 +11,7 @@ object IsFreeFingerprint : Fingerprint (
     strings = listOf("free")
 )
 
-object IsCacheLicenseValid : Fingerprint (
+object IsCacheLicenseValidFingerprint : Fingerprint (
     returnType = "Z",
     filters = listOf(
         methodCall(name = "currentTimeMillis"),
