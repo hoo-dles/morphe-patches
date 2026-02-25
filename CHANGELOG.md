@@ -1,3 +1,10 @@
+# [1.9.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.9.0-dev.1...v1.9.0-dev.2) (2026-02-25)
+
+
+### Features
+
+* **Busuu:** Add `Enable Premium` patch ([66187a7](https://github.com/hoo-dles/morphe-patches/commit/66187a71996c3244dd7630bab24783aa93862730))
+
 # [1.9.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.8.0...v1.9.0-dev.1) (2026-02-24)
 
 
