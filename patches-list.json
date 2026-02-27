@@ -1,5 +1,5 @@
 {
-  "version": "1.9.1-dev.1",
+  "version": "1.9.1",
   "patches": [
     {
       "name": "Block Permissions Request",

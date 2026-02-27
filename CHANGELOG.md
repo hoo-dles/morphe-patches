@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/hoo-dles/morphe-patches/compare/v1.9.0...v1.9.1) (2026-02-27)
+
+
+### Bug Fixes
+
+* **Prime Video:** Fix crash and remove version constraint ([3093d77](https://github.com/hoo-dles/morphe-patches/commit/3093d77a618cd309cce11a05789f76c87402978f))
+
 ## [1.9.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.9.0...v1.9.1-dev.1) (2026-02-27)
 
 
