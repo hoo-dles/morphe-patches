@@ -1,4 +1,4 @@
-package main.java.app.morphe.extension.primevideo.ads;
+package app.morphe.extension.primevideo.ads;
 
 import com.amazon.avod.fsm.SimpleTrigger;
 import com.amazon.avod.media.ads.AdBreak;
