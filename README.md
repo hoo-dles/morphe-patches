@@ -35,7 +35,6 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 | Avocards           | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                                                |
 | Busuu              | `com.busuu.android.enc`            | <ul><li>Enable Premium</li></ul>                                                                                                |
 | Cake               | `me.mycake`                        | <ul><li>Enable Plus</li></ul>                                                                                                   |
-| Crunchyroll        | `com.crunchyroll.crunchyroid`      | <ul><li>Enable Premium[^2]</li></ul>                                                                                            |
 | DAILY POCKET       | `kr.co.yjteam.dailypay`            | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |
 | Duolingo           | `com.duolingo`                     | <ul><li>Disable Play Integrity check</li><li>Enable debug mode</li><li>Enable Super/MAX</li><li>Unlock licensed songs</li></ul> |
 | Eggbun             | `kr.eggbun.eggconvo`               | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                                                  |
