@@ -1,3 +1,10 @@
+# [1.10.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.9.1...v1.10.0-dev.1) (2026-02-28)
+
+
+### Features
+
+* **Icon Packer:** Add `Unlock premium features` patch ([35c14e7](https://github.com/hoo-dles/morphe-patches/commit/35c14e77874287540e133502604ca798940b6f73))
+
 ## [1.9.1](https://github.com/hoo-dles/morphe-patches/compare/v1.9.0...v1.9.1) (2026-02-27)
 
 
