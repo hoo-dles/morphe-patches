@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-02-28T20:11:36",
-  "description": "# [1.10.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.9.1...v1.10.0-dev.1) (2026-02-28)\n\n\n### Features\n\n* **Icon Packer:** Add `Unlock premium features` patch ([35c14e7](https://github.com/hoo-dles/morphe-patches/commit/35c14e77874287540e133502604ca798940b6f73))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.10.0-dev.1/patches-1.10.0-dev.1.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.10.0-dev.1/patches-1.10.0-dev.1.mpp.asc",
-  "version": "1.10.0-dev.1"
+  "created_at": "2026-02-28T23:08:06",
+  "description": "# [1.10.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.10.0-dev.1...v1.10.0-dev.2) (2026-02-28)\n\n\n### Bug Fixes\n\n* **Crunchyroll:** Remove patches ([93993fb](https://github.com/hoo-dles/morphe-patches/commit/93993fbf494e78a30a368a7bfcee1f8fbb1126d6))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.10.0-dev.2/patches-1.10.0-dev.2.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.10.0-dev.2/patches-1.10.0-dev.2.mpp.asc",
+  "version": "1.10.0-dev.2"
 }

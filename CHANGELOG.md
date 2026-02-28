@@ -1,3 +1,10 @@
+# [1.10.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.10.0-dev.1...v1.10.0-dev.2) (2026-02-28)
+
+
+### Bug Fixes
+
+* **Crunchyroll:** Remove patches ([93993fb](https://github.com/hoo-dles/morphe-patches/commit/93993fbf494e78a30a368a7bfcee1f8fbb1126d6))
+
 # [1.10.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.9.1...v1.10.0-dev.1) (2026-02-28)
 
 
