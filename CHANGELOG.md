@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/hoo-dles/morphe-patches/compare/v1.10.0...v1.10.1) (2026-03-01)
+
+
+### Bug Fixes
+
+* **Prime Video:** Support latest version (4.0.443) ([b529264](https://github.com/hoo-dles/morphe-patches/commit/b529264f3440859ef93f6074423122cba382833e))
+
 ## [1.10.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.10.0...v1.10.1-dev.1) (2026-03-01)
 
 
