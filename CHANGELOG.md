@@ -1,3 +1,16 @@
+# [1.10.0](https://github.com/hoo-dles/morphe-patches/compare/v1.9.1...v1.10.0) (2026-03-01)
+
+
+### Bug Fixes
+
+* **Crunchyroll:** Remove patches ([93993fb](https://github.com/hoo-dles/morphe-patches/commit/93993fbf494e78a30a368a7bfcee1f8fbb1126d6))
+
+
+### Features
+
+* **Icon Packer:** Add `Unlock premium features` patch ([35c14e7](https://github.com/hoo-dles/morphe-patches/commit/35c14e77874287540e133502604ca798940b6f73))
+* **Mimo:** Add `Enable Premium` patch ([3b5c376](https://github.com/hoo-dles/morphe-patches/commit/3b5c37661a8b1ca0a5d2c4ef7e54f81893a129b2))
+
 # [1.10.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.10.0-dev.2...v1.10.0-dev.3) (2026-03-01)
 
 
