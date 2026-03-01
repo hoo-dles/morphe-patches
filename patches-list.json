@@ -1,5 +1,5 @@
 {
-  "version": "1.10.0-dev.1",
+  "version": "1.10.0-dev.2",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -142,16 +142,6 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.busuu.android.enc": null
-      },
-      "options": []
-    },
-    {
-      "name": "Enable Premium",
-      "description": "Enables client-side only premium features. Most functionality is absent as it is verified on the server.",
-      "use": true,
-      "dependencies": [],
-      "compatiblePackages": {
-        "com.crunchyroll.crunchyroid": null
       },
       "options": []
     },
