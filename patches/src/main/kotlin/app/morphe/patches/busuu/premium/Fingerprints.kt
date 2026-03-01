@@ -23,7 +23,7 @@ object GetTierFingerprint : Fingerprint (
 object PremiumUserCtorFingerprint : Fingerprint (
     strings = listOf("legacyId", "name", "avatar", "accessTier")
 )
-object GetHasActieSubscriptionFingerprint : Fingerprint (
+object GetHasActiveSubscriptionFingerprint : Fingerprint (
     name = "getHasActiveSubscription"
 )
 
