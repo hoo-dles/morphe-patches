@@ -1,5 +1,5 @@
 {
-  "version": "1.10.0-dev.3",
+  "version": "1.10.0",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -218,18 +218,6 @@
       "name": "Enable Premium",
       "description": null,
       "use": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.getmimo": null
-      },
-      "options": []
-    },
-    {
-      "name": "Enable Premium",
-      "description": null,
-      "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "com.bambuna.podcastaddict": null
@@ -323,6 +311,18 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.zombodroid.MemeGenerator": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Pro",
+      "description": null,
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.getmimo": null
       },
       "options": []
     },
@@ -456,7 +456,7 @@
       "options": []
     },
     {
-      "name": "Spoof signature",
+      "name": "Spoof package signature",
       "description": null,
       "use": true,
       "dependencies": [],
