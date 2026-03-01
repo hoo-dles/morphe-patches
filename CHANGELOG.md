@@ -1,3 +1,10 @@
+# [1.10.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.10.0-dev.2...v1.10.0-dev.3) (2026-03-01)
+
+
+### Features
+
+* **Mimo:** Add `Enable Premium` patch ([3b5c376](https://github.com/hoo-dles/morphe-patches/commit/3b5c37661a8b1ca0a5d2c4ef7e54f81893a129b2))
+
 # [1.10.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.10.0-dev.1...v1.10.0-dev.2) (2026-02-28)
 
 
