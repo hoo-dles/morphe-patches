@@ -1,4 +1,4 @@
-package app.morphe.patches.mimo.premium
+package app.morphe.patches.mimo.pro
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.patch.bytecodePatch
@@ -6,8 +6,8 @@ import app.morphe.patches.mimo.misc.signature.spoofSignatureHeaderPatch
 import app.morphe.util.returnEarly
 
 @Suppress("unused")
-val enablePremiumPatch = bytecodePatch(
-    name = "Enable Premium"
+val enableProPatch = bytecodePatch(
+    name = "Enable Pro"
 ) {
     compatibleWith("com.getmimo")
 
