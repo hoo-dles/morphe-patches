@@ -1,5 +1,5 @@
 {
-  "version": "1.10.0",
+  "version": "1.10.1-dev.1",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -436,7 +436,7 @@
     {
       "name": "Rename shared permissions",
       "description": "Rename certain permissions shared across Amazon apps. Applying this patch can fix installation errors, but can also break features in certain apps.",
-      "use": false,
+      "use": true,
       "dependencies": [],
       "compatiblePackages": {
         "com.amazon.avod.thirdpartyclient": null

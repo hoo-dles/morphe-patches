@@ -996,6 +996,19 @@ private fun MutableMethod.overrideReturnValue(value: String, returnLate: Boolean
 }
 
 /**
+ * Add instructions `indexFromEnd` places before the end of the method.
+ */
+internal fun MutableMethod.addInstructionsToEnd(indexFromEnd: Int, smaliInstructions: String) =
+    this.addInstructions(this.instructions.count() - indexFromEnd, smaliInstructions)
+
+/**
+ * Add instructions to end of method before final return instruction.
+ */
+internal fun MutableMethod.addInstructionsToEnd(smaliInstructions: String) =
+    this.addInstructionsToEnd(1, smaliInstructions)
+
+
+/**
  * Remove the given AccessFlags from the field.
  */
 internal fun MutableField.removeFlag(vararg flags: AccessFlags) {
@@ -1017,22 +1030,16 @@ internal fun MutableClass.constructor() =
     this.methods.first { AccessFlags.CONSTRUCTOR.isSet(it.accessFlags) }
 
 /**
+ * Returns true if provided `AccessFlags` is set.
+ */
+internal fun ClassDef.hasFlag(flag: AccessFlags ) = this.accessFlags and flag.value > 0
+
+/**
  * Get the public toString() method.
  */
 internal fun ClassDef.toStringMethod() =
     this.methods.first { it.name == "toString" && AccessFlags.PUBLIC.isSet(it.accessFlags) }
 
-/**
- * Add instructions `indexFromEnd` places before the end of the method.
- */
-internal fun MutableMethod.addInstructionsToEnd(indexFromEnd: Int, smaliInstructions: String) =
-    this.addInstructions(this.instructions.count() - indexFromEnd, smaliInstructions)
-
-/**
- * Add instructions to end of method before final return instruction.
- */
-internal fun MutableMethod.addInstructionsToEnd(smaliInstructions: String) =
-    this.addInstructionsToEnd(1, smaliInstructions)
 
 private class InstructionUtils {
     companion object {

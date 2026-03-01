@@ -10,8 +10,7 @@ import org.w3c.dom.Element
 val renamePermissionsPatch = resourcePatch(
     name = "Rename shared permissions",
     description = "Rename certain permissions shared across Amazon apps. " +
-            "Applying this patch can fix installation errors, but can also break features in certain apps.",
-    use = false
+            "Applying this patch can fix installation errors, but can also break features in certain apps."
 ) {
     compatibleWith("com.amazon.avod.thirdpartyclient")
 
