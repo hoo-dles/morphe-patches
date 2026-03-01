@@ -1,5 +1,5 @@
 {
-  "version": "1.9.1",
+  "version": "1.10.0-dev.3",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -147,16 +147,6 @@
     },
     {
       "name": "Enable Premium",
-      "description": "Enables client-side only premium features. Most functionality is absent as it is verified on the server.",
-      "use": true,
-      "dependencies": [],
-      "compatiblePackages": {
-        "com.crunchyroll.crunchyroid": null
-      },
-      "options": []
-    },
-    {
-      "name": "Enable Premium",
       "description": null,
       "use": true,
       "dependencies": [
@@ -221,6 +211,18 @@
         "org.languageapp.lingory": [
           "1.2.75"
         ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": null,
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.getmimo": null
       },
       "options": []
     },
@@ -454,12 +456,34 @@
       "options": []
     },
     {
+      "name": "Spoof signature",
+      "description": null,
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.getmimo": null
+      },
+      "options": []
+    },
+    {
       "name": "Unlock licensed songs",
       "description": "Allows playing the full version of licensed music instead of the 30-second preview.",
       "use": false,
       "dependencies": [],
       "compatiblePackages": {
         "com.duolingo": null
+      },
+      "options": []
+    },
+    {
+      "name": "Unlock premium features",
+      "description": null,
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "cn.ommiao.iconpacker": null
       },
       "options": []
     },
