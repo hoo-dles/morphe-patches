@@ -16,8 +16,7 @@ val enablePremiumPatch = bytecodePatch(
         GetTierFingerprint.match(ApiUserAccessToStringFingerprint.classDef)
             .method.returnEarly("standard")
 
-        val premiumUserClass = PremiumUserCtorFingerprint.classDef
-        GetHasActieSubscriptionFingerprint.method.returnEarly(true)
-        IsPremiumFingerprint.method.returnEarly(true)
+        GetHasActiveSubscriptionFingerprint.method.returnEarly(true)
+        IsPremiumFingerprint.match(PremiumUserCtorFingerprint.classDef).method.returnEarly(true)
     }
 }
