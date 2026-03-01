@@ -1,4 +1,4 @@
-package app.morphe.patches.mimo.premium
+package app.morphe.patches.mimo.pro
 
 import app.morphe.patcher.Fingerprint
 

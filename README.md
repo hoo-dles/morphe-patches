@@ -44,7 +44,7 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 | Material Capsule   | `com.pryshedko.mtisland`           | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | Meme Generator     | `com.zombodroid.MemeGenerator`     | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | Merriam-Webster    | `com.merriamwebster`               | <ul><li>Enable Premium</li></ul>                                                                                                |
-| Mimo               | `com.getmimo`                      | <ul><li>Enable Premium</li></ul>                                                                                                |
+| Mimo               | `com.getmimo`                      | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | MyExpenses         | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                                                    |
 | MyFitnessPal       | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                                               |
 | Pandora            | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                                           |
