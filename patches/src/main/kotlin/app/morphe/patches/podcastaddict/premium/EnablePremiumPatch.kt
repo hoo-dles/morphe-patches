@@ -5,7 +5,8 @@ import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val enablePremiumPatch = bytecodePatch(
-    name = "Enable Premium"
+    name = "Enable Premium",
+    description = "Enables app features locked behind the subscription paywall."
 ) {
     compatibleWith("com.bambuna.podcastaddict"("2026.1"))
 
