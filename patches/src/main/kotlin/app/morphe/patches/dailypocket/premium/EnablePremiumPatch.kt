@@ -1,4 +1,4 @@
-package app.morphe.patches.dailypay.premium
+package app.morphe.patches.dailypocket.premium
 
 import app.morphe.patcher.patch.rawResourcePatch
 
@@ -6,7 +6,7 @@ import app.morphe.patcher.patch.rawResourcePatch
 val enablePremiumPatch = rawResourcePatch(
     name = "Enable Premium"
 ) {
-    compatibleWith("kr.co.yjteam.dailypay")
+    compatibleWith("kr.co.yjteam.dailypay"("6.0.7"))
     dependsOn(premiumWidgetPatch)
 
     execute {

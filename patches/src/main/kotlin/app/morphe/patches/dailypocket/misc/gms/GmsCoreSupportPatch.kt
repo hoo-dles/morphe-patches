@@ -1,7 +1,7 @@
-package app.morphe.patches.dailypay.misc.gms
+package app.morphe.patches.dailypocket.misc.gms
 
-import app.morphe.patches.dailypay.misc.gms.Constants.DAILYPAY_PACKAGE_NAME
-import app.morphe.patches.dailypay.misc.gms.Constants.MORPHE_DAILYPAY_PACKAGE_NAME
+import app.morphe.patches.dailypocket.misc.gms.Constants.DAILYPAY_PACKAGE_NAME
+import app.morphe.patches.dailypocket.misc.gms.Constants.MORPHE_DAILYPAY_PACKAGE_NAME
 import app.morphe.patches.shared.misc.extension.activityOnCreateExtensionHook
 import app.morphe.patches.shared.misc.extension.sharedExtensionPatch
 import app.morphe.patches.shared.misc.gms.gmsCoreSupportPatch

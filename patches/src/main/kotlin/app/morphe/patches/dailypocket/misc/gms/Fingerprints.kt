@@ -1,4 +1,4 @@
-package app.morphe.patches.dailypay.misc.gms
+package app.morphe.patches.dailypocket.misc.gms
 
 import app.morphe.patcher.Fingerprint
 

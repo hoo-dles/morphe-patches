@@ -1,4 +1,4 @@
-package app.morphe.patches.dailypay.premium
+package app.morphe.patches.dailypocket.premium
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
