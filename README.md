@@ -67,7 +67,7 @@
 Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch source to Morphe Manager.
 
 #### Help, why can't I log in with my Google account? Why doesn't Google Drive work?
-MicroG integration is needed for features that require Google Play Services. Apps that are currently supported are marked with :earth_americas:.
+MicroG integration is needed for features that require Google Play Services. Apps that are currently supported are marked with a :earth_americas:.
 
 #### What apk version should I use?
 Versions I have tested with are defined in each patch, but they may (hopfully?) work for newer app releases. Give it a shot and open a ticket if there's issues. Patches mark with a :dart: will, almost certainly, only work with that specific version.
