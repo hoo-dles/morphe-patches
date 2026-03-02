@@ -6,6 +6,7 @@ import app.morphe.patcher.patch.bytecodePatch
 @Suppress("unused")
 val disableSignatureCheckPatch = bytecodePatch(
     name = "Disable signature check",
+    description = "Removes the anti-tamper protection, which verifies apk signature, causing the app to force close."
 ) {
     compatibleWith("ginlemon.flowerfree"("6.6 build 002"))
 

@@ -5,7 +5,8 @@ import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val disableAdsPatch = bytecodePatch(
-    name = "Disable ads"
+    name = "Disable ads",
+    description = "Disables all ads contained within the UI."
 ) {
     compatibleWith("com.sofascore.results"("25.12.17"))
 

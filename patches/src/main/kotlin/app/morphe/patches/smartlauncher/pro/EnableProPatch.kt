@@ -12,6 +12,7 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 @Suppress("unused")
 val enableProPatch = bytecodePatch(
     name = "Enable Pro",
+    description = "Enables app features locked behind the subscription paywall."
 ) {
     compatibleWith("ginlemon.flowerfree"("6.6 build 002"))
 

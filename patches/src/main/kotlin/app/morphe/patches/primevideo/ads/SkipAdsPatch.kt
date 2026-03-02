@@ -13,7 +13,7 @@ import com.android.tools.smali.dexlib2.iface.reference.MethodReference
 @Suppress("unused")
 val skipAdsPatch = bytecodePatch(
     name = "Skip ads",
-    description = "Automatically skips video stream ads.",
+    description = "Automatically skips ads baked into the video stream.",
 ) {
     compatibleWith("com.amazon.avod.thirdpartyclient"("3.0.443"))
 

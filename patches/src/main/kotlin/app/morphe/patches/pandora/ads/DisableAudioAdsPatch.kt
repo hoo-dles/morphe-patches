@@ -5,7 +5,8 @@ import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val disableAudioAdsPatch = bytecodePatch(
-    name = "Disable audio ads",
+    name = "Disable ads",
+    description = "Disables ads during audio streaming."
 ) {
     compatibleWith("com.pandora.android")
 

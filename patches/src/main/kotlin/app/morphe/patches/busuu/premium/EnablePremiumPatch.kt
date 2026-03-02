@@ -5,7 +5,8 @@ import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val enablePremiumPatch = bytecodePatch(
-    name = "Enable Premium"
+    name = "Enable Premium",
+    description = "Enables app features locked behind the subscription paywall."
 ) {
     compatibleWith("com.busuu.android.enc"("32.30.0"))
 

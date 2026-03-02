@@ -8,7 +8,8 @@ import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val enablePremiumPatch = bytecodePatch(
-    name = "Enable Premium"
+    name = "Enable Premium",
+    description = "Enables app features locked behind the subscription paywall."
 ) {
     compatibleWith("com.avocards"("3.0.18"))
 

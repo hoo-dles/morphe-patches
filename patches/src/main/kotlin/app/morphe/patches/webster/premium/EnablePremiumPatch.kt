@@ -5,7 +5,8 @@ import app.morphe.patcher.patch.bytecodePatch
 
 @Suppress("unused")
 val EnablePremiumPatch = bytecodePatch(
-    name = "Enable Premium"
+    name = "Enable Premium",
+    description = "Enables app features locked behind the subscription paywall."
 ) {
     compatibleWith("com.merriamwebster")
 
