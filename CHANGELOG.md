@@ -1,3 +1,11 @@
+## [1.10.2-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.10.1...v1.10.2-dev.1) (2026-03-02)
+
+
+### Bug Fixes
+
+* Add suggested versions to most patches ([002ea08](https://github.com/hoo-dles/morphe-patches/commit/002ea088e11c7801a41588d4d20ae03e5b00c821))
+* **Duolingo:** Remove `Unlock licensed songs` patch ([d1fd408](https://github.com/hoo-dles/morphe-patches/commit/d1fd408845aa7ff97847528857393dc5c00dd248))
+
 ## [1.10.1](https://github.com/hoo-dles/morphe-patches/compare/v1.10.0...v1.10.1) (2026-03-01)
 
 
