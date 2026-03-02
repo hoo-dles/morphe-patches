@@ -17,9 +17,6 @@
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/hoo-dles/morphe-patches/release.yml)
 ![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)
 
-### 🤷‍♂️ How do I use this?
-Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch source to Morphe Manager.
-
 <br/>
 
 > [!NOTE]
@@ -29,36 +26,54 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 
 <br/>
 
-| App                | Package                            | Patches                                                                                                                         |
-|--------------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Amazon Prime Video | `com.amazon.avod.thirdpartyclient` | <ul><li>Skip ads</li></ul>                                                                                                      |
-| Avocards           | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                                                |
-| Busuu              | `com.busuu.android.enc`            | <ul><li>Enable Premium</li></ul>                                                                                                |
-| Cake               | `me.mycake`                        | <ul><li>Enable Plus</li></ul>                                                                                                   |
-| DAILY POCKET       | `kr.co.yjteam.dailypay`            | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |
-| Duolingo           | `com.duolingo`                     | <ul><li>Disable Play Integrity check</li><li>Enable debug mode</li><li>Enable Super/MAX</li><li>Unlock licensed songs</li></ul> |
-| Eggbun             | `kr.eggbun.eggconvo`               | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                                                  |
-| IbisPaint X[^1]    | `jp.ne.ibis.ibispaintx.app`        | <ul><li>Enable Prime Membership</li></ul>                                                                                       |
-| Icon Packer        | `cn.ommiao.iconpacker`             | <ul><li>Unlocked premium features</li></ul>                                                                                     |
-| Lingory[^1]        | `org.languageapp.lingory`          | <ul><li>Enable Premium</li></ul>                                                                                                |
-| Material Capsule   | `com.pryshedko.mtisland`           | <ul><li>Enable Pro</li></ul>                                                                                                    |
-| Meme Generator     | `com.zombodroid.MemeGenerator`     | <ul><li>Enable Pro</li></ul>                                                                                                    |
-| Merriam-Webster    | `com.merriamwebster`               | <ul><li>Enable Premium</li></ul>                                                                                                |
-| Mimo               | `com.getmimo`                      | <ul><li>Enable Pro</li></ul>                                                                                                    |
-| MyExpenses         | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                                                    |
-| MyFitnessPal       | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                                               |
-| Pandora            | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                                           |
-| Podcast Addict     | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                                                |
-| Proton VPN         | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock split tunneling</li></ul>                                                     |
-| Smart Launcher     | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                                                    |
-| Sofascore          | `com.sofascore.results`            | <ul><li>Disable ads</li></ul>                                                                                                   |
-| Solid Explorer     | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                                                     |
-| Teuida             | `net.teuida.teuida`                | <ul><li>Enable Premium</li><li>MicroG support</li></ul>                                                                         |
-| TTMIK Stories      | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                                                |
-| World Map Quiz     | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                                                |
-| WPS Office         | `cn.wps.moffice_eng`               | <ul><li>Disable anti-tamper checks</li><li>Enable Pro[^2]</li></ul>                                                             |
+| App                           | Package                            | Patches                                                                                           |
+|-------------------------------|------------------------------------|---------------------------------------------------------------------------------------------------|
+| Amazon Prime Video            | `com.amazon.avod.thirdpartyclient` | <ul><li>Skip ads</li></ul>                                                                        |
+| Avocards                      | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                  |
+| Busuu                         | `com.busuu.android.enc`            | <ul><li>Enable Premium</li></ul>                                                                  |
+| Cake :dart:                   | `me.mycake`                        | <ul><li>Enable Plus</li></ul>                                                                     |
+| DAILY POCKET :earth_americas: | `kr.co.yjteam.dailypay`            | <ul><li>Enable Premium</li></ul>                                                                  |
+| Duolingo                      | `com.duolingo`                     | <ul><li>Disable Play Integrity check</li><li>Enable debug mode</li><li>Enable Super/MAX</li></ul> |
+| Eggbun                        | `kr.eggbun.eggconvo`               | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                    |
+| IbisPaint X :dart: :computer: | `jp.ne.ibis.ibispaintx.app`        | <ul><li>Enable Prime Membership</li></ul>                                                         |
+| Icon Packer                   | `cn.ommiao.iconpacker`             | <ul><li>Unlocked premium features</li></ul>                                                       |
+| Lingory :dart: :computer:     | `org.languageapp.lingory`          | <ul><li>Enable Premium</li></ul>                                                                  |
+| Material Capsule              | `com.pryshedko.mtisland`           | <ul><li>Enable Pro</li></ul>                                                                      |
+| Meme Generator                | `com.zombodroid.MemeGenerator`     | <ul><li>Enable Pro</li></ul>                                                                      |
+| Merriam-Webster               | `com.merriamwebster`               | <ul><li>Enable Premium</li></ul>                                                                  |
+| Mimo                          | `com.getmimo`                      | <ul><li>Enable Pro</li></ul>                                                                      |
+| MyExpenses                    | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                      |
+| MyFitnessPal                  | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                 |
+| Pandora                       | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                             |
+| Podcast Addict                | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                  |
+| Proton VPN                    | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock split tunneling</li></ul>                       |
+| Smart Launcher                | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                      |
+| Sofascore                     | `com.sofascore.results`            | <ul><li>Disable ads</li></ul>                                                                     |
+| Solid Explorer                | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                       |
+| Teuida :earth_americas:       | `net.teuida.teuida`                | <ul><li>Enable Premium</li></ul>                                                                  |
+| TTMIK Stories :dart:          | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                  |
+| World Map Quiz                | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                  |
+| WPS Office                    | `cn.wps.moffice_eng`               | <ul><li>Disable anti-tamper checks</li><li>Enable Pro</li></ul>                                   |
 
-<br />
+:earth_americas: _Supports MicroG integration._\
+:dart: _This app has a strict requirement to use the version defined in the patch._\
+:computer: _These patches will only work for devices running `arm64-v8a` CPUs._
 
-[^1]: Patches are only compatible with `arm64-v8a` devices.
-[^2]: Functionality may be limited due to server-side checks.
+<br>
+
+## Frequently Asked Questions :man_shrugging:
+
+#### How do I use this thing?
+Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch source to Morphe Manager.
+
+#### Help, why can't I log in with my Google account? Why doesn't Google Drive work?
+MicroG integration is needed for features that require Google Play Services. Apps that are currently supported are marked with a :earth_americas:.
+
+#### What apk version should I use?
+Versions I have tested with are defined in each patch, but they may (hopfully?) work for newer app releases. Give it a shot and open a ticket if there's issues. Patches mark with a :dart: will, almost certainly, only work with that specific version.
+
+#### Can you make a patch for \[Super Cool App Goes Here\]?
+Maybe? Each patch is different, and many features use server-side functionality that cannot be modified. Before submitting a request, please check the existing open (and closed!) issues to reduce duplication.
+
+#### You haven't completed my patch request.. Did you not see it? / Did you forget? / Why do you hate me?
+I did see it. I haven't fogotten. We're good, bro. I'm a one-person "team" who does this stuff in my free time. If it's within my technical capabilities, I'll get around to it at some point.

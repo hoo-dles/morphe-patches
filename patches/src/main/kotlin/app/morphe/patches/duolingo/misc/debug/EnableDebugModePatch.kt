@@ -14,7 +14,7 @@ val enableDebugModePatch = bytecodePatch(
     description = "Enables hidden debug menu in settings.",
     use = false
 ) {
-    compatibleWith("com.duolingo")
+    compatibleWith("com.duolingo"("6.66.5"))
 
     execute {
         // Obfuscated class and name, but essentially: BuildConfigProvider.isDebug

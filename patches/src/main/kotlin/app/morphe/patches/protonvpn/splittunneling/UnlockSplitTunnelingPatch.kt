@@ -8,9 +8,10 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 @Suppress("unused")
 val unlockSplitTunnelingPatch = bytecodePatch(
-    name = "Unlock split tunneling"
+    name = "Unlock split tunneling",
+    description = "Enables the split tunneling feature usually locked behind the Proton Plus paywall."
 ) {
-    compatibleWith("ch.protonvpn.android")
+    compatibleWith("ch.protonvpn.android"("5.16.14.0"))
 
     execute {
         SplitTunnelingSettingViewStateCtor.apply {

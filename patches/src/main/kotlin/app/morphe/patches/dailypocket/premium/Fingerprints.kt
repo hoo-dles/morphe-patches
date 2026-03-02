@@ -1,9 +1,7 @@
-package app.morphe.patches.dailypay.premium
+package app.morphe.patches.dailypocket.premium
 
 import app.morphe.patcher.Fingerprint
-import app.morphe.patcher.InstructionLocation.MatchAfterImmediately
 import app.morphe.patcher.OpcodesFilter
-import app.morphe.patcher.opcode
 import com.android.tools.smali.dexlib2.Opcode
 
 object WidgetConfigOnCreateFingerprint : Fingerprint (

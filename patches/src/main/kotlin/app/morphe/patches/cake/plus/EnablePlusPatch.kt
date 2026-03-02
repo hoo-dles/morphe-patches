@@ -10,7 +10,7 @@ const val RETURN_TRUE = "78 00 5c 00"
 @Suppress("unused")
 val enablePlusPatch = rawResourcePatch(
     name = "Enable Plus",
-    description = "Enable Plus membership (not all features are available)."
+    description = "Enable Plus membership (not all features are available). There is a strict version requirement for this patch."
 ) {
     compatibleWith("me.mycake"("6.4.0"))
 

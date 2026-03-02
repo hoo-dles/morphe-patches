@@ -13,7 +13,7 @@ val disableLoginIntegrityPatch = bytecodePatch(
     name = "Disable Login Integrity",
     description = "Removes Play Integrity device attestation from login request."
 ) {
-    compatibleWith("com.duolingo")
+    compatibleWith("com.duolingo"("6.66.5"))
 
     execute {
         val emptySignalRef = BasicLoginFingerprint.method.let {
