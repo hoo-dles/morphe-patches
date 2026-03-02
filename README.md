@@ -70,7 +70,7 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 MicroG integration is needed for features that require Google Play Services. Apps that are currently supported are marked with a :earth_americas:.
 
 #### What apk version should I use?
-Versions I have tested with are defined in each patch, but they may (hopfully?) work for newer app releases. Give it a shot and open a ticket if there's issues. Patches mark with a :dart: will, almost certainly, only work with that specific version.
+Versions I have tested are defined in each patch, but they may (hopfully?) work for newer app releases. Give it a shot and open a ticket if there's issues. Patches marked with a :dart: will, almost certainly, only work with that specific version.
 
 #### Can you make a patch for \[Super Cool App Goes Here\]?
 Maybe? Each patch is different, and many features use server-side functionality that cannot be modified. Before submitting a request, please check the existing open (and closed!) issues to reduce duplication.
