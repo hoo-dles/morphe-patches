@@ -1,4 +1,4 @@
-package app.morphe.patches.dailypay.misc.gms
+package app.morphe.patches.dailypocket.misc.gms
 
 internal object Constants {
     const val DAILYPAY_PACKAGE_NAME = "kr.co.yjteam.dailypay"

@@ -9,9 +9,10 @@ import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 
 @Suppress("unused")
 val unlockPremiumFeaturesPatch = bytecodePatch(
-    name = "Unlock premium features"
+    name = "Unlock premium features",
+    description = "Enables app features locked behind the subscription paywall. Some UI elements may not show an active membership, but this does not effect functionality."
 ) {
-    compatibleWith("cn.ommiao.iconpacker")
+    compatibleWith("cn.ommiao.iconpacker"("1.21.0-release"))
 
     dependsOn(disableLicenseCheckPatch)
 

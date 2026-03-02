@@ -6,7 +6,7 @@ import app.morphe.patcher.patch.bytecodePatch
 @Suppress("unused")
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
-    description = "Enables premium paid subscription.",
+    description = "Enables app features locked behind the subscription paywall."
 ) {
     compatibleWith("net.teuida.teuida")
 

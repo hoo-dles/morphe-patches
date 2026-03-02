@@ -7,6 +7,7 @@ import app.morphe.util.returnEarly
 @Suppress("unused")
 val enableProPatch = bytecodePatch(
     name = "Enable Pro",
+    description = "Enables app features locked behind the subscription paywall."
 ) {
     compatibleWith("org.totschnig.myexpenses"("3.9.8"))
 

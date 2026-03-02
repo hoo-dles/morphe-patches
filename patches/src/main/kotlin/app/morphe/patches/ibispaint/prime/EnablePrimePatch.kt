@@ -5,7 +5,8 @@ import app.morphe.patches.shared.misc.hex.hexPatch
 
 @Suppress("unused")
 val enablePrimePatch = rawResourcePatch(
-    name = "Enable Prime Membership"
+    name = "Enable Prime membership",
+    description = "Enables app features locked behind the subscription paywall."
 ) {
     compatibleWith("jp.ne.ibis.ibispaintx.app"("13.1.19"))
 

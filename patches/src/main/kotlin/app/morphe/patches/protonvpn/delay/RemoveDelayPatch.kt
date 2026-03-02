@@ -5,9 +5,10 @@ import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val removeChangeServerDelayPatch = bytecodePatch(
-    name = "Remove server change delay"
+    name = "Remove delay",
+    description = "Removes the imposed delay when changing VPN servers."
 ) {
-    compatibleWith("ch.protonvpn.android")
+    compatibleWith("ch.protonvpn.android"("5.16.14.0"))
 
     execute {
         GetLongDelayFingerprint.method.returnEarly(0)

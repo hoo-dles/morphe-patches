@@ -6,9 +6,10 @@ import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val enableProPatch = bytecodePatch(
-    name = "Enable Pro"
+    name = "Enable Pro",
+    description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith("com.zombodroid.MemeGenerator")
+    compatibleWith("com.zombodroid.MemeGenerator"("4.6670"))
 
     execute {
         CheckSignatures1Fingerprint.method.returnEarly(true)
