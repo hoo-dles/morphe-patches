@@ -9,7 +9,7 @@ val enableProPatch = bytecodePatch(
     name = "Enable Pro",
     description = "Enables Pro subscription features. Login is required and AI functionality is unavailable."
 ) {
-    compatibleWith("cn.wps.moffice_eng")
+    compatibleWith("cn.wps.moffice_eng"("18.24"))
 
     dependsOn(disableAntiTamperPatch)
 

@@ -15,7 +15,7 @@ val skipAdsPatch = bytecodePatch(
     name = "Skip ads",
     description = "Automatically skips video stream ads.",
 ) {
-    compatibleWith("com.amazon.avod.thirdpartyclient")
+    compatibleWith("com.amazon.avod.thirdpartyclient"("3.0.443"))
 
     dependsOn(sharedExtensionPatch)
 

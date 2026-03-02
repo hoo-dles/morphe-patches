@@ -11,7 +11,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 val unlockPremiumFeaturesPatch = bytecodePatch(
     name = "Unlock premium features"
 ) {
-    compatibleWith("cn.ommiao.iconpacker")
+    compatibleWith("cn.ommiao.iconpacker"("1.21.0-release"))
 
     dependsOn(disableLicenseCheckPatch)
 

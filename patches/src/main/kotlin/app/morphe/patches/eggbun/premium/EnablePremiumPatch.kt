@@ -7,7 +7,7 @@ import app.morphe.util.returnEarly
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium"
 ) {
-    compatibleWith("kr.eggbun.eggconvo")
+    compatibleWith("kr.eggbun.eggconvo"("4.12.19"))
 
     execute {
         IsLifetimePremiumFingerprint.method.returnEarly(true)

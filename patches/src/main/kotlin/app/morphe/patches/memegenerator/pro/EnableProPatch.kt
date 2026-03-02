@@ -8,7 +8,7 @@ import app.morphe.util.returnEarly
 val enableProPatch = bytecodePatch(
     name = "Enable Pro"
 ) {
-    compatibleWith("com.zombodroid.MemeGenerator")
+    compatibleWith("com.zombodroid.MemeGenerator"("4.6670"))
 
     execute {
         CheckSignatures1Fingerprint.method.returnEarly(true)

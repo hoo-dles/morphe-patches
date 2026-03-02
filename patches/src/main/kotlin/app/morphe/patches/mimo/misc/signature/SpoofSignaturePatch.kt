@@ -8,7 +8,7 @@ const val SIGNATURE = "93D53764C40AEB53E09A306D01D74DFF11412021"
 val spoofSignatureHeaderPatch = bytecodePatch (
     name = "Spoof package signature"
 ){
-    compatibleWith("com.getmimo")
+    compatibleWith("com.getmimo"("9.0"))
 
     execute {
         SignatureBytesToStringFingerprint.method.returnEarly(SIGNATURE)

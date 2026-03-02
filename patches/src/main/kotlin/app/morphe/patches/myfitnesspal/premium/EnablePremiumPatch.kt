@@ -7,7 +7,7 @@ import app.morphe.util.returnEarly
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium+"
 ) {
-    compatibleWith("com.myfitnesspal.android")
+    compatibleWith("com.myfitnesspal.android"("25.50.0"))
 
     execute {
         GetPremiumPlusFingerprint.method.returnEarly(true)

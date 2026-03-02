@@ -7,7 +7,7 @@ import app.morphe.util.returnEarly
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium"
 ) {
-    compatibleWith("com.busuu.android.enc")
+    compatibleWith("com.busuu.android.enc"("32.30.0"))
 
     execute {
         IsPremiumFingerprint.match(ApiUserToStringFingerprint.classDef)

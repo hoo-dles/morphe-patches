@@ -10,7 +10,7 @@ import app.morphe.util.returnEarly
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium"
 ) {
-    compatibleWith("com.avocards")
+    compatibleWith("com.avocards"("3.0.18"))
 
     execute {
         GetPremiumUserFingerprint.method.returnEarly(true)

@@ -21,7 +21,7 @@ enum class PremiumVariant {
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
 ) {
-    compatibleWith("com.duolingo")
+    compatibleWith("com.duolingo"("6.66.5"))
 
     val premiumVariant by stringOption(
         key = "premiumVariant",
