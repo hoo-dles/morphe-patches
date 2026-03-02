@@ -9,7 +9,7 @@ import app.morphe.util.returnEarly
 val enableProPatch = bytecodePatch(
     name = "Enable Pro"
 ) {
-    compatibleWith("com.getmimo")
+    compatibleWith("com.getmimo"("9.0"))
 
     dependsOn(spoofSignatureHeaderPatch)
 

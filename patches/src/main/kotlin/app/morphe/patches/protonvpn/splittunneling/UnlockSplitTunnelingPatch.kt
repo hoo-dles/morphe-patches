@@ -10,7 +10,7 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 val unlockSplitTunnelingPatch = bytecodePatch(
     name = "Unlock split tunneling"
 ) {
-    compatibleWith("ch.protonvpn.android")
+    compatibleWith("ch.protonvpn.android"("5.16.14.0"))
 
     execute {
         SplitTunnelingSettingViewStateCtor.apply {

@@ -9,7 +9,7 @@ import app.morphe.patcher.util.smali.ExternalLabel
 val enableProPatch = bytecodePatch(
     name = "Enable Premium Pro"
 ) {
-    compatibleWith("pl.solidexplorer2")
+    compatibleWith("pl.solidexplorer2"("3.3.1"))
 
     execute {
         LicenseDetailsCtorFingerprint.method.apply {

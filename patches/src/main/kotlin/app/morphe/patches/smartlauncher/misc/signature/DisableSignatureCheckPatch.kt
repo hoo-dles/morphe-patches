@@ -7,7 +7,7 @@ import app.morphe.patcher.patch.bytecodePatch
 val disableSignatureCheckPatch = bytecodePatch(
     name = "Disable signature check",
 ) {
-    compatibleWith("ginlemon.flowerfree")
+    compatibleWith("ginlemon.flowerfree"("6.6 build 002"))
 
     execute {
         // Let's just remove the System.exit call

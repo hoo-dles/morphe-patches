@@ -9,7 +9,7 @@ val enablePremiumPatch = bytecodePatch(
     name = "Force Native Keyboard",
     description = "When typing in normal lessons, Eggbun forces you to use their own on-screen keyboard. This patches forces the use of the default OS keyboard."
 ) {
-    compatibleWith("kr.eggbun.eggconvo")
+    compatibleWith("kr.eggbun.eggconvo"("4.12.19"))
 
     execute {
         KrKeyboardCtorFingerprint.method.apply {

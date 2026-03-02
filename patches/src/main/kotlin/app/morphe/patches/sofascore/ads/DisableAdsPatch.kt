@@ -7,7 +7,7 @@ import app.morphe.util.returnEarly
 val disableAdsPatch = bytecodePatch(
     name = "Disable ads"
 ) {
-    compatibleWith("com.sofascore.results")
+    compatibleWith("com.sofascore.results"("25.12.17"))
 
     execute {
         GetForceAdsFingerprint.method.returnEarly(false)

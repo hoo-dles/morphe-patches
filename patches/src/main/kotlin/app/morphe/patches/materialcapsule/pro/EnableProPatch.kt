@@ -8,7 +8,7 @@ import app.morphe.util.returnEarly
 val enableProPatch = bytecodePatch(
     name = "Enable Pro"
 ) {
-    compatibleWith("com.pryshedko.mtisland")
+    compatibleWith("com.pryshedko.mtisland"("10.3"))
 
     dependsOn(disableLicenseCheckPatch)
 

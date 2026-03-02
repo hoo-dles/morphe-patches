@@ -6,7 +6,7 @@ import app.morphe.util.returnEarly
 val disableAntiTamperPatch = bytecodePatch(
     name = "Disable anti-tamper checks"
 ) {
-    compatibleWith("cn.wps.moffice_eng")
+    compatibleWith("cn.wps.moffice_eng"("18.24"))
 
     execute {
         SecurityCheck1Fingerprint.method.returnEarly()

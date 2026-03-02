@@ -7,7 +7,7 @@ import app.morphe.util.returnEarly
 val EnablePremiumPatch = bytecodePatch(
     name = "Enable Premium"
 ) {
-    compatibleWith("com.qbis.guessthecountry")
+    compatibleWith("com.qbis.guessthecountry"("3.34.2"))
 
     execute {
         IsProductInCacheFingerprint.method.returnEarly(true)

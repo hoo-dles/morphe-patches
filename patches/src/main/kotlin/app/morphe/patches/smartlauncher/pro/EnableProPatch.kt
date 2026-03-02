@@ -13,7 +13,7 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 val enableProPatch = bytecodePatch(
     name = "Enable Pro",
 ) {
-    compatibleWith("ginlemon.flowerfree")
+    compatibleWith("ginlemon.flowerfree"("6.6 build 002"))
 
     dependsOn(disableSignatureCheckPatch)
 

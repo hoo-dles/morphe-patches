@@ -7,7 +7,7 @@ import app.morphe.util.returnEarly
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium"
 ) {
-    compatibleWith("com.bambuna.podcastaddict")
+    compatibleWith("com.bambuna.podcastaddict"("2026.1"))
 
     execute {
         HasPremiumFingerprint.method.returnEarly(true)
