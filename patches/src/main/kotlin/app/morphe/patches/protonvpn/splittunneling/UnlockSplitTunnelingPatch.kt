@@ -11,7 +11,7 @@ val unlockSplitTunnelingPatch = bytecodePatch(
     name = "Unlock split tunneling",
     description = "Enables the split tunneling feature usually locked behind the Proton Plus paywall."
 ) {
-    compatibleWith("ch.protonvpn.android"("5.16.14.0"))
+    compatibleWith("ch.protonvpn.android"("5.16.83.0"))
 
     execute {
         SplitTunnelingSettingViewStateCtor.apply {
