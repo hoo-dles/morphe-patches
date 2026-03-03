@@ -10,7 +10,7 @@ val enableProPatch = bytecodePatch(
     name = "Enable Pro",
     description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith("pl.solidexplorer2"("3.3.1"))
+    compatibleWith("pl.solidexplorer2"("3.4.1"))
 
     execute {
         LicenseDetailsCtorFingerprint.method.apply {
