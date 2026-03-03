@@ -8,7 +8,7 @@ val removeChangeServerDelayPatch = bytecodePatch(
     name = "Remove delay",
     description = "Removes the imposed delay when changing VPN servers."
 ) {
-    compatibleWith("ch.protonvpn.android"("5.16.14.0"))
+    compatibleWith("ch.protonvpn.android"("5.16.83.0"))
 
     execute {
         GetLongDelayFingerprint.method.returnEarly(0)

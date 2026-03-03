@@ -1,4 +1,4 @@
-package app.morphe.patches.protonvpn.splittunneling
+package app.morphe.patches.protonvpn.customdns
 
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.removeInstruction
@@ -7,15 +7,15 @@ import app.morphe.patcher.patch.bytecodePatch
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 @Suppress("unused")
-val unlockSplitTunnelingPatch = bytecodePatch(
-    name = "Unlock split tunneling",
-    description = "Enables the split tunneling feature usually locked behind the Proton Plus paywall."
+val unlockCustomDnsPatch = bytecodePatch(
+    name = "Unlock custom DNS",
+    description = "Enables the custom DNS feature usually locked behind the Proton Plus paywall."
 ) {
     compatibleWith("ch.protonvpn.android"("5.16.83.0"))
 
     execute {
-        SplitTunnelingSettingViewStateCtor.apply {
-            val isRestrictedRegisterIndex = SplitTunnelingSettingViewStateCtor.instructionMatches.last().index - 1
+        CustomDNSSettingViewStateCtor.apply {
+            val isRestrictedRegisterIndex = instructionMatches.last().index - 1
             val isRestrictedRegister = method.getInstruction<OneRegisterInstruction>(isRestrictedRegisterIndex).registerA
 
             method.replaceInstruction(isRestrictedRegisterIndex,"const/4 v$isRestrictedRegister, 0x0")
@@ -26,4 +26,5 @@ val unlockSplitTunnelingPatch = bytecodePatch(
             method.removeInstruction(isPlusUserIndex)
         }
     }
+
 }
