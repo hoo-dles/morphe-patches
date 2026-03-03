@@ -1,3 +1,10 @@
+# [1.11.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.10.2...v1.11.0-dev.1) (2026-03-03)
+
+
+### Features
+
+* **Proton VPN:** Add `Unlock Custom DNS` patch ([2796089](https://github.com/hoo-dles/morphe-patches/commit/2796089c789482e3da6fe28b110bd8679358e984))
+
 ## [1.10.2](https://github.com/hoo-dles/morphe-patches/compare/v1.10.1...v1.10.2) (2026-03-02)
 
 
