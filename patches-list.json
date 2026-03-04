@@ -1,10 +1,10 @@
 {
-  "version": "1.10.2",
+  "version": "1.11.0",
   "patches": [
     {
       "name": "Add resources",
       "description": "Add resources such as strings or arrays to the app.",
-      "use": true,
+      "use": false,
       "dependencies": [],
       "compatiblePackages": null,
       "options": []
@@ -387,7 +387,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "pl.solidexplorer2": [
-          "3.3.1"
+          "3.4.1"
         ]
       },
       "options": []
@@ -468,7 +468,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "ch.protonvpn.android": [
-          "5.16.14.0"
+          "5.16.83.0"
         ]
       },
       "options": []
@@ -520,6 +520,18 @@
       "options": []
     },
     {
+      "name": "Unlock custom DNS",
+      "description": "Enables the custom DNS feature usually locked behind the Proton Plus paywall.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "ch.protonvpn.android": [
+          "5.16.83.0"
+        ]
+      },
+      "options": []
+    },
+    {
       "name": "Unlock premium features",
       "description": "Enables app features locked behind the subscription paywall. Some UI elements may not show an active membership, but this does not effect functionality.",
       "use": true,
@@ -540,7 +552,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "ch.protonvpn.android": [
-          "5.16.14.0"
+          "5.16.83.0"
         ]
       },
       "options": []
