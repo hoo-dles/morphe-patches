@@ -1,5 +1,5 @@
 {
-  "version": "1.11.0",
+  "version": "1.12.0-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -105,6 +105,18 @@
     },
     {
       "name": "Disable anti-tamper",
+      "description": "Disables anti-tamper checks including signature verification and purchase ID.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "nom.vrd": [
+          "1.9.3-GooglePlay"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Disable anti-tamper",
       "description": "Disables various anti-tamper checks that causes the app to force-close.",
       "use": true,
       "dependencies": [],
@@ -123,6 +135,18 @@
       "compatiblePackages": {
         "ginlemon.flowerfree": [
           "6.6 build 002"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Disable telemetry",
+      "description": "Disables event logging sent to the app's custom endpoint.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "nom.vrd": [
+          "1.9.3-GooglePlay"
         ]
       },
       "options": []
@@ -469,6 +493,20 @@
       "compatiblePackages": {
         "ch.protonvpn.android": [
           "5.16.83.0"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Remove trial limit",
+      "description": "Removes the imposed 6-hour trial usage limit.",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "nom.vrd": [
+          "1.9.3-GooglePlay"
         ]
       },
       "options": []

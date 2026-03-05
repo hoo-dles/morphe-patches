@@ -1,3 +1,10 @@
+# [1.12.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.11.0...v1.12.0-dev.1) (2026-03-05)
+
+
+### Features
+
+* **NOMone Desktop:** Add `Disable anti-tamper`, `Disable telemetry patch`, `Remove trial limit` patches ([dca779b](https://github.com/hoo-dles/morphe-patches/commit/dca779b472ee601fb55e2914af424c735a4ce8a4))
+
 # [1.11.0](https://github.com/hoo-dles/morphe-patches/compare/v1.10.2...v1.11.0) (2026-03-03)
 
 
