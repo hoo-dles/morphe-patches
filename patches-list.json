@@ -1,5 +1,5 @@
 {
-  "version": "1.12.0-dev.1",
+  "version": "1.12.0-dev.2",
   "patches": [
     {
       "name": "Add resources",
@@ -298,6 +298,18 @@
       "compatiblePackages": {
         "app.ttmikstories.android": [
           "1.16.0"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.wallpaperscraft.wallpaper": [
+          "3.61.01"
         ]
       },
       "options": []

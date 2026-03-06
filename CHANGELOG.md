@@ -1,3 +1,10 @@
+# [1.12.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.12.0-dev.1...v1.12.0-dev.2) (2026-03-06)
+
+
+### Features
+
+* **Wallcraft:** Add `Enable Premium` patch ([a04fbe3](https://github.com/hoo-dles/morphe-patches/commit/a04fbe32f9edbceb27542d5a2e5f0d658c7b75fd))
+
 # [1.12.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.11.0...v1.12.0-dev.1) (2026-03-05)
 
 
