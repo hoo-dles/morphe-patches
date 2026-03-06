@@ -1,5 +1,5 @@
 {
-  "version": "1.12.0-dev.2",
+  "version": "1.12.0-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -346,20 +346,6 @@
       "compatiblePackages": {
         "jp.ne.ibis.ibispaintx.app": [
           "13.1.19"
-        ]
-      },
-      "options": []
-    },
-    {
-      "name": "Enable Pro",
-      "description": "Enables app features locked behind the subscription paywall.",
-      "use": true,
-      "dependencies": [
-        "BytecodePatch"
-      ],
-      "compatiblePackages": {
-        "com.pryshedko.mtisland": [
-          "10.3"
         ]
       },
       "options": []
