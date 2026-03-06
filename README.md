@@ -12,7 +12,7 @@
 </picture>
 </div>
 
-# :leaves: hoo-dles Morphe Patches
+# :leaves: hoodles Morphe Patches
 
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/hoo-dles/morphe-patches/release.yml)
 ![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)
@@ -53,6 +53,7 @@
 | Solid Explorer                | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                           |
 | Teuida :earth_americas:       | `net.teuida.teuida`                | <ul><li>Enable Premium</li></ul>                                                                      |
 | TTMIK Stories :dart:          | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                      |
+| Wallcraft                     | `com.wallpaperscraft.wallpaper`    | <ul><li>Enable Premium</li></ul>                                                                      |
 | World Map Quiz                | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                      |
 | WPS Office                    | `cn.wps.moffice_eng`               | <ul><li>Disable anti-tamper checks</li><li>Enable Pro</li></ul>                                       |
 
@@ -71,10 +72,10 @@ Add this repo (https://github.com/hoo-dles/morphe-patches) as a remote patch sou
 MicroG integration is needed for features that require Google Play Services. Apps that are currently supported are marked with a :earth_americas:.
 
 #### What apk version should I use?
-Versions I have tested are defined in each patch, but they may (hopfully?) work for newer app releases. Give it a shot and open a ticket if there's issues. Patches marked with a :dart: will, almost certainly, only work with that specific version.
+Versions I have tested are defined in each patch, but they may (hopefully?) work for newer app releases. Give it a shot and open a ticket if there's issues. Patches marked with a :dart: will, almost certainly, only work with that specific version.
 
 #### Can you make a patch for \[Super Cool App Goes Here\]?
 Maybe? Each patch is different, and many features use server-side functionality that cannot be modified. Before submitting a request, please check the existing open (and closed!) issues to reduce duplication.
 
 #### You haven't completed my patch request.. Did you not see it? / Did you forget? / Why do you hate me?
-I did see it. I haven't fogotten. We're good, bro. I'm a one-person "team" who does this stuff in my free time. If it's within my technical capabilities, I'll get around to it at some point.
+I did see it. I haven't forgotten. We're good, bro. I'm a one-person "team" who does this stuff in my free time. If it's within my technical capabilities, I'll get around to it at some point.
