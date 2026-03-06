@@ -1,3 +1,25 @@
+# [1.12.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.11.0...v1.12.0-dev.1) (2026-03-06)
+
+
+### Features
+
+* **NOMone Desktop:** Add `Disable anti-tamper`, `Disable telemetry patch`, `Remove trial limit` patches ([ca0650d](https://github.com/hoo-dles/morphe-patches/commit/ca0650ddfda28ffaa9a30f2a06bb5aae4919cfda))
+* **Wallcraft:** Add `Enable Premium` patch ([4a3f5da](https://github.com/hoo-dles/morphe-patches/commit/4a3f5da10358c8fdbceb4ef58553d0ee106bf661))
+
+# [1.12.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.12.0-dev.1...v1.12.0-dev.2) (2026-03-06)
+
+
+### Features
+
+* **Wallcraft:** Add `Enable Premium` patch ([a04fbe3](https://github.com/hoo-dles/morphe-patches/commit/a04fbe32f9edbceb27542d5a2e5f0d658c7b75fd))
+
+# [1.12.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.11.0...v1.12.0-dev.1) (2026-03-05)
+
+
+### Features
+
+* **NOMone Desktop:** Add `Disable anti-tamper`, `Disable telemetry patch`, `Remove trial limit` patches ([dca779b](https://github.com/hoo-dles/morphe-patches/commit/dca779b472ee601fb55e2914af424c735a4ce8a4))
+
 # [1.11.0](https://github.com/hoo-dles/morphe-patches/compare/v1.10.2...v1.11.0) (2026-03-03)
 
 
