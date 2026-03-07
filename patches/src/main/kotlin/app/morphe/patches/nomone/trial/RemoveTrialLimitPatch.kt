@@ -14,7 +14,7 @@ val removeTrialLimitPatch = bytecodePatch(
     description = "Removes the imposed 6-hour trial usage limit."
 ) {
 
-    compatibleWith("nom.vrd"("1.9.3-GooglePlay"))
+    compatibleWith("nom.vrd"("1.9.3-GooglePlay", "1.9.3-storage"))
     dependsOn(disableAntiTamperPatch)
 
     execute {
