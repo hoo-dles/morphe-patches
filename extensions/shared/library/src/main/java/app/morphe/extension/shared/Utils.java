@@ -1197,4 +1197,8 @@ public class Utils {
             }
         };
     }
+
+    public static String smaliClassToJava(String clazz) {
+        return clazz.substring(1, clazz.length() - 1).replace('/', '.');
+    }
 }
