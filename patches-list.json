@@ -1,5 +1,5 @@
 {
-  "version": "1.12.0",
+  "version": "1.13.0-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -110,7 +110,8 @@
       "dependencies": [],
       "compatiblePackages": {
         "nom.vrd": [
-          "1.9.3-GooglePlay"
+          "1.9.3-GooglePlay",
+          "1.9.3-storage"
         ]
       },
       "options": []
@@ -146,7 +147,22 @@
       "dependencies": [],
       "compatiblePackages": {
         "nom.vrd": [
-          "1.9.3-GooglePlay"
+          "1.9.3-GooglePlay",
+          "1.9.3-storage"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable FobMob+",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.mobilefootie.wc2010": [
+          "226.16092.20260302"
         ]
       },
       "options": []
@@ -504,7 +520,8 @@
       ],
       "compatiblePackages": {
         "nom.vrd": [
-          "1.9.3-GooglePlay"
+          "1.9.3-GooglePlay",
+          "1.9.3-storage"
         ]
       },
       "options": []
