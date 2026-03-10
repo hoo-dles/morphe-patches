@@ -8,7 +8,7 @@ val disableAntiTamperPatch = bytecodePatch(
     description = "Disables anti-tamper checks including signature verification and purchase ID."
 ) {
 
-    compatibleWith("nom.vrd"("1.9.3-GooglePlay"))
+    compatibleWith("nom.vrd"("1.9.3-GooglePlay", "1.9.3-storage"))
 
     execute {
         IsValidSignatureFingerprint.method.returnEarly(true)

@@ -737,8 +737,9 @@ private const val RETURN_TYPE_MISMATCH = "Mismatch between override type and Met
  * Overrides the first instruction of a method with a boxed `java.lang.Boolean` return value.
  * None of the method code will ever execute.
  */
-fun MutableMethod.returnBoxedBooleanEarly(value: Boolean) {
-    check(returnType == "Ljava/lang/Boolean;") { RETURN_TYPE_MISMATCH }
+fun MutableMethod.returnBoxedBooleanEarly(value: Boolean, force: Boolean = false) {
+    if (!force)
+        check(returnType == "Ljava/lang/Boolean;") { RETURN_TYPE_MISMATCH }
     addInstructions(0,
         """
             sget-object v0, Ljava/lang/Boolean;->${if (value) "TRUE" else "FALSE" }:Ljava/lang/Boolean;
