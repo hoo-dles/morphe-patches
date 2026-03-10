@@ -1,3 +1,10 @@
+# [1.13.0](https://github.com/hoo-dles/morphe-patches/compare/v1.12.0...v1.13.0) (2026-03-10)
+
+
+### Features
+
+* **FotMob:** Add `Enable FotMob+` patch ([dd571bc](https://github.com/hoo-dles/morphe-patches/commit/dd571bc3d5dcfb91f12832c4f51df46ceabda62a))
+
 # [1.13.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.12.0...v1.13.0-dev.1) (2026-03-09)
 
 
