@@ -1,5 +1,5 @@
 {
-  "version": "1.13.0",
+  "version": "1.13.1-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -300,7 +300,9 @@
       "use": true,
       "dependencies": [],
       "compatiblePackages": {
-        "net.teuida.teuida": null
+        "net.teuida.teuida": [
+          "1.21.16"
+        ]
       },
       "options": []
     },
@@ -491,11 +493,12 @@
         "ResourcePatch",
         "ResourcePatch",
         "ResourcePatch",
-        "BytecodePatch",
         "BytecodePatch"
       ],
       "compatiblePackages": {
-        "net.teuida.teuida": null
+        "net.teuida.teuida": [
+          "1.21.16"
+        ]
       },
       "options": []
     },
