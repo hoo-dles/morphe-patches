@@ -1,7 +1,7 @@
 name: ⭐ Feature request
 description: Create a detailed request for a new feature.
-title: "feat: "
-labels: ["Feature request"]
+title: 'feat: '
+labels: ['Feature request']
 body:
   - type: markdown
     attributes:
@@ -18,16 +18,13 @@ body:
       description: |
         - Describe your feature in detail
         - Add images, videos, links, examples, references, etc. if possible
-  - type: textarea
+    validations:
+      required: true
+  - type: input
     attributes:
-      label: Motivation
-      description: |
-        A strong motivation is necessary for a feature request to be considered.
-
-        - Why should this feature be implemented? 
-        - What is the explicit use case?
-        - What are the benefits?
-        - What makes this feature important?
+      label: App package name
+      description: 'There are a lot of similar apps out there, please provide the full package name.'
+      placeholder: 'com.mysupercool.app'
     validations:
       required: true
   - type: checkboxes

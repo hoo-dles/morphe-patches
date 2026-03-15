@@ -48,7 +48,7 @@
 | Pandora                       | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                 |
 | Podcast Addict                | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                      |
 | Proton VPN                    | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock custom DNS</li><li>Unlock split tunneling</li></ul> |
-| Smart Launcher                | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                   >                      |
+| Smart Launcher                | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                          |
 | Sofascore                     | `com.sofascore.results`            | <ul><li>Disable ads</li></ul>                                                                         |
 | Solid Explorer                | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                           |
 | Teuida :earth_americas:       | `net.teuida.teuida`                | <ul><li>Enable Premium</li></ul>                                                                      |

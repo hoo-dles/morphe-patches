@@ -4,6 +4,7 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.patch.BytecodePatchContext
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.shared.misc.gms.getMainOnCreateFingerprint
 import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.iface.Method
 import java.net.URLDecoder
@@ -114,26 +115,5 @@ open class ExtensionHook(
  *                          or the 'ends with' string for the activity such as `/MainActivity;`
  * @param targetBundleMethod If the extension should hook `onCreate(Landroid/os/Bundle;)` or `onCreate()`
  */
-fun activityOnCreateExtensionHook(activityClassType: String, targetBundleMethod: Boolean = true): ExtensionHook {
-    require(activityClassType.endsWith(';')) {
-        "Class type must end with a semicolon: $activityClassType"
-    }
-
-    val fullClassType = activityClassType.startsWith('L')
-
-    val fingerprint = Fingerprint(
-        returnType = "V",
-        parameters = if (targetBundleMethod) {
-            listOf("Landroid/os/Bundle;")
-        } else {
-            listOf()
-        },
-        custom = { method, classDef ->
-            method.name == "onCreate" &&
-                    if (fullClassType) classDef.type == activityClassType
-                    else classDef.type.endsWith(activityClassType)
-        }
-    )
-
-    return ExtensionHook(fingerprint)
-}
+fun activityOnCreateExtensionHook(activityClassType: String = "/MainActivity;", targetBundleMethod: Boolean = true) =
+    ExtensionHook(getMainOnCreateFingerprint(activityClassType, targetBundleMethod))

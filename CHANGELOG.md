@@ -1,3 +1,10 @@
+## [1.13.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.13.0...v1.13.1-dev.1) (2026-03-10)
+
+
+### Bug Fixes
+
+* **Teuida:** Update patches to latest (v1.21.16) ([efba5b2](https://github.com/hoo-dles/morphe-patches/commit/efba5b276d0713e3efc108f706d1f46cd9d67b5e))
+
 # [1.13.0](https://github.com/hoo-dles/morphe-patches/compare/v1.12.0...v1.13.0) (2026-03-10)
 
 
