@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-03-10T20:49:29",
-  "description": "## [1.13.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.13.0...v1.13.1-dev.1) (2026-03-10)\n\n\n### Bug Fixes\n\n* **Teuida:** Update patches to latest (v1.21.16) ([efba5b2](https://github.com/hoo-dles/morphe-patches/commit/efba5b276d0713e3efc108f706d1f46cd9d67b5e))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.13.1-dev.1/patches-1.13.1-dev.1.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.13.1-dev.1/patches-1.13.1-dev.1.mpp.asc",
-  "version": "1.13.1-dev.1"
+  "created_at": "2026-03-16T01:38:21",
+  "description": "# [1.14.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.13.1-dev.1...v1.14.0-dev.1) (2026-03-16)\n\n\n### Features\n\n* **Windy:** Add `Enable Premium` patch ([76e4eb6](https://github.com/hoo-dles/morphe-patches/commit/76e4eb69312ece6f53d4d0c7c044697e96988703))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.14.0-dev.1/patches-1.14.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.14.0-dev.1/patches-1.14.0-dev.1.mpp.asc",
+  "version": "1.14.0-dev.1"
 }

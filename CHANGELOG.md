@@ -1,3 +1,10 @@
+# [1.14.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.13.1-dev.1...v1.14.0-dev.1) (2026-03-16)
+
+
+### Features
+
+* **Windy:** Add `Enable Premium` patch ([76e4eb6](https://github.com/hoo-dles/morphe-patches/commit/76e4eb69312ece6f53d4d0c7c044697e96988703))
+
 ## [1.13.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.13.0...v1.13.1-dev.1) (2026-03-10)
 
 
