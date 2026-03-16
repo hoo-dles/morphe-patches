@@ -1,5 +1,5 @@
 {
-  "version": "1.14.0-dev.1",
+  "version": "1.14.0-dev.2",
   "patches": [
     {
       "name": "Add resources",
@@ -264,6 +264,20 @@
       "compatiblePackages": {
         "com.qbis.guessthecountry": [
           "3.34.2"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "use": true,
+      "dependencies": [
+        "RawResourcePatch"
+      ],
+      "compatiblePackages": {
+        "com.hellochinese": [
+          "7.9.25"
         ]
       },
       "options": []

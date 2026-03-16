@@ -1,3 +1,10 @@
+# [1.14.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.14.0-dev.1...v1.14.0-dev.2) (2026-03-16)
+
+
+### Features
+
+* **HelloChinese:** Add `Enable Premium` patch ([1827fab](https://github.com/hoo-dles/morphe-patches/commit/1827fab273d6b243e21f1b2f58995daa7f0bda6c))
+
 # [1.14.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.13.1-dev.1...v1.14.0-dev.1) (2026-03-16)
 
 
