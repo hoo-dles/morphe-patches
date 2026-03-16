@@ -54,6 +54,7 @@
 | Teuida :earth_americas:       | `net.teuida.teuida`                | <ul><li>Enable Premium</li></ul>                                                                      |
 | TTMIK Stories :dart:          | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                      |
 | Wallcraft                     | `com.wallpaperscraft.wallpaper`    | <ul><li>Enable Premium</li></ul>                                                                      |
+| Windy                         | `com.windyty.android`              | <ul><li>Enable Premium</li></ul>                                                                      |
 | World Map Quiz                | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                      |
 | WPS Office                    | `cn.wps.moffice_eng`               | <ul><li>Disable anti-tamper checks</li><li>Enable Pro</li></ul>                                       |
 
