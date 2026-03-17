@@ -1,5 +1,5 @@
 {
-  "version": "1.14.0-dev.2",
+  "version": "1.14.0",
   "patches": [
     {
       "name": "Add resources",
