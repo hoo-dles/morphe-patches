@@ -7,6 +7,8 @@ import kotlin.collections.component1
 import kotlin.collections.component2
 import kotlin.math.max
 
+const val ARM64_NOP = "1f 20 03 d5"
+
 fun hexPatch(ignoreMissingTargetFiles: Boolean = false, block: HexPatchBuilder.() -> Unit) =
     @Suppress("Deprecation")
     hexPatch(ignoreMissingTargetFiles, fun(): Set<Replacement> = HexPatchBuilder().apply(block))

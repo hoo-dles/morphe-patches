@@ -1,31 +1,25 @@
 package app.morphe.patches.teuida.misc.gms
 
-import app.morphe.patcher.patch.Option
-import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.shared.misc.extension.activityOnCreateExtensionHook
+import app.morphe.patches.shared.misc.extension.sharedExtensionPatch
+import app.morphe.patches.shared.misc.gms.getMainOnCreateFingerprint
 import app.morphe.patches.shared.misc.gms.gmsCoreSupportPatch
+import app.morphe.patches.shared.misc.gms.gmsCoreSupportResourcePatch
+import app.morphe.patches.teuida.misc.gms.Constants.MAIN_ACTIVITY_NAME
 import app.morphe.patches.teuida.misc.gms.Constants.MORPHE_TEUIDA_PACKAGE_NAME
 import app.morphe.patches.teuida.misc.gms.Constants.TEUIDA_PACKAGE_NAME
-import app.morphe.patches.shared.misc.gms.gmsCoreSupportResourcePatch
-import app.morphe.patches.teuida.misc.extension.sharedExtensionsPatch
-import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val gmsCoreSupportPatch = gmsCoreSupportPatch(
     fromPackageName = TEUIDA_PACKAGE_NAME,
     toPackageName = MORPHE_TEUIDA_PACKAGE_NAME,
-    mainActivityOnCreateFingerprint = MainActivityOnCreateFingerprint,
-    extensionPatch = sharedExtensionsPatch,
+    mainActivityOnCreateFingerprint = getMainOnCreateFingerprint(MAIN_ACTIVITY_NAME),
     gmsCoreSupportResourcePatchFactory = ::gmsCoreSupportResourcePatch,
-) {
-    compatibleWith(TEUIDA_PACKAGE_NAME)
-
-    dependsOn(
-        bytecodePatch {
-            execute {
-                IsGooglePlayServicesAvailableFingerprint.method.returnEarly()
-            }
-        }
+    extensionPatch = sharedExtensionPatch(
+        activityOnCreateExtensionHook(MAIN_ACTIVITY_NAME)
     )
+) {
+    compatibleWith(TEUIDA_PACKAGE_NAME("1.21.16"))
 }
 
 private fun gmsCoreSupportResourcePatch() =

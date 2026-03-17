@@ -203,9 +203,9 @@ fun gmsCoreSupportPatch(
         }
         ServiceCheckFingerprint.method.returnEarly()
 
-        // Google Play Utility is not present in all apps, so we need to check if it's present.
-        if (GooglePlayUtilityFingerprint.methodOrNull != null) {
-            GooglePlayUtilityFingerprint.method.returnEarly(0)
+        // Return status code 0 for play service availability checks.
+        listOf(IsGooglePlayServicesAvailableFingerprint, GooglePlayUtilityFingerprint).forEach {
+            it.methodOrNull?.apply { returnEarly(0) }
         }
 
         // Set original and patched package names for extension to use.

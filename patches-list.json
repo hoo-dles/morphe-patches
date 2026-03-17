@@ -1,5 +1,5 @@
 {
-  "version": "1.13.0",
+  "version": "1.14.0-dev.2",
   "patches": [
     {
       "name": "Add resources",
@@ -270,6 +270,20 @@
     },
     {
       "name": "Enable Premium",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "use": true,
+      "dependencies": [
+        "RawResourcePatch"
+      ],
+      "compatiblePackages": {
+        "com.hellochinese": [
+          "7.9.25"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
       "description": "Enables app features locked behind the subscription paywall. There is a strict version requirement for this patch and only arm64-v8a devices are supported.",
       "use": true,
       "dependencies": [
@@ -300,7 +314,9 @@
       "use": true,
       "dependencies": [],
       "compatiblePackages": {
-        "net.teuida.teuida": null
+        "net.teuida.teuida": [
+          "1.21.16"
+        ]
       },
       "options": []
     },
@@ -337,6 +353,20 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.merriamwebster": null
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables some app features locked behind the subscription paywall. Not all premium functionality is available.",
+      "use": true,
+      "dependencies": [
+        "RawResourcePatch"
+      ],
+      "compatiblePackages": {
+        "com.windyty.android": [
+          "49.0.1"
+        ]
       },
       "options": []
     },
@@ -491,11 +521,12 @@
         "ResourcePatch",
         "ResourcePatch",
         "ResourcePatch",
-        "BytecodePatch",
         "BytecodePatch"
       ],
       "compatiblePackages": {
-        "net.teuida.teuida": null
+        "net.teuida.teuida": [
+          "1.21.16"
+        ]
       },
       "options": []
     },
