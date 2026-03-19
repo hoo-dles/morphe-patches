@@ -9,10 +9,10 @@ private val nativePatch = hexPatch( block = {
     val lib = "lib/arm64-v8a/libalg.so"
 
     // patch isValidApp default value
-    "00 00 80 12 a0 37 00 b9" asPatternTo "00 00 80 52 a0 37 00 b9" inFile lib
+    "00 00 80 12 A0 37 00 B9" asPatternTo "00 00 80 52 A0 37 00 B9" inFile lib
 
-    // prevent jmp when retval of process_sign_str is not 0 or 1
-    "01 0f 00 54" asPatternTo ARM64_NOP inFile lib
+    // force SignData.meta[1] = 0
+    "01 C0 00 51 A0 53 40 F9 01 04 00 B9" asPatternTo "01 00 80 52 A0 53 40 F9 01 04 00 B9" inFile lib
 })
 
 @Suppress("unused")
