@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-03-17T17:04:05",
-  "description": "# [1.14.0](https://github.com/hoo-dles/morphe-patches/compare/v1.13.0...v1.14.0) (2026-03-17)\n\n\n### Bug Fixes\n\n* **Teuida:** Update patches to latest (v1.21.16) ([efba5b2](https://github.com/hoo-dles/morphe-patches/commit/efba5b276d0713e3efc108f706d1f46cd9d67b5e))\n\n\n### Features\n\n* **HelloChinese:** Add `Enable Premium` patch ([1827fab](https://github.com/hoo-dles/morphe-patches/commit/1827fab273d6b243e21f1b2f58995daa7f0bda6c))\n* **Windy:** Add `Enable Premium` patch ([76e4eb6](https://github.com/hoo-dles/morphe-patches/commit/76e4eb69312ece6f53d4d0c7c044697e96988703))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.14.0/patches-1.14.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.14.0/patches-1.14.0.mpp.asc",
-  "version": "1.14.0"
+  "created_at": "2026-03-19T00:06:58",
+  "description": "## [1.14.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.14.0...v1.14.1-dev.1) (2026-03-19)\n\n\n### Bug Fixes\n\n* **HelloChinese:** Fix data loading issues stemming from decryption metadata ([57a1420](https://github.com/hoo-dles/morphe-patches/commit/57a14209391108bf247be52022ca23cda15c1a3d))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.14.1-dev.1/patches-1.14.1-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.14.1-dev.1/patches-1.14.1-dev.1.mpp.asc",
+  "version": "1.14.1-dev.1"
 }
