@@ -7,3 +7,8 @@ object IsPremiumForWidgetFingerprint : Fingerprint(
     returnType = "Z",
     strings = listOf("premium")
 )
+
+object ShouldInterceptRequestFingerprint : Fingerprint(
+    definingClass = "/BridgeWebViewClient;",
+    name = "shouldInterceptRequest"
+)
