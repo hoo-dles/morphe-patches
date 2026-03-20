@@ -1,5 +1,5 @@
 {
-  "version": "1.14.1-dev.1",
+  "version": "1.14.1-dev.2",
   "patches": [
     {
       "name": "Add resources",
@@ -361,7 +361,7 @@
       "description": "Enables some app features locked behind the subscription paywall. Not all premium functionality is available.",
       "use": true,
       "dependencies": [
-        "RawResourcePatch"
+        "BytecodePatch"
       ],
       "compatiblePackages": {
         "com.windyty.android": [
