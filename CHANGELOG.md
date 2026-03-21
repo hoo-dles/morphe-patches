@@ -1,3 +1,17 @@
+## [1.14.1-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.14.1-dev.1...v1.14.1-dev.2) (2026-03-20)
+
+
+### Bug Fixes
+
+* **Windy:** Patch javascript dynamically to prevent clobbering by OTA updates ([2e50f30](https://github.com/hoo-dles/morphe-patches/commit/2e50f30a370c42637087f4d28639d18ef9d9d475))
+
+## [1.14.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.14.0...v1.14.1-dev.1) (2026-03-19)
+
+
+### Bug Fixes
+
+* **HelloChinese:** Fix data loading issues stemming from decryption metadata ([57a1420](https://github.com/hoo-dles/morphe-patches/commit/57a14209391108bf247be52022ca23cda15c1a3d))
+
 # [1.14.0](https://github.com/hoo-dles/morphe-patches/compare/v1.13.0...v1.14.0) (2026-03-17)
 
 
