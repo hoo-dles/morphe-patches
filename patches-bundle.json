@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-03-21T03:19:55",
-  "description": "## [1.14.1](https://github.com/hoo-dles/morphe-patches/compare/v1.14.0...v1.14.1) (2026-03-21)\n\n\n### Bug Fixes\n\n* **HelloChinese:** Fix data loading issues stemming from decryption metadata ([57a1420](https://github.com/hoo-dles/morphe-patches/commit/57a14209391108bf247be52022ca23cda15c1a3d))\n* **Windy:** Patch javascript dynamically to prevent clobbering by OTA updates ([2e50f30](https://github.com/hoo-dles/morphe-patches/commit/2e50f30a370c42637087f4d28639d18ef9d9d475))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.14.1/patches-1.14.1.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.14.1/patches-1.14.1.mpp.asc",
-  "version": "1.14.1"
+  "created_at": "2026-03-21T16:29:15",
+  "description": "# [1.15.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.14.1...v1.15.0-dev.1) (2026-03-21)\n\n\n### Bug Fixes\n\n* **Daily Pocket:** Update MicroG integration in conjunction with MicroG RE fixes ([cad792e](https://github.com/hoo-dles/morphe-patches/commit/cad792ecfcc17c297a3b02b4637c139585af5356))\n* **Teuida:** Update MicroG integration in conjunction with MicroG RE fixes ([7304719](https://github.com/hoo-dles/morphe-patches/commit/7304719268e1594a2c46f0a20a398623656505cf))\n\n\n### Features\n\n* **Solid Explorer:** Add MicroG integration ([7cd6c25](https://github.com/hoo-dles/morphe-patches/commit/7cd6c25dbc818de6239d02d5dbf6f37ec0d16fb8))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.15.0-dev.1/patches-1.15.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.15.0-dev.1/patches-1.15.0-dev.1.mpp.asc",
+  "version": "1.15.0-dev.1"
 }
