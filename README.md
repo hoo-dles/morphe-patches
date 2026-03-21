@@ -53,6 +53,7 @@
 | Proton VPN                      | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock custom DNS</li><li>Unlock split tunneling</li></ul> |
 | Smart Launcher                  | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                          |
 | Sofascore                       | `com.sofascore.results`            | <ul><li>Disable ads</li></ul>                                                                         |
+| SoundCloud                      | `com.soundcloud.android`           | <ul><li>Enable SoundCloud Go+</li><li>Disable telemetry</li></ul>                                     |
 | Solid Explorer :earth_americas: | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                           |
 | Teuida :earth_americas:         | `net.teuida.teuida`                | <ul><li>Enable Premium</li></ul>                                                                      |
 | TTMIK Stories :dart:            | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                      |
