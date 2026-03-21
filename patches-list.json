@@ -1,5 +1,5 @@
 {
-  "version": "1.14.1",
+  "version": "1.15.0-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -499,11 +499,10 @@
       "options": []
     },
     {
-      "name": "GmsCore support",
-      "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
+      "name": "MicroG integration",
+      "description": "Allows the app to work without root by using MicroG instead of Google Play Services.",
       "use": true,
       "dependencies": [
-        "ResourcePatch",
         "ResourcePatch",
         "ResourcePatch",
         "BytecodePatch"
@@ -514,19 +513,30 @@
       "options": []
     },
     {
-      "name": "GmsCore support",
-      "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
+      "name": "MicroG integration",
+      "description": "Allows the app to work without root by using MicroG instead of Google Play Services.",
       "use": true,
       "dependencies": [
-        "ResourcePatch",
         "ResourcePatch",
         "ResourcePatch",
         "BytecodePatch"
       ],
       "compatiblePackages": {
-        "net.teuida.teuida": [
-          "1.21.16"
-        ]
+        "pl.solidexplorer2": null
+      },
+      "options": []
+    },
+    {
+      "name": "MicroG integration",
+      "description": "Allows the app to work without root by using MicroG instead of Google Play Services.",
+      "use": true,
+      "dependencies": [
+        "ResourcePatch",
+        "ResourcePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "net.teuida.teuida": null
       },
       "options": []
     },
