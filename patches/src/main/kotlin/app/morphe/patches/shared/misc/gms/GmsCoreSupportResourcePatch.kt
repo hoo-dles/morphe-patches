@@ -44,12 +44,15 @@ fun gmsCoreSupportResourcePatch(
                         .getElementsByTagName("application")
                         .item(0)
 
-                // Spoof package name and signature.
-                applicationNode.adoptChild("meta-data") {
-                    setAttribute("android:name", "$GMS_CORE_VENDOR_GROUP_ID.android.gms.SPOOFED_PACKAGE_NAME")
-                    setAttribute("android:value", fromPackageName)
+                // Spoof package name
+                if (changePackageName) {
+                    applicationNode.adoptChild("meta-data") {
+                        setAttribute("android:name", "$GMS_CORE_VENDOR_GROUP_ID.android.gms.SPOOFED_PACKAGE_NAME")
+                        setAttribute("android:value", fromPackageName)
+                    }
                 }
 
+                // Spoof package signature
                 applicationNode.adoptChild("meta-data") {
                     setAttribute("android:name", "$GMS_CORE_VENDOR_GROUP_ID.android.gms.SPOOFED_PACKAGE_SIGNATURE")
                     setAttribute("android:value", spoofedPackageSignature)
