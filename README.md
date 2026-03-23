@@ -29,6 +29,7 @@
 | App                             | Package                            | Patches                                                                                               |
 |---------------------------------|------------------------------------|-------------------------------------------------------------------------------------------------------|
 | All-In-One Calculator           | `all.in.one.calculator`            | <ul><li>Disable ads</li><ul>                                                                          |
+| AllTrails                       | `com.alltrails.alltrails`          | <ul><li>Enable Peak membership</li></ul>                                                              |
 | Amazon Prime Video              | `com.amazon.avod.thirdpartyclient` | <ul><li>Skip ads</li></ul>                                                                            |
 | Avocards                        | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                      |
 | Busuu                           | `com.busuu.android.enc`            | <ul><li>Enable Premium</li></ul>                                                                      |
@@ -38,7 +39,7 @@
 | Eggbun                          | `kr.eggbun.eggconvo`               | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                        |
 | FotMob                          | `com.mobilefootie.wc2010`          | <ul><li>Enable FotMob+</li></ul>                                                                      |
 | HelloChinese :dart: :computer:  | `com.hellochinese`                 | <ul><li>Enable Premium</li></ul>                                                                      |
-| IbisPaint X :dart: :computer:   | `jp.ne.ibis.ibispaintx.app`        | <ul><li>Enable Prime Membership</li></ul>                                                             |
+| IbisPaint X :dart: :computer:   | `jp.ne.ibis.ibispaintx.app`        | <ul><li>Enable Prime membership</li></ul>                                                             |
 | Icon Packer                     | `cn.ommiao.iconpacker`             | <ul><li>Unlocked premium features</li></ul>                                                           |
 | Lingory :dart: :computer:       | `org.languageapp.lingory`          | <ul><li>Enable Premium</li></ul>                                                                      |
 | Meme Generator                  | `com.zombodroid.MemeGenerator`     | <ul><li>Enable Pro</li></ul>                                                                          |
