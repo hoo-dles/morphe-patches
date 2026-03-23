@@ -1,3 +1,10 @@
+# [1.15.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.15.0-dev.1...v1.15.0-dev.2) (2026-03-23)
+
+
+### Features
+
+* **AllTrails:** Add `Enable Peak membership` patch ([2124dfb](https://github.com/hoo-dles/morphe-patches/commit/2124dfbd99a14cdc4be9de48bd0873b92941e2dc))
+
 # [1.15.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.14.1...v1.15.0-dev.1) (2026-03-21)
 
 

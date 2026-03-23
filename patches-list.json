@@ -1,5 +1,5 @@
 {
-  "version": "1.15.0-dev.1",
+  "version": "1.15.0-dev.2",
   "patches": [
     {
       "name": "Add resources",
@@ -154,7 +154,7 @@
       "options": []
     },
     {
-      "name": "Enable FobMob+",
+      "name": "Enable FotMob+",
       "description": "Enables app features locked behind the subscription paywall.",
       "use": true,
       "dependencies": [
@@ -163,6 +163,18 @@
       "compatiblePackages": {
         "com.mobilefootie.wc2010": [
           "226.16092.20260302"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Peak membership",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.alltrails.alltrails": [
+          "26.3.20"
         ]
       },
       "options": []
@@ -508,7 +520,9 @@
         "BytecodePatch"
       ],
       "compatiblePackages": {
-        "kr.co.yjteam.dailypay": null
+        "kr.co.yjteam.dailypay": [
+          "6.0.7"
+        ]
       },
       "options": []
     },
@@ -522,7 +536,9 @@
         "BytecodePatch"
       ],
       "compatiblePackages": {
-        "pl.solidexplorer2": null
+        "pl.solidexplorer2": [
+          "3.4.1"
+        ]
       },
       "options": []
     },
@@ -536,7 +552,9 @@
         "BytecodePatch"
       ],
       "compatiblePackages": {
-        "net.teuida.teuida": null
+        "net.teuida.teuida": [
+          "1.21.16"
+        ]
       },
       "options": []
     },
@@ -573,7 +591,9 @@
       "use": true,
       "dependencies": [],
       "compatiblePackages": {
-        "com.amazon.avod.thirdpartyclient": null
+        "com.amazon.avod.thirdpartyclient": [
+          "3.0.443"
+        ]
       },
       "options": []
     },
