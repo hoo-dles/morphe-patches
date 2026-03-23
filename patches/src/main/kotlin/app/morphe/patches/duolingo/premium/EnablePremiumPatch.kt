@@ -5,6 +5,7 @@ import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.instructions
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.patch.stringOption
+import app.morphe.patches.duolingo.shared.Constants
 import app.morphe.patches.duolingo.shared.Utils.fieldFromToString
 import app.morphe.util.*
 import com.android.tools.smali.dexlib2.AccessFlags
@@ -22,7 +23,7 @@ val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
     description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith("com.duolingo"("6.66.5"))
+    compatibleWith(Constants.COMPATIBILITY)
 
     val premiumVariant by stringOption(
         key = "premiumVariant",

@@ -1,6 +1,8 @@
 package app.morphe.patches.webster.premium
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 
 @Suppress("unused")
@@ -8,7 +10,11 @@ val EnablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
     description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith("com.merriamwebster")
+    compatibleWith(Compatibility(
+        name = "Merriam-Webster",
+        packageName = "com.merriamwebster",
+        targets = listOf(AppTarget(null))
+    ))
 
     execute {
         GetSubscriptionFingerprint.method.addInstructions(

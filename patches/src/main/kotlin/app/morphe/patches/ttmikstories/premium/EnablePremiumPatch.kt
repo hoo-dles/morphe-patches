@@ -1,5 +1,7 @@
 package app.morphe.patches.ttmikstories.premium
 
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.rawResourcePatch
 import app.morphe.patches.shared.misc.hermes.hermesPatch
 
@@ -8,7 +10,11 @@ val enablePremiumPatch = rawResourcePatch(
     name = "Enable Premium",
     description = "Enables app features locked behind the subscription paywall. There is a strict version requirement for this patch."
 ) {
-    compatibleWith("app.ttmikstories.android"("1.16.0"))
+    compatibleWith(Compatibility(
+        name = "TTMIK Stories",
+        packageName = "app.ttmikstories.android",
+        targets = listOf(AppTarget("1.16.0"))
+    ))
 
     dependsOn(hermesPatch {
         //  Call1           r3, r3, r4

@@ -4,6 +4,7 @@ import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.removeInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.protonvpn.shared.Constants
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 @Suppress("unused")
@@ -11,7 +12,7 @@ val unlockCustomDnsPatch = bytecodePatch(
     name = "Unlock custom DNS",
     description = "Enables the custom DNS feature usually locked behind the Proton Plus paywall."
 ) {
-    compatibleWith("ch.protonvpn.android"("5.16.83.0"))
+    compatibleWith(Constants.COMPATIBILITY)
 
     execute {
         CustomDNSSettingViewStateCtor.apply {

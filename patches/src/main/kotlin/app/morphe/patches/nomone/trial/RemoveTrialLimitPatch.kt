@@ -3,6 +3,7 @@ package app.morphe.patches.nomone.trial
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.nomone.misc.tamper.disableAntiTamperPatch
+import app.morphe.patches.nomone.shared.Constants
 import app.morphe.util.findFreeRegister
 import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
@@ -14,7 +15,8 @@ val removeTrialLimitPatch = bytecodePatch(
     description = "Removes the imposed 6-hour trial usage limit."
 ) {
 
-    compatibleWith("nom.vrd"("1.9.3-GooglePlay", "1.9.3-storage"))
+    compatibleWith(Constants.COMPATIBILITY)
+
     dependsOn(disableAntiTamperPatch)
 
     execute {

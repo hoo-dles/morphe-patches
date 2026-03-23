@@ -1,5 +1,7 @@
 package app.morphe.patches.hellochinese.premium
 
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.shared.misc.hex.ARM64_NOP
 import app.morphe.patches.shared.misc.hex.hexPatch
@@ -20,7 +22,11 @@ val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
     description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith("com.hellochinese"("7.9.25"))
+    compatibleWith(Compatibility(
+        name = "HelloChinese",
+        packageName = "com.hellochinese",
+        targets = listOf(AppTarget("7.9.25"))
+    ))
 
     dependsOn(nativePatch)
 

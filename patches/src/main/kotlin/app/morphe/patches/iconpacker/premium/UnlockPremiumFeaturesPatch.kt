@@ -2,6 +2,8 @@ package app.morphe.patches.iconpacker.premium
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.all.misc.pairip.license.disableLicenseCheckPatch
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
@@ -12,7 +14,11 @@ val unlockPremiumFeaturesPatch = bytecodePatch(
     name = "Unlock premium features",
     description = "Enables app features locked behind the subscription paywall. Some UI elements may not show an active membership, but this does not effect functionality."
 ) {
-    compatibleWith("cn.ommiao.iconpacker"("1.21.0-release"))
+    compatibleWith(Compatibility(
+        name = "Icon Packer",
+        packageName = "cn.ommiao.iconpacker",
+        targets = listOf(AppTarget("1.21.0-release"))
+    ))
 
     dependsOn(disableLicenseCheckPatch)
 

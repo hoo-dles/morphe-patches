@@ -1,6 +1,7 @@
 package app.morphe.patches.lingory.premium
 
 import app.morphe.patcher.patch.rawResourcePatch
+import app.morphe.patches.lingory.shared.Constants
 import app.morphe.patches.shared.misc.hex.hexPatch
 
 @Suppress("unused")
@@ -8,7 +9,7 @@ val enablePremiumPatch = rawResourcePatch(
     name = "Enable Premium",
     description = "Enables app features locked behind the subscription paywall. There is a strict version requirement for this patch and only arm64-v8a devices are supported."
 ) {
-    compatibleWith("org.languageapp.lingory"("1.2.75"))
+    compatibleWith(Constants.COMPATIBILITY)
 
     dependsOn(
         hexPatch(block = {

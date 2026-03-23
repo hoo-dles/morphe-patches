@@ -4,6 +4,7 @@ import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.primevideo.misc.extension.sharedExtensionPatch
+import app.morphe.patches.primevideo.shared.Constants
 import app.morphe.util.*
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
@@ -15,7 +16,7 @@ val skipAdsPatch = bytecodePatch(
     name = "Skip ads",
     description = "Automatically skips ads baked into the video stream.",
 ) {
-    compatibleWith("com.amazon.avod.thirdpartyclient"("3.0.443"))
+    compatibleWith(Constants.COMPATIBILITY)
 
     dependsOn(sharedExtensionPatch)
 

@@ -1,6 +1,7 @@
 package app.morphe.patches.lingory.misc.notifications
 
 import app.morphe.patcher.patch.rawResourcePatch
+import app.morphe.patches.lingory.shared.Constants
 import app.morphe.patches.shared.misc.hex.hexPatch
 
 @Suppress("unused")
@@ -8,7 +9,7 @@ val blockNotificationPermissionsPatch = rawResourcePatch(
     name = "Block Permissions Request",
     description = "Blocks the request of notification permissions on load of app."
 ) {
-    compatibleWith("org.languageapp.lingory"("1.2.75"))
+    compatibleWith(Constants.COMPATIBILITY)
 
     dependsOn(
         hexPatch(block = {

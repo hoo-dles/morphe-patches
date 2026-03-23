@@ -3,6 +3,7 @@ package app.morphe.patches.duolingo.misc.debug
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.duolingo.shared.Constants
 import app.morphe.util.addInstructionsToEnd
 import app.morphe.util.constructor
 import app.morphe.util.getReference
@@ -12,9 +13,9 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 val enableDebugModePatch = bytecodePatch(
     name = "Enable debug mode",
     description = "Enables hidden debug menu in settings.",
-    use = false
+    default = false
 ) {
-    compatibleWith("com.duolingo"("6.66.5"))
+    compatibleWith(Constants.COMPATIBILITY)
 
     execute {
         // Obfuscated class and name, but essentially: BuildConfigProvider.isDebug

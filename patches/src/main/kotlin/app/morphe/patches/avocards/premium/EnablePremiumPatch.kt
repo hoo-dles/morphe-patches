@@ -3,6 +3,8 @@ package app.morphe.patches.avocards.premium
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.instructions
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.util.returnEarly
 
@@ -11,7 +13,11 @@ val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
     description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith("com.avocards"("3.0.18"))
+    compatibleWith(Compatibility(
+        name = "Avocards",
+        packageName = "com.avocards",
+        targets = listOf(AppTarget("3.0.18"))
+    ))
 
     execute {
         GetPremiumUserFingerprint.method.returnEarly(true)

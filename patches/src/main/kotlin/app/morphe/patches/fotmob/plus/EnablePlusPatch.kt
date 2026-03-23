@@ -5,6 +5,8 @@ import app.morphe.patcher.checkCast
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.newInstance
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.fotmob.misc.extension.sharedExtensionPatch
 import app.morphe.util.indexOfFirstInstructionReversed
@@ -15,10 +17,14 @@ import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 
 @Suppress("unused")
 val enablePlusPatch = bytecodePatch(
-    name = "Enable FobMob+",
+    name = "Enable FotMob+",
     description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith("com.mobilefootie.wc2010"("226.16092.20260302"))
+    compatibleWith(Compatibility(
+        name = "FotMob",
+        packageName = "com.mobilefootie.wc2010",
+        targets = listOf(AppTarget("226.16092.20260302"))
+    ))
 
     dependsOn(sharedExtensionPatch)
 
