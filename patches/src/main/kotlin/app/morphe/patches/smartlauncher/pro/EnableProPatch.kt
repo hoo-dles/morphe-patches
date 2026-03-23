@@ -5,6 +5,7 @@ import app.morphe.patcher.extensions.InstructionExtensions.instructions
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.smali.ExternalLabel
 import app.morphe.patches.smartlauncher.misc.signature.disableSignatureCheckPatch
+import app.morphe.patches.smartlauncher.shared.Constants
 import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction21c
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
@@ -14,7 +15,7 @@ val enableProPatch = bytecodePatch(
     name = "Enable Pro",
     description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith("ginlemon.flowerfree"("6.6 build 002"))
+    compatibleWith(Constants.COMPATIBILITY)
 
     dependsOn(disableSignatureCheckPatch)
 

@@ -1,3 +1,23 @@
+# [1.15.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.15.0-dev.1...v1.15.0-dev.2) (2026-03-23)
+
+
+### Features
+
+* **AllTrails:** Add `Enable Peak membership` patch ([2124dfb](https://github.com/hoo-dles/morphe-patches/commit/2124dfbd99a14cdc4be9de48bd0873b92941e2dc))
+
+# [1.15.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.14.1...v1.15.0-dev.1) (2026-03-21)
+
+
+### Bug Fixes
+
+* **Daily Pocket:** Update MicroG integration in conjunction with MicroG RE fixes ([cad792e](https://github.com/hoo-dles/morphe-patches/commit/cad792ecfcc17c297a3b02b4637c139585af5356))
+* **Teuida:** Update MicroG integration in conjunction with MicroG RE fixes ([7304719](https://github.com/hoo-dles/morphe-patches/commit/7304719268e1594a2c46f0a20a398623656505cf))
+
+
+### Features
+
+* **Solid Explorer:** Add MicroG integration ([7cd6c25](https://github.com/hoo-dles/morphe-patches/commit/7cd6c25dbc818de6239d02d5dbf6f37ec0d16fb8))
+
 ## [1.14.1](https://github.com/hoo-dles/morphe-patches/compare/v1.14.0...v1.14.1) (2026-03-21)
 
 

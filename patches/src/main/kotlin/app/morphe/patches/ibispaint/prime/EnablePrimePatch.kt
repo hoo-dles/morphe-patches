@@ -1,5 +1,7 @@
 package app.morphe.patches.ibispaint.prime
 
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.rawResourcePatch
 import app.morphe.patches.shared.misc.hex.hexPatch
 
@@ -8,7 +10,11 @@ val enablePrimePatch = rawResourcePatch(
     name = "Enable Prime membership",
     description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith("jp.ne.ibis.ibispaintx.app"("13.1.19"))
+    compatibleWith(Compatibility(
+        name = "IbisPaint X",
+        packageName = "jp.ne.ibis.ibispaintx.app",
+        targets = listOf(AppTarget("13.1.19"))
+    ))
 
     dependsOn(
         hexPatch(block = {

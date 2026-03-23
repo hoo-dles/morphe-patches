@@ -35,6 +35,13 @@ body:
       placeholder: '1.23.456'
     validations:
       required: true
+  - type: input
+    attributes:
+      label: Manager or CLI version
+      description: 'Please provide the version of the Morphe Manager or Morphe CLI used.'
+      placeholder: 'Manager v1.12.0'
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Error logs

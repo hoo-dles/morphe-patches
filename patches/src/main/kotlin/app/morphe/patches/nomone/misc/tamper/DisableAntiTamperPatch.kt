@@ -1,6 +1,7 @@
 package app.morphe.patches.nomone.misc.tamper
 
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.nomone.shared.Constants
 import app.morphe.util.returnEarly
 
 val disableAntiTamperPatch = bytecodePatch(
@@ -8,7 +9,7 @@ val disableAntiTamperPatch = bytecodePatch(
     description = "Disables anti-tamper checks including signature verification and purchase ID."
 ) {
 
-    compatibleWith("nom.vrd"("1.9.3-GooglePlay", "1.9.3-storage"))
+    compatibleWith(Constants.COMPATIBILITY)
 
     execute {
         IsValidSignatureFingerprint.method.returnEarly(true)

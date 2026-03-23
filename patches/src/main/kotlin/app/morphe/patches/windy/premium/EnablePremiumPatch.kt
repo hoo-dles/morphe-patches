@@ -3,6 +3,8 @@ package app.morphe.patches.windy.premium
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.instructions
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.patch.rawResourcePatch
 import app.morphe.patches.shared.misc.extension.activityOnCreateExtensionHook
@@ -19,7 +21,11 @@ val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
     description = "Enables some app features locked behind the subscription paywall. Not all premium functionality is available."
 ) {
-    compatibleWith("com.windyty.android"("49.0.1"))
+    compatibleWith(Compatibility(
+        name = "Windy",
+        packageName = "com.windyty.android",
+        targets = listOf(AppTarget("49.0.1"))
+    ))
 
     dependsOn(extensionPatch)
 

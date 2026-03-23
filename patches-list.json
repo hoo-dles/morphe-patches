@@ -1,5 +1,5 @@
 {
-  "version": "1.14.1",
+  "version": "1.15.0-dev.2",
   "patches": [
     {
       "name": "Add resources",
@@ -154,7 +154,7 @@
       "options": []
     },
     {
-      "name": "Enable FobMob+",
+      "name": "Enable FotMob+",
       "description": "Enables app features locked behind the subscription paywall.",
       "use": true,
       "dependencies": [
@@ -163,6 +163,18 @@
       "compatiblePackages": {
         "com.mobilefootie.wc2010": [
           "226.16092.20260302"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Peak membership",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.alltrails.alltrails": [
+          "26.3.20"
         ]
       },
       "options": []
@@ -499,26 +511,42 @@
       "options": []
     },
     {
-      "name": "GmsCore support",
-      "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
+      "name": "MicroG integration",
+      "description": "Allows the app to work without root by using MicroG instead of Google Play Services.",
       "use": true,
       "dependencies": [
-        "ResourcePatch",
         "ResourcePatch",
         "ResourcePatch",
         "BytecodePatch"
       ],
       "compatiblePackages": {
-        "kr.co.yjteam.dailypay": null
+        "kr.co.yjteam.dailypay": [
+          "6.0.7"
+        ]
       },
       "options": []
     },
     {
-      "name": "GmsCore support",
-      "description": "Allows the app to work without root by using a different package name when patched using a GmsCore instead of Google Play Services.",
+      "name": "MicroG integration",
+      "description": "Allows the app to work without root by using MicroG instead of Google Play Services.",
       "use": true,
       "dependencies": [
         "ResourcePatch",
+        "ResourcePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "pl.solidexplorer2": [
+          "3.4.1"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "MicroG integration",
+      "description": "Allows the app to work without root by using MicroG instead of Google Play Services.",
+      "use": true,
+      "dependencies": [
         "ResourcePatch",
         "ResourcePatch",
         "BytecodePatch"
@@ -563,7 +591,9 @@
       "use": true,
       "dependencies": [],
       "compatiblePackages": {
-        "com.amazon.avod.thirdpartyclient": null
+        "com.amazon.avod.thirdpartyclient": [
+          "3.0.443"
+        ]
       },
       "options": []
     },

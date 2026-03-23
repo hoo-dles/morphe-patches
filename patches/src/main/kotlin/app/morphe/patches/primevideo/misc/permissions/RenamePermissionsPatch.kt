@@ -2,6 +2,7 @@ package app.morphe.patches.primevideo.misc.permissions
 
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patches.primevideo.shared.Constants
 import app.morphe.util.asSequence
 import app.morphe.util.getNode
 import org.w3c.dom.Element
@@ -12,7 +13,7 @@ val renamePermissionsPatch = resourcePatch(
     description = "Rename certain permissions shared across Amazon apps. " +
             "Applying this patch can fix installation errors, but can also break features in certain apps."
 ) {
-    compatibleWith("com.amazon.avod.thirdpartyclient")
+    compatibleWith(Constants.COMPATIBILITY)
 
     val permissionNames = setOf(
         "com.amazon.identity.permission.CAN_CALL_MAP_INFORMATION_PROVIDER",

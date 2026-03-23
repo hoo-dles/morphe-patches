@@ -3,6 +3,7 @@ package app.morphe.patches.mimo.pro
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.mimo.misc.signature.spoofSignatureHeaderPatch
+import app.morphe.patches.mimo.shared.Constants
 import app.morphe.util.returnEarly
 
 @Suppress("unused")
@@ -10,7 +11,7 @@ val enableProPatch = bytecodePatch(
     name = "Enable Pro",
     description = "Enables app features locked behind the subscription paywall."
 ) {
-    compatibleWith("com.getmimo"("9.0"))
+    compatibleWith(Constants.COMPATIBILITY)
 
     dependsOn(spoofSignatureHeaderPatch)
 

@@ -1,5 +1,7 @@
 package app.morphe.patches.cake.plus
 
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.rawResourcePatch
 import app.morphe.patches.shared.misc.hermes.hermesPatch
 
@@ -12,7 +14,11 @@ val enablePlusPatch = rawResourcePatch(
     name = "Enable Plus",
     description = "Enable Plus membership (not all features are available). There is a strict version requirement for this patch."
 ) {
-    compatibleWith("me.mycake"("6.4.0"))
+    compatibleWith(Compatibility(
+        name = "Cake",
+        packageName = "me.mycake",
+        targets = listOf(AppTarget("6.4.0"))
+    ))
 
     dependsOn(hermesPatch {
         //  GetEnvironment        r0, 0
