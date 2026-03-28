@@ -1,5 +1,5 @@
 {
-  "version": "1.15.0",
+  "version": "1.16.0-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -149,6 +149,18 @@
         "nom.vrd": [
           "1.9.3-GooglePlay",
           "1.9.3-storage"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Disable telemetry",
+      "description": "Disables SoundCloud's telemetry system.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.soundcloud.android": [
+          "2026.03.20-release"
         ]
       },
       "options": []
@@ -415,7 +427,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.zombodroid.MemeGenerator": [
-          "4.6670"
+          "4.6671"
         ]
       },
       "options": []
@@ -482,6 +494,20 @@
       "compatiblePackages": {
         "cn.wps.moffice_eng": [
           "18.24"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable SoundCloud Go+",
+      "description": "",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.soundcloud.android": [
+          "2026.03.20-release"
         ]
       },
       "options": []

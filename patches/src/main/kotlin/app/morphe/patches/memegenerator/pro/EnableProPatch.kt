@@ -14,7 +14,7 @@ val enableProPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "Meme Generator",
         packageName = "com.zombodroid.MemeGenerator",
-        targets = listOf(AppTarget("4.6670"))
+        targets = listOf(AppTarget("4.6671"))
     ))
 
     execute {
