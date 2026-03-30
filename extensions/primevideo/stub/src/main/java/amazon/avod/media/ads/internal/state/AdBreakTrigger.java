@@ -1,4 +1,4 @@
-package com.amazon.avod.media.ads.internal.state;
+package amazon.avod.media.ads.internal.state;
 
 import com.amazon.avod.media.TimeSpan;
 import com.amazon.avod.media.ads.AdBreak;
