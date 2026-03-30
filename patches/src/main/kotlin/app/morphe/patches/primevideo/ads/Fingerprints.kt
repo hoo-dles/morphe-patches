@@ -27,3 +27,8 @@ object OnSeekBehindUnwatchedAdFingerprint : Fingerprint (
     name = "onSeekBehindUnwatchedAd",
     custom = {_, classDef -> !classDef.hasFlag(AccessFlags.ABSTRACT) }
 )
+
+object ContentPresentationFlowLambdaFingerprint : Fingerprint(
+    definingClass = "Lcom/amazon/video/sdk/uiplayerv2/extensions/player/PlaybackPresentationFlowKt\$contentPresentationFlow\$1;",
+    name = "invokeSuspend"
+)
