@@ -1,3 +1,10 @@
+# [1.18.0](https://github.com/hoo-dles/morphe-patches/compare/v1.17.0...v1.18.0) (2026-04-01)
+
+
+### Features
+
+* **SnoreLab:** Add `Enable Premium` patch ([7b1cffa](https://github.com/hoo-dles/morphe-patches/commit/7b1cffaa9e95f5707aaf7046d3724829d414ffcb))
+
 # [1.18.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.17.0...v1.18.0-dev.1) (2026-04-01)
 
 
