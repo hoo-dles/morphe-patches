@@ -1,0 +1,24 @@
+package app.morphe.patches.pydroid.premium
+
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
+import app.morphe.patcher.patch.bytecodePatch
+
+val enablePremiumPatch = bytecodePatch(
+    name = "Enable Premium",
+    description = "Enables app features locked behind the subscription paywall."
+) {
+    compatibleWith(Compatibility(
+        name = "PyDroid3",
+        packageName = "ru.iiec.pydroid3",
+        targets = listOf(AppTarget("8.3_arm64")),
+        appIconColor = 0x3776AB
+    ))
+
+    execute {
+        SetIsPremiumFingerprint.method.addInstructions(0, """
+            const/4 p1, 0x1
+        """.trimIndent())
+    }
+}

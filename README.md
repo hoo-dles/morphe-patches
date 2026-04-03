@@ -52,6 +52,7 @@
 | Pandora                         | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                 |
 | Podcast Addict                  | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                      |
 | Proton VPN                      | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock custom DNS</li><li>Unlock split tunneling</li></ul> |
+| PyDroid3                        | `ru.iiec.pydroid3`                 | <ul><li>Enable Premium</li></ul>                                                                      |
 | Smart Launcher                  | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                          |
 | SnoreLab                        | `com.snorelab.app`                 | <ul><li>Enable Premium</li></ul>                                                                      |
 | Sofascore                       | `com.sofascore.results`            | <ul><li>Disable ads</li></ul>                                                                         |
