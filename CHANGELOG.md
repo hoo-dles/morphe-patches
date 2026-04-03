@@ -1,3 +1,10 @@
+# [1.20.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.19.0...v1.20.0-dev.1) (2026-04-03)
+
+
+### Features
+
+* **PyDroid3:** Add `Enable Premium` patch ([1ed55c8](https://github.com/hoo-dles/morphe-patches/commit/1ed55c8946b289a38068a9c7c324fd1aa80bfe23))
+
 # [1.19.0](https://github.com/hoo-dles/morphe-patches/compare/v1.18.0...v1.19.0) (2026-04-03)
 
 

@@ -1,5 +1,5 @@
 {
-  "version": "1.19.0",
+  "version": "1.20.0-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -342,6 +342,18 @@
       "compatiblePackages": {
         "com.bambuna.podcastaddict": [
           "2026.1"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "ru.iiec.pydroid3": [
+          "8.3_arm64"
         ]
       },
       "options": []

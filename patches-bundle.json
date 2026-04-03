@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-03T19:41:43",
-  "description": "# [1.19.0](https://github.com/hoo-dles/morphe-patches/compare/v1.18.0...v1.19.0) (2026-04-03)\n\n\n### Features\n\n* **Lyfta:** Add `Enable Premium` patch ([90b238a](https://github.com/hoo-dles/morphe-patches/commit/90b238aa3866acfdc3c05cb54cc4b58a9beef314))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.19.0/patches-1.19.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.19.0/patches-1.19.0.mpp.asc",
-  "version": "1.19.0"
+  "created_at": "2026-04-03T23:28:56",
+  "description": "# [1.20.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.19.0...v1.20.0-dev.1) (2026-04-03)\n\n\n### Features\n\n* **PyDroid3:** Add `Enable Premium` patch ([1ed55c8](https://github.com/hoo-dles/morphe-patches/commit/1ed55c8946b289a38068a9c7c324fd1aa80bfe23))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.20.0-dev.1/patches-1.20.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.20.0-dev.1/patches-1.20.0-dev.1.mpp.asc",
+  "version": "1.20.0-dev.1"
 }
