@@ -28,7 +28,6 @@
 
 | App                             | Package                            | Patches                                                                                               |
 |---------------------------------|------------------------------------|-------------------------------------------------------------------------------------------------------|
-| All-In-One Calculator           | `all.in.one.calculator`            | <ul><li>Disable ads</li><ul>                                                                          |
 | AllTrails                       | `com.alltrails.alltrails`          | <ul><li>Enable Peak membership</li></ul>                                                              |
 | Amazon Prime Video              | `com.amazon.avod.thirdpartyclient` | <ul><li>Enable speed control</li><li>Skip ads</li></ul>                                               |
 | Avocards                        | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                      |
