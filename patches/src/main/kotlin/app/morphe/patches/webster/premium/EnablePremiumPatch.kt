@@ -13,6 +13,7 @@ val EnablePremiumPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "Merriam-Webster",
         packageName = "com.merriamwebster",
+        appIconColor = 0xAE0015,
         targets = listOf(AppTarget(null))
     ))
 

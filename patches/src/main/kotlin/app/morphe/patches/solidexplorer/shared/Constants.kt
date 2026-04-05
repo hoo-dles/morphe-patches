@@ -7,6 +7,7 @@ object Constants {
     val COMPATIBILITY = Compatibility(
         name = "Solid Explorer",
         packageName = "pl.solidexplorer2",
+        appIconColor = 0x039BE5,
         targets = listOf(AppTarget("3.4.1"))
     )
 }

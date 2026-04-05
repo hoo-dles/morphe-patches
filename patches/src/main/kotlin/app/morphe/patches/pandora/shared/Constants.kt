@@ -7,6 +7,7 @@ object Constants {
     val COMPATIBILITY = Compatibility(
         name = "Pandora",
         packageName = "com.pandora.android",
+        appIconColor = 0xFFFFFF,
         targets = listOf(AppTarget(null))
     )
 }

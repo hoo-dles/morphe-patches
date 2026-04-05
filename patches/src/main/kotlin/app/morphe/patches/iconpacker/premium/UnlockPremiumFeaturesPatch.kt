@@ -17,6 +17,7 @@ val unlockPremiumFeaturesPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "Icon Packer",
         packageName = "cn.ommiao.iconpacker",
+        appIconColor = 0x0066FF,
         targets = listOf(AppTarget("1.21.0-release"))
     ))
 

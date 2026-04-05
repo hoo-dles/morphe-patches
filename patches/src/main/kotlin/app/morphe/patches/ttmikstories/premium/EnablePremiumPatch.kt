@@ -13,6 +13,7 @@ val enablePremiumPatch = rawResourcePatch(
     compatibleWith(Compatibility(
         name = "TTMIK Stories",
         packageName = "app.ttmikstories.android",
+        appIconColor = 0xF45925,
         targets = listOf(AppTarget("1.16.0"))
     ))
 

@@ -7,6 +7,7 @@ internal object Constants {
     val COMPATIBILITY = Compatibility(
         name = "Daily Pocket",
         packageName = "kr.co.yjteam.dailypay",
+        appIconColor = 0xF6F6F6,
         targets = listOf(AppTarget("6.0.7"))
     )
 

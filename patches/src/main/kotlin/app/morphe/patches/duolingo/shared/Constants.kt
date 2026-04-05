@@ -7,6 +7,7 @@ internal object Constants {
     val COMPATIBILITY = Compatibility(
         name = "Duolingo",
         packageName = "com.duolingo",
+        appIconColor = 0x58CC02,
         targets = listOf(AppTarget("6.66.5"))
     )
 }

@@ -14,6 +14,7 @@ val enableProPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "MyExpenses",
         packageName = "org.totschnig.myexpenses",
+        appIconColor = 0x428BCA,
         targets = listOf(AppTarget("3.9.8"))
     ))
 

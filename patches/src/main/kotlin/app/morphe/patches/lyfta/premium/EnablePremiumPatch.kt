@@ -13,6 +13,7 @@ val enablePremiumPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "Lyfta",
         packageName = "com.lyfta",
+        appIconColor = 0x000000,
         targets = listOf(AppTarget("1.551"))
     ))
 

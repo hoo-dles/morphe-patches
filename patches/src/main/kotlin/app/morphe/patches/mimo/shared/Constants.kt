@@ -7,6 +7,7 @@ object Constants {
     val COMPATIBILITY = Compatibility(
         name = "Mimo",
         packageName = "com.getmimo",
+        appIconColor = 0x7E4BDE,
         targets = listOf(AppTarget("9.0"))
     )
 

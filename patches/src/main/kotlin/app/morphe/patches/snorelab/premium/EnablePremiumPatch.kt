@@ -13,6 +13,7 @@ val enablePremiumPatch = bytecodePatch(
         Compatibility(
             name = "SnoreLab",
             packageName = "com.snorelab.app",
+            appIconColor = 0x1B5A9A,
             targets = listOf(AppTarget("2.27.3.6291"))
         )
     )

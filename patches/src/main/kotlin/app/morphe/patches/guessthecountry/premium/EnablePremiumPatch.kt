@@ -13,6 +13,7 @@ val EnablePremiumPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "World Map Quiz",
         packageName = "com.qbis.guessthecountry",
+        appIconColor = 0x19A2A4,
         targets = listOf(AppTarget("3.34.2"))
     ))
 

@@ -14,6 +14,7 @@ val enablePremiumPatch = bytecodePatch(
         Compatibility(
             name = "AllTrails",
             packageName = "com.alltrails.alltrails",
+            appIconColor = 0x64F67A,
             targets = listOf(AppTarget("26.3.20"))
         )
     )

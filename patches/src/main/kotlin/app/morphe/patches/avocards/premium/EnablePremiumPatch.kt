@@ -16,6 +16,7 @@ val enablePremiumPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "Avocards",
         packageName = "com.avocards",
+        appIconColor = 0x13AA52,
         targets = listOf(AppTarget("3.0.18"))
     ))
 

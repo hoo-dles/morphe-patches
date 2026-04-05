@@ -17,6 +17,7 @@ val enablePlusPatch = rawResourcePatch(
     compatibleWith(Compatibility(
         name = "Cake",
         packageName = "me.mycake",
+        appIconColor = 0xFF4884,
         targets = listOf(AppTarget("6.4.0"))
     ))
 

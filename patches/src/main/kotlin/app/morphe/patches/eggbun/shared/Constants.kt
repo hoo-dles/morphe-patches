@@ -7,6 +7,7 @@ internal object Constants {
     val COMPATIBILITY = Compatibility(
         name = "Eggbun",
         packageName = "kr.eggbun.eggconvo",
+        appIconColor = 0xFBCF3B,
         targets = listOf(AppTarget("4.12.19"))
     )
 }

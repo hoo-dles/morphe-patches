@@ -7,6 +7,7 @@ object Constants {
     val COMPATIBILITY = Compatibility(
         name = "Proton VPN",
         packageName = "ch.protonvpn.android",
+        appIconColor = 0x6D4AFF,
         targets = listOf(AppTarget("5.16.83.0"))
     )
 }

@@ -24,6 +24,7 @@ val enablePremiumPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "Windy",
         packageName = "com.windyty.android",
+        appIconColor = 0x9D0300,
         targets = listOf(AppTarget("49.0.1"))
     ))
 

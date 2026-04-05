@@ -13,6 +13,7 @@ val enablePremiumPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "Podcast Addict",
         packageName = "com.bambuna.podcastaddict",
+        appIconColor = 0xFD7E14,
         targets = listOf(AppTarget("2026.1"))
     ))
 

@@ -13,6 +13,7 @@ val enablePremiumPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "Wallcraft",
         packageName = "com.wallpaperscraft.wallpaper",
+        appIconColor = 0x000000,
         targets = listOf(AppTarget("3.61.01"))
     ))
 

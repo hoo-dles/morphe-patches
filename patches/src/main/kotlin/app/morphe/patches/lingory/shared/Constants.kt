@@ -7,6 +7,7 @@ object Constants {
     val COMPATIBILITY = Compatibility(
         name = "Lingory",
         packageName = "org.languageapp.lingory",
+        appIconColor = 0x8F98FF,
         targets = listOf(AppTarget("1.2.75"))
 
     )

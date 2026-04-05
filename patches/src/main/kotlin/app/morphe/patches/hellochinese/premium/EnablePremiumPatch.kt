@@ -25,6 +25,7 @@ val enablePremiumPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "HelloChinese",
         packageName = "com.hellochinese",
+        appIconColor = 0xFFFFFF,
         targets = listOf(AppTarget("7.9.25"))
     ))
 

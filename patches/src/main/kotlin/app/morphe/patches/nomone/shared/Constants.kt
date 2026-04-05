@@ -7,6 +7,7 @@ object Constants {
     val COMPATIBILITY = Compatibility(
         name = "NOMone Desktop",
         packageName = "nom.vrd",
+        appIconColor = 0x52CDFB,
         targets = listOf(
             AppTarget("1.9.3-GooglePlay"),
             AppTarget("1.9.3-storage")

@@ -13,6 +13,7 @@ val disableAdsPatch = bytecodePatch(
     compatibleWith(Compatibility(
         name = "Sofascore",
         packageName = "com.sofascore.results",
+        appIconColor = 0x374DF5,
         targets = listOf(AppTarget("25.12.17"))
     ))
 

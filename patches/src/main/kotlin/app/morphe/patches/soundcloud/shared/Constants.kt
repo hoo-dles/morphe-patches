@@ -7,6 +7,7 @@ object Constants {
     val COMPATIBILITY = Compatibility(
         name = "SoundCloud",
         packageName = "com.soundcloud.android",
+        appIconColor = 0x000000,
         targets = listOf(AppTarget("2026.03.20-release"))
     )
 }
