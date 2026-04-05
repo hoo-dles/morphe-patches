@@ -13,7 +13,7 @@ val enablePremiumPatch = bytecodePatch(
         name = "PyDroid3",
         packageName = "ru.iiec.pydroid3",
         appIconColor = 0x3776AB,
-        targets = listOf(AppTarget("8.3_arm64")),
+        targets = listOf(AppTarget("8.3_arm64"))
     ))
 
     execute {
