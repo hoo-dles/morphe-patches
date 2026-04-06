@@ -1,5 +1,5 @@
 {
-  "version": "1.20.0",
+  "version": "1.21.0-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -465,7 +465,7 @@
       ],
       "compatiblePackages": {
         "jp.ne.ibis.ibispaintx.app": [
-          "13.1.19"
+          "14.0.0"
         ]
       },
       "options": []

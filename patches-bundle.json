@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-05T16:10:38",
-  "description": "# [1.20.0](https://github.com/hoo-dles/morphe-patches/compare/v1.19.0...v1.20.0) (2026-04-05)\n\n\n### Features\n\n* **Nova Launcher:** Add `Enable Prime` patch ([2fe5084](https://github.com/hoo-dles/morphe-patches/commit/2fe50841d9ceb7078ea8b5d1b237eeaf9d8e9087))\n* **PyDroid3:** Add `Enable Premium` patch ([1ed55c8](https://github.com/hoo-dles/morphe-patches/commit/1ed55c8946b289a38068a9c7c324fd1aa80bfe23))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.20.0/patches-1.20.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.20.0/patches-1.20.0.mpp.asc",
-  "version": "1.20.0"
+  "created_at": "2026-04-06T19:55:04",
+  "description": "# [1.21.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.20.0...v1.21.0-dev.1) (2026-04-06)\n\n\n### Features\n\n* **IbisPaint X:** Update patch to support 14.0.0 ([4136c88](https://github.com/hoo-dles/morphe-patches/commit/4136c88eff5e96c5ce522cd201595b1f8b6d26fa))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.21.0-dev.1/patches-1.21.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.21.0-dev.1/patches-1.21.0-dev.1.mpp.asc",
+  "version": "1.21.0-dev.1"
 }
