@@ -1,3 +1,10 @@
+# [1.22.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.21.0...v1.22.0-dev.1) (2026-04-07)
+
+
+### Features
+
+* **Xodo:** Add `Enable Pro` patch ([cf41fee](https://github.com/hoo-dles/morphe-patches/commit/cf41fee2b4da2199537e7b26def78525e07c1ef5))
+
 # [1.21.0](https://github.com/hoo-dles/morphe-patches/compare/v1.20.0...v1.21.0) (2026-04-07)
 
 

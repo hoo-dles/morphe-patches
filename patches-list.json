@@ -1,5 +1,5 @@
 {
-  "version": "1.21.0",
+  "version": "1.22.0-dev.1",
   "patches": [
     {
       "name": "Add resources",
@@ -136,6 +136,18 @@
       "compatiblePackages": {
         "ginlemon.flowerfree": [
           "6.6 build 002"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Disable signature check",
+      "description": "Removes the anti-tamper protection, which verifies apk signature, causing the app to force close.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.xodo.pdf.reader": [
+          "10.13.0"
         ]
       },
       "options": []
@@ -544,6 +556,20 @@
       "compatiblePackages": {
         "cn.wps.moffice_eng": [
           "18.24"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Pro",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "use": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.xodo.pdf.reader": [
+          "10.13.0"
         ]
       },
       "options": []
