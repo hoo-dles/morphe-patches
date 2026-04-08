@@ -8,7 +8,6 @@ object LoginStateFingerprint : Fingerprint(
     returnType = "V",
     strings = listOf(
         "password",
-        "distinctId",
         "signal"
     )
 )
