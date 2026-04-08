@@ -2,28 +2,28 @@ package app.morphe.patches.busuu.premium
 
 import app.morphe.patcher.Fingerprint
 
-object IsPremiumFingerprint : Fingerprint (
+object IsPremiumFingerprint : Fingerprint(
     name = "isPremium"
 )
 
 // ApiUser
-object ApiUserToStringFingerprint : Fingerprint (
+object ApiUserToStringFingerprint : Fingerprint(
     strings = listOf("ApiUser(legacyUid=")
 )
 
 // ApiUserAccess
-object ApiUserAccessToStringFingerprint : Fingerprint (
+object ApiUserAccessToStringFingerprint : Fingerprint(
     strings = listOf("ApiUserAccess(tier=")
 )
-object GetTierFingerprint : Fingerprint (
+object GetTierFingerprint : Fingerprint(
     name = "getTier"
 )
 
 // PremiumUser
-object PremiumUserCtorFingerprint : Fingerprint (
+object PremiumUserCtorFingerprint : Fingerprint(
     strings = listOf("legacyId", "name", "avatar", "accessTier")
 )
-object GetHasActiveSubscriptionFingerprint : Fingerprint (
+object GetHasActiveSubscriptionFingerprint : Fingerprint(
     name = "getHasActiveSubscription"
 )
 

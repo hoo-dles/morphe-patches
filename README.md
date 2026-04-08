@@ -26,44 +26,45 @@
 
 <br/>
 
-| App                              | Package                            | Patches                                                                                               |
-|----------------------------------|------------------------------------|-------------------------------------------------------------------------------------------------------|
-| AllTrails                        | `com.alltrails.alltrails`          | <ul><li>Enable Peak membership</li></ul>                                                              |
-| Amazon Prime Video               | `com.amazon.avod.thirdpartyclient` | <ul><li>Enable speed control</li><li>Skip ads</li></ul>                                               |
-| Avocards                         | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                      |
-| Busuu                            | `com.busuu.android.enc`            | <ul><li>Enable Premium</li></ul>                                                                      |
-| Cake :dart:                      | `me.mycake`                        | <ul><li>Enable Plus</li></ul>                                                                         |
-| DAILY POCKET :earth_americas:    | `kr.co.yjteam.dailypay`            | <ul><li>Enable Premium</li></ul>                                                                      |
-| Duolingo                         | `com.duolingo`                     | <ul><li>Disable Play Integrity check</li><li>Enable debug mode</li><li>Enable Super/MAX</li></ul>     |
-| Eggbun                           | `kr.eggbun.eggconvo`               | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                        |
-| FotMob                           | `com.mobilefootie.wc2010`          | <ul><li>Enable FotMob+</li></ul>                                                                      |
-| HelloChinese :dart: :computer:   | `com.hellochinese`                 | <ul><li>Enable Premium</li></ul>                                                                      |
-| IbisPaint X :dart: :computer:    | `jp.ne.ibis.ibispaintx.app`        | <ul><li>Enable Prime membership</li></ul>                                                             |
-| Icon Packer                      | `cn.ommiao.iconpacker`             | <ul><li>Unlocked premium features</li></ul>                                                           |
-| Lingory :dart: :computer:        | `org.languageapp.lingory`          | <ul><li>Enable Premium</li></ul>                                                                      |
-| Lyfta                            | `com.lyfta`                        | <ul><li>Enable Premium</li></ul>                                                                      |
-| Meme Generator                   | `com.zombodroid.MemeGenerator`     | <ul><li>Enable Pro</li></ul>                                                                          |
-| Merriam-Webster                  | `com.merriamwebster`               | <ul><li>Enable Premium</li></ul>                                                                      |
-| Mimo                             | `com.getmimo`                      | <ul><li>Enable Pro</li></ul>                                                                          |
-| MyExpenses                       | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                          |
-| MyFitnessPal                     | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                     |
-| NOMone Desktop                   | `nom.vrd`                          | <ul><li>Disable anti-tamper</li><li>Disable telemetry</li><li>Remove trial limit</li></ul>            |
-| Nova Launcher                    | `com.teslacoilsw.launcher`         | <ul><li>Enable Prime</li></ul>                                                                        |
-| Pandora                          | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                 |
-| Podcast Addict :earth_americas:  | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                      |
-| Proton VPN                       | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock custom DNS</li><li>Unlock split tunneling</li></ul> |
-| PyDroid3                         | `ru.iiec.pydroid3`                 | <ul><li>Enable Premium</li></ul>                                                                      |
-| Smart Launcher                   | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                          |
-| SnoreLab                         | `com.snorelab.app`                 | <ul><li>Enable Premium</li></ul>                                                                      |
-| Sofascore                        | `com.sofascore.results`            | <ul><li>Disable ads</li></ul>                                                                         |
-| SoundCloud                       | `com.soundcloud.android`           | <ul><li>Enable SoundCloud Go+</li><li>Disable telemetry</li></ul>                                     |
-| Solid Explorer :earth_americas:  | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                           |
-| Teuida :earth_americas:          | `net.teuida.teuida`                | <ul><li>Enable Premium</li></ul>                                                                      |
-| TTMIK Stories :dart:             | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                      |
-| Wallcraft                        | `com.wallpaperscraft.wallpaper`    | <ul><li>Enable Premium</li></ul>                                                                      |
-| Windy                            | `com.windyty.android`              | <ul><li>Enable Premium</li></ul>                                                                      |
-| World Map Quiz                   | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                      |
-| WPS Office                       | `cn.wps.moffice_eng`               | <ul><li>Disable anti-tamper checks</li><li>Enable Pro</li></ul>                                       |
+| App                             | Package                            | Patches                                                                                               |
+|---------------------------------|------------------------------------|-------------------------------------------------------------------------------------------------------|
+| AllTrails                       | `com.alltrails.alltrails`          | <ul><li>Enable Peak membership</li></ul>                                                              |
+| Amazon Prime Video              | `com.amazon.avod.thirdpartyclient` | <ul><li>Enable speed control</li><li>Skip ads</li></ul>                                               |
+| Avocards                        | `com.avocards`                     | <ul><li>Enable Premium</li></ul>                                                                      |
+| Busuu                           | `com.busuu.android.enc`            | <ul><li>Enable Premium</li></ul>                                                                      |
+| Cake :dart:                     | `me.mycake`                        | <ul><li>Enable Plus</li></ul>                                                                         |
+| DAILY POCKET :earth_americas:   | `kr.co.yjteam.dailypay`            | <ul><li>Enable Premium</li></ul>                                                                      |
+| Duolingo                        | `com.duolingo`                     | <ul><li>Disable Play Integrity check</li><li>Enable debug mode</li><li>Enable Super/MAX</li></ul>     |
+| Eggbun                          | `kr.eggbun.eggconvo`               | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                        |
+| FotMob                          | `com.mobilefootie.wc2010`          | <ul><li>Enable FotMob+</li></ul>                                                                      |
+| HelloChinese :dart: :computer:  | `com.hellochinese`                 | <ul><li>Enable Premium</li></ul>                                                                      |
+| IbisPaint X :dart: :computer:   | `jp.ne.ibis.ibispaintx.app`        | <ul><li>Enable Prime membership</li></ul>                                                             |
+| Icon Packer                     | `cn.ommiao.iconpacker`             | <ul><li>Unlocked premium features</li></ul>                                                           |
+| Lingory :dart: :computer:       | `org.languageapp.lingory`          | <ul><li>Enable Premium</li></ul>                                                                      |
+| Lyfta                           | `com.lyfta`                        | <ul><li>Enable Premium</li></ul>                                                                      |
+| Meme Generator                  | `com.zombodroid.MemeGenerator`     | <ul><li>Enable Pro</li></ul>                                                                          |
+| Merriam-Webster                 | `com.merriamwebster`               | <ul><li>Enable Premium</li></ul>                                                                      |
+| Mimo                            | `com.getmimo`                      | <ul><li>Enable Pro</li></ul>                                                                          |
+| MyExpenses                      | `org.totschnig.myexpenses`         | <ul><li>Enable Pro</li></ul>                                                                          |
+| MyFitnessPal                    | `com.myfitnesspal.android`         | <ul><li>Enable Premium+</li></ul>                                                                     |
+| NOMone Desktop                  | `nom.vrd`                          | <ul><li>Disable anti-tamper</li><li>Disable telemetry</li><li>Remove trial limit</li></ul>            |
+| Nova Launcher                   | `com.teslacoilsw.launcher`         | <ul><li>Enable Prime</li></ul>                                                                        |
+| Pandora                         | `com.pandora.android`              | <ul><li>Disable ads</li><li>Unlimited skips</li></ul>                                                 |
+| Podcast Addict :earth_americas: | `com.bambuna.podcastaddict`        | <ul><li>Enable Premium</li></ul>                                                                      |
+| Proton VPN                      | `ch.protonvpn.android`             | <ul><li>Remove server change delay</li><li>Unlock custom DNS</li><li>Unlock split tunneling</li></ul> |
+| PyDroid3                        | `ru.iiec.pydroid3`                 | <ul><li>Enable Premium</li></ul>                                                                      |
+| Smart Launcher                  | `ginlemon.flowerfree`              | <ul><li>Enable Pro</li></ul>                                                                          |
+| SnoreLab                        | `com.snorelab.app`                 | <ul><li>Enable Premium</li></ul>                                                                      |
+| Sofascore                       | `com.sofascore.results`            | <ul><li>Disable ads</li></ul>                                                                         |
+| SoundCloud                      | `com.soundcloud.android`           | <ul><li>Enable SoundCloud Go+</li><li>Disable telemetry</li></ul>                                     |
+| Solid Explorer :earth_americas: | `pl.solidexplorer2`                | <ul><li>Enable Pro</li><ul>                                                                           |
+| Teuida :earth_americas:         | `net.teuida.teuida`                | <ul><li>Enable Premium</li></ul>                                                                      |
+| TTMIK Stories :dart:            | `app.ttmikstories.android`         | <ul><li>Enable Premium</li></ul>                                                                      |
+| Wallcraft                       | `com.wallpaperscraft.wallpaper`    | <ul><li>Enable Premium</li></ul>                                                                      |
+| Windy                           | `com.windyty.android`              | <ul><li>Enable Premium</li></ul>                                                                      |
+| World Map Quiz                  | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                      |
+| WPS Office                      | `cn.wps.moffice_eng`               | <ul><li>Disable anti-tamper checks</li><li>Enable Pro</li></ul>                                       |
+| Xodo                            | `com.xodo.pdf.reader`              | <ul><li>Enable Pro</li></ul>                                                                          |
 
 :earth_americas: _Supports MicroG integration._\
 :dart: _This app has a strict requirement to use the version defined in the patch._\

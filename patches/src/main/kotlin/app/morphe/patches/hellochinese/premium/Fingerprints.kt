@@ -7,11 +7,11 @@ import app.morphe.patcher.literal
 import app.morphe.patcher.opcode
 import com.android.tools.smali.dexlib2.Opcode
 
-object IsAuthInvalidFingerprint : Fingerprint (
+object IsAuthInvalidFingerprint : Fingerprint(
     strings = listOf("AuthError", "10001", "decode")
 )
 
-object IsUserTypeEqual2Fingerprint : Fingerprint (
+object IsUserTypeEqual2Fingerprint : Fingerprint(
     returnType = "Z",
     parameters = listOf("Landroid/content/Context;"),
     filters = listOf(
@@ -20,7 +20,7 @@ object IsUserTypeEqual2Fingerprint : Fingerprint (
     ),
 )
 
-object IsUserTypeOver0Fingerprint : Fingerprint (
+object IsUserTypeOver0Fingerprint : Fingerprint(
     returnType = "Z",
     parameters = listOf("Landroid/content/Context;"),
     filters = listOf(

@@ -22,7 +22,7 @@ object GetPremiumBaseFingerprint : Fingerprint(
     }
 )
 
-object IsPremiumFingerprint : Fingerprint (
+object IsPremiumFingerprint : Fingerprint(
     custom = { method, classDef ->
         method.name == "isPremium" && classDef.type == "Lcom/avocards/data/manager/UserManager;"
     }

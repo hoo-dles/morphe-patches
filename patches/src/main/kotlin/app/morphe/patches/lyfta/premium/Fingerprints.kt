@@ -2,7 +2,7 @@ package app.morphe.patches.lyfta.premium
 
 import app.morphe.patcher.Fingerprint
 
-object GetSubscriptionTypeFingerprint : Fingerprint (
+object GetSubscriptionTypeFingerprint : Fingerprint(
     definingClass = "Lcom/lyfta/util/helpers/Utils;",
     name = "getSubscriptionType"
 )

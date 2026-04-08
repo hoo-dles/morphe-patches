@@ -4,7 +4,7 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.OpcodesFilter
 import com.android.tools.smali.dexlib2.Opcode
 
-object WidgetConfigOnCreateFingerprint : Fingerprint (
+object WidgetConfigOnCreateFingerprint : Fingerprint(
     filters = OpcodesFilter.opcodesToFilters(
         Opcode.MOVE_RESULT_OBJECT,
         Opcode.INVOKE_VIRTUAL,

@@ -4,11 +4,11 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.fieldAccess
 import app.morphe.patcher.methodCall
 
-object SubscriptionUtilClassFingerprint : Fingerprint (
+object SubscriptionUtilClassFingerprint : Fingerprint(
     strings = listOf("Error getting active offerings")
 )
 
-object IsValidSubFingerprint : Fingerprint (
+object IsValidSubFingerprint : Fingerprint(
     returnType = "Z",
     filters = listOf(
         fieldAccess(type = "Ljava/lang/Boolean;"),
@@ -19,7 +19,7 @@ object IsValidSubFingerprint : Fingerprint (
     )
 )
 
-object HasActiveSubFingerprint : Fingerprint (
+object HasActiveSubFingerprint : Fingerprint(
     strings = listOf("call to 'resume' before 'invoke' with coroutine"),
     filters = listOf(
         methodCall(
@@ -29,10 +29,10 @@ object HasActiveSubFingerprint : Fingerprint (
     )
 )
 
-object LifetimeEntitlementFingerprint : Fingerprint (
+object LifetimeEntitlementFingerprint : Fingerprint(
     strings = listOf("LifeTimeEntitlement(entitlement=")
 )
 
-object EntitlementFingerprint : Fingerprint (
+object EntitlementFingerprint : Fingerprint(
     strings = listOf("Entitlement(identifier=")
 )

@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-07T05:25:41",
-  "description": "# [1.21.0](https://github.com/hoo-dles/morphe-patches/compare/v1.20.0...v1.21.0) (2026-04-07)\n\n\n### Features\n\n* **IbisPaint X:** Update patch to support 14.0.0 ([4136c88](https://github.com/hoo-dles/morphe-patches/commit/4136c88eff5e96c5ce522cd201595b1f8b6d26fa))\n* **Podcast Addict:** Add `MicroG integration` patch ([95f3b09](https://github.com/hoo-dles/morphe-patches/commit/95f3b0921f15dc0d7eff672c7d43636d78a79119))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.21.0/patches-1.21.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.21.0/patches-1.21.0.mpp.asc",
-  "version": "1.21.0"
+  "created_at": "2026-04-07T20:56:39",
+  "description": "# [1.22.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.21.0...v1.22.0-dev.1) (2026-04-07)\n\n\n### Features\n\n* **Xodo:** Add `Enable Pro` patch ([cf41fee](https://github.com/hoo-dles/morphe-patches/commit/cf41fee2b4da2199537e7b26def78525e07c1ef5))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.22.0-dev.1/patches-1.22.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.22.0-dev.1/patches-1.22.0-dev.1.mpp.asc",
+  "version": "1.22.0-dev.1"
 }

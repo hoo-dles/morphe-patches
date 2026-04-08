@@ -3,7 +3,7 @@ package app.morphe.patches.soundcloud.premium
 import app.morphe.patcher.Fingerprint
 import com.android.tools.smali.dexlib2.AccessFlags
 
-object FeatureConstructorFingerprint : Fingerprint (
+object FeatureConstructorFingerprint : Fingerprint(
     definingClass = "/Feature;",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.CONSTRUCTOR),
     parameters = listOf(
@@ -13,7 +13,7 @@ object FeatureConstructorFingerprint : Fingerprint (
     )
 )
 
-object UserConsumerPlanConstructorFingerprint : Fingerprint (
+object UserConsumerPlanConstructorFingerprint : Fingerprint(
     definingClass = "/UserConsumerPlan;",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.CONSTRUCTOR),
     parameters = listOf(
@@ -26,13 +26,13 @@ object UserConsumerPlanConstructorFingerprint : Fingerprint (
     )
 )
 
-object GetDowngradeTierFingerprint : Fingerprint (
+object GetDowngradeTierFingerprint : Fingerprint(
     definingClass = "/ConfigurationSettingsStorage;",
     strings = listOf("pending_plan_downgrade"),
     returnType = "/Tier;"
 )
 
-object MapToPlanFingerprint : Fingerprint (
+object MapToPlanFingerprint : Fingerprint(
     definingClass = "/RemoteUpsellVisibilityController;",
     name = "mapToPlan"
 )

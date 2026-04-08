@@ -4,14 +4,14 @@ import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.fieldAccess
 import com.android.tools.smali.dexlib2.Opcode
 
-object ProcessLicenseResponseFingerprint : Fingerprint (
+object ProcessLicenseResponseFingerprint : Fingerprint(
     custom = { method, classDef ->
         classDef.type == "Lcom/pairip/licensecheck/LicenseClient;" &&
                 method.name == "processResponse"
     }
 )
 
-object RepeatedCheckFingerprint : Fingerprint (
+object RepeatedCheckFingerprint : Fingerprint(
     filters = listOf(
         fieldAccess(
             opcode = Opcode.SGET_BOOLEAN,
@@ -20,7 +20,7 @@ object RepeatedCheckFingerprint : Fingerprint (
     )
 )
 
-object ValidateLicenseResponseFingerprint : Fingerprint (
+object ValidateLicenseResponseFingerprint : Fingerprint(
     custom = { method, classDef ->
         (classDef.type == "Lcom/pairip/licensecheck/ResponseValidator;" || classDef.type == "Lcom/pairip/licensecheck/LicenseResponseHelper;") &&
                 method.name == "validateResponse"

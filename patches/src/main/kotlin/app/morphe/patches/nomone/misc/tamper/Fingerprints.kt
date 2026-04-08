@@ -7,7 +7,7 @@ import app.morphe.patcher.literal
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 
-object IsValidSignatureFingerprint : Fingerprint (
+object IsValidSignatureFingerprint : Fingerprint(
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC),
     parameters = listOf("Landroid/content/Context;"),
     returnType = "Z",
@@ -20,7 +20,7 @@ object IsValidSignatureFingerprint : Fingerprint (
     )
 )
 
-object IsCrackedFingerprint : Fingerprint (
+object IsCrackedFingerprint : Fingerprint(
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC),
     parameters = listOf("Landroid/content/Context;"),
     returnType = "Z",
