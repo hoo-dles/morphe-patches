@@ -1,3 +1,15 @@
+# [1.23.0](https://github.com/hoo-dles/morphe-patches/compare/v1.22.0...v1.23.0) (2026-04-12)
+
+
+### Bug Fixes
+
+* **Duolingo:** Updating patches to support `6.74.4` ([1bd78b0](https://github.com/hoo-dles/morphe-patches/commit/1bd78b0b204bd4dc126316ff9944a4ea6a0e3497))
+
+
+### Features
+
+* **Ventusky:** Add `Enable Premium` patch ([1c3cc17](https://github.com/hoo-dles/morphe-patches/commit/1c3cc178122abfced2b92379059843c75d8c7ee8))
+
 # [1.23.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.22.1-dev.1...v1.23.0-dev.1) (2026-04-09)
 
 
