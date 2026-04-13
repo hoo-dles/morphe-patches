@@ -3,7 +3,6 @@ package app.morphe.patches.hellochinese.premium
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.shared.misc.hex.ARM64_NOP
 import app.morphe.patches.shared.misc.hex.hexPatch
 import app.morphe.util.returnEarly
 
