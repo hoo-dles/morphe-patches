@@ -4,6 +4,7 @@ import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.pydroid.misc.meta.includeOriginalMetadataPatch
 
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
@@ -15,6 +16,8 @@ val enablePremiumPatch = bytecodePatch(
         appIconColor = 0x3776AB,
         targets = listOf(AppTarget("8.3_arm64"))
     ))
+
+    dependsOn(includeOriginalMetadataPatch)
 
     execute {
         SetIsPremiumFingerprint.method.addInstructions(0, """
