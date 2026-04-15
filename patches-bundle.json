@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-13T21:43:40",
-  "description": "## [1.23.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.23.0...v1.23.1-dev.1) (2026-04-13)\n\n\n### Bug Fixes\n\n* **PyDroid3:** Fix anti-tamper that caused broken python3 output ([94fb0c8](https://github.com/hoo-dles/morphe-patches/commit/94fb0c839dbf5b2469feced647a5735e732a01dc))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.23.1-dev.1/patches-1.23.1-dev.1.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.23.1-dev.1/patches-1.23.1-dev.1.mpp.asc",
-  "version": "1.23.1-dev.1"
+  "created_at": "2026-04-15T17:48:41",
+  "description": "# [1.24.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.23.1-dev.1...v1.24.0-dev.1) (2026-04-15)\n\n\n### Features\n\n* **MacroFactor:** Add `Enable Premium` patch ([c47c6eb](https://github.com/hoo-dles/morphe-patches/commit/c47c6eb1ac14a269ce198c7ea3fcacade68066f5))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.24.0-dev.1/patches-1.24.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.24.0-dev.1/patches-1.24.0-dev.1.mpp.asc",
+  "version": "1.24.0-dev.1"
 }

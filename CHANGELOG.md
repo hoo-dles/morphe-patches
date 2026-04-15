@@ -1,3 +1,10 @@
+# [1.24.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.23.1-dev.1...v1.24.0-dev.1) (2026-04-15)
+
+
+### Features
+
+* **MacroFactor:** Add `Enable Premium` patch ([c47c6eb](https://github.com/hoo-dles/morphe-patches/commit/c47c6eb1ac14a269ce198c7ea3fcacade68066f5))
+
 ## [1.23.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.23.0...v1.23.1-dev.1) (2026-04-13)
 
 
