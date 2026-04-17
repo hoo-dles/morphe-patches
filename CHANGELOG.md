@@ -1,3 +1,18 @@
+# [1.25.0](https://github.com/hoo-dles/morphe-patches/compare/v1.24.0...v1.25.0) (2026-04-17)
+
+
+### Features
+
+* Add universal `Hide app icon` patch ([58e5860](https://github.com/hoo-dles/morphe-patches/commit/58e586027fe6bd05f54934933785e9875ffbb3f3))
+* **MacroFactor Workouts:** Add `Enable Premium` patch ([27841fd](https://github.com/hoo-dles/morphe-patches/commit/27841fd09962e286acc6b7e18716ba8dda460bb1))
+
+# [1.25.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.25.0-dev.1...v1.25.0-dev.2) (2026-04-17)
+
+
+### Features
+
+* **MacroFactor Workouts:** Add `Enable Premium` patch ([27841fd](https://github.com/hoo-dles/morphe-patches/commit/27841fd09962e286acc6b7e18716ba8dda460bb1))
+
 # [1.25.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.24.0...v1.25.0-dev.1) (2026-04-17)
 
 

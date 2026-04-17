@@ -1,5 +1,5 @@
 {
-  "version": "1.25.0-dev.1",
+  "version": "1.25.0",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -349,6 +349,9 @@
       "compatiblePackages": {
         "com.sbs.diet": [
           "5.7.6"
+        ],
+        "com.sbs.train": [
+          "1.1.7"
         ]
       },
       "options": []
@@ -790,6 +793,9 @@
       "compatiblePackages": {
         "com.sbs.diet": [
           "5.7.6"
+        ],
+        "com.sbs.train": [
+          "1.1.7"
         ]
       },
       "options": []
