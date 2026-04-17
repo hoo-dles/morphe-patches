@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-17T17:40:36",
-  "description": "# [1.25.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.25.0-dev.1...v1.25.0-dev.2) (2026-04-17)\n\n\n### Features\n\n* **MacroFactor Workouts:** Add `Enable Premium` patch ([27841fd](https://github.com/hoo-dles/morphe-patches/commit/27841fd09962e286acc6b7e18716ba8dda460bb1))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.25.0-dev.2/patches-1.25.0-dev.2.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.25.0-dev.2/patches-1.25.0-dev.2.mpp.asc",
-  "version": "1.25.0-dev.2"
+  "created_at": "2026-04-17T19:20:53",
+  "description": "# [1.25.0](https://github.com/hoo-dles/morphe-patches/compare/v1.24.0...v1.25.0) (2026-04-17)\n\n\n### Features\n\n* Add universal `Hide app icon` patch ([58e5860](https://github.com/hoo-dles/morphe-patches/commit/58e586027fe6bd05f54934933785e9875ffbb3f3))\n* **MacroFactor Workouts:** Add `Enable Premium` patch ([27841fd](https://github.com/hoo-dles/morphe-patches/commit/27841fd09962e286acc6b7e18716ba8dda460bb1))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.25.0/patches-1.25.0.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.25.0/patches-1.25.0.mpp.asc",
+  "version": "1.25.0"
 }
