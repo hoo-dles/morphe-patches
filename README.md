@@ -67,6 +67,8 @@
 | World Map Quiz                  | `com.qbis.guessthecountry`         | <ul><li>Enable Premium</li></ul>                                                                      |
 | WPS Office                      | `cn.wps.moffice_eng`               | <ul><li>Disable anti-tamper checks</li><li>Enable Pro</li></ul>                                       |
 | Xodo                            | `com.xodo.pdf.reader`              | <ul><li>Enable Pro</li></ul>                                                                          |
+|                                 |                                    |                                                                                                       |
+| _Universal Patches_             |                                    | <ul><li>Change package name</li><li>Disable Pairip license check</li><li>Hide app icon</li></ul>      |
 
 :earth_americas: _Supports MicroG integration._\
 :dart: _This app has a strict requirement to use the version defined in the patch._\
