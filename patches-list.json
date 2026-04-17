@@ -1,14 +1,6 @@
 {
-  "version": "1.24.0",
+  "version": "1.25.0-dev.1",
   "patches": [
-    {
-      "name": "Add resources",
-      "description": "Add resources such as strings or arrays to the app.",
-      "use": false,
-      "dependencies": [],
-      "compatiblePackages": null,
-      "options": []
-    },
     {
       "name": "Block Permissions Request",
       "description": "Blocks the request of notification permissions on load of app.",
@@ -651,6 +643,14 @@
           "4.12.19"
         ]
       },
+      "options": []
+    },
+    {
+      "name": "Hide app icon",
+      "description": "Hides the app icon from the Android launcher.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": null,
       "options": []
     },
     {

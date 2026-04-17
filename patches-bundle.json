@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-15T22:51:19",
-  "description": "# [1.24.0](https://github.com/hoo-dles/morphe-patches/compare/v1.23.0...v1.24.0) (2026-04-15)\n\n\n### Bug Fixes\n\n* **PyDroid3:** Fix anti-tamper that caused broken python3 output ([94fb0c8](https://github.com/hoo-dles/morphe-patches/commit/94fb0c839dbf5b2469feced647a5735e732a01dc))\n\n\n### Features\n\n* **MacroFactor:** Add `Enable Premium` patch ([c47c6eb](https://github.com/hoo-dles/morphe-patches/commit/c47c6eb1ac14a269ce198c7ea3fcacade68066f5))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.24.0/patches-1.24.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.24.0/patches-1.24.0.mpp.asc",
-  "version": "1.24.0"
+  "created_at": "2026-04-17T15:42:51",
+  "description": "# [1.25.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.24.0...v1.25.0-dev.1) (2026-04-17)\n\n\n### Features\n\n* Add universal `Hide app icon` patch ([58e5860](https://github.com/hoo-dles/morphe-patches/commit/58e586027fe6bd05f54934933785e9875ffbb3f3))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.25.0-dev.1/patches-1.25.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.25.0-dev.1/patches-1.25.0-dev.1.mpp.asc",
+  "version": "1.25.0-dev.1"
 }

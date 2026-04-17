@@ -1,3 +1,10 @@
+# [1.25.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.24.0...v1.25.0-dev.1) (2026-04-17)
+
+
+### Features
+
+* Add universal `Hide app icon` patch ([58e5860](https://github.com/hoo-dles/morphe-patches/commit/58e586027fe6bd05f54934933785e9875ffbb3f3))
+
 # [1.24.0](https://github.com/hoo-dles/morphe-patches/compare/v1.23.0...v1.24.0) (2026-04-15)
 
 
