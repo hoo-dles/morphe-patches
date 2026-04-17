@@ -6,13 +6,13 @@
     - type: markdown
       attributes:
         value: |
-          # Hoodles Patches template enhancement request
+          # Enhancement Request
           
           Before creating a new enhancement request, please keep the following in mind:
           
           - :rotating_light: **If you're requesting a patch for currently unsupported app, you're in the wrong place! Please follow [these instructions](https://github.com/hoo-dles/morphe-patches/discussions/232)!** :rotating_light:
           - **Do not submit a duplicate feature request**: Search for existing feature requests [here](https://github.com/hoo-dles/morphe-patches/issues?q=label%3A%22enhancement%22).
-          - **Please don't ask for the world. I'm only one person, and I'm not a wizard.**
+          - **Please don't ask for the world.** I'm only one person, and I'm not a wizard.
     - type: textarea
       attributes:
         label: Feature description

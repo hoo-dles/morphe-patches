@@ -6,12 +6,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Hoodles Patches bug report
+        # Bug Report
 
         Before creating a new bug report, please keep the following in mind:
 
-        - **Do not submit a duplicate bug report**: Search for existing bug reports [here](https://github.com/hoo-dles/morphe-patches/issues?q=label%3A%22bug%22).
-        - **Do not use the issue page for support**: If you need help or have questions, please visit the [official reddit](https://www.reddit.com/r/MorpheApp) or create a new [Q&A discussion](https://github.com/hoo-dles/morphe-patches/discussions/new?category=q-a).
+        - **Do not submit a duplicate bug report.** Search for existing bug reports [here](https://github.com/hoo-dles/morphe-patches/issues?q=label%3A%22bug%22).
+        - **Do not use the issue page for support.** If you need help or have questions, please visit the [official reddit](https://www.reddit.com/r/MorpheApp) or create a new [Q&A discussion](https://github.com/hoo-dles/morphe-patches/discussions/new?category=q-a).
   - type: textarea
     attributes:
       label: Bug description
