@@ -26,7 +26,7 @@ val enablePremiumPatch = bytecodePatch(
 
         GetPlanStatusFingerprint.matchAll().forEach {
             it.method.addInstructions(0, """
-                sget-object v0, ${premiumStaticField.definingClass}->${premiumStaticField.name}:${premiumStaticField.type}
+                sget-object v0, $premiumStaticField
                 return-object v0
             """.trimIndent())
         }
