@@ -1,3 +1,17 @@
+# [1.26.0](https://github.com/hoo-dles/morphe-patches/compare/v1.25.0...v1.26.0) (2026-04-19)
+
+
+### Features
+
+* **AdGuard:** Add `Enable Premium` patch ([623ae92](https://github.com/hoo-dles/morphe-patches/commit/623ae92c0ff85a9049306b942407daaf2f577393))
+
+# [1.26.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.25.0...v1.26.0-dev.1) (2026-04-18)
+
+
+### Features
+
+* **AdGuard:** Add `Enable Premium` patch ([623ae92](https://github.com/hoo-dles/morphe-patches/commit/623ae92c0ff85a9049306b942407daaf2f577393))
+
 # [1.25.0](https://github.com/hoo-dles/morphe-patches/compare/v1.24.0...v1.25.0) (2026-04-17)
 
 

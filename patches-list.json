@@ -1,5 +1,5 @@
 {
-  "version": "1.25.0",
+  "version": "1.26.0",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -205,6 +205,18 @@
       "compatiblePackages": {
         "me.mycake": [
           "6.4.0"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "use": true,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.adguard.android": [
+          "4.12.81"
         ]
       },
       "options": []
