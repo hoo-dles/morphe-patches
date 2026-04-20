@@ -1,3 +1,3 @@
 dependencies {
-    implementation(project(":extensions:shared:library"))
+    compileOnly(libs.morphe.extensions.library)
 }

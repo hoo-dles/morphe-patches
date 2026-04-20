@@ -1,0 +1,28 @@
+package hoodles.morphe.patches.ttmikstories.premium
+
+import app.morphe.patcher.patch.AppTarget
+import app.morphe.patcher.patch.Compatibility
+import app.morphe.patcher.patch.rawResourcePatch
+import hoodles.morphe.patches.shared.misc.hermes.hermesPatch
+
+@Suppress("unused")
+val enablePremiumPatch = rawResourcePatch(
+    name = "Enable Premium",
+    description = "Enables app features locked behind the subscription paywall. There is a strict version requirement for this patch."
+) {
+    compatibleWith(Compatibility(
+        name = "TTMIK Stories",
+        packageName = "app.ttmikstories.android",
+        appIconColor = 0xF45925,
+        targets = listOf(AppTarget("1.16.0"))
+    ))
+
+    dependsOn(hermesPatch {
+        //  Call1           r3, r3, r4
+        //      --> LoadConstTrue r3
+        //      --> Nop
+        //      --> Nop
+        //  PutNewOwnById   r0, r3, "isWhiteListUser"
+        setOf("51 03 03 04 40 00 03 F5 77" to "78 03 61 61 40 00 03 F5 77")
+    })
+}

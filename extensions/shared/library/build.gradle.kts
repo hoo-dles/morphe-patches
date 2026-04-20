@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "app.morphe.extension"
+    namespace = "hoodles.morphe.extension.shared"
     compileSdk = 36
 
     defaultConfig {
@@ -18,4 +18,5 @@ android {
 
 dependencies {
     compileOnly(libs.annotation)
+    implementation(libs.morphe.extensions.library)
 }

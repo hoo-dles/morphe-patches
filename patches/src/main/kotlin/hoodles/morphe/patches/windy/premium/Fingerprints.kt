@@ -1,0 +1,14 @@
+package hoodles.morphe.patches.windy.premium
+
+import app.morphe.patcher.Fingerprint
+
+object IsPremiumForWidgetFingerprint : Fingerprint(
+    parameters = listOf(),
+    returnType = "Z",
+    strings = listOf("premium")
+)
+
+object ShouldInterceptRequestFingerprint : Fingerprint(
+    definingClass = "/BridgeWebViewClient;",
+    name = "shouldInterceptRequest"
+)

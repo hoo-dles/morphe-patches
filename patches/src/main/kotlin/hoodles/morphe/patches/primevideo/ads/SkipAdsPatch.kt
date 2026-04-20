@@ -1,0 +1,56 @@
+package hoodles.morphe.patches.primevideo.ads
+
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
+import app.morphe.patcher.patch.bytecodePatch
+import hoodles.morphe.patches.primevideo.misc.extension.sharedExtensionPatch
+import hoodles.morphe.patches.primevideo.shared.Constants
+import app.morphe.util.*
+import com.android.tools.smali.dexlib2.AccessFlags
+import com.android.tools.smali.dexlib2.Opcode
+import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+
+@Suppress("unused")
+val skipAdsPatch = bytecodePatch(
+    name = "Skip ads",
+    description = "Automatically skips ads baked into the video stream.",
+) {
+    compatibleWith(Constants.COMPATIBILITY)
+
+    dependsOn(sharedExtensionPatch)
+
+    // Skip all the logic in ServerInsertedAdBreakState.enter(), which plays all the ad clips in this
+    // ad break. Instead, force the video player to seek over the entire break and reset the state machine.
+    execute {
+        // Force doTrigger() access to public so we can call it from our extension.
+        // Not necessary as of v3.0.443, keeping for backwards compat.
+        DoTriggerFingerprint.method.accessFlags = AccessFlags.PUBLIC.value;
+
+        EnterServerInsertedAdBreakStateFingerprint.method.apply {
+            // Get register that stores VideoPlayer:
+            //  invoke-virtual ->getPrimaryPlayer()
+            //  move-result-object { playerRegister }
+            val playerIndex = indexOfFirstInstructionOrThrow() {
+                opcode == Opcode.INVOKE_VIRTUAL && getReference<MethodReference>()?.name == "getPrimaryPlayer"
+            }
+            val playerRegister = getInstruction<OneRegisterInstruction>(playerIndex + 1).registerA
+
+            // Reuse the params from the original method:
+            //  p0 = ServerInsertedAdBreakState
+            //  p1 = AdBreakTrigger
+            addInstructions(
+                playerIndex + 2,
+                """
+                    invoke-static { p0, p1, v$playerRegister }, Lhoodles/morphe/extension/primevideo/ads/SkipAdsPatch;->enterServerInsertedAdBreakState(Lcom/amazon/avod/media/ads/internal/state/ServerInsertedAdBreakState;Lcom/amazon/avod/media/ads/internal/state/AdBreakTrigger;Lcom/amazon/avod/media/playback/VideoPlayer;)V
+                    return-void
+                """
+            )
+        }
+
+        // Return early from these callbacks to prevent unwanted overlays from ad breaks.
+        OnSeekBehindUnwatchedAdFingerprint.method.returnEarly()
+        OnSeekPastUnwatchedAdFingerprint.method.returnEarly()
+    }
+}
+
