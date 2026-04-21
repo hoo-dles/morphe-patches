@@ -1,3 +1,10 @@
+# [1.27.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.26.0...v1.27.0-dev.1) (2026-04-21)
+
+
+### Features
+
+* **XRecorder:** Add `Enable Pro` patch ([5e56f5d](https://github.com/hoo-dles/morphe-patches/commit/5e56f5d662c40aa01e46f2873a9d97363ac30a3b))
+
 # [1.26.0](https://github.com/hoo-dles/morphe-patches/compare/v1.25.0...v1.26.0) (2026-04-19)
 
 
