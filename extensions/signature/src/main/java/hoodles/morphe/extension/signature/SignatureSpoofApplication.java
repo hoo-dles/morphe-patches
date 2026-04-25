@@ -36,8 +36,8 @@ public class SignatureSpoofApplication extends Application implements Invocation
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         if ("getPackageInfo".equals(method.getName())) {
             String pkgName = (String) args[0];
-            int flag = ((Long) args[1]).intValue();
-            if ((flag & GET_SIGNATURES) != 0 && appPkgName.equals(pkgName)) {
+            long flags = ((Number) args[1]).longValue();
+            if ((flags & GET_SIGNATURES) != 0 && appPkgName.equals(pkgName)) {
                 PackageInfo info = (PackageInfo) method.invoke(base, args);
                 info.signatures = new Signature[] { new Signature(this.sign) };
                 return info;
