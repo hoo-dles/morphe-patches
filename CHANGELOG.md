@@ -1,3 +1,10 @@
+# [1.28.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.28.0-dev.1...v1.28.0-dev.2) (2026-04-25)
+
+
+### Bug Fixes
+
+* **XRecorder:** Support Android <14 ([94ba654](https://github.com/hoo-dles/morphe-patches/commit/94ba654184502b8c408df5069221eeb5c1a243e6))
+
 # [1.28.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.27.0...v1.28.0-dev.1) (2026-04-24)
 
 
