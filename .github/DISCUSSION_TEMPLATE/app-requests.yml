@@ -1,0 +1,57 @@
+title: "[App Name]"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!IMPORTANT]
+        > Please check existing discussions first! If the app is already requested, upvote it instead :arrow_up:
+
+  - type: input
+    id: app_name
+    attributes:
+      label: App Name
+      description: Full name of the app as shown on Play Store
+      placeholder: Really Cool App
+    validations:
+      required: true
+
+  - type: input
+    id: package_name
+    attributes:
+      label: Package Name
+      description: "Official android package name"
+      placeholder: com.reallycool.app
+    validations:
+      required: true
+
+  - type: textarea
+    id: features
+    attributes:
+      label: Requested Features
+      description: List the specific features you would like patched on this app
+      placeholder: |
+        - Unlock premium
+        - Remove ads
+        - Block telemetry
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Info
+      description: Any other details that may be helpful to patch development
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have verified that a suitable patch does not already exist on another community repo.
+          required: true
+        - label: I understand that server-side features (AI, cloud sync) cannot be patched.
+          required: true
+        - label: This app request is not for bypassing a region-lock (use a VPN).
+          required: true
