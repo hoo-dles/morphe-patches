@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-04-25T21:11:08",
-  "description": "# [1.28.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.28.0-dev.1...v1.28.0-dev.2) (2026-04-25)\n\n\n### Bug Fixes\n\n* **XRecorder:** Support Android <14 ([94ba654](https://github.com/hoo-dles/morphe-patches/commit/94ba654184502b8c408df5069221eeb5c1a243e6))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.28.0-dev.2/patches-1.28.0-dev.2.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.28.0-dev.2/patches-1.28.0-dev.2.mpp.asc",
-  "version": "1.28.0-dev.2"
+  "created_at": "2026-04-26T19:37:45",
+  "description": "# [1.28.0](https://github.com/hoo-dles/morphe-patches/compare/v1.27.0...v1.28.0) (2026-04-26)\n\n\n### Bug Fixes\n\n* **XRecorder:** Support Android <14 ([94ba654](https://github.com/hoo-dles/morphe-patches/commit/94ba654184502b8c408df5069221eeb5c1a243e6))\n\n\n### Features\n\n* **Proton VPN:** Add `Unlock LAN connections` patch ([e568677](https://github.com/hoo-dles/morphe-patches/commit/e568677dd5f3d87f7a51a957455fd196021c532c))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.28.0/patches-1.28.0.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.28.0/patches-1.28.0.mpp.asc",
+  "version": "1.28.0"
 }
