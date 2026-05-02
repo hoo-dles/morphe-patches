@@ -1,5 +1,5 @@
 {
-  "version": "1.29.0-dev.2",
+  "version": "1.29.0-dev.3",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -640,7 +640,7 @@
     },
     {
       "name": "Enable SoundCloud Go+",
-      "description": "",
+      "description": "Enables app features locked behind the subscription paywall.",
       "use": true,
       "dependencies": [
         "BytecodePatch"
@@ -650,6 +650,14 @@
           "2026.04.27-release"
         ]
       },
+      "options": []
+    },
+    {
+      "name": "Enable debug",
+      "description": "Enables debugging on the app by setting android:debuggable=\"true\".",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": null,
       "options": []
     },
     {

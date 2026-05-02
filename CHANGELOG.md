@@ -1,3 +1,15 @@
+# [1.29.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.29.0-dev.2...v1.29.0-dev.3) (2026-05-02)
+
+
+### Bug Fixes
+
+* **Soundcloud:** Remove remaining ad containers UI elements ([4b6322e](https://github.com/hoo-dles/morphe-patches/commit/4b6322e2018156d84164e6cc9c7be6850b0ffe79))
+
+
+### Features
+
+* Add `Enable debug` patch ([6222d59](https://github.com/hoo-dles/morphe-patches/commit/6222d591ff2e374e79a8239b390a9e78b88a3346))
+
 # [1.29.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.29.0-dev.1...v1.29.0-dev.2) (2026-05-02)
 
 
