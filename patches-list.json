@@ -1,5 +1,5 @@
 {
-  "version": "1.28.0",
+  "version": "1.29.0-dev.1",
   "patches": [
     {
       "name": "Block Permissions Request",
@@ -439,7 +439,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "cz.ackee.ventusky": [
-          "52.0"
+          "53.1"
         ]
       },
       "options": []

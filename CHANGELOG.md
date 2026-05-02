@@ -1,3 +1,10 @@
+# [1.29.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.28.0...v1.29.0-dev.1) (2026-05-02)
+
+
+### Features
+
+* **Ventusky:** Support v53.1 ([b3da1f5](https://github.com/hoo-dles/morphe-patches/commit/b3da1f505ab59b9271091650997becc5f26b4e67))
+
 # [1.28.0](https://github.com/hoo-dles/morphe-patches/compare/v1.27.0...v1.28.0) (2026-04-26)
 
 
