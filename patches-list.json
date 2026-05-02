@@ -1,6 +1,20 @@
 {
-  "version": "1.29.0-dev.1",
+  "version": "1.29.0-dev.2",
   "patches": [
+    {
+      "name": "AMOLED dark theme",
+      "description": "Changes the default dark theme to use true blacks for AMOLED screens.",
+      "use": false,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": {
+        "com.soundcloud.android": [
+          "2026.04.27-release"
+        ]
+      },
+      "options": []
+    },
     {
       "name": "Block Permissions Request",
       "description": "Blocks the request of notification permissions on load of app.",
@@ -164,7 +178,7 @@
       "dependencies": [],
       "compatiblePackages": {
         "com.soundcloud.android": [
-          "2026.03.20-release"
+          "2026.04.27-release"
         ]
       },
       "options": []
@@ -633,7 +647,7 @@
       ],
       "compatiblePackages": {
         "com.soundcloud.android": [
-          "2026.03.20-release"
+          "2026.04.27-release"
         ]
       },
       "options": []

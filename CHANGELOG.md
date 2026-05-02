@@ -1,3 +1,10 @@
+# [1.29.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.29.0-dev.1...v1.29.0-dev.2) (2026-05-02)
+
+
+### Features
+
+* **Soundcloud:** Add `AMOLED dark theme` patch ([af51747](https://github.com/hoo-dles/morphe-patches/commit/af5174744f50ac91fc279d8159fc4374b06a9f49))
+
 # [1.29.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.28.0...v1.29.0-dev.1) (2026-05-02)
 
 
