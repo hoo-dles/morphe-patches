@@ -30,7 +30,7 @@ val enablePremiumPatch = bytecodePatch(
         UserConsumerPlanConstructorFingerprint.method.addInstructions(0, """
             const-string p1, "high_tier"
             const-string p5, "go-plus"
-            const-string p6, "SoundCloud Go+"
+            const-string p6, "SoundCloud Go"
         """.trimIndent())
 
         // Override "pending_plan_downgrade" shared pref to prevent Offboarding screen
