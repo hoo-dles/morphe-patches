@@ -1,5 +1,5 @@
 {
-  "version": "1.29.0-dev.3",
+  "version": "1.29.0",
   "patches": [
     {
       "name": "AMOLED dark theme",

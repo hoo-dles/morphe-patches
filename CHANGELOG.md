@@ -1,3 +1,17 @@
+# [1.29.0](https://github.com/hoo-dles/morphe-patches/compare/v1.28.0...v1.29.0) (2026-05-02)
+
+
+### Bug Fixes
+
+* **Soundcloud:** Remove remaining ad containers UI elements ([4b6322e](https://github.com/hoo-dles/morphe-patches/commit/4b6322e2018156d84164e6cc9c7be6850b0ffe79))
+
+
+### Features
+
+* Add `Enable debug` patch ([6222d59](https://github.com/hoo-dles/morphe-patches/commit/6222d591ff2e374e79a8239b390a9e78b88a3346))
+* **Soundcloud:** Add `AMOLED dark theme` patch ([af51747](https://github.com/hoo-dles/morphe-patches/commit/af5174744f50ac91fc279d8159fc4374b06a9f49))
+* **Ventusky:** Support v53.1 ([b3da1f5](https://github.com/hoo-dles/morphe-patches/commit/b3da1f505ab59b9271091650997becc5f26b4e67))
+
 # [1.29.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.29.0-dev.2...v1.29.0-dev.3) (2026-05-02)
 
 
