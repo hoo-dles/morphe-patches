@@ -6,6 +6,7 @@ import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 
 internal object HasPurchasedMethodFingerprint : Fingerprint(
+    definingClass = "Ll7/a;",
     accessFlags = listOf(AccessFlags.PRIVATE, AccessFlags.FINAL),
     returnType = "Z",
     filters = OpcodesFilter.opcodesToFilters(
