@@ -1,9 +1,9 @@
 package hoodles.morphe.patches.lightroom.misc.premium
 
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val unlockPremiumPatch = bytecodePatch(
@@ -18,7 +18,7 @@ val unlockPremiumPatch = bytecodePatch(
     ))
 
     execute {
-        // Set hasPurchased = true.
-        HasPurchasedMethodFingerprint.method.returnEarly(true)
+        // Set hasPremium = true.
+        HasPurchasedMethodFingerprint.method.replaceInstruction(2, "const/4 v2, 0x1")
     }
 }

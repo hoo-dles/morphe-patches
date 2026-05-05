@@ -1,9 +1,10 @@
 package hoodles.morphe.patches.lightroom.misc.login
 
+import app.morphe.patcher.extensions.InstructionExtensions.instructions
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.util.returnEarly
 
 @Suppress("unused")
 val disableMandatoryLoginPatch = bytecodePatch(
@@ -18,7 +19,8 @@ val disableMandatoryLoginPatch = bytecodePatch(
     ))
 
     execute {
-        // Set isLoggedIn = true.
-        IsLoggedInMethodFingerprint.method.returnEarly(true)
+        // Replace the second-to-last instruction to force isLoggedIn = true.
+        val index = IsLoggedInMethodFingerprint.method.instructions.lastIndex - 1
+        IsLoggedInMethodFingerprint.method.replaceInstruction(index, "const/4 v0, 0x1")
     }
 }
