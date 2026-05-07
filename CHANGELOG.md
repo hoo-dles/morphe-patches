@@ -1,3 +1,16 @@
+# [1.30.0](https://github.com/hoo-dles/morphe-patches/compare/v1.29.0...v1.30.0) (2026-05-07)
+
+
+### Bug Fixes
+
+* **Prime Video:** Update `Enable speed control` patch to support v3.0.452+ ([dda0f65](https://github.com/hoo-dles/morphe-patches/commit/dda0f654395cebbcb6a6e23414b1621d40149916))
+* **Soundcloud:** Change patch name and UI element to indicate only Go capabilities ([eb29d18](https://github.com/hoo-dles/morphe-patches/commit/eb29d184d597c492344a30e8760848fd6b304cc9))
+
+
+### Features
+
+* **CamScanner:** Add `Enable Premium` and `Disable telemetry` patches ([052ed4f](https://github.com/hoo-dles/morphe-patches/commit/052ed4feaf58574777496c1e301006a7cd58132f))
+
 # [1.30.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.29.1-dev.2...v1.30.0-dev.1) (2026-05-05)
 
 
