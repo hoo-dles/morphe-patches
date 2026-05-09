@@ -1,0 +1,63 @@
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to build"
+        required: true
+        default: "main"
+
+jobs:
+  build:
+    name: Build
+
+    permissions:
+      contents: write
+      packages: write
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout selected branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch }}
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Cache Gradle
+        uses: burrunan/gradle-cache-action@v3
+
+      - name: Grant execute permission
+        run: chmod +x gradlew
+
+      - name: Show current branch
+        run: |
+          echo "Building branch:"
+          git branch --show-current
+          echo "GitHub ref:"
+          echo ${{ github.ref }}
+
+      - name: Build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew clean :patches:buildAndroid generatePatchesList
+
+      - name: Show outputs
+        run: |
+          echo "=== patches/build/libs ==="
+          ls -lah patches/build/libs || true
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: morphe-patches-primevideo
+          path: |
+            patches/build/libs/*.mpp
+            patches/build/libs/*.json
