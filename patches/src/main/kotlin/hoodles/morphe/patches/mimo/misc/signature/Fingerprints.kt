@@ -6,8 +6,7 @@ import com.android.tools.smali.dexlib2.AccessFlags
 object SignatureBytesToStringFingerprint : Fingerprint(
     parameters = listOf("[B", "Z"),
     returnType = "Ljava/lang/String;",
-    accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC),
-    definingClass = "Lcom/google/android/gms/common/util/"
+    accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC)
 )
 
 object SignatureFromPackageFingerprint : Fingerprint(
