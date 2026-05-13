@@ -1,3 +1,10 @@
+## [1.31.1](https://github.com/hoo-dles/morphe-patches/compare/v1.31.0...v1.31.1) (2026-05-13)
+
+
+### Bug Fixes
+
+* **Mimo:** Update patch compatibility to v9.11 ([e627e75](https://github.com/hoo-dles/morphe-patches/commit/e627e7545d9768f846ad51bababf56932eb96532))
+
 ## [1.31.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.31.0...v1.31.1-dev.1) (2026-05-13)
 
 
