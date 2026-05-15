@@ -1,3 +1,10 @@
+# [1.32.0](https://github.com/hoo-dles/morphe-patches/compare/v1.31.1...v1.32.0) (2026-05-15)
+
+
+### Features
+
+* **GitHub:** Add `AMOLED dark theme` patch ([b7daebc](https://github.com/hoo-dles/morphe-patches/commit/b7daebcd563c8b12b1045ef6a1bbbe5afc3f4aa0))
+
 # [1.32.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.31.1...v1.32.0-dev.1) (2026-05-15)
 
 

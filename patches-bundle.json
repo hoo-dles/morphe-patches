@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-05-15T18:09:00",
-  "description": "# [1.32.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.31.1...v1.32.0-dev.1) (2026-05-15)\n\n\n### Features\n\n* **GitHub:** Add `AMOLED dark theme` patch ([b7daebc](https://github.com/hoo-dles/morphe-patches/commit/b7daebcd563c8b12b1045ef6a1bbbe5afc3f4aa0))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.32.0-dev.1/patches-1.32.0-dev.1.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.32.0-dev.1/patches-1.32.0-dev.1.mpp.asc",
-  "version": "1.32.0-dev.1"
+  "created_at": "2026-05-15T18:13:06",
+  "description": "# [1.32.0](https://github.com/hoo-dles/morphe-patches/compare/v1.31.1...v1.32.0) (2026-05-15)\n\n\n### Features\n\n* **GitHub:** Add `AMOLED dark theme` patch ([b7daebc](https://github.com/hoo-dles/morphe-patches/commit/b7daebcd563c8b12b1045ef6a1bbbe5afc3f4aa0))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.32.0/patches-1.32.0.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.32.0/patches-1.32.0.mpp.asc",
+  "version": "1.32.0"
 }
