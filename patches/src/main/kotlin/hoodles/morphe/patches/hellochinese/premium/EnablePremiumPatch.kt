@@ -25,7 +25,7 @@ val enablePremiumPatch = bytecodePatch(
         name = "HelloChinese",
         packageName = "com.hellochinese",
         appIconColor = 0xFFFFFF,
-        targets = listOf(AppTarget("7.9.25"))
+        targets = listOf(AppTarget("7.10.20"))
     ))
 
     dependsOn(nativePatch)

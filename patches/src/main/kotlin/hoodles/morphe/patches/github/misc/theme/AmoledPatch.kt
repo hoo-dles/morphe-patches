@@ -10,7 +10,6 @@ import app.morphe.util.addInstructionsAtControlFlowLabel
 import app.morphe.util.findElementByAttributeValue
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction35c
-import hoodles.morphe.patches.all.manifest.debug.enableDebugPatch
 
 val bytecodeOverrides = bytecodePatch {
     execute {

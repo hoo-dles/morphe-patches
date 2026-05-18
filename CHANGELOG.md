@@ -1,3 +1,10 @@
+## [1.32.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.32.0...v1.32.1-dev.1) (2026-05-18)
+
+
+### Bug Fixes
+
+* **Hello Chinese:** Bump version compatibility to 7.10.20 ([8251dda](https://github.com/hoo-dles/morphe-patches/commit/8251dda8300ccd14948b426c41bb782656315b03))
+
 # [1.32.0](https://github.com/hoo-dles/morphe-patches/compare/v1.31.1...v1.32.0) (2026-05-15)
 
 
