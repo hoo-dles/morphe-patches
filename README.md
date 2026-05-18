@@ -26,7 +26,7 @@
 | Eggbun                               | `kr.eggbun.eggconvo`                       | <ul><li>Enable Premium</li><li>Force native keyboard</li></ul>                                                                       |
 | FotMob                               | `com.mobilefootie.wc2010`                  | <ul><li>Enable FotMob+</li></ul>                                                                                                     |
 | GitHub                               | `com.github.android`                       | <ul><li>AMOLED dark theme</li></ul>                                                                                                  |
-| HelloChinese :dart: :computer:       | `com.hellochinese`                         | <ul><li>Enable Premium</li></ul>                                                                                                     |
+| HelloChinese :computer:              | `com.hellochinese`                         | <ul><li>Enable Premium</li></ul>                                                                                                     |
 | IbisPaint X :dart: :computer:        | `jp.ne.ibis.ibispaintx.app`                | <ul><li>Enable Prime membership</li></ul>                                                                                            |
 | Icon Packer                          | `cn.ommiao.iconpacker`                     | <ul><li>Unlocked premium features</li></ul>                                                                                          |
 | Lingory :dart: :computer:            | `org.languageapp.lingory`                  | <ul><li>Enable Premium</li></ul>                                                                                                     |
