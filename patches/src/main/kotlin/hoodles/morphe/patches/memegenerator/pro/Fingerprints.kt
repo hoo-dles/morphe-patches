@@ -3,7 +3,9 @@ package hoodles.morphe.patches.memegenerator.pro
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.literal
 import app.morphe.patcher.methodCall
+import app.morphe.patcher.opcode
 import com.android.tools.smali.dexlib2.AccessFlags
+import com.android.tools.smali.dexlib2.Opcode
 
 object IsFreeFingerprint : Fingerprint(
     parameters = listOf("Landroid/content/Context;"),
@@ -15,30 +17,22 @@ object IsCacheLicenseValidFingerprint : Fingerprint(
     returnType = "Z",
     filters = listOf(
         methodCall(name = "currentTimeMillis"),
+        literal(256),
         literal(60000)
     )
 )
 
-object CheckLicenseMillis : Fingerprint (
-    parameters = listOf("Landroid/content/Context;"),
-    returnType = "J",
-    strings = listOf("YzcPC7h384FA")
+object GetSignatureFingerprint : Fingerprint(
+    parameters = listOf("[B"),
+    returnType = "Ljava/lang/String;",
+    strings = listOf("SHA-1")
 )
 
-object CheckSignatures1Fingerprint : Fingerprint(
-    accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC),
-    parameters = listOf("Landroid/app/Activity;"),
-    returnType = "Z",
+object LicenseCheckFingerprint : Fingerprint(
+    parameters = listOf("Lcom/zombodroid/memegen6source/SplashActivity;"),
     filters = listOf(
-        methodCall(name = "toLowerCase")
-    )
-)
-
-object CheckSignatures2Fingerprint : Fingerprint(
-    parameters = listOf("Landroid/app/Activity;","L"),
-    returnType = "Ljava/lang/Boolean;",
-    filters = listOf(
-        literal(3.0f),
-        methodCall(name = "toLowerCase")
+        opcode(Opcode.CMP_LONG),
+        literal(1),
+        opcode(Opcode.IF_GEZ)
     )
 )
