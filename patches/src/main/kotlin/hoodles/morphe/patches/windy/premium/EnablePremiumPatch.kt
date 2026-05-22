@@ -24,7 +24,7 @@ val enablePremiumPatch = bytecodePatch(
         name = "Windy",
         packageName = "com.windyty.android",
         appIconColor = 0x9D0300,
-        targets = listOf(AppTarget("49.0.1"))
+        targets = listOf(AppTarget("50.0.2"))
     ))
 
     dependsOn(extensionPatch)

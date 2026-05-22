@@ -16,11 +16,11 @@ import app.morphe.extension.shared.Logger;
 public class EnablePremiumPatch {
     private static final Map<Pattern, String> replacements = new LinkedHashMap<>() {{
         // Patch `hasAny()` function
-        put(Pattern.compile("null!==\\w+\\.get\\(\"subscription\"\\),"), "true,");
+        put(Pattern.compile("null!==\\w+\\.get\\(`subscription`\\),"), "true,");
         // Patch logic run when null subscription is set
-        put(Pattern.compile("\\w+\\.set\\(\"detail1h\",!1\\),"), "");
-        put(Pattern.compile("set\\(\"subscription\",null\\),"), "set(\"subscription\",\"premium\"),");
-        put(Pattern.compile("\\w+&&document\\.body\\.classList\\.remove\\(\"subs-\"\\.concat\\(\\w+\\)\\),"), "document.body.classList.add(\"subs-premium\"),");
+        put(Pattern.compile("\\w+\\.set\\(`detail1h`,!1\\),"), "");
+        put(Pattern.compile("set\\(`subscription`,null\\),"), "set(\"subscription\",\"premium\"),");
+        put(Pattern.compile("\\w+&&document\\.body\\.classList\\.remove\\(`subs-\\$\\{\\w+\\}`\\),"), "document.body.classList.add(\"subs-premium\"),");
     }};
 
     public static void patchAppJavascript(WebResourceRequest request, WebResourceResponse response) {
