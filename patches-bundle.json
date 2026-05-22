@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-05-22T19:40:13",
-  "description": "# [1.33.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.32.1-dev.2...v1.33.0-dev.1) (2026-05-22)\n\n\n### Features\n\n* **Windy:** Update patch logic to support v50.0.2 ([32f606b](https://github.com/hoo-dles/morphe-patches/commit/32f606bdfda024569a7b97cf9eb5033fe4e05273))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.33.0-dev.1/patches-1.33.0-dev.1.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.33.0-dev.1/patches-1.33.0-dev.1.mpp.asc",
-  "version": "1.33.0-dev.1"
+  "created_at": "2026-05-22T23:12:42",
+  "description": "# [1.33.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.33.0-dev.1...v1.33.0-dev.2) (2026-05-22)\n\n\n### Features\n\n* **Meme Generator:** Update patch logic to support v4.6826 ([2fb3325](https://github.com/hoo-dles/morphe-patches/commit/2fb3325edac3f11b0b3d43d54bf3bb8cd887f1d9))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.33.0-dev.2/patches-1.33.0-dev.2.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.33.0-dev.2/patches-1.33.0-dev.2.mpp.asc",
+  "version": "1.33.0-dev.2"
 }

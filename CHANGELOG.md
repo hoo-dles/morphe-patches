@@ -1,3 +1,10 @@
+# [1.33.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.33.0-dev.1...v1.33.0-dev.2) (2026-05-22)
+
+
+### Features
+
+* **Meme Generator:** Update patch logic to support v4.6826 ([2fb3325](https://github.com/hoo-dles/morphe-patches/commit/2fb3325edac3f11b0b3d43d54bf3bb8cd887f1d9))
+
 # [1.33.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.32.1-dev.2...v1.33.0-dev.1) (2026-05-22)
 
 
