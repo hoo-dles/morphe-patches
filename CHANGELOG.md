@@ -1,3 +1,10 @@
+# [1.35.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.35.0-dev.2...v1.35.0-dev.3) (2026-06-07)
+
+
+### Bug Fixes
+
+* **Duolingo:** Update patches to support 6.82.3 ([fdfcae2](https://github.com/hoo-dles/morphe-patches/commit/fdfcae27edf25878a2c60c27b72858c01f14b4c5))
+
 # [1.35.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.35.0-dev.1...v1.35.0-dev.2) (2026-06-07)
 
 

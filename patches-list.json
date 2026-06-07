@@ -1,5 +1,5 @@
 {
-  "version": "1.35.0-dev.2",
+  "version": "1.35.0-dev.3",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -135,7 +135,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.77.5",
+              "version": "6.82.3",
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -274,7 +274,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.77.5",
+              "version": "6.82.3",
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -667,7 +667,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.77.5",
+              "version": "6.82.3",
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -1510,7 +1510,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.77.5",
+              "version": "6.82.3",
               "isExperimental": false,
               "minSdk": null,
               "description": null
