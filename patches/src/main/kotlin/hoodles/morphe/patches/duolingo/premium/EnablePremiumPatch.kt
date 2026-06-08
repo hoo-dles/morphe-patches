@@ -50,13 +50,13 @@ val enablePremiumPatch = bytecodePatch(
 
         // These fields are calculated in constructor, but not serialized. So we have to find their
         // name and set it late.
-        val isPaidField = UserIsPaidFieldUsageFingerprint.method.let {
-            val isPaidIndex = it.indexOfFirstInstructionOrThrow(Opcode.IGET_BOOLEAN)
-            it.getInstruction<ReferenceInstruction>(isPaidIndex).getReference<FieldReference>()!!
+        val isPaidField = UserIsPaidFieldUsageFingerprint.let {
+            val isPaidIndex = it.instructionMatches.first().index
+            it.method.getInstruction<ReferenceInstruction>(isPaidIndex).getReference<FieldReference>()!!
         }
-        val hasGoldField = UserHasGoldFieldUsageFingerprint.method.let {
-            val hasGoldIndex = it.indexOfFirstInstructionOrThrow(Opcode.IGET_BOOLEAN)
-            it.getInstruction<ReferenceInstruction>(hasGoldIndex).getReference<FieldReference>()!!
+        val hasGoldField = UserHasGoldFieldUsageFingerprint.let {
+            val hasGoldIndex = it.instructionMatches.first().index
+            it.method.getInstruction<ReferenceInstruction>(hasGoldIndex).getReference<FieldReference>()!!
         }
 
         // Remove final keyword on fields we want to patch.

@@ -1,6 +1,7 @@
 package hoodles.morphe.patches.duolingo.premium
 
 import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.fieldAccess
 
 // Matches LoggedInState.toString()
 object LoggedInStateFingerprint : Fingerprint(
@@ -12,20 +13,27 @@ object UserFingerprint : Fingerprint(
     strings = listOf("User(adsConfig=", ", id=", ", betaStatus=")
 )
 
-// Some method that has to do with subscription trials
 object UserIsPaidFieldUsageFingerprint : Fingerprint(
-    parameters = listOf("L", "L"),
+    definingClass = "Lcom/duolingo/sessionend/ads/",
+    name = "test",
+    parameters = listOf("Ljava/lang/Object;"),
     returnType = "Z",
-    strings = listOf("user", "onboardingState")
+    filters = listOf(
+        fieldAccess(
+            definingClass = "Lcom/duolingo/data/user/User;",
+            type = "Z"
+        )
+    )
 )
 
-// Some method that has to do with checking if MAX is enabled
 object UserHasGoldFieldUsageFingerprint : Fingerprint(
-    parameters = listOf("L", "L", "L"),
-    returnType = "L",
-    strings = listOf(
-        "maxFeaturesEnabled",
-        "isEmaEnabledInCourse",
-        "user"
+    classFingerprint = Fingerprint(
+        strings = listOf("VideoCallUserData(hasMax=", ", currentCourseId=")
+    ),
+    filters = listOf(
+        fieldAccess(
+            definingClass = "Lcom/duolingo/data/user/User;",
+            type = "Z"
+        )
     )
 )

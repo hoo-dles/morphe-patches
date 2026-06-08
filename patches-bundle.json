@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-05-28T23:00:52",
-  "description": "# [1.34.0](https://github.com/hoo-dles/morphe-patches/compare/v1.33.0...v1.34.0) (2026-05-28)\n\n\n### Bug Fixes\n\n* **MacroFactor Workouts:** Bump version compatibility ([5ac1195](https://github.com/hoo-dles/morphe-patches/commit/5ac119558e1ad128bed265c7629fb5559d787005))\n\n\n### Features\n\n* **Sleep as Android:** Add `Enable Premium` patch ([f20a97d](https://github.com/hoo-dles/morphe-patches/commit/f20a97df1426644b722dc8a0b7880ccbdaf61b97))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.34.0/patches-1.34.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.34.0/patches-1.34.0.mpp.asc",
-  "version": "1.34.0"
+  "created_at": "2026-06-07T19:32:38",
+  "description": "# [1.35.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.35.0-dev.2...v1.35.0-dev.3) (2026-06-07)\n\n\n### Bug Fixes\n\n* **Duolingo:** Update patches to support 6.82.3 ([fdfcae2](https://github.com/hoo-dles/morphe-patches/commit/fdfcae27edf25878a2c60c27b72858c01f14b4c5))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.35.0-dev.3/patches-1.35.0-dev.3.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.35.0-dev.3/patches-1.35.0-dev.3.mpp.asc",
+  "version": "1.35.0-dev.3"
 }

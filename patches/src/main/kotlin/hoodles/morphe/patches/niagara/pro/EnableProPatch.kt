@@ -4,6 +4,7 @@ import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
+import hoodles.morphe.patches.niagara.misc.signature.spoofSignaturePatch
 
 val enableProPatch = bytecodePatch(
     name = "Enable Niagara Pro",
@@ -13,8 +14,10 @@ val enableProPatch = bytecodePatch(
         name = "Niagara Launcher",
         packageName = "bitpit.launcher",
         appIconColor = 0x9fcdfb,
-        targets = listOf(AppTarget("1.16.4"))
+        targets = listOf(AppTarget("1.16.7"))
     ))
+
+    dependsOn(spoofSignaturePatch)
 
     execute {
         ProStateConstructorFingerprint.method.addInstructions(0, """

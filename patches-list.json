@@ -1,5 +1,5 @@
 {
-  "version": "1.34.0",
+  "version": "1.35.0-dev.3",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -135,7 +135,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.77.5",
+              "version": "6.82.3",
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -274,7 +274,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.77.5",
+              "version": "6.82.3",
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -448,7 +448,9 @@
       "name": "Enable Niagara Pro",
       "description": "Enables app features locked behind the subscription paywall.",
       "default": true,
-      "dependencies": [],
+      "dependencies": [
+        "BytecodePatch"
+      ],
       "compatiblePackages": [
         {
           "packageName": "bitpit.launcher",
@@ -459,7 +461,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "1.16.4",
+              "version": "1.16.7",
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -665,7 +667,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.77.5",
+              "version": "6.82.3",
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -906,6 +908,31 @@
           "targets": [
             {
               "version": "8.3_arm64",
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.michaldrabik.showly2",
+          "name": "Showly",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#F44336",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "3.70.0",
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -1483,7 +1510,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.77.5",
+              "version": "6.82.3",
               "isExperimental": false,
               "minSdk": null,
               "description": null

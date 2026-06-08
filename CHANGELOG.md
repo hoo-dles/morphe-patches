@@ -1,3 +1,24 @@
+# [1.35.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.35.0-dev.2...v1.35.0-dev.3) (2026-06-07)
+
+
+### Bug Fixes
+
+* **Duolingo:** Update patches to support 6.82.3 ([fdfcae2](https://github.com/hoo-dles/morphe-patches/commit/fdfcae27edf25878a2c60c27b72858c01f14b4c5))
+
+# [1.35.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.35.0-dev.1...v1.35.0-dev.2) (2026-06-07)
+
+
+### Bug Fixes
+
+* **Niagara Launcher:** Add package signature and install source spoofing ([d905526](https://github.com/hoo-dles/morphe-patches/commit/d9055263bdd13c25432323bbc8b38f26fa9ebea0))
+
+# [1.35.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.34.0...v1.35.0-dev.1) (2026-05-29)
+
+
+### Features
+
+* **Showly:** Add `Enable Premium` patch ([939bd2f](https://github.com/hoo-dles/morphe-patches/commit/939bd2f1422d3667062f5e22817e7fe96e89ab0f))
+
 # [1.34.0](https://github.com/hoo-dles/morphe-patches/compare/v1.33.0...v1.34.0) (2026-05-28)
 
 
