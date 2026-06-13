@@ -1,3 +1,10 @@
+## [1.35.1](https://github.com/hoo-dles/morphe-patches/compare/v1.35.0...v1.35.1) (2026-06-12)
+
+
+### Bug Fixes
+
+* **MyFitnessPal:** Update patch to support 26.21.1 ([92ae67d](https://github.com/hoo-dles/morphe-patches/commit/92ae67d96711a7a6dc0d9845a3f2c6efb65878aa))
+
 ## [1.35.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.35.0...v1.35.1-dev.1) (2026-06-09)
 
 
