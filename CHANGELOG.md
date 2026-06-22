@@ -1,3 +1,10 @@
+## [1.36.1-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.36.1-dev.1...v1.36.1-dev.2) (2026-06-22)
+
+
+### Bug Fixes
+
+* **Xodo:** Update patch to support v10.15.0 ([c59eb5e](https://github.com/hoo-dles/morphe-patches/commit/c59eb5e00e08543771fd0a089c64fdb070d0028d))
+
 ## [1.36.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.36.0...v1.36.1-dev.1) (2026-06-22)
 
 

@@ -1,5 +1,5 @@
 {
-  "version": "1.36.1-dev.1",
+  "version": "1.36.1-dev.2",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -246,31 +246,6 @@
           "targets": [
             {
               "version": "6.6 build 002",
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Disable signature check",
-      "description": "Removes the anti-tamper protection, which verifies apk signature, causing the app to force close.",
-      "default": true,
-      "dependencies": [],
-      "compatiblePackages": [
-        {
-          "packageName": "com.xodo.pdf.reader",
-          "name": "Xodo",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": "#FFFFFF",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "10.13.0",
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -1397,11 +1372,11 @@
           "name": "Xodo",
           "description": null,
           "apkFileType": null,
-          "appIconColor": "#FFFFFF",
+          "appIconColor": "#C82C40",
           "signatures": null,
           "targets": [
             {
-              "version": "10.13.0",
+              "version": "10.15.0",
               "isExperimental": false,
               "minSdk": null,
               "description": null
