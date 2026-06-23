@@ -1,3 +1,25 @@
+## [1.36.1-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.36.1-dev.2...v1.36.1-dev.3) (2026-06-23)
+
+
+### Bug Fixes
+
+* **IbisPaint X:** Update to support v14.0.4 ([54ccd1c](https://github.com/hoo-dles/morphe-patches/commit/54ccd1c9892b9a8bac62859d3cb9672ca9ebe7e5))
+
+## [1.36.1-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.36.1-dev.1...v1.36.1-dev.2) (2026-06-22)
+
+
+### Bug Fixes
+
+* **Xodo:** Update patch to support v10.15.0 ([c59eb5e](https://github.com/hoo-dles/morphe-patches/commit/c59eb5e00e08543771fd0a089c64fdb070d0028d))
+
+## [1.36.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.36.0...v1.36.1-dev.1) (2026-06-22)
+
+
+### Bug Fixes
+
+* **Duolingo:** Update support for v6.83.4 and fix video calls for MAX ([941841f](https://github.com/hoo-dles/morphe-patches/commit/941841fb1d91477b62a9a5a87316dd9b124796d9))
+* **Pandora:** Update icon color ([46c9d1b](https://github.com/hoo-dles/morphe-patches/commit/46c9d1b90f7a90ba71e5b53231cc46136d3695e2))
+
 # [1.36.0](https://github.com/hoo-dles/morphe-patches/compare/v1.35.1...v1.36.0) (2026-06-13)
 
 

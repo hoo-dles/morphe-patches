@@ -1,7 +1,11 @@
 package hoodles.morphe.patches.duolingo.premium
 
 import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.InstructionLocation
 import app.morphe.patcher.fieldAccess
+import app.morphe.patcher.methodCall
+import app.morphe.patcher.opcode
+import com.android.tools.smali.dexlib2.Opcode
 
 // Matches LoggedInState.toString()
 object LoggedInStateFingerprint : Fingerprint(
@@ -14,9 +18,7 @@ object UserFingerprint : Fingerprint(
 )
 
 object UserIsPaidFieldUsageFingerprint : Fingerprint(
-    definingClass = "Lcom/duolingo/sessionend/ads/",
-    name = "test",
-    parameters = listOf("Ljava/lang/Object;"),
+    parameters = listOf("Lcom/duolingo/data/user/User;", "Lcom/duolingo/data/home/CoursePathInfo;", "Z", "Lcom/duolingo/core/experiments/ExperimentsRepository\$TreatmentRecord;"),
     returnType = "Z",
     filters = listOf(
         fieldAccess(
@@ -35,5 +37,19 @@ object UserHasGoldFieldUsageFingerprint : Fingerprint(
             definingClass = "Lcom/duolingo/data/user/User;",
             type = "Z"
         )
+    )
+)
+
+object HasVideoCallInPathFeatureFingerprint : Fingerprint(
+    filters = listOf(
+        fieldAccess(
+            name = "VIDEO_CALL_IN_PATH",
+            definingClass = "Lcom/duolingo/core/subscription/models/SubscriptionFeatures;"
+        ),
+        methodCall(
+            name = "contains",
+            location = InstructionLocation.MatchAfterImmediately()
+        ),
+        opcode(Opcode.MOVE_RESULT, InstructionLocation.MatchAfterImmediately())
     )
 )

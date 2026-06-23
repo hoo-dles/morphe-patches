@@ -3,6 +3,7 @@ package hoodles.morphe.patches.duolingo.premium
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.instructions
+import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.patch.stringOption
 import app.morphe.util.getReference
@@ -15,6 +16,7 @@ import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import hoodles.morphe.util.constructor
 import hoodles.morphe.util.fieldByName
 import app.morphe.util.indexOfFirstInstructionOrThrow
+import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import hoodles.morphe.patches.duolingo.shared.integrity.disableLoginIntegrityPatch
 import hoodles.morphe.util.removeFlag
 
@@ -100,6 +102,20 @@ val enablePremiumPatch = bytecodePatch(
             this.addInstructions(
                 patchIndex, instrSb.toString()
             )
+        }
+
+        if (optionIsMax) {
+            // I can't seem to find where SubscriptionFeatureGroup is stored in memory, so let's just
+            // patch all the relevant call sites where out feature is checked.
+            HasVideoCallInPathFeatureFingerprint.matchAll().forEach {
+                val resultIndex = it.instructionMatches.last().index
+                val resultReg = it.method.getInstruction<OneRegisterInstruction>(resultIndex).registerA
+                it.method.addInstructions(
+                    resultIndex + 1, """
+                const/4 v$resultReg, 0x1
+            """.trimIndent()
+                )
+            }
         }
     }
 }

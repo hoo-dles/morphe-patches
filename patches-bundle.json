@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-06-13T18:35:17",
-  "description": "# [1.36.0](https://github.com/hoo-dles/morphe-patches/compare/v1.35.1...v1.36.0) (2026-06-13)\n\n\n### Features\n\n* **RP Hypertrophy:** Add `Enable Premium` patch ([f2f109f](https://github.com/hoo-dles/morphe-patches/commit/f2f109f460b8ae03366f66dfaae823d53fa426c1))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.36.0/patches-1.36.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.36.0/patches-1.36.0.mpp.asc",
-  "version": "1.36.0"
+  "created_at": "2026-06-23T02:28:41",
+  "description": "## [1.36.1-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.36.1-dev.2...v1.36.1-dev.3) (2026-06-23)\n\n\n### Bug Fixes\n\n* **IbisPaint X:** Update to support v14.0.4 ([54ccd1c](https://github.com/hoo-dles/morphe-patches/commit/54ccd1c9892b9a8bac62859d3cb9672ca9ebe7e5))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.36.1-dev.3/patches-1.36.1-dev.3.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.36.1-dev.3/patches-1.36.1-dev.3.mpp.asc",
+  "version": "1.36.1-dev.3"
 }

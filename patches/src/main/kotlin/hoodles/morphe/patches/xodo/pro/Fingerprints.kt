@@ -5,7 +5,7 @@ import app.morphe.patcher.opcode
 import com.android.tools.smali.dexlib2.Opcode
 
 object IsProFingerprint : Fingerprint(
-    Fingerprint(
+    classFingerprint = Fingerprint(
         strings = listOf("Monthly", "Yearly"),
         parameters = listOf("I", "Ljava/lang/String;")
     ),

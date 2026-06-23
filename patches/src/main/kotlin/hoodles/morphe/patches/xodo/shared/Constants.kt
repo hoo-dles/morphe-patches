@@ -7,7 +7,7 @@ object Constants {
     val COMPATIBILITY = Compatibility(
         name = "Xodo",
         packageName = "com.xodo.pdf.reader",
-        appIconColor = 0xFFFFFF,
-        targets = listOf(AppTarget("10.13.0"))
+        appIconColor = 0xc82c40,
+        targets = listOf(AppTarget("10.15.0"))
     )
 }
