@@ -1,3 +1,10 @@
+## [1.36.1-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.36.1-dev.2...v1.36.1-dev.3) (2026-06-23)
+
+
+### Bug Fixes
+
+* **IbisPaint X:** Update to support v14.0.4 ([54ccd1c](https://github.com/hoo-dles/morphe-patches/commit/54ccd1c9892b9a8bac62859d3cb9672ca9ebe7e5))
+
 ## [1.36.1-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.36.1-dev.1...v1.36.1-dev.2) (2026-06-22)
 
 
