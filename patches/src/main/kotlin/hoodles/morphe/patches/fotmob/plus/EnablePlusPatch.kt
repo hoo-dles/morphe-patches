@@ -24,7 +24,7 @@ val enablePlusPatch = bytecodePatch(
         name = "FotMob",
         packageName = "com.mobilefootie.wc2010",
         appIconColor = 0x00985F,
-        targets = listOf(AppTarget("226.16092.20260302"))
+        targets = listOf(AppTarget("233.16900.20260611"))
     ))
 
     dependsOn(sharedExtensionPatch)
