@@ -21,7 +21,7 @@ val EnableCustomTabsPatch = bytecodePatch(
         val customTabsLauncherCtor = mutableClassDefBy(customTabsEnabledField.definingClass)
             .methods.first { it.name == "<init>" }
 
-        customTabsLauncherCtor.addInstructionsToEnd(1, """
+        customTabsLauncherCtor.addInstructionsToEnd("""
             const/4 v0, 0x1
             iput-boolean v0, p0, $customTabsEnabledField
         """.trimIndent())
