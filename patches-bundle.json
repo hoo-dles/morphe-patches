@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-06-27T16:37:07",
-  "description": "# [1.38.0](https://github.com/hoo-dles/morphe-patches/compare/v1.37.0...v1.38.0) (2026-06-27)\n\n\n### Features\n\n* **Goodreads:** Add `Disable ads` patch ([d9da4fe](https://github.com/hoo-dles/morphe-patches/commit/d9da4feed08dc0cac0b7556ce00287bd865d02ee))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.38.0/patches-1.38.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.38.0/patches-1.38.0.mpp.asc",
-  "version": "1.38.0"
+  "created_at": "2026-06-28T22:16:20",
+  "description": "## [1.38.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.38.0...v1.38.1-dev.1) (2026-06-28)\n\n\n### Bug Fixes\n\n* **Duolingo:** Update patches to support v6.85.7 ([de14559](https://github.com/hoo-dles/morphe-patches/commit/de14559633f8294b810d5ad4d625b3fe052e3482))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.38.1-dev.1/patches-1.38.1-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.38.1-dev.1/patches-1.38.1-dev.1.mpp.asc",
+  "version": "1.38.1-dev.1"
 }

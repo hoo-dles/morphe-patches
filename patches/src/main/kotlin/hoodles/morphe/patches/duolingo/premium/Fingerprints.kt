@@ -5,6 +5,7 @@ import app.morphe.patcher.InstructionLocation
 import app.morphe.patcher.fieldAccess
 import app.morphe.patcher.methodCall
 import app.morphe.patcher.opcode
+import app.morphe.patcher.string
 import com.android.tools.smali.dexlib2.Opcode
 
 // Matches LoggedInState.toString()
@@ -30,7 +31,7 @@ object UserIsPaidFieldUsageFingerprint : Fingerprint(
 
 object UserHasGoldFieldUsageFingerprint : Fingerprint(
     classFingerprint = Fingerprint(
-        strings = listOf("VideoCallUserData(hasMax=", ", currentCourseId=")
+        strings = listOf("MaxHooksUserData(isAdmin=")
     ),
     filters = listOf(
         fieldAccess(
@@ -40,10 +41,10 @@ object UserHasGoldFieldUsageFingerprint : Fingerprint(
     )
 )
 
-object HasVideoCallInPathFeatureFingerprint : Fingerprint(
+fun getFeatureFingerprint(feature: String) = Fingerprint(
     filters = listOf(
         fieldAccess(
-            name = "VIDEO_CALL_IN_PATH",
+            name = feature,
             definingClass = "Lcom/duolingo/core/subscription/models/SubscriptionFeatures;"
         ),
         methodCall(
@@ -51,5 +52,13 @@ object HasVideoCallInPathFeatureFingerprint : Fingerprint(
             location = InstructionLocation.MatchAfterImmediately()
         ),
         opcode(Opcode.MOVE_RESULT, InstructionLocation.MatchAfterImmediately())
+    )
+)
+
+object VideoCallTabCtaButtonStateToStringFingerprint : Fingerprint(
+    strings = listOf("VideoCallTabCtaButtonState(userHasMax="),
+    filters = listOf(
+        string(", isEligibleForSecondaryUpsell="),
+        opcode(Opcode.IGET_BOOLEAN)
     )
 )

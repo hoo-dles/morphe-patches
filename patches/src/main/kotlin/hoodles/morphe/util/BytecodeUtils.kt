@@ -11,8 +11,8 @@ import com.android.tools.smali.dexlib2.iface.ClassDef
 /**
  * Get the first constructor.
  */
-internal fun MutableClass.constructor() =
-    this.methods.first { AccessFlags.CONSTRUCTOR.isSet(it.accessFlags) }
+internal fun MutableClass.constructor(isStatic: Boolean = false) =
+    this.methods.first { it.name == (if (isStatic) "<clinit>" else "<init>") }
 
 /**
  * Returns true if provided `AccessFlags` is set.

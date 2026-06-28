@@ -17,7 +17,9 @@ import hoodles.morphe.util.constructor
 import hoodles.morphe.util.fieldByName
 import app.morphe.util.indexOfFirstInstructionOrThrow
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import com.android.tools.smali.dexlib2.iface.instruction.TwoRegisterInstruction
 import hoodles.morphe.patches.duolingo.shared.integrity.disableLoginIntegrityPatch
+import hoodles.morphe.util.addInstructionsToEnd
 import hoodles.morphe.util.removeFlag
 
 enum class PremiumVariant {
@@ -106,15 +108,35 @@ val enablePremiumPatch = bytecodePatch(
 
         if (optionIsMax) {
             // I can't seem to find where SubscriptionFeatureGroup is stored in memory, so let's just
-            // patch all the relevant call sites where out feature is checked.
-            HasVideoCallInPathFeatureFingerprint.matchAll().forEach {
-                val resultIndex = it.instructionMatches.last().index
-                val resultReg = it.method.getInstruction<OneRegisterInstruction>(resultIndex).registerA
-                it.method.addInstructions(
-                    resultIndex + 1, """
-                const/4 v$resultReg, 0x1
-            """.trimIndent()
-                )
+            // patch all the relevant call sites where the feature is checked.
+            val features = listOf("VIDEO_CALL_IN_PATH", "VIDEO_CALL_IN_PRACTICE_HUB")
+            features.forEach { feature ->
+                getFeatureFingerprint(feature).matchAll().forEach { match ->
+                    val resultIndex = match.instructionMatches.last().index
+                    val resultReg = match.method.getInstruction<OneRegisterInstruction>(resultIndex).registerA
+                    match.method.addInstructions(
+                        resultIndex + 1, """
+                            const/4 v$resultReg, 0x1
+                        """.trimIndent()
+                    )
+                }
+            }
+
+            // Video call from bottom nav is gated by isEligibleForSecondaryUpsell, which will
+            // force upsell purchase activity if true. I don't know where this comes from either,
+            // so patch at VideoCallTabCtaButtonState initialization.
+            VideoCallTabCtaButtonStateToStringFingerprint.apply {
+                val upsellField = instructionMatches.last().getFieldAccessed()
+                classDef.constructor().also {
+                    val setFieldIndex = it.indexOfFirstInstructionOrThrow {
+                        getReference<FieldReference>()?.name == upsellField.name
+                    }
+                    val paramReg = it.getInstruction<TwoRegisterInstruction>(setFieldIndex).registerA
+
+                    it.addInstructions(setFieldIndex, """
+                        const/4 v$paramReg, 0x0
+                    """.trimIndent())
+                }
             }
         }
     }
