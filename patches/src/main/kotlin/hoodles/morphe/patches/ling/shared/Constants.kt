@@ -8,6 +8,6 @@ internal object Constants {
         name = "Ling",
         packageName = "com.simyasolutions.ling.universal",
         appIconColor = 0xF8485E,
-        targets = listOf(AppTarget("8.4.3"))
+        targets = listOf(AppTarget("8.4.4"))
     )
 }

@@ -4,10 +4,8 @@ import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.rawResourcePatch
 import hoodles.morphe.patches.shared.misc.hermes.hermesPatch
+import hoodles.morphe.util.HermesConstants.RETURN_TRUE
 
-//  LoadConstTrue         r0
-//  Ret                   r0
-const val RETURN_TRUE = "78 00 5c 00"
 
 @Suppress("unused")
 val enablePlusPatch = rawResourcePatch(
