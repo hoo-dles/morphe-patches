@@ -22,7 +22,7 @@ val enablePremiumPatch = bytecodePatch(
         name = "AdGuard",
         packageName = "com.adguard.android",
         appIconColor = 0x67b279,
-        targets = listOf(AppTarget("4.13.0"))
+        targets = listOf(AppTarget("4.13.1"))
     ))
 
     execute {

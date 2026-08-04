@@ -571,7 +571,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "4.13.0",
+              "version": "4.13.1",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
