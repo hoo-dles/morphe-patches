@@ -1,3 +1,10 @@
+# [1.42.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.1...v1.42.0-dev.2) (2026-08-24)
+
+
+### Features
+
+* **Bunpo:** Add `Enable Platinum` patch ([12609cd](https://github.com/hoo-dles/morphe-patches/commit/12609cd74699aba58fc82670529304ca3d6cf1ec))
+
 # [1.42.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.41.0...v1.42.0-dev.1) (2026-08-24)
 
 
