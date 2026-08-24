@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-08-18T04:14:13",
-  "description": "# [1.41.0](https://github.com/hoo-dles/morphe-patches/compare/v1.40.0...v1.41.0) (2026-08-18)\n\n\n### Bug Fixes\n\n* **Duolingo:** Force max energy ([969359c](https://github.com/hoo-dles/morphe-patches/commit/969359c24d2d3ac6d75e06eb052c0f3cc7911b62))\n\n\n### Features\n\n* **Duolingo:** Update patches to support `6.92.5` ([dca61c3](https://github.com/hoo-dles/morphe-patches/commit/dca61c3c602aecb8c0b6fcc79a4368c4bb59cf67))\n* **MyFitnessPal:** Update patches to support `26.31.0` ([4d50bf9](https://github.com/hoo-dles/morphe-patches/commit/4d50bf9db7d4bd1ac32f393036683090429232c2))\n* **Smart Launcher:** Update patches to support `6.6 build 016` ([1218a1d](https://github.com/hoo-dles/morphe-patches/commit/1218a1d902fd28e90528765c8e6396df28d8981e))\n* **Windy:** Update patches to support `51.0.1` ([634ad8a](https://github.com/hoo-dles/morphe-patches/commit/634ad8aa627ce3f35ecc023d0e0df0f015b4c53c))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.41.0/patches-1.41.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.41.0/patches-1.41.0.mpp.asc",
-  "version": "1.41.0"
+  "created_at": "2026-08-24T03:55:56",
+  "description": "# [1.42.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.41.0...v1.42.0-dev.1) (2026-08-24)\n\n\n### Features\n\n* **Lightroom:** Update patches to support `11.5.01` ([fdf6b2e](https://github.com/hoo-dles/morphe-patches/commit/fdf6b2e7fc5230934405816337bf84679a2d6e10))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.42.0-dev.1/patches-1.42.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.42.0-dev.1/patches-1.42.0-dev.1.mpp.asc",
+  "version": "1.42.0-dev.1"
 }

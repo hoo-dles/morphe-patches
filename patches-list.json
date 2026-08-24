@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.41.0",
+  "version": "1.42.0-dev.1",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -89,7 +89,7 @@
     {
       "name": "Bypass login",
       "description": "Allows app use without login. BUT breaks many features. There is a strict version requirement for this patch and only arm64-v8a devices are supported.",
-      "default": false,
+      "default": true,
       "dependencies": [
         "BytecodePatch"
       ],
@@ -103,7 +103,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "11.4.5",
+              "version": "11.5.01",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -774,7 +774,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "7.10.20",
+              "version": "7.11.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -2072,7 +2072,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "11.4.5",
+              "version": "11.5.01",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

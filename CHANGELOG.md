@@ -1,3 +1,10 @@
+# [1.42.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.41.0...v1.42.0-dev.1) (2026-08-24)
+
+
+### Features
+
+* **Lightroom:** Update patches to support `11.5.01` ([fdf6b2e](https://github.com/hoo-dles/morphe-patches/commit/fdf6b2e7fc5230934405816337bf84679a2d6e10))
+
 # [1.41.0](https://github.com/hoo-dles/morphe-patches/compare/v1.40.0...v1.41.0) (2026-08-18)
 
 
