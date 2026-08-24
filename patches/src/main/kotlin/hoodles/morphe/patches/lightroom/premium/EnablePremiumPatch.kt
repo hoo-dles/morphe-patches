@@ -8,7 +8,8 @@ package hoodles.morphe.patches.lightroom.premium
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.util.returnEarly
 import hoodles.morphe.patches.lightroom.shared.Constants
-import hoodles.morphe.patches.lightroom.shared.pairip.stripPairipPatch
+import hoodles.morphe.patches.lightroom.shared.stripPairipPatch
+import hoodles.morphe.util.requireArm64
 
 val enablePremiumPatch = bytecodePatch(
     name = "Unlock premium features",
