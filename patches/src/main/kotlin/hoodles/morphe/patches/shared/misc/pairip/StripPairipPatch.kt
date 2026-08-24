@@ -1,3 +1,8 @@
+/**
+ * Copyright 2026 Hoo-dles
+ * https://github.com/hoo-dles/morphe-patches
+ */
+
 package hoodles.morphe.patches.shared.misc.pairip
 
 import app.morphe.patcher.patch.ApkArchitecture

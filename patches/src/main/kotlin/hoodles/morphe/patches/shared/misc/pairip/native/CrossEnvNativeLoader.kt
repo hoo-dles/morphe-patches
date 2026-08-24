@@ -1,11 +1,14 @@
+/**
+ * Copyright 2026 Hoo-dles
+ * https://github.com/hoo-dles/morphe-patches
+ */
+
 package hoodles.morphe.patches.shared.misc.pairip.native
 
 import android.annotation.SuppressLint
-import android.content.Context
 import app.morphe.util.inputStreamFromBundledResource
 import java.io.File
 import java.io.FileOutputStream
-import java.lang.reflect.Method
 import org.scijava.nativelib.NativeLoader
 
 const val NATIVE_DIR_PREFIX = "pairip/native"
