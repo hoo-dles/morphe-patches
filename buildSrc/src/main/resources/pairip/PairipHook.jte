@@ -3,7 +3,7 @@
 @import hoodles.morphe.codegen.pairip.*
 
 @param String appName
-@param JsonData data
+@param JavaCodegenData data
 
 package hoodles.morphe.extension.${appName}.pairip;
 
@@ -25,16 +25,16 @@ public class PairipHook {
     }
 
     private static void injectMethods() {
-        @for(Map.Entry<String, List<Field>> entry : data.getMethods().entrySet())
-            @for(Field field : entry.getValue())
+        @for(Map.Entry<String, List<JavaField>> entry : data.getMethods().entrySet())
+            @for(JavaField field : entry.getValue())
                 ${UtilsKt.getClassFromFqcn(entry.getKey())}.${field.getName()} = getMethod("${UtilsKt.getOwningClass(field.getValue())}", "${field.getValue()}");
             @endfor
         @endfor
     }
 
     private static void injectStrings() {
-        @for(Map.Entry<String, List<Field>> entry : data.getStrings().entrySet())
-            @for(Field field : entry.getValue())
+        @for(Map.Entry<String, List<JavaField>> entry : data.getStrings().entrySet())
+            @for(JavaField field : entry.getValue())
                 ${UtilsKt.getClassFromFqcn(entry.getKey())}.${field.getName()} = "${UtilsKt.toLiteral(field.getValue())}";
             @endfor
         @endfor

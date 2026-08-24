@@ -8,6 +8,6 @@ repositories {
 }
 
 dependencies {
-    implementation("gg.jte:jte:3.2.4")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0")
+    implementation(libs.jte)
+    implementation(libs.kotlinx.serialization.json)
 }
