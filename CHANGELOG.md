@@ -1,3 +1,10 @@
+# [1.42.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.2...v1.42.0-dev.3) (2026-08-26)
+
+
+### Features
+
+* **Lingodeer:** Add `Enable Premium` patch ([7b8f7c5](https://github.com/hoo-dles/morphe-patches/commit/7b8f7c5485b853f131de77970a903394e09fe4d0))
+
 # [1.42.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.1...v1.42.0-dev.2) (2026-08-24)
 
 
