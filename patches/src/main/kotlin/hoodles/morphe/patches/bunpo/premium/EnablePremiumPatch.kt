@@ -21,14 +21,16 @@ val sharedExtensionPatch = sharedExtensionPatch(
 
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Platinum",
-    description = "Enables app features locked behind the subscription paywall. There is a strict version requirement for this patch and only arm64-v8a devices are supported."
+    description = "Enables app features locked behind the subscription paywall."
 ) {
     compatibleWith(Compatibility(
         name = "Bunpo",
         packageName = "com.bunpoapp",
         appIconColor = 0xfdfdfd,
-        targets = listOf(AppTarget("3.20.0"))
+        targets = listOf(AppTarget("3.21.0"))
     ))
+
+    availability(requireArm64())
 
     dependsOn(stripPairipPatch, sharedExtensionPatch)
 
