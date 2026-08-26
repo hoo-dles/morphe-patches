@@ -1,7 +1,7 @@
 [versions]
 android-all = "14-robolectric-10818077"
 jte = "3.2.4"
-morphe-patcher = "1.9.0"
+morphe-patcher = "1.11.0"
 morphe-patches-library = "1.6.0"
 # Tracking https://github.com/google/smali/issues/100.
 slf4j-api = "2.0.18"

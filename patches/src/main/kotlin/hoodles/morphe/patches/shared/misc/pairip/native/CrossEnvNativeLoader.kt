@@ -6,6 +6,7 @@
 package hoodles.morphe.patches.shared.misc.pairip.native
 
 import android.annotation.SuppressLint
+import app.morphe.patcher.patch.ResourcePatchContext
 import app.morphe.util.inputStreamFromBundledResource
 import java.io.File
 import java.io.FileOutputStream
@@ -14,9 +15,9 @@ import org.scijava.nativelib.NativeLoader
 const val NATIVE_DIR_PREFIX = "pairip/native"
 
 object CrossEnvNativeLoader {
-    fun load(libName: String) {
+    fun load(libName: String, context: ResourcePatchContext) {
         val isAndroid = System.getProperty("java.vendor")?.contains("Android", ignoreCase = true) == true
-        if (isAndroid) AndroidLoader.load(libName) else DesktopLoader.load(libName)
+        if (isAndroid) AndroidLoader.load(libName, context.fileWorkspace) else DesktopLoader.load(libName)
     }
 }
 
@@ -28,8 +29,8 @@ private object DesktopLoader {
 
 private object AndroidLoader {
     @SuppressLint("SetWorldReadable", "UnsafeDynamicallyLoadedCode")
-    fun load(libName: String) {
-        val targetDir = File(getCodeCache(), "native_libs").apply { mkdirs() }
+    fun load(libName: String, codeCache: File) {
+        val targetDir = File(codeCache, "native_libs").apply { mkdirs() }
         val targetSoFile = File(targetDir, "lib$libName.so")
 
         targetDir.setWritable(true, true)
@@ -53,24 +54,5 @@ private object AndroidLoader {
         targetDir.setExecutable(true, false)
 
         System.load(targetSoFile.absolutePath)
-    }
-
-    @SuppressLint("SetWorldReadable", "SetWorldWritable")
-    private fun getCodeCache(): File {
-        val pkgName = File("/proc/self/cmdline")
-            .readText()
-            .trim { it <= ' ' }
-            .split(":")[0]
-
-        val codeCache = File("/data/data/$pkgName/code_cache")
-        val cache = File("/data/data/$pkgName/cache")
-
-        val target = when {
-            codeCache.exists() || codeCache.mkdirs() -> codeCache
-            cache.exists() || cache.mkdirs() -> cache
-            else -> File("/data/user/0/$pkgName/code_cache")
-        }
-
-        return target
     }
 }

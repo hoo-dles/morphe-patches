@@ -18,3 +18,7 @@ val requireRootMount = AvailabilityResolver {
         else -> PatchAvailability.UNAVAILABLE
     }
 }
+
+fun combine(vararg resolvers: AvailabilityResolver) = AvailabilityResolver {
+    type, architecture -> resolvers.map { it.resolve(type, architecture) }.maxBy { it.ordinal }
+}

@@ -5,6 +5,7 @@
 
 package hoodles.morphe.patches.shared.misc.pairip.native
 
+import app.morphe.patcher.logging.Logger
 import app.morphe.patcher.patch.rawResourcePatch
 import app.morphe.util.inputStreamFromBundledResource
 import kotlinx.serialization.json.Json
@@ -37,14 +38,20 @@ internal fun getNativeLibsPatch(app: String) = rawResourcePatch {
                 val lib = get(apkLibsPath + libName, true)
 
                 // decrypt .text
-                val elf = ElfFile.from(lib)
-                val offset = elf.firstSectionByName(".text").header.sh_offset
-                decryptElf(lib, offset, data.keystream)
+                if (data.keystream.isNotEmpty()) {
+                    val elf = ElfFile.from(lib)
+                    val offset = elf.firstSectionByName(".text").header.sh_offset
+                    decryptElf(lib, offset, data.keystream)
+                }
 
                 // fix GOT
-                val result = ElfPatcher.addRelocations(lib.path, data.relocations.toTypedArray())
-                if (!result)
-                    throw Error("Error patching native library ($libName)")
+                if (data.relocations.isNotEmpty()) {
+                    ElfPatcher.init(this)
+                    val result =
+                        ElfPatcher.patch(lib.path, data.relocations.toTypedArray())
+                    if (!result)
+                        throw Error("Error patching native library ($libName)")
+                }
             }
         }
     }
