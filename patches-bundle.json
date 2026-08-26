@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-08-26T06:32:00",
-  "description": "# [1.42.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.2...v1.42.0-dev.3) (2026-08-26)\n\n\n### Features\n\n* **Lingodeer:** Add `Enable Premium` patch ([7b8f7c5](https://github.com/hoo-dles/morphe-patches/commit/7b8f7c5485b853f131de77970a903394e09fe4d0))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.42.0-dev.3/patches-1.42.0-dev.3.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.42.0-dev.3/patches-1.42.0-dev.3.mpp.asc",
-  "version": "1.42.0-dev.3"
+  "created_at": "2026-08-26T22:52:12",
+  "description": "# [1.42.0-dev.4](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.3...v1.42.0-dev.4) (2026-08-26)\n\n\n### Bug Fixes\n\n* **Bunpo:** Bump version to `3.21.0` and fix runtime crash for older Android versions ([ba10ba8](https://github.com/hoo-dles/morphe-patches/commit/ba10ba885da57799a71352a7f03b5a2ac5601694))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.42.0-dev.4/patches-1.42.0-dev.4.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.42.0-dev.4/patches-1.42.0-dev.4.mpp.asc",
+  "version": "1.42.0-dev.4"
 }

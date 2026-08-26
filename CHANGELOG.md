@@ -1,3 +1,10 @@
+# [1.42.0-dev.4](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.3...v1.42.0-dev.4) (2026-08-26)
+
+
+### Bug Fixes
+
+* **Bunpo:** Bump version to `3.21.0` and fix runtime crash for older Android versions ([ba10ba8](https://github.com/hoo-dles/morphe-patches/commit/ba10ba885da57799a71352a7f03b5a2ac5601694))
+
 # [1.42.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.2...v1.42.0-dev.3) (2026-08-26)
 
 
