@@ -1,3 +1,10 @@
+# [1.42.0-dev.6](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.5...v1.42.0-dev.6) (2026-08-27)
+
+
+### Features
+
+* **Fotmob:** Update patch to support `236.17398.20260827` ([24073e7](https://github.com/hoo-dles/morphe-patches/commit/24073e77c1800df7d8ba682adb6a87c593aaeac2))
+
 # [1.42.0-dev.5](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.4...v1.42.0-dev.5) (2026-08-27)
 
 
