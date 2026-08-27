@@ -1,3 +1,11 @@
+# [1.42.0-dev.5](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.4...v1.42.0-dev.5) (2026-08-27)
+
+
+### Features
+
+* **Niagara Launcher:** Update patch to support `1.16.23` ([9928340](https://github.com/hoo-dles/morphe-patches/commit/99283403a6524f697ae2475a81e13ca8878e9c49))
+* **Soundcloud:** Update patches to support `2026.08.26-release` ([64b69a4](https://github.com/hoo-dles/morphe-patches/commit/64b69a468d636300a9b0f762d0c5a4b0005aa34c))
+
 # [1.42.0-dev.4](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.3...v1.42.0-dev.4) (2026-08-26)
 
 

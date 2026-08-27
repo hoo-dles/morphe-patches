@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.42.0-dev.4",
+  "version": "1.42.0-dev.5",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -47,7 +47,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "2026.04.27-release",
+              "version": "2026.08.26-release",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -373,7 +373,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "2026.04.27-release",
+              "version": "2026.08.26-release",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -465,7 +465,7 @@
               "description": null
             },
             {
-              "version": "1.16.15",
+              "version": "1.16.23",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1307,7 +1307,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "14.0.6",
+              "version": "14.0.11",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1497,7 +1497,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "3.5.16",
+              "version": "3.5.19",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1610,7 +1610,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "2026.04.27-release",
+              "version": "2026.08.26-release",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1852,7 +1852,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "3.5.16",
+              "version": "3.5.19",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
