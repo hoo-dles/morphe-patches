@@ -1,22 +1,22 @@
+/**
+ * Copyright 2026 Hoo-dles
+ * https://github.com/hoo-dles/morphe-patches
+ */
+
 package hoodles.morphe.patches.shared.misc.pairip
 
-import app.morphe.patcher.patch.BytecodePatch
-import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.patches.all.misc.hex.HexPatchBuilder
-import app.morphe.patches.all.misc.hex.hexPatch
+import app.morphe.patcher.patch.RawResourcePatch
+import app.morphe.patcher.patch.rawResourcePatch
 import hoodles.morphe.patches.shared.misc.pairip.bytecode.getBytecodePatch
 import hoodles.morphe.patches.shared.misc.pairip.extension.getExtensionPatch
-import hoodles.morphe.patches.shared.misc.pairip.resources.getPairipResourcesPatch
+import hoodles.morphe.patches.shared.misc.pairip.native.getNativeLibsPatch
+import hoodles.morphe.patches.shared.misc.pairip.resources.pairipResourcesPatch
 
-fun getStripPairipPatch(
-    appName: String,
-    useStub: Boolean = false,
-    replacements: (HexPatchBuilder.() -> Unit)? = null
-): BytecodePatch = bytecodePatch {
+fun getStripPairipPatch(appName: String): RawResourcePatch = rawResourcePatch {
     dependsOn(
-        getPairipResourcesPatch(useStub),
+        pairipResourcesPatch,
+        getNativeLibsPatch(appName),
         getBytecodePatch(appName),
         getExtensionPatch(appName)
     )
-    replacements?.also { dependsOn(hexPatch(false, it)) }
 }

@@ -14,12 +14,6 @@ import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 
-//object AccountStatusStaticCtorFingerprint : Fingerprint (
-//    definingClass = "Lcom/adobe/lrmobile/thfoundation/library/",
-//    name = "<clinit>",
-//    strings = listOf("created", "Created")
-//)
-
 object AccountStatusFromSharedPrefsFingerprint : Fingerprint (
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC),
     strings = listOf("THUser::AccountStatus", "created")

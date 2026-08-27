@@ -20,7 +20,11 @@ val enableProPatch = bytecodePatch(
     dependsOn(spoofSignaturePatch, changePackageInstallerPatch())
 
     execute {
-        ProStateConstructorFingerprint.method.addInstructions(0, """
+        val match = ProStateClassFingerprint.matchAll().mapNotNull {
+            ProStateConstructorFingerprint.matchOrNull(it.originalClassDef)
+        }.single()
+
+        match.method.addInstructions(0, """
             const/4 p1, 0x1
             const/4 p2, 0x1
         """.trimIndent())

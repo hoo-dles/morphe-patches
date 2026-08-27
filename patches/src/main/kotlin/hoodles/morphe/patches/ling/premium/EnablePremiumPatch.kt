@@ -13,7 +13,7 @@ import hoodles.morphe.util.HermesConstants.RETURN_TRUE
 @Suppress("unused")
 val enablePremiumPatch = rawResourcePatch(
     name = "Enable Pro",
-    description = "Enables app features locked behind the subscription paywall."
+    description = "Enables app features locked behind the subscription paywall. Requirements: strict apk version"
 ) {
     compatibleWith(Constants.COMPATIBILITY)
 

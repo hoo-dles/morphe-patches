@@ -11,15 +11,18 @@ import app.morphe.util.getReference
 import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 import hoodles.morphe.patches.lightroom.shared.Constants
-import hoodles.morphe.patches.lightroom.shared.pairip.stripPairipPatch
+import hoodles.morphe.patches.lightroom.shared.stripPairipPatch
+import hoodles.morphe.util.requireArm64
 
 @Suppress("unused")
 val bypassLoginPatch = bytecodePatch(
     name = "Bypass login",
-    description = "Allows app use without login. BUT breaks many features. There is a strict version requirement for this patch and only arm64-v8a devices are supported.",
+    description = "Allows app use without login. BUT breaks many features. Requirements: arm64-v8a, strict apk version",
     default = false
 ) {
     compatibleWith(Constants.COMPATIBILITY)
+
+    availability(requireArm64())
 
     dependsOn(stripPairipPatch)
 

@@ -8,10 +8,10 @@ package hoodles.morphe.codegen.pairip
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Field(val name: String, val value: String)
+data class JavaField(val name: String, val value: String)
 
 @Serializable
-data class JsonData(
-    val strings: Map<String, List<Field>>,
-    val methods: Map<String, List<Field>>
+data class JavaCodegenData(
+    val strings: Map<String, List<JavaField>>,
+    val methods: Map<String, List<JavaField>>
 )

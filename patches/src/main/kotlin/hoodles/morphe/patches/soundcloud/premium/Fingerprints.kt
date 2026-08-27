@@ -38,7 +38,7 @@ object GetDowngradeTierFingerprint : Fingerprint(
 )
 
 object MapToPlanFingerprint : Fingerprint(
-    definingClass = "/RemoteUpsellVisibilityController;",
+    definingClass = "UpsellVisibilityController;",
     name = "mapToPlan"
 )
 

@@ -15,6 +15,6 @@ object Constants {
         name = "Niagara Launcher",
         packageName = PACKAGE_NAME,
         appIconColor = 0x9fcdfb,
-        targets = listOf(AppTarget("1.16.7"), AppTarget("1.16.15"))
+        targets = listOf(AppTarget("1.16.7"), AppTarget("1.16.23"))
     )
 }

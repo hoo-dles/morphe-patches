@@ -10,6 +10,7 @@ import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.all.misc.hex.hexPatch
 import app.morphe.util.returnEarly
+import hoodles.morphe.util.requireArm64
 
 private val nativePatch = hexPatch( block = {
     val lib = "lib/arm64-v8a/libalg.so"
@@ -24,14 +25,16 @@ private val nativePatch = hexPatch( block = {
 @Suppress("unused")
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
-    description = "Enables app features locked behind the subscription paywall."
+    description = "Enables app features locked behind the subscription paywall. Requirements: arm64-v8a"
 ) {
     compatibleWith(Compatibility(
         name = "HelloChinese",
         packageName = "com.hellochinese",
         appIconColor = 0xFFFFFF,
-        targets = listOf(AppTarget("7.10.20"))
+        targets = listOf(AppTarget("7.11.0"))
     ))
+
+    availability(requireArm64())
 
     dependsOn(nativePatch)
 

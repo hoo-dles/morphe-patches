@@ -7,8 +7,8 @@ import gg.jte.ContentType
 import gg.jte.TemplateEngine
 import gg.jte.output.FileOutput
 import gg.jte.resolve.ResourceCodeResolver
-import hoodles.morphe.codegen.pairip.Field
-import hoodles.morphe.codegen.pairip.JsonData
+import hoodles.morphe.codegen.pairip.JavaField
+import hoodles.morphe.codegen.pairip.JavaCodegenData
 import hoodles.morphe.codegen.pairip.getClassFromFqcn
 import hoodles.morphe.codegen.pairip.getPackageFromFqcn
 import kotlinx.serialization.json.Json
@@ -18,6 +18,7 @@ import java.io.File
 
 abstract class GeneratePairipExtensionTask : DefaultTask() {
 
+    @Suppress("NewApi")
     @TaskAction
     fun generate() {
         val jsonMaps = project.project("patches").fileTree("pairip") {
@@ -37,7 +38,7 @@ abstract class GeneratePairipExtensionTask : DefaultTask() {
 
         jsonMaps.forEach { file ->
             val appName = file.nameWithoutExtension
-            val data = Json.decodeFromString<JsonData>(file.readText())
+            val data = Json.decodeFromString<JavaCodegenData>(file.readText())
 
             // Extension code
             val appExtRoot = genExtRoot.resolve(appName)
@@ -80,7 +81,7 @@ abstract class GeneratePairipExtensionTask : DefaultTask() {
                 appStubMain.resolve("AndroidManifest.xml")
             )
 
-            fun generateStubClasses(entries: Map<String, List<Field>>, jteTemplate: String) {
+            fun generateStubClasses(entries: Map<String, List<JavaField>>, jteTemplate: String) {
                 for ((fqcn, fields) in entries) {
                     val packageName = getPackageFromFqcn(fqcn)
                     val packagePath = appStubJava.resolve(packageName.replace(".", "/"))

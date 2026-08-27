@@ -39,5 +39,5 @@ object LifetimeEntitlementFingerprint : Fingerprint(
 )
 
 object EntitlementFingerprint : Fingerprint(
-    strings = listOf("Entitlement(identifier=")
+    strings = listOf("Entitlement(identifier=", ", localizedName=")
 )

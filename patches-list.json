@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.41.0",
+  "version": "1.42.0-dev.6",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -47,7 +47,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "2026.04.27-release",
+              "version": "2026.08.26-release",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -91,7 +91,7 @@
       "description": "Allows app use without login. BUT breaks many features. There is a strict version requirement for this patch and only arm64-v8a devices are supported.",
       "default": false,
       "dependencies": [
-        "BytecodePatch"
+        "RawResourcePatch"
       ],
       "compatiblePackages": [
         {
@@ -103,7 +103,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "11.4.5",
+              "version": "11.5.01",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -373,7 +373,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "2026.04.27-release",
+              "version": "2026.08.26-release",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -429,7 +429,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "226.16092.20260302",
+              "version": "236.17398.20260827",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -465,7 +465,7 @@
               "description": null
             },
             {
-              "version": "1.16.15",
+              "version": "1.16.23",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -492,6 +492,35 @@
           "targets": [
             {
               "version": "26.3.20",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Enable Platinum",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "default": true,
+      "dependencies": [
+        "RawResourcePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.bunpoapp",
+          "name": "Bunpo",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FDFDFD",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "3.21.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -774,7 +803,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "7.10.20",
+              "version": "7.11.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -860,53 +889,6 @@
           "targets": [
             {
               "version": "1.551",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Enable Premium",
-      "description": "REQUIRES ROOT MOUNT INSTALL! Enables app features locked behind the subscription paywall.",
-      "default": true,
-      "dependencies": [
-        "BytecodePatch",
-        "BytecodePatch",
-        "BytecodePatch"
-      ],
-      "compatiblePackages": [
-        {
-          "packageName": "com.sbs.diet",
-          "name": "MacroFactor",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": "#000000",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "5.7.9",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        },
-        {
-          "packageName": "com.sbs.train",
-          "name": "MacroFactor Workouts",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": "#000000",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "1.2.1",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1184,6 +1166,81 @@
       "options": []
     },
     {
+      "name": "Enable Premium (ROOT)",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "default": true,
+      "dependencies": [
+        "RawResourcePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.lingodeer",
+          "name": "Lingodeer",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#38D06C",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "2.99.412",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Enable Premium (ROOT)",
+      "description": "Enables app features locked behind the subscription paywall.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch",
+        "BytecodePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.sbs.diet",
+          "name": "MacroFactor",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#000000",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "5.7.9",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "packageName": "com.sbs.train",
+          "name": "MacroFactor Workouts",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#000000",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "1.2.1",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Enable Premium+",
       "description": "Enables app features locked behind the subscription paywall.",
       "default": true,
@@ -1250,7 +1307,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "14.0.6",
+              "version": "14.0.11",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1440,7 +1497,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "3.5.16",
+              "version": "3.5.19",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1553,7 +1610,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "2026.04.27-release",
+              "version": "2026.08.26-release",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1795,7 +1852,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "3.5.16",
+              "version": "3.5.19",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -2060,7 +2117,7 @@
       "description": "Enables app features locked behind the subscription paywall. There is a strict version requirement for this patch and only arm64-v8a devices are supported.",
       "default": true,
       "dependencies": [
-        "BytecodePatch"
+        "RawResourcePatch"
       ],
       "compatiblePackages": [
         {
@@ -2072,7 +2129,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "11.4.5",
+              "version": "11.5.01",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

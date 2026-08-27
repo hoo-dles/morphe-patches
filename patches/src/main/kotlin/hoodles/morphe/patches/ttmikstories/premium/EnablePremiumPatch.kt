@@ -13,7 +13,7 @@ import hoodles.morphe.patches.shared.misc.hermes.hermesPatch
 @Suppress("unused")
 val enablePremiumPatch = rawResourcePatch(
     name = "Enable Premium",
-    description = "Enables app features locked behind the subscription paywall. There is a strict version requirement for this patch."
+    description = "Enables app features locked behind the subscription paywall. Requirements: strict apk version"
 ) {
     compatibleWith(Compatibility(
         name = "TTMIK Stories",

@@ -1,9 +1,10 @@
 [versions]
-morphe-patcher = "1.8.0-dev.3"
-morphe-patches-library = "1.5.2-dev.3"
-#morphe-patcher = "1.7.0"
-#morphe-patches-library = "1.5.1"
+android-all = "14-robolectric-10818077"
+jte = "3.2.4"
+morphe-patcher = "1.11.0"
+morphe-patches-library = "1.6.0"
 # Tracking https://github.com/google/smali/issues/100.
+slf4j-api = "2.0.18"
 smali = "d92701d947"
 agp = "9.1.0"
 annotation = "1.9.1"
@@ -11,8 +12,12 @@ gson = "2.14.0"
 guava = "33.6.0-jre"
 hiddenapibypass = "6.1"
 jelf = "0.12.0"
+kotlinx-serialization-json = "1.11.0"
+native-lib-loader = "2.5.0"
 
 [libraries]
+android-all = { module = "org.robolectric:android-all", version.ref = "android-all" }
+jte = { module = "gg.jte:jte", version.ref = "jte" }
 morphe-patches-library = { module = "app.morphe:morphe-patches-library", version.ref = "morphe-patches-library" }
 morphe-extensions-library = { module = "app.morphe:morphe-extensions-library", version.ref = "morphe-patches-library" }
 annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
@@ -20,6 +25,9 @@ gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
 hiddenbypassapi = { module = "org.lsposed.hiddenapibypass:hiddenapibypass", version.ref = "hiddenapibypass" }
 jelf = { module = "net.fornwall:jelf", version.ref = "jelf"}
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json"}
+native-lib-loader = { module = "org.scijava:native-lib-loader", version.ref = "native-lib-loader" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j-api" }
 
 [plugins]
 android-library = { id = "com.android.library" }

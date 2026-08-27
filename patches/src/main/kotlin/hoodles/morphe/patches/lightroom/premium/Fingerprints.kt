@@ -13,7 +13,7 @@ import com.android.tools.smali.dexlib2.Opcode
 
 object IsLTPUActiveFingerprint : Fingerprint (
     classFingerprint = Fingerprint(
-        strings = listOf("delayed_susi_without_first_time_paywall")
+        strings = listOf("LTPU test is not enabled for this user, skipping initialization.")
     ),
     returnType = "Z",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC, AccessFlags.FINAL),

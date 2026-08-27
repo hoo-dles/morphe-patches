@@ -13,6 +13,6 @@ object Constants {
         name = "Lightroom Mobile",
         packageName = "com.adobe.lrmobile",
         appIconColor = 0x001d35,
-        targets = listOf(AppTarget("11.4.5"))
+        targets = listOf(AppTarget("11.5.01"))
     )
 }

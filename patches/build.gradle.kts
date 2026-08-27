@@ -36,7 +36,15 @@ dependencies {
     // Used to read exported symbol from ELF libraries
     implementation(libs.jelf)
 
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.native.lib.loader) {
+        // bundled version clashes with newer runtime dependency
+        exclude(group = "org.slf4j", module = "slf4j-api")
+    }
+
     compileOnly(project(":patches:stub"))
+    compileOnly(libs.android.all)
+    compileOnly(libs.slf4j.api)
 }
 
 tasks {
@@ -66,4 +74,8 @@ kotlin {
 java {
     targetCompatibility = JavaVersion.VERSION_17
     sourceCompatibility = JavaVersion.VERSION_17
+}
+
+plugins {
+    kotlin("plugin.serialization") version "2.4.10"
 }
