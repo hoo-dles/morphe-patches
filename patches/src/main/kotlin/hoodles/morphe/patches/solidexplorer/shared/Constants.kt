@@ -13,6 +13,6 @@ object Constants {
         name = "Solid Explorer",
         packageName = "pl.solidexplorer2",
         appIconColor = 0x039BE5,
-        targets = listOf(AppTarget("3.5.16"))
+        targets = listOf(AppTarget("3.5.19"))
     )
 }
