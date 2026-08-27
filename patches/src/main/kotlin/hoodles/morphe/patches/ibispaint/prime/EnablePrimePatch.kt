@@ -9,6 +9,7 @@ import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.rawResourcePatch
 import app.morphe.util.byteArrayOf
+import hoodles.morphe.util.requireArm64
 import net.fornwall.jelf.ElfFile
 import net.fornwall.jelf.ElfSymbol
 import java.io.RandomAccessFile
@@ -16,7 +17,7 @@ import java.io.RandomAccessFile
 @Suppress("unused")
 val enablePrimePatch = rawResourcePatch(
     name = "Enable Prime membership",
-    description = "Enables app features locked behind the subscription paywall."
+    description = "Enables app features locked behind the subscription paywall. Requirements: arm64-v8a"
 ) {
     compatibleWith(Compatibility(
         name = "IbisPaint X",
@@ -24,6 +25,8 @@ val enablePrimePatch = rawResourcePatch(
         appIconColor = 0x0B649B,
         targets = listOf(AppTarget("14.0.11"))
     ))
+
+    availability(requireArm64())
 
     execute {
         val lib = get("lib/arm64-v8a/libibispaint.so", true)

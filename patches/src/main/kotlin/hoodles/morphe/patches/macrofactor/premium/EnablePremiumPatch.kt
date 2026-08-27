@@ -12,6 +12,7 @@ import hoodles.morphe.patches.macrofactor.misc.signature.spoofSignaturePatch
 import hoodles.morphe.patches.macrofactor.shared.Constants
 import hoodles.morphe.patches.shared.misc.extension.activityOnCreateExtensionHook
 import hoodles.morphe.patches.shared.misc.extension.sharedExtensionPatch
+import hoodles.morphe.util.requireRootMount
 
 internal val extensionPatch = sharedExtensionPatch(
     "macrofactor",
@@ -20,9 +21,11 @@ internal val extensionPatch = sharedExtensionPatch(
 
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium (ROOT)",
-    description = "Enables app features locked behind the subscription paywall."
+    description = "Enables app features locked behind the subscription paywall. Requirements: root mount"
 ) {
     compatibleWith(*Constants.COMPATIBILITY)
+
+    availability(requireRootMount)
 
     dependsOn(extensionPatch, spoofSignaturePatch, changePackageInstallerPatch())
 

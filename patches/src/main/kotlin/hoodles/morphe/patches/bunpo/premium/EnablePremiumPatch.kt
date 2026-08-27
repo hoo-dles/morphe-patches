@@ -21,7 +21,7 @@ val sharedExtensionPatch = sharedExtensionPatch(
 
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Platinum",
-    description = "Enables app features locked behind the subscription paywall."
+    description = "Enables app features locked behind the subscription paywall. Requirements: arm64-v8a, strict apk version"
 ) {
     compatibleWith(Compatibility(
         name = "Bunpo",

@@ -14,7 +14,7 @@ import hoodles.morphe.util.HermesConstants.RETURN_TRUE
 @Suppress("unused")
 val enablePlusPatch = rawResourcePatch(
     name = "Enable Plus",
-    description = "Enable Plus membership (not all features are available). There is a strict version requirement for this patch."
+    description = "Enable Plus membership (not all features are available). Requirements: strict apk version"
 ) {
     compatibleWith(Compatibility(
         name = "Cake",
