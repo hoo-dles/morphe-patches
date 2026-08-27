@@ -1,3 +1,20 @@
+# [1.42.0](https://github.com/hoo-dles/morphe-patches/compare/v1.41.0...v1.42.0) (2026-08-27)
+
+
+### Bug Fixes
+
+* **Bunpo:** Bump version to `3.21.0` and fix runtime crash for older Android versions ([ba10ba8](https://github.com/hoo-dles/morphe-patches/commit/ba10ba885da57799a71352a7f03b5a2ac5601694))
+
+
+### Features
+
+* **Bunpo:** Add `Enable Platinum` patch ([12609cd](https://github.com/hoo-dles/morphe-patches/commit/12609cd74699aba58fc82670529304ca3d6cf1ec))
+* **Fotmob:** Update patch to support `236.17398.20260827` ([24073e7](https://github.com/hoo-dles/morphe-patches/commit/24073e77c1800df7d8ba682adb6a87c593aaeac2))
+* **Lightroom:** Update patches to support `11.5.01` ([fdf6b2e](https://github.com/hoo-dles/morphe-patches/commit/fdf6b2e7fc5230934405816337bf84679a2d6e10))
+* **Lingodeer:** Add `Enable Premium` patch ([7b8f7c5](https://github.com/hoo-dles/morphe-patches/commit/7b8f7c5485b853f131de77970a903394e09fe4d0))
+* **Niagara Launcher:** Update patch to support `1.16.23` ([9928340](https://github.com/hoo-dles/morphe-patches/commit/99283403a6524f697ae2475a81e13ca8878e9c49))
+* **Soundcloud:** Update patches to support `2026.08.26-release` ([64b69a4](https://github.com/hoo-dles/morphe-patches/commit/64b69a468d636300a9b0f762d0c5a4b0005aa34c))
+
 # [1.42.0-dev.6](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0-dev.5...v1.42.0-dev.6) (2026-08-27)
 
 
