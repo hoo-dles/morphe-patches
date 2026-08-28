@@ -1,3 +1,10 @@
+## [1.42.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0...v1.42.1-dev.1) (2026-08-28)
+
+
+### Bug Fixes
+
+* **Niagara:** Bump supported version to `1.16.24` and fix patch failure ([d2344ae](https://github.com/hoo-dles/morphe-patches/commit/d2344ae2726b5ab5f7e14fa75e52d0990a8a22e5))
+
 # [1.42.0](https://github.com/hoo-dles/morphe-patches/compare/v1.41.0...v1.42.0) (2026-08-27)
 
 
