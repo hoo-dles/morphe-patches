@@ -1,3 +1,10 @@
+# [1.43.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.42.1-dev.1...v1.43.0-dev.1) (2026-08-28)
+
+
+### Features
+
+* **Bend:** Add `Enable Premium` patch ([d3ee74f](https://github.com/hoo-dles/morphe-patches/commit/d3ee74f73ad1239cb580a485e1c0bc97ab0510f1))
+
 ## [1.42.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0...v1.42.1-dev.1) (2026-08-28)
 
 

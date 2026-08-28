@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.42.1-dev.1",
+  "version": "1.43.0-dev.1",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -601,6 +601,35 @@
           "targets": [
             {
               "version": "3.0.18",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables app features locked behind the subscription paywall. Requirements: arm64-v8a, strict apk version",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.bowerydigital.bend",
+          "name": "Bend",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#1674A8",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "7.6.6",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

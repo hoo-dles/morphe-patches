@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-08-28T05:25:31",
-  "description": "## [1.42.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0...v1.42.1-dev.1) (2026-08-28)\n\n\n### Bug Fixes\n\n* **Niagara:** Bump supported version to `1.16.24` and fix patch failure ([d2344ae](https://github.com/hoo-dles/morphe-patches/commit/d2344ae2726b5ab5f7e14fa75e52d0990a8a22e5))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.42.1-dev.1/patches-1.42.1-dev.1.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.42.1-dev.1/patches-1.42.1-dev.1.mpp.asc",
-  "version": "1.42.1-dev.1"
+  "created_at": "2026-08-28T18:06:17",
+  "description": "# [1.43.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.42.1-dev.1...v1.43.0-dev.1) (2026-08-28)\n\n\n### Features\n\n* **Bend:** Add `Enable Premium` patch ([d3ee74f](https://github.com/hoo-dles/morphe-patches/commit/d3ee74f73ad1239cb580a485e1c0bc97ab0510f1))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.43.0-dev.1/patches-1.43.0-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.43.0-dev.1/patches-1.43.0-dev.1.mpp.asc",
+  "version": "1.43.0-dev.1"
 }
