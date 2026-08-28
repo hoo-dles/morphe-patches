@@ -1,4 +1,4 @@
-package hoodles.morphe.patches.bunpo.premium
+package hoodles.morphe.patches.shared.revenuecat
 
 import app.morphe.patcher.Fingerprint
 
