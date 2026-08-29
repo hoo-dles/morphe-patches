@@ -1,3 +1,10 @@
+# [1.43.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.43.0-dev.1...v1.43.0-dev.2) (2026-08-29)
+
+
+### Bug Fixes
+
+* **Showly:** Fix news feed not loading ([828698e](https://github.com/hoo-dles/morphe-patches/commit/828698efb3ece50b5e07a9cc8dcc4c4d3b1490e0))
+
 # [1.43.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.42.1-dev.1...v1.43.0-dev.1) (2026-08-28)
 
 
