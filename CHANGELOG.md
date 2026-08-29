@@ -1,3 +1,10 @@
+# [1.43.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.43.0-dev.2...v1.43.0-dev.3) (2026-08-29)
+
+
+### Bug Fixes
+
+* **AdGuard:** Add version code for correct APK discovery ([d08ac92](https://github.com/hoo-dles/morphe-patches/commit/d08ac92d55211c5b9faef91d94245cd076ed0550))
+
 # [1.43.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.43.0-dev.1...v1.43.0-dev.2) (2026-08-29)
 
 
