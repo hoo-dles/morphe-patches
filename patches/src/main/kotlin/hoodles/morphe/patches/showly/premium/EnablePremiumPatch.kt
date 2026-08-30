@@ -9,6 +9,8 @@ import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.util.returnEarly
+import hoodles.morphe.patches.showly.shared.Constants
+import hoodles.morphe.patches.showly.shared.spoofSignaturePatch
 
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
@@ -16,10 +18,12 @@ val enablePremiumPatch = bytecodePatch(
 ) {
     compatibleWith(Compatibility(
         name = "Showly",
-        packageName = "com.michaldrabik.showly2",
+        packageName = Constants.PACKAGE_NAME,
         appIconColor = 0xf44336,
         targets = listOf(AppTarget("3.70.0"))
     ))
+
+    dependsOn(spoofSignaturePatch)
 
     execute {
         IsPremiumFingerprint.method.returnEarly(true)

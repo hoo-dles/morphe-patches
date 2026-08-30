@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.42.0",
+  "version": "1.43.0-dev.3",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -465,7 +465,7 @@
               "description": null
             },
             {
-              "version": "1.16.23",
+              "version": "1.16.24",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -575,7 +575,12 @@
           "targets": [
             {
               "version": "4.13.2",
-              "versionCodes": null,
+              "versionCodes": {
+                "ARM64_V8A": 42119001,
+                "ARMEABI_V7A": 42119001,
+                "X86_64": 42119001,
+                "X86": 42119001
+              },
               "isExperimental": false,
               "minSdk": null,
               "description": null
@@ -601,6 +606,35 @@
           "targets": [
             {
               "version": "3.0.18",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Enable Premium",
+      "description": "Enables app features locked behind the subscription paywall. Requirements: arm64-v8a, strict apk version",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.bowerydigital.bend",
+          "name": "Bend",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#1674A8",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "7.6.6",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -957,7 +991,9 @@
       "name": "Enable Premium",
       "description": "Enables app features locked behind the subscription paywall.",
       "default": true,
-      "dependencies": [],
+      "dependencies": [
+        "BytecodePatch"
+      ],
       "compatiblePackages": [
         {
           "packageName": "com.michaldrabik.showly2",

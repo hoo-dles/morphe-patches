@@ -1,4 +1,4 @@
-package hoodles.morphe.extension.bunpo.premium;
+package hoodles.morphe.extension.revenuecat.entitlement;
 
 import com.revenuecat.purchases.EntitlementInfo;
 import com.revenuecat.purchases.OwnershipType;
@@ -11,7 +11,7 @@ import org.json.JSONObject;
 import java.util.Date;
 import java.util.Map;
 
-public class EnablePremiumPatch {
+public class EntitlementHelper {
     private static final long YEAR_IN_MS = 31536000000L;
     private static final Date now;
     private static final Date expiry;
@@ -21,8 +21,8 @@ public class EnablePremiumPatch {
         expiry = new Date(now.getTime() + YEAR_IN_MS);
     }
 
-    public static void addEntitlement(Map<String, EntitlementInfo> all, VerificationResult verification) {
+    public static void addEntitlement(Map<String, EntitlementInfo> all, VerificationResult verification, String entitlementName) {
         EntitlementInfo entitlement = new EntitlementInfo("", true, true, PeriodType.NORMAL, now, now, expiry, Store.PLAY_STORE, "", "", false, null, null, OwnershipType.PURCHASED, new JSONObject(), verification);
-        all.put("platinum", entitlement);
+        all.put(entitlementName, entitlement);
     }
 }

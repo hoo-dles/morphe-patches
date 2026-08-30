@@ -21,7 +21,8 @@ val enableProPatch = bytecodePatch(
 
     execute {
         val match = ProStateClassFingerprint.matchAll().mapNotNull {
-            ProStateConstructorFingerprint.matchOrNull(it.originalClassDef)
+            // Fingerprint objects cache results, so we need a new one each time
+            getProStateConstructorFingerprint().matchOrNull(it.originalClassDef)
         }.single()
 
         match.method.addInstructions(0, """

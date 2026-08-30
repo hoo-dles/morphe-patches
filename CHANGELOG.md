@@ -1,3 +1,31 @@
+# [1.43.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.43.0-dev.2...v1.43.0-dev.3) (2026-08-29)
+
+
+### Bug Fixes
+
+* **AdGuard:** Add version code for correct APK discovery ([d08ac92](https://github.com/hoo-dles/morphe-patches/commit/d08ac92d55211c5b9faef91d94245cd076ed0550))
+
+# [1.43.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.43.0-dev.1...v1.43.0-dev.2) (2026-08-29)
+
+
+### Bug Fixes
+
+* **Showly:** Fix news feed not loading ([828698e](https://github.com/hoo-dles/morphe-patches/commit/828698efb3ece50b5e07a9cc8dcc4c4d3b1490e0))
+
+# [1.43.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.42.1-dev.1...v1.43.0-dev.1) (2026-08-28)
+
+
+### Features
+
+* **Bend:** Add `Enable Premium` patch ([d3ee74f](https://github.com/hoo-dles/morphe-patches/commit/d3ee74f73ad1239cb580a485e1c0bc97ab0510f1))
+
+## [1.42.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0...v1.42.1-dev.1) (2026-08-28)
+
+
+### Bug Fixes
+
+* **Niagara:** Bump supported version to `1.16.24` and fix patch failure ([d2344ae](https://github.com/hoo-dles/morphe-patches/commit/d2344ae2726b5ab5f7e14fa75e52d0990a8a22e5))
+
 # [1.42.0](https://github.com/hoo-dles/morphe-patches/compare/v1.41.0...v1.42.0) (2026-08-27)
 
 

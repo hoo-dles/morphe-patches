@@ -12,7 +12,7 @@ object ProStateClassFingerprint : Fingerprint(
     strings = listOf("E(1=", ", 2=")
 )
 
-object ProStateConstructorFingerprint : Fingerprint(
+fun getProStateConstructorFingerprint() = Fingerprint(
     name = "<init>",
     parameters = listOf("Z", "Z", "Z")
 )
