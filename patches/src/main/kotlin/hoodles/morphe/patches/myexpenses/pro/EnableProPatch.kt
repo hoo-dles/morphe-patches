@@ -20,7 +20,7 @@ val enableProPatch = bytecodePatch(
         name = "MyExpenses",
         packageName = "org.totschnig.myexpenses",
         appIconColor = 0x428BCA,
-        targets = listOf(AppTarget("3.9.8"))
+        targets = listOf(AppTarget("4.1.1.2"))
     ))
 
     execute {
