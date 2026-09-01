@@ -1,3 +1,10 @@
+# [1.44.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.43.0...v1.44.0-dev.1) (2026-09-01)
+
+
+### Features
+
+* **ASL Bloom:** Add `Enable Premium` patch ([3dde853](https://github.com/hoo-dles/morphe-patches/commit/3dde853c2362849e336277e556e9a2e84a36137f))
+
 # [1.43.0](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0...v1.43.0) (2026-08-30)
 
 
