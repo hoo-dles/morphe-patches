@@ -1,4 +1,4 @@
-package hoodles.morphe.extension.revenuecat.entitlement;
+package hoodles.morphe.extension.revenuecat;
 
 import com.revenuecat.purchases.EntitlementInfo;
 import com.revenuecat.purchases.OwnershipType;
@@ -11,7 +11,7 @@ import org.json.JSONObject;
 import java.util.Date;
 import java.util.Map;
 
-public class EntitlementHelper {
+public class PurchaseHelper {
     private static final long YEAR_IN_MS = 31536000000L;
     private static final Date now;
     private static final Date expiry;
@@ -24,5 +24,9 @@ public class EntitlementHelper {
     public static void addEntitlement(Map<String, EntitlementInfo> all, VerificationResult verification, String entitlementName) {
         EntitlementInfo entitlement = new EntitlementInfo("", true, true, PeriodType.NORMAL, now, now, expiry, Store.PLAY_STORE, "", "", false, null, null, OwnershipType.PURCHASED, new JSONObject(), verification);
         all.put(entitlementName, entitlement);
+    }
+
+    public static void addProduct(Map<String, Date> allExpirationDatesByProduct, String productName) {
+        allExpirationDatesByProduct.put(productName, expiry);
     }
 }
