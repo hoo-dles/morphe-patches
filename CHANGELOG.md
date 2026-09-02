@@ -1,3 +1,10 @@
+# [1.44.0](https://github.com/OmerKurdi79/morphe-patches/compare/v1.43.0...v1.44.0) (2026-09-02)
+
+
+### Features
+
+* **hellochinese:** add Skip on first mistake lesson patch ([e6dc1f7](https://github.com/OmerKurdi79/morphe-patches/commit/e6dc1f7f31700dbd4712ab1364c273e3a5907706))
+
 # [1.43.0](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0...v1.43.0) (2026-08-30)
 
 

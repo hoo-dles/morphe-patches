@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.43.0",
+  "version": "1.44.0",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -826,34 +826,6 @@
       "default": true,
       "dependencies": [
         "RawResourcePatch"
-      ],
-      "compatiblePackages": [
-        {
-          "packageName": "com.hellochinese",
-          "name": "HelloChinese",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": "#FFFFFF",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "7.11.0",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Skip on first mistake",
-      "description": "Shows both skip and continue buttons from the first mistake.",
-      "default": true,
-      "dependencies": [
-        "BytecodePatch"
       ],
       "compatiblePackages": [
         {
@@ -2032,6 +2004,34 @@
           "targets": [
             {
               "version": "3.0.452.1047",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Skip on first mistake",
+      "description": "Shows both skip and continue buttons from the first mistake.",
+      "default": true,
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.hellochinese",
+          "name": "HelloChinese",
+          "description": null,
+          "apkFileType": null,
+          "appIconColor": "#FFFFFF",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "7.11.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
