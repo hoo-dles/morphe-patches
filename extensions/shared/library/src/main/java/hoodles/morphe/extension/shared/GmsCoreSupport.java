@@ -18,6 +18,7 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
@@ -53,6 +54,8 @@ public class GmsCoreSupport {
             = "?app=MicroG";
     private static final String BUILD_MANUFACTURER
             = Build.MANUFACTURER.toLowerCase(Locale.ROOT).replace(" ", "-");
+
+    private static final long MIN_REQUIRED_VERSION_CODE = 255070000L;
 
     /**
      * If a manufacturer specific page exists on DontKillMyApp.
@@ -134,7 +137,17 @@ public class GmsCoreSupport {
             // Verify GmsCore is installed.
             try {
                 PackageManager manager = context.getPackageManager();
-                manager.getPackageInfo(GMS_CORE_PACKAGE_NAME, PackageManager.GET_ACTIVITIES);
+                PackageInfo info = manager.getPackageInfo(GMS_CORE_PACKAGE_NAME, PackageManager.GET_ACTIVITIES);
+
+                // Check for minimum MicroG RE version
+                long version = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) ? info.getLongVersionCode() : info.versionCode;
+                if (version < MIN_REQUIRED_VERSION_CODE) {
+                    Logger.printInfo(() -> "Installed GmsCore does not meet minimum required version");
+                    Utils.showToastLong(str("gms_core_toast_new_version_required"));
+                    open(getGmsCoreDownload());
+                    return;
+                }
+
             } catch (PackageManager.NameNotFoundException exception) {
                 Logger.printInfo(() -> "GmsCore was not found");
                 // Cannot show a dialog and must show a toast,
