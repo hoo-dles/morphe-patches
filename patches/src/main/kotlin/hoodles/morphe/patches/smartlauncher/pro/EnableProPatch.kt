@@ -10,10 +10,10 @@ import app.morphe.patcher.extensions.InstructionExtensions.instructions
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.smali.ExternalLabel
 import app.morphe.util.getReference
-import hoodles.morphe.patches.smartlauncher.misc.signature.disableSignatureCheckPatch
-import hoodles.morphe.patches.smartlauncher.shared.Constants
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction21c
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
+import hoodles.morphe.patches.smartlauncher.misc.signature.disableSignatureCheckPatch
+import hoodles.morphe.patches.smartlauncher.shared.Constants
 
 @Suppress("unused")
 val enableProPatch = bytecodePatch(

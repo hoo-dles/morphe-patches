@@ -1,6 +1,6 @@
-@import java.util.Map
-@import java.util.List
 @import hoodles.morphe.codegen.pairip.*
+@import java.util.List
+@import java.util.Map
 
 @param String appName
 @param JavaCodegenData data

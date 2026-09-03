@@ -9,9 +9,9 @@ import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.util.addInstructionsToEnd
-import hoodles.morphe.patches.duolingo.shared.Constants
 import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
+import hoodles.morphe.patches.duolingo.shared.Constants
 import hoodles.morphe.patches.duolingo.shared.integrity.disableLoginIntegrityPatch
 import hoodles.morphe.util.constructor
 

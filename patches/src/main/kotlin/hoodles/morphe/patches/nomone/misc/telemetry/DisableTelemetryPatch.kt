@@ -7,8 +7,8 @@ package hoodles.morphe.patches.nomone.misc.telemetry
 
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.util.returnEarly
-import hoodles.morphe.patches.nomone.shared.tamper.disableAntiTamperPatch
 import hoodles.morphe.patches.nomone.shared.Constants
+import hoodles.morphe.patches.nomone.shared.tamper.disableAntiTamperPatch
 
 @Suppress("unused")
 val disableTelemetryPatch = bytecodePatch(

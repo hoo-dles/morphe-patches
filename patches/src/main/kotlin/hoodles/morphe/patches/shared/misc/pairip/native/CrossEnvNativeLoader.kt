@@ -8,9 +8,9 @@ package hoodles.morphe.patches.shared.misc.pairip.native
 import android.annotation.SuppressLint
 import app.morphe.patcher.patch.ResourcePatchContext
 import app.morphe.util.inputStreamFromBundledResource
+import org.scijava.nativelib.NativeLoader
 import java.io.File
 import java.io.FileOutputStream
-import org.scijava.nativelib.NativeLoader
 
 const val NATIVE_DIR_PREFIX = "pairip/native"
 

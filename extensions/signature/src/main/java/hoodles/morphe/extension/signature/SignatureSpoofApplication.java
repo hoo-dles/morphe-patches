@@ -17,12 +17,12 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Base64;
 
-import app.morphe.extension.shared.Logger;
+import org.lsposed.hiddenapibypass.HiddenApiBypass;
 
 import java.lang.reflect.Field;
 import java.util.Map;
 
-import org.lsposed.hiddenapibypass.HiddenApiBypass;
+import app.morphe.extension.shared.Logger;
 
 public class SignatureSpoofApplication extends Application {
     static {

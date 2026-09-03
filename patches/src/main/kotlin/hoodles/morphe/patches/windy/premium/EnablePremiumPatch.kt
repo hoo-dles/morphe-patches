@@ -11,7 +11,6 @@ import app.morphe.patcher.extensions.InstructionExtensions.instructions
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.util.returnBoxedBooleanEarly
 import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import hoodles.morphe.patches.shared.misc.extension.activityOnCreateExtensionHook

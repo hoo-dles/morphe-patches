@@ -9,8 +9,8 @@ import com.amazon.avod.fsm.SimpleTrigger;
 import com.amazon.avod.media.ads.AdBreak;
 import com.amazon.avod.media.ads.internal.state.AdBreakTrigger;
 import com.amazon.avod.media.ads.internal.state.AdEnabledPlayerTriggerType;
-import com.amazon.avod.media.playback.VideoPlayer;
 import com.amazon.avod.media.ads.internal.state.ServerInsertedAdBreakState;
+import com.amazon.avod.media.playback.VideoPlayer;
 
 import app.morphe.extension.shared.Logger;
 

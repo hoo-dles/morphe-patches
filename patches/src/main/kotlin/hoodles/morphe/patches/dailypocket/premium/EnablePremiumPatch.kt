@@ -9,8 +9,8 @@ import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.patch.rawResourcePatch
-import hoodles.morphe.patches.dailypocket.shared.Constants
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction21t
+import hoodles.morphe.patches.dailypocket.shared.Constants
 
 private val premiumWidgetPatch = bytecodePatch {
     execute {
