@@ -10,6 +10,8 @@ package hoodles.morphe.patches.shared.misc.gms
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
+import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.BytecodePatchBuilder
 import app.morphe.patcher.patch.BytecodePatchContext
@@ -17,10 +19,13 @@ import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.all.misc.extension.ExtensionHook
 import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 import app.morphe.util.findMutableMethodOf
+import app.morphe.util.registersUsed
 import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.instruction.BuilderInstruction21c
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction21c
+import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction35c
+import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction3rc
 import com.android.tools.smali.dexlib2.iface.reference.StringReference
 import com.android.tools.smali.dexlib2.immutable.reference.ImmutableStringReference
 import hoodles.morphe.patches.all.manifest.packagename.changePackageNamePatch
@@ -83,8 +88,6 @@ fun gmsCoreSupportPatch(
         sharedExtensionPatch(ExtensionHook(mainOnCreateFingerprint))
     )
 
-    if (changePackageName) dependsOn(changePackageNamePatch)
-
     execute {
         fun transformStringReferences(transform: (str: String) -> String?) = classDefForEach {
             val mutableClass by lazy {
@@ -125,6 +128,7 @@ fun gmsCoreSupportPatch(
             in Constants.PERMISSIONS,
             in Constants.ACTIONS,
             in Constants.AUTHORITIES,
+            in Constants.CAPABILITIES,
                 -> referencedString.replace("com.google", GMS_CORE_VENDOR_GROUP_ID)
 
             // No vendor prefix for whatever reason...
@@ -217,6 +221,15 @@ fun gmsCoreSupportPatch(
 
         // Change the vendor of GmsCore in the extension.
         GmsCoreSupportFingerprint.method.returnEarly(GMS_CORE_VENDOR_GROUP_ID)
+
+        // Force isSystemProviderRequired = false for all CredentialOption.
+        // TODO: we might need to hook `CreateCredentialRequest` as well
+        SetIsSystemProviderRequiredFingerprint.matchAllOrNull()?.forEach { match ->
+            val setIndex = match.instructionMatches.first().index
+            val sysReqReg = match.method.getInstruction<Instruction35c>(setIndex).registerD
+
+            match.method.addInstruction(setIndex, "const/4 v$sysReqReg, 0x0")
+        }
 
         executeBlock()
     }

@@ -9,7 +9,9 @@
 package hoodles.morphe.patches.shared.misc.gms
 
 import app.morphe.patcher.Fingerprint
+import app.morphe.patcher.methodCall
 import com.android.tools.smali.dexlib2.AccessFlags
+import com.android.tools.smali.dexlib2.Opcode
 
 internal object GooglePlayUtilityFingerprint : Fingerprint(
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC),
@@ -75,3 +77,13 @@ internal fun getMainOnCreateFingerprint(activityClassType: String, targetBundleM
         }
     )
 }
+
+internal object SetIsSystemProviderRequiredFingerprint : Fingerprint (
+    filters = listOf(
+        methodCall(
+            name = "setIsSystemProviderRequired",
+            definingClass = $$"Landroid/credentials/CredentialOption$Builder;",
+            opcode = Opcode.INVOKE_VIRTUAL
+        )
+    )
+)

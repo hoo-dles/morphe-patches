@@ -13,6 +13,10 @@ package hoodles.morphe.patches.shared.misc.gms
  * that are present in GmsCore which need to be transformed.
  */
 internal object Constants {
+    val CAPABILITIES = setOf(
+        "com.google.android.libraries.identity.googleid.TYPE_GOOGLE_ID_TOKEN_CREDENTIAL"
+    )
+
     /**
      * All permissions.
      */
