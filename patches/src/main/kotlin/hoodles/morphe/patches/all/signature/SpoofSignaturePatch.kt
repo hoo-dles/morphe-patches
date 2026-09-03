@@ -3,19 +3,29 @@
  * https://github.com/hoo-dles/morphe-patches
  */
 
-package hoodles.morphe.patches.shared.misc.signature
+package hoodles.morphe.patches.all.signature
 
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.patch.resourcePatch
+import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 import app.morphe.util.getNode
 import app.morphe.util.writeRegister
-import hoodles.morphe.patches.shared.misc.extension.sharedExtensionPatch
-import hoodles.morphe.patches.shared.misc.signature.Constants.SPOOF_CLASS_SMALI_NAME
+import hoodles.morphe.patches.all.signature.Constants.SPOOF_CLASS_SMALI_NAME
+import hoodles.morphe.util.getEndEntityCertificate
 import org.w3c.dom.Element
+import java.util.Base64
+
+private lateinit var packageName: String
+private lateinit var signature: String
 
 private val manifestPatch = resourcePatch {
     execute {
+        val cert = getEndEntityCertificate(packageMetadata.signingCertificates)
+
+        signature = Base64.getEncoder().encodeToString(cert.encoded)
+        packageName = packageMetadata.packageName
+
         document("AndroidManifest.xml").use { document ->
             val application = document.getNode("application") as Element
             val applicationClass = application.getAttribute("android:name")
@@ -25,7 +35,11 @@ private val manifestPatch = resourcePatch {
     }
 }
 
-fun spoofSignaturePatch(packageName: String, signature: String) = bytecodePatch {
+val spoofSignaturePatch = bytecodePatch(
+    name = "Spoof signature",
+    description = "Spoofs the package signature of the original APK.",
+    default = false
+) {
     dependsOn(manifestPatch, sharedExtensionPatch("common/signature"))
 
     finalize {

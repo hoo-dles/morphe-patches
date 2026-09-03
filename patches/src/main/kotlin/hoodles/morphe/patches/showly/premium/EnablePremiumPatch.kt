@@ -9,8 +9,7 @@ import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.util.returnEarly
-import hoodles.morphe.patches.showly.shared.Constants
-import hoodles.morphe.patches.showly.shared.spoofSignaturePatch
+import hoodles.morphe.patches.all.signature.spoofSignaturePatch
 
 val enablePremiumPatch = bytecodePatch(
     name = "Enable Premium",
@@ -18,7 +17,7 @@ val enablePremiumPatch = bytecodePatch(
 ) {
     compatibleWith(Compatibility(
         name = "Showly",
-        packageName = Constants.PACKAGE_NAME,
+        packageName = "com.michaldrabik.showly2",
         appIconColor = 0xf44336,
         targets = listOf(AppTarget("3.70.0"))
     ))

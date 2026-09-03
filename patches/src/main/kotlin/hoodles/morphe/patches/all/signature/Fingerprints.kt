@@ -3,7 +3,7 @@
  * https://github.com/hoo-dles/morphe-patches
  */
 
-package hoodles.morphe.patches.shared.misc.signature
+package hoodles.morphe.patches.all.signature
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.string

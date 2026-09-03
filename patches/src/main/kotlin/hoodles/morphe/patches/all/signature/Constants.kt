@@ -3,7 +3,7 @@
  * https://github.com/hoo-dles/morphe-patches
  */
 
-package hoodles.morphe.patches.shared.misc.signature
+package hoodles.morphe.patches.all.signature
 
 import com.android.tools.smali.dexlib2.analysis.reflection.util.ReflectionUtils
 

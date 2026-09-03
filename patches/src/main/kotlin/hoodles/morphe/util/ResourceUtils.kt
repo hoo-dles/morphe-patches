@@ -5,6 +5,10 @@
 
 package hoodles.morphe.util
 
+import app.morphe.patcher.apk.ApkSignatureScheme
+import app.morphe.patcher.patch.PatchException
+import java.security.cert.X509Certificate
+
 // Matches unescaped double quotes.
 private val UNESCAPED_DOUBLE_QUOTE = Regex("(?<!\\\\)\"")
 
@@ -49,4 +53,34 @@ internal fun sanitizeAndroidResourceString(
     }
 
     return sanitized
+}
+
+private fun sortOrder(scheme: ApkSignatureScheme) = when (scheme) {
+    ApkSignatureScheme.V31 -> 0
+    ApkSignatureScheme.V3 -> 1
+    ApkSignatureScheme.V2 -> 2
+    else -> 99
+}
+
+class NoCertificateException : Exception("Unable to extract certificate from apk")
+
+fun getEndEntityCertificate(
+    schemeToCertsMap: Map<ApkSignatureScheme, List<X509Certificate>>
+): X509Certificate {
+
+    val highestSchemeVersion = schemeToCertsMap.keys.minByOrNull { sortOrder(it) } ?: throw NoCertificateException()
+    val certsForScheme = schemeToCertsMap[highestSchemeVersion] ?: throw NoCertificateException()
+
+    if (certsForScheme.isEmpty()) throw NoCertificateException()
+
+    // if single/self-signed, it is the developer cert
+    if (certsForScheme.size == 1) {
+        return certsForScheme.first()
+    }
+
+    // if a cert chain exists, find the leaf
+    val issuerPrincipals = certsForScheme.map { it.issuerX500Principal }.toSet()
+    return certsForScheme.firstOrNull { cert ->
+        !issuerPrincipals.contains(cert.subjectX500Principal)
+    } ?: certsForScheme.first()
 }

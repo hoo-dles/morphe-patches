@@ -9,7 +9,7 @@ import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.removeInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.util.returnEarly
-import hoodles.morphe.patches.superchinese.misc.signature.spoofSignaturePatch
+import hoodles.morphe.patches.all.signature.spoofSignaturePatch
 import hoodles.morphe.patches.superchinese.shared.Constants
 import hoodles.morphe.util.returnBoxedIntegerEarly
 
