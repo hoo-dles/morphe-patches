@@ -26,7 +26,7 @@ private val manifestPatch = resourcePatch {
 }
 
 fun spoofSignaturePatch(packageName: String, signature: String) = bytecodePatch {
-    dependsOn(manifestPatch, sharedExtensionPatch("signature"))
+    dependsOn(manifestPatch, sharedExtensionPatch("common/signature"))
 
     finalize {
         SignatureSpoofApplicationCtorFingerprint.apply {
