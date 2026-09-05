@@ -11,6 +11,7 @@ import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.patch.resourcePatch
 import com.android.tools.smali.dexlib2.analysis.reflection.util.ReflectionUtils.javaToDexName
 import hoodles.morphe.util.getEndEntityCertificate
+import hoodles.morphe.util.isCertMaybeInauthentic
 import java.security.MessageDigest
 import javax.xml.xpath.XPathConstants
 import javax.xml.xpath.XPathFactory
@@ -28,6 +29,9 @@ private val resourceMetadataPatch = resourcePatch {
         MicroGMetadata.packageName = packageMetadata.packageName
 
         val cert = getEndEntityCertificate(packageMetadata.signingCertificates)
+
+        if (isCertMaybeInauthentic(cert)) throw PatchException("Invalid signing certificate. Original APK is required.")
+
         val digest = MessageDigest.getInstance("SHA-1").digest(cert.encoded)
         MicroGMetadata.signatureSHA1 = digest.joinToString("") { "%02x".format(it) }
 

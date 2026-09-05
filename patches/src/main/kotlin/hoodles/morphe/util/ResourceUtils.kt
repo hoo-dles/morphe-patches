@@ -6,6 +6,7 @@
 package hoodles.morphe.util
 
 import app.morphe.patcher.apk.ApkSignatureScheme
+import java.security.MessageDigest
 import java.security.cert.X509Certificate
 
 // Matches unescaped double quotes.
@@ -85,3 +86,17 @@ fun getEndEntityCertificate(
         !issuerPrincipals.contains(cert.subjectX500Principal)
     } ?: certsForScheme.first()
 }
+
+fun isCertMaybeInauthentic(cert: X509Certificate): Boolean {
+    if (cert.subjectX500Principal.name.contains("morphe", true))
+        return true
+
+    val digest = MessageDigest.getInstance("SHA-1").digest(cert.encoded)
+    return isCertMaybeInauthentic(digest.joinToString("") { "%02x".format(it) })
+}
+
+val KNOWN_SHA1 = listOf(
+    "e94e3afa40a54ecee4eef83f580393507fcd205a", // AntiSplit M
+    "61ed377e85d386a8dfee6b864bd85b0bfaa5af81", // public debug certificate
+)
+private fun isCertMaybeInauthentic(certSHA1: String) = KNOWN_SHA1.contains(certSHA1.lowercase())
