@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.44.0-dev.1",
+  "version": "1.44.0-dev.2",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -229,7 +229,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "25.12.17",
+              "version": "26.08.18",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -283,7 +283,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.92.5",
+              "version": "6.95.4",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -772,7 +772,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.92.5",
+              "version": "6.95.4",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -976,7 +976,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "2026.4",
+              "version": "2026.10.1",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1507,7 +1507,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "3.9.8",
+              "version": "4.1.1.2",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1561,7 +1561,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "3.5.19",
+              "version": "3.5.20",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1736,7 +1736,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.92.5",
+              "version": "6.95.4",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1810,121 +1810,14 @@
     {
       "name": "MicroG integration",
       "description": "Allows the app to work without root by using MicroG instead of Google Play Services.",
-      "default": true,
+      "default": false,
       "dependencies": [
+        "BytecodePatch",
         "ResourcePatch",
         "ResourcePatch",
         "BytecodePatch"
       ],
-      "compatiblePackages": [
-        {
-          "packageName": "kr.co.yjteam.dailypay",
-          "name": "Daily Pocket",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": "#F6F6F6",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "6.0.7",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "MicroG integration",
-      "description": "Allows the app to work without root by using MicroG instead of Google Play Services.",
-      "default": true,
-      "dependencies": [
-        "ResourcePatch",
-        "ResourcePatch",
-        "BytecodePatch"
-      ],
-      "compatiblePackages": [
-        {
-          "packageName": "com.google.android.apps.magazines",
-          "name": "Google News",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": "#4285F4",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "5.161.0.931240252",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "MicroG integration",
-      "description": "Allows the app to work without root by using MicroG instead of Google Play Services.",
-      "default": true,
-      "dependencies": [
-        "ResourcePatch",
-        "ResourcePatch",
-        "BytecodePatch"
-      ],
-      "compatiblePackages": [
-        {
-          "packageName": "com.bambuna.podcastaddict",
-          "name": "Podcast Addict",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": "#FD7E14",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "2026.4",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "MicroG integration",
-      "description": "Allows the app to work without root by using MicroG instead of Google Play Services.",
-      "default": true,
-      "dependencies": [
-        "ResourcePatch",
-        "ResourcePatch",
-        "BytecodePatch"
-      ],
-      "compatiblePackages": [
-        {
-          "packageName": "pl.solidexplorer2",
-          "name": "Solid Explorer",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": "#039BE5",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "3.5.19",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
+      "compatiblePackages": null,
       "options": []
     },
     {
@@ -2040,6 +1933,17 @@
           ]
         }
       ],
+      "options": []
+    },
+    {
+      "name": "Spoof signature",
+      "description": "Spoofs the package signature of the original APK.",
+      "default": false,
+      "dependencies": [
+        "ResourcePatch",
+        "BytecodePatch"
+      ],
+      "compatiblePackages": null,
       "options": []
     },
     {
