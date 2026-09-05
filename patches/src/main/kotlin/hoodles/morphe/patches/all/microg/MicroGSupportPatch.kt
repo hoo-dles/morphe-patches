@@ -6,17 +6,13 @@
  * https://github.com/hoo-dles/morphe-patches
  */
 
-package hoodles.morphe.patches.shared.misc.gms
+package hoodles.morphe.patches.all.microg
 
-import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.extensions.InstructionExtensions.addInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
-import app.morphe.patcher.patch.BytecodePatchBuilder
-import app.morphe.patcher.patch.BytecodePatchContext
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.all.misc.extension.ExtensionHook
-import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 import app.morphe.util.findMutableMethodOf
 import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.Opcode
@@ -25,63 +21,36 @@ import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction21c
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction35c
 import com.android.tools.smali.dexlib2.iface.reference.StringReference
 import com.android.tools.smali.dexlib2.immutable.reference.ImmutableStringReference
-import hoodles.morphe.patches.all.manifest.packagename.setOrGetFallbackPackageName
+import hoodles.morphe.patches.shared.misc.extension.sharedExtensionPatch
 import hoodles.morphe.patches.shared.misc.resources.addAppResources
 import hoodles.morphe.patches.shared.misc.resources.addResourcesPatch
-import kotlin.reflect.KFunction1
 
-internal const val EXTENSION_CLASS_DESCRIPTOR = "Lhoodles/morphe/extension/shared/GmsCoreSupport;"
-
+internal const val EXTENSION_CLASS_DESCRIPTOR = "Lhoodles/morphe/extension/microg/MicroGSupport;"
 internal const val GMS_CORE_VENDOR_GROUP_ID = "app.revanced"
 
-/**
- * A patch that allows patched Google apps to run without root and under a different package name
- * by using GmsCore instead of Google Play Services.
- *
- * @param spoofedPackageSignature The signature of the package to spoof to.
- * @param mainActivityName The activity class containing onCreate where we will inject our extension (uses Smali naming and standard string comparison conventions).
- * @param fromPackageName The package name of the original app.
- * @param toPackageName The package name to fall back to if no custom package name is specified in patch options.
- * @param earlyReturnFingerprints The fingerprints of methods that need to be returned early.
- * @param executeBlock The additional execution block of the patch.
- * @param block The additional block to build the patch.
- */
-fun gmsCoreSupportPatch(
-    spoofedPackageSignature: String,
-    mainActivityName: String,
-    fromPackageName: String? = null,
-    toPackageName: String? = null,
-    earlyReturnFingerprints: Set<Fingerprint> = setOf(),
-    executeBlock: BytecodePatchContext.() -> Unit = {},
-    block: BytecodePatchBuilder.() -> Unit = {},
-) = gmsCoreSupportPatch(
-    spoofedPackageSignature,
-    getMainOnCreateFingerprint(mainActivityName),
-    fromPackageName,
-    toPackageName,
-    earlyReturnFingerprints,
-    executeBlock,
-    block
+private val microGExtensionPatch = sharedExtensionPatch(
+    "common/microg",
+    { ExtensionHook(MicroGMetadata.onCreateFingerprint) },
+    listOf(microGMetadataPatch)
 )
 
-fun gmsCoreSupportPatch(
-    spoofedPackageSignature: String,
-    mainOnCreateFingerprint: Fingerprint,
-    fromPackageName: String? = null,
-    toPackageName: String? = null,
-    earlyReturnFingerprints: Set<Fingerprint> = setOf(),
-    executeBlock: BytecodePatchContext.() -> Unit = {},
-    block: BytecodePatchBuilder.() -> Unit = {},
-) = bytecodePatch(
+@Suppress("unused")
+val microGSupportPatch = bytecodePatch(
     name = "MicroG integration",
     description = "Allows the app to work without root by using MicroG instead of Google Play Services.",
+    default = false
 ) {
-    val changePackageName = !fromPackageName.isNullOrBlank() && !toPackageName.isNullOrBlank()
+//    val newPackageName by stringOption(
+//        key = "newPackageName",
+//        title = "New package name",
+//        description = "If set, the app's package name will be changed to this value (usually not necessary).",
+//    )
 
     dependsOn(
+        microGMetadataPatch,
         addResourcesPatch,
-        gmsCoreSupportResourcePatch(spoofedPackageSignature, fromPackageName, toPackageName),
-        sharedExtensionPatch(ExtensionHook(mainOnCreateFingerprint))
+        gmsCoreSupportResourcePatch,
+        microGExtensionPatch
     )
 
     execute {
@@ -173,10 +142,10 @@ fun gmsCoreSupportPatch(
             ::commonTransform,
             ::contentUrisTransform,
         )
-        if (changePackageName) {
-            val packageName = setOrGetFallbackPackageName(toPackageName)
-            transformations.add(packageNameTransform(fromPackageName, packageName) as KFunction1<String, String?>)
-        }
+//        if (changePackageName) {
+//            val packageName = setOrGetFallbackPackageName(newPackageName!!)
+//            transformations.add(packageNameTransform(fromPackageName, packageName) as KFunction1<String, String?>)
+//        }
 
         transformStringReferences transform@{ string ->
             transformations.forEach { transform ->
@@ -186,28 +155,22 @@ fun gmsCoreSupportPatch(
             return@transform null
         }
 
-        // Return these methods early to prevent the app from crashing.
-        earlyReturnFingerprints.forEach {
-            it.method.apply {
-                if (returnType == "Z") {
-                    returnEarly(false)
-                } else {
-                    returnEarly()
-                }
-            }
-        }
-        ServiceCheckFingerprint.method.returnEarly()
+        ServiceCheckFingerprint.methodOrNull?.returnEarly()
 
         // Return status code 0 for play service availability checks.
-        listOf(IsGooglePlayServicesAvailableFingerprint, GooglePlayUtilityFingerprint).forEach {
+        listOf(
+            IsGooglePlayServicesAvailableFingerprint,
+            GooglePlayUtilityFingerprint,
+            IsGooglePlayServicesAvailableLightFingerprint
+        ).forEach {
             it.methodOrNull?.apply { returnEarly(0) }
         }
 
         // Set original and patched package names for extension to use.
-        OriginalPackageNameExtensionFingerprint.method.returnEarly(fromPackageName ?: packageMetadata.packageName)
+//        OriginalPackageNameExtensionFingerprint.method.returnEarly(fromPackageName ?: packageMetadata.packageName)
 
         // Verify GmsCore is installed and whitelisted for power optimizations and background usage.
-        mainOnCreateFingerprint.method.apply {
+        MicroGMetadata.onCreateFingerprint.method.apply {
             addInstruction(
                 0,
                 "invoke-static/range { p0 .. p0 }, $EXTENSION_CLASS_DESCRIPTOR->" +
@@ -226,9 +189,5 @@ fun gmsCoreSupportPatch(
 
             match.method.addInstruction(setIndex, "const/4 v$sysReqReg, 0x0")
         }
-
-        executeBlock()
     }
-
-    block()
 }

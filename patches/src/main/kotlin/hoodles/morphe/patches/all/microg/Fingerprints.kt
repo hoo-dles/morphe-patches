@@ -6,7 +6,7 @@
  * https://github.com/hoo-dles/morphe-patches
  */
 
-package hoodles.morphe.patches.shared.misc.gms
+package hoodles.morphe.patches.all.microg
 
 import app.morphe.patcher.Fingerprint
 import app.morphe.patcher.methodCall
@@ -30,6 +30,14 @@ internal object IsGooglePlayServicesAvailableFingerprint : Fingerprint(
     returnType = "I",
     parameters = listOf("Landroid/content/Context;", "I")
 )
+
+internal object IsGooglePlayServicesAvailableLightFingerprint : Fingerprint(
+    definingClass = "Lcom/google/android/gms/common/GoogleApiAvailabilityLight;",
+    accessFlags = listOf(AccessFlags.PUBLIC),
+    returnType = "I",
+    parameters = listOf("Landroid/content/Context;", "I")
+)
+
 
 internal object ServiceCheckFingerprint : Fingerprint(
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC),
@@ -55,28 +63,6 @@ internal object OriginalPackageNameExtensionFingerprint : Fingerprint(
         methodDef.name == "getOriginalPackageName" && classDef.type == EXTENSION_CLASS_DESCRIPTOR
     }
 )
-
-internal fun getMainOnCreateFingerprint(activityClassType: String, targetBundleMethod: Boolean = true): Fingerprint {
-    require(activityClassType.endsWith(';')) {
-        "Class type must end with a semicolon: $activityClassType"
-    }
-
-    val fullClassType = activityClassType.startsWith('L')
-
-    return Fingerprint(
-        returnType = "V",
-        parameters = if (targetBundleMethod) {
-            listOf("Landroid/os/Bundle;")
-        } else {
-            listOf()
-        },
-        custom = { method, classDef ->
-            method.name == "onCreate" &&
-                    if (fullClassType) classDef.type == activityClassType
-                    else classDef.type.endsWith(activityClassType)
-        }
-    )
-}
 
 internal object SetIsSystemProviderRequiredFingerprint : Fingerprint (
     filters = listOf(

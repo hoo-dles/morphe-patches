@@ -5,8 +5,8 @@
 
 package hoodles.morphe.patches.primevideo.misc.extension
 
-import hoodles.morphe.patches.shared.misc.extension.activityOnCreateExtensionHook
-import hoodles.morphe.patches.shared.misc.extension.sharedExtensionPatch
+import app.morphe.patches.all.misc.extension.activityOnCreateExtensionHook
+import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 
 val sharedExtensionPatch = sharedExtensionPatch(
     "primevideo",

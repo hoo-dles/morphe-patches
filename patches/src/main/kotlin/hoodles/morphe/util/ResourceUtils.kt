@@ -6,7 +6,6 @@
 package hoodles.morphe.util
 
 import app.morphe.patcher.apk.ApkSignatureScheme
-import app.morphe.patcher.patch.PatchException
 import java.security.cert.X509Certificate
 
 // Matches unescaped double quotes.
@@ -67,9 +66,11 @@ class NoCertificateException : Exception("Unable to extract certificate from apk
 fun getEndEntityCertificate(
     schemeToCertsMap: Map<ApkSignatureScheme, List<X509Certificate>>
 ): X509Certificate {
+    // scheme map can have empty lists for some reason
+    val filteredMap = schemeToCertsMap.filterValues { it.isNotEmpty() }
 
-    val highestSchemeVersion = schemeToCertsMap.keys.minByOrNull { sortOrder(it) } ?: throw NoCertificateException()
-    val certsForScheme = schemeToCertsMap[highestSchemeVersion] ?: throw NoCertificateException()
+    val highestSchemeVersion = filteredMap.keys.minByOrNull { sortOrder(it) } ?: throw NoCertificateException()
+    val certsForScheme = filteredMap[highestSchemeVersion] ?: throw NoCertificateException()
 
     if (certsForScheme.isEmpty()) throw NoCertificateException()
 

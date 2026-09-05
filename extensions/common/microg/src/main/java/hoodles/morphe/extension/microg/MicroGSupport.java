@@ -6,7 +6,7 @@
  * https://github.com/hoo-dles/morphe-patches
  */
 
-package hoodles.morphe.extension.shared;
+package hoodles.morphe.extension.microg;
 
 import static app.morphe.extension.shared.StringRef.str;
 import static hoodles.morphe.extension.shared.requests.Route.Method.GET;
@@ -41,7 +41,7 @@ import hoodles.morphe.extension.shared.requests.Requester;
 import hoodles.morphe.extension.shared.requests.Route;
 
 @SuppressWarnings("unused")
-public class GmsCoreSupport {
+public class MicroGSupport {
     private static final String GMS_CORE_PACKAGE_NAME
             = getGmsCoreVendorGroupId() + ".android.gms";
     private static final Uri GMS_CORE_PROVIDER
@@ -63,19 +63,19 @@ public class GmsCoreSupport {
     @Nullable
     private static volatile Boolean DONT_KILL_MY_APP_MANUFACTURER_SUPPORTED;
 
-    private static String getOriginalPackageName() {
-       return null; // Modified during patching.
-    }
+//    private static String getOriginalPackageName() {
+//       return null; // Modified during patching.
+//    }
 
     /**
      * @return If the current package name is the same as the original unpatched app.
      *         If `GmsCore support` was not included during patching, this returns true;
      */
-    public static boolean isPackageNameOriginal() {
-        String originalPackageName = getOriginalPackageName();
-        return originalPackageName == null
-                || originalPackageName.equals(Utils.getContext().getPackageName());
-    }
+//    public static boolean isPackageNameOriginal() {
+//        String originalPackageName = getOriginalPackageName();
+//        return originalPackageName == null
+//                || originalPackageName.equals(Utils.getContext().getPackageName());
+//    }
 
     private static void open(String queryOrLink) {
         Logger.printInfo(() -> "Opening link: " + queryOrLink);
@@ -144,7 +144,8 @@ public class GmsCoreSupport {
                 if (version < MIN_REQUIRED_VERSION_CODE) {
                     Logger.printInfo(() -> "Installed GmsCore does not meet minimum required version");
                     Utils.showToastLong(str("gms_core_toast_new_version_required"));
-                    open(getGmsCoreDownload());
+                    Intent launchIntent = manager.getLaunchIntentForPackage(GMS_CORE_PACKAGE_NAME);
+                    context.startActivity(launchIntent);
                     return;
                 }
 

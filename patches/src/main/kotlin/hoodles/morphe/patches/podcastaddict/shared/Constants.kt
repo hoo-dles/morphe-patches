@@ -13,6 +13,6 @@ object Constants {
         name = "Podcast Addict",
         packageName = "com.bambuna.podcastaddict",
         appIconColor = 0xFD7E14,
-        targets = listOf(AppTarget("2026.4"))
+        targets = listOf(AppTarget("2026.10.1"))
     )
 }

@@ -6,7 +6,7 @@
  * https://github.com/hoo-dles/morphe-patches
  */
 
-package hoodles.morphe.patches.shared.misc.gms
+package hoodles.morphe.patches.all.microg
 
 /**
  * A collection of permissions, intents and content provider authorities
