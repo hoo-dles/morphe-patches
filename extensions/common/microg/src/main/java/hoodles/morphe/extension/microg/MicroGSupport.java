@@ -55,7 +55,7 @@ public class MicroGSupport {
     private static final String BUILD_MANUFACTURER
             = Build.MANUFACTURER.toLowerCase(Locale.ROOT).replace(" ", "-");
 
-    private static final long MIN_REQUIRED_VERSION_CODE = 255070000L;
+    private static final long MIN_REQUIRED_VERSION_CODE = 255070104L;
 
     /**
      * If a manufacturer specific page exists on DontKillMyApp.
@@ -145,6 +145,8 @@ public class MicroGSupport {
                     Logger.printInfo(() -> "Installed GmsCore does not meet minimum required version");
                     Utils.showToastLong(str("gms_core_toast_new_version_required"));
                     Intent launchIntent = manager.getLaunchIntentForPackage(GMS_CORE_PACKAGE_NAME);
+                    launchIntent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                    launchIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     context.startActivity(launchIntent);
                     return;
                 }
