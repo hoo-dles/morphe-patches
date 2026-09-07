@@ -23,7 +23,7 @@ val enablePrimePatch = rawResourcePatch(
         name = "IbisPaint X",
         packageName = "jp.ne.ibis.ibispaintx.app",
         appIconColor = 0x0B649B,
-        targets = listOf(AppTarget("14.0.11"))
+        targets = listOf(AppTarget("14.1.0"))
     ))
 
     availability(requireArm64())
