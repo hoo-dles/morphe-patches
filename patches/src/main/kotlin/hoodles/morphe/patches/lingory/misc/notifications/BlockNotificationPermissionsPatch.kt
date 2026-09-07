@@ -6,8 +6,8 @@
 package hoodles.morphe.patches.lingory.misc.notifications
 
 import app.morphe.patcher.patch.rawResourcePatch
-import hoodles.morphe.patches.lingory.shared.Constants
 import app.morphe.patches.all.misc.hex.hexPatch
+import hoodles.morphe.patches.lingory.shared.Constants
 import hoodles.morphe.util.requireArm64
 
 @Suppress("unused")

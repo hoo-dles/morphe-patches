@@ -1,5 +1,5 @@
-@import java.util.List
 @import hoodles.morphe.codegen.pairip.*
+@import java.util.List
 
 @param String packageName
 @param String className

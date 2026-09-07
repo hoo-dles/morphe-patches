@@ -6,9 +6,9 @@
 package hoodles.morphe.patches.camscanner.misc.telemetry
 
 import app.morphe.patcher.patch.bytecodePatch
-import app.morphe.util.returnEarly
 import app.morphe.patches.all.misc.fix.changepackageinstaller.changePackageInstallerPatch
-import hoodles.morphe.patches.camscanner.misc.signature.spoofSignaturePatch
+import app.morphe.util.returnEarly
+import hoodles.morphe.patches.all.signature.spoofSignaturePatch
 import hoodles.morphe.patches.camscanner.shared.Constants
 
 @Suppress("unused")

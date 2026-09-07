@@ -5,7 +5,6 @@
 
 package hoodles.morphe.patches.shared.misc.pairip.native
 
-import app.morphe.patcher.logging.Logger
 import app.morphe.patcher.patch.rawResourcePatch
 import app.morphe.util.inputStreamFromBundledResource
 import kotlinx.serialization.json.Json

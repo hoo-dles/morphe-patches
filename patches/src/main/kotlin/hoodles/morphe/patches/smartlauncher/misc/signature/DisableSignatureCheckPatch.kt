@@ -7,7 +7,6 @@ package hoodles.morphe.patches.smartlauncher.misc.signature
 
 import app.morphe.patcher.extensions.InstructionExtensions.removeInstruction
 import app.morphe.patcher.patch.bytecodePatch
-import hoodles.morphe.patches.smartlauncher.shared.Constants
 
 @Suppress("unused")
 val disableSignatureCheckPatch = bytecodePatch {

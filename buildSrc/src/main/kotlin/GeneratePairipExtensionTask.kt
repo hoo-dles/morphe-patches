@@ -7,8 +7,8 @@ import gg.jte.ContentType
 import gg.jte.TemplateEngine
 import gg.jte.output.FileOutput
 import gg.jte.resolve.ResourceCodeResolver
-import hoodles.morphe.codegen.pairip.JavaField
 import hoodles.morphe.codegen.pairip.JavaCodegenData
+import hoodles.morphe.codegen.pairip.JavaField
 import hoodles.morphe.codegen.pairip.getClassFromFqcn
 import hoodles.morphe.codegen.pairip.getPackageFromFqcn
 import kotlinx.serialization.json.Json

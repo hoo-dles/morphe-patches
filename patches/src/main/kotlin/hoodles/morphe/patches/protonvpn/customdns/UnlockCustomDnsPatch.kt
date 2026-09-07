@@ -9,8 +9,8 @@ import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.removeInstruction
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
-import hoodles.morphe.patches.protonvpn.shared.Constants
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
+import hoodles.morphe.patches.protonvpn.shared.Constants
 
 @Suppress("unused")
 val unlockCustomDnsPatch = bytecodePatch(

@@ -13,6 +13,6 @@ internal object Constants {
         name = "Duolingo",
         packageName = "com.duolingo",
         appIconColor = 0x58CC02,
-        targets = listOf(AppTarget("6.92.5"))
+        targets = listOf(AppTarget("6.95.4"))
     )
 }

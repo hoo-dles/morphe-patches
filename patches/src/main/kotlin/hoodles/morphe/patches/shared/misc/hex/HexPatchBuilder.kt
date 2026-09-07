@@ -11,7 +11,6 @@ package hoodles.morphe.patches.shared.misc.hex
 import app.morphe.patcher.patch.PatchException
 import app.morphe.util.byteArrayOf
 import hoodles.morphe.util.find
-import kotlin.math.max
 
 /**
  * Represents a pattern to search for and its replacement pattern in a file.

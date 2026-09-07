@@ -8,13 +8,15 @@ package hoodles.morphe.patches.primevideo.ads
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.bytecodePatch
-import hoodles.morphe.patches.primevideo.misc.extension.sharedExtensionPatch
-import hoodles.morphe.patches.primevideo.shared.Constants
-import app.morphe.util.*
+import app.morphe.util.getReference
+import app.morphe.util.indexOfFirstInstructionOrThrow
+import app.morphe.util.returnEarly
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.MethodReference
+import hoodles.morphe.patches.primevideo.misc.extension.sharedExtensionPatch
+import hoodles.morphe.patches.primevideo.shared.Constants
 
 @Suppress("unused")
 val skipAdsPatch = bytecodePatch(

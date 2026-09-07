@@ -7,9 +7,7 @@ tasks {
 
     val cleanGenerated = register<Delete>("cleanGenerated") {
         description = "Cleans code generated files. Does not remove `__generated__` directory"
-        delete(fileTree(codeGenPath) {
-            include("**/*")
-        })
+        delete(codeGenPath.listFiles())
     }
 
     register<GeneratePairipExtensionTask>("codegen") {

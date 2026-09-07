@@ -5,14 +5,14 @@
 
 package hoodles.morphe.extension.mirinae.pro;
 
-import hoodles.morphe.extension.shared.Utils;
-import hoodles.morphe.extension.shared.requests.Requester;
-
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 
 import java.net.HttpURLConnection;
 import java.util.regex.Pattern;
+
+import hoodles.morphe.extension.shared.Utils;
+import hoodles.morphe.extension.shared.requests.Requester;
 
 @SuppressWarnings("unused")
 public class EnableProPatch {

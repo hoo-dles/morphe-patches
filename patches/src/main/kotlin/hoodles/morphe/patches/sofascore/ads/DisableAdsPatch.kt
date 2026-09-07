@@ -5,22 +5,16 @@
 
 package hoodles.morphe.patches.sofascore.ads
 
-import app.morphe.patcher.patch.AppTarget
-import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.util.returnEarly
+import hoodles.morphe.patches.sofascore.shared.Constants.COMPATIBILITY
 
 @Suppress("unused")
 val disableAdsPatch = bytecodePatch(
     name = "Disable ads",
     description = "Disables all ads contained within the UI."
 ) {
-    compatibleWith(Compatibility(
-        name = "Sofascore",
-        packageName = "com.sofascore.results",
-        appIconColor = 0x374DF5,
-        targets = listOf(AppTarget("25.12.17"))
-    ))
+    compatibleWith(COMPATIBILITY)
 
     execute {
         GetForceAdsFingerprint.method.returnEarly(false)

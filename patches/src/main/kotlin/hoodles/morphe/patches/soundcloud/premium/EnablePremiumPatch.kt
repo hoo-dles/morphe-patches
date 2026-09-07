@@ -7,8 +7,8 @@ package hoodles.morphe.patches.soundcloud.premium
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
-import hoodles.morphe.patches.shared.misc.extension.activityOnCreateExtensionHook
-import hoodles.morphe.patches.shared.misc.extension.sharedExtensionPatch
+import app.morphe.patches.all.misc.extension.activityOnCreateExtensionHook
+import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 import hoodles.morphe.patches.soundcloud.shared.Constants
 
 private val extensionPatch = sharedExtensionPatch(

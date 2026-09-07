@@ -1,3 +1,18 @@
+# [1.44.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.44.0-dev.1...v1.44.0-dev.2) (2026-09-05)
+
+
+### Features
+
+* Add universal `MicroG integration` patch ([a11dcb4](https://github.com/hoo-dles/morphe-patches/commit/a11dcb4d938c5fd33ce8a3fb9d2dde6575f40c97))
+* Add universal `Spoof SIgnature` patch ([946f3c2](https://github.com/hoo-dles/morphe-patches/commit/946f3c2321984850e37023a3b474a74b08714e82))
+
+# [1.44.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.43.0...v1.44.0-dev.1) (2026-09-01)
+
+
+### Features
+
+* **ASL Bloom:** Add `Enable Premium` patch ([3dde853](https://github.com/hoo-dles/morphe-patches/commit/3dde853c2362849e336277e556e9a2e84a36137f))
+
 # [1.43.0](https://github.com/hoo-dles/morphe-patches/compare/v1.42.0...v1.43.0) (2026-08-30)
 
 

@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.android.library) 
+    alias(libs.plugins.android.library)
 }
 
 android {
@@ -17,6 +17,5 @@ android {
 }
 
 dependencies {
-    compileOnly(libs.annotation)
     implementation(libs.morphe.extensions.library)
 }
