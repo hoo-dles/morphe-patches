@@ -29,7 +29,7 @@ internal const val EXTENSION_CLASS_DESCRIPTOR = "Lhoodles/morphe/extension/micro
 internal const val GMS_CORE_VENDOR_GROUP_ID = "app.revanced"
 
 private val microGExtensionPatch = sharedExtensionPatch(
-    "common/microg",
+    "all/microg",
     { ExtensionHook(MicroGMetadata.onCreateFingerprint) },
     listOf(microGMetadataPatch)
 )

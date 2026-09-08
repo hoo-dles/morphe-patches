@@ -1,7 +1,3 @@
-dependencies {
-    implementation(project(":extensions:shared:library"))
-}
-
 android {
     namespace = "hoodles.morphe.extension"
     compileSdk = 36
@@ -14,4 +10,8 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+}
+
+dependencies {
+    implementation(project(":extensions:shared:library"))
 }

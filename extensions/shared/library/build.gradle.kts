@@ -17,5 +17,5 @@ android {
 }
 
 dependencies {
-    implementation(libs.morphe.extensions.library)
+    api(libs.morphe.extensions.library)
 }
