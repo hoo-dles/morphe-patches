@@ -8,7 +8,7 @@ package hoodles.morphe.patches.superchinese.misc.telemetry
 import app.morphe.patcher.extensions.InstructionExtensions.replaceInstruction
 import app.morphe.patcher.patch.bytecodePatch
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction11n
-import hoodles.morphe.patches.superchinese.misc.signature.spoofSignaturePatch
+import hoodles.morphe.patches.all.signature.spoofSignaturePatch
 import hoodles.morphe.patches.superchinese.shared.Constants
 
 @Suppress("unused")

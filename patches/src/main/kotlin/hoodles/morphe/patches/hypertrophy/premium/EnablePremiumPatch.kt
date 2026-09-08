@@ -11,6 +11,7 @@ import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.proxy.mutableTypes.MutableMethod
 import app.morphe.patches.all.misc.extension.activityOnCreateExtensionHook
+import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 import com.android.tools.smali.dexlib2.AccessFlags
 import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.builder.MutableMethodImplementation
@@ -20,7 +21,6 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
 import com.android.tools.smali.dexlib2.immutable.ImmutableMethodParameter
 import com.android.tools.smali.dexlib2.immutable.reference.ImmutableMethodReference
 import hoodles.morphe.patches.all.pairip.license.disableLicenseCheckPatch
-import hoodles.morphe.patches.shared.misc.extension.sharedExtensionPatch
 
 val extensionPatch = sharedExtensionPatch(
     "hypertrophy",

@@ -12,9 +12,9 @@ import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.util.smali.ExternalLabel
+import app.morphe.patches.all.misc.extension.activityOnCreateExtensionHook
+import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 import app.morphe.util.returnEarly
-import hoodles.morphe.patches.shared.misc.extension.activityOnCreateExtensionHook
-import hoodles.morphe.patches.shared.misc.extension.sharedExtensionPatch
 
 internal val extensionPatch = sharedExtensionPatch(
     "goodreads",

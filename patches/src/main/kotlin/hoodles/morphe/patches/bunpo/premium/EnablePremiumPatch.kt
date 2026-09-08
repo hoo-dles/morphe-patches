@@ -8,8 +8,8 @@ package hoodles.morphe.patches.bunpo.premium
 import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.all.misc.extension.activityOnCreateExtensionHook
 import hoodles.morphe.patches.bunpo.shared.stripPairipPatch
-import hoodles.morphe.patches.shared.misc.extension.activityOnCreateExtensionHook
 import hoodles.morphe.patches.shared.revenuecat.getAddEntitlementPatch
 import hoodles.morphe.util.requireArm64
 

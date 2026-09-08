@@ -5,6 +5,10 @@
 
 package hoodles.morphe.util
 
+import app.morphe.patcher.apk.ApkSignatureScheme
+import java.security.MessageDigest
+import java.security.cert.X509Certificate
+
 // Matches unescaped double quotes.
 private val UNESCAPED_DOUBLE_QUOTE = Regex("(?<!\\\\)\"")
 
@@ -50,3 +54,49 @@ internal fun sanitizeAndroidResourceString(
 
     return sanitized
 }
+
+private fun sortOrder(scheme: ApkSignatureScheme) = when (scheme) {
+    ApkSignatureScheme.V31 -> 0
+    ApkSignatureScheme.V3 -> 1
+    ApkSignatureScheme.V2 -> 2
+    else -> 99
+}
+
+class NoCertificateException : Exception("Unable to extract certificate from apk")
+
+fun getEndEntityCertificate(
+    schemeToCertsMap: Map<ApkSignatureScheme, List<X509Certificate>>
+): X509Certificate {
+    // scheme map can have empty lists for some reason
+    val filteredMap = schemeToCertsMap.filterValues { it.isNotEmpty() }
+
+    val highestSchemeVersion = filteredMap.keys.minByOrNull { sortOrder(it) } ?: throw NoCertificateException()
+    val certsForScheme = filteredMap[highestSchemeVersion] ?: throw NoCertificateException()
+
+    if (certsForScheme.isEmpty()) throw NoCertificateException()
+
+    // if single/self-signed, it is the developer cert
+    if (certsForScheme.size == 1) {
+        return certsForScheme.first()
+    }
+
+    // if a cert chain exists, find the leaf
+    val issuerPrincipals = certsForScheme.map { it.issuerX500Principal }.toSet()
+    return certsForScheme.firstOrNull { cert ->
+        !issuerPrincipals.contains(cert.subjectX500Principal)
+    } ?: certsForScheme.first()
+}
+
+fun isCertMaybeInauthentic(cert: X509Certificate): Boolean {
+    if (cert.subjectX500Principal.name.contains("morphe", true))
+        return true
+
+    val digest = MessageDigest.getInstance("SHA-1").digest(cert.encoded)
+    return isCertMaybeInauthentic(digest.joinToString("") { "%02x".format(it) })
+}
+
+val KNOWN_SHA1 = listOf(
+    "e94e3afa40a54ecee4eef83f580393507fcd205a", // AntiSplit M
+    "61ed377e85d386a8dfee6b864bd85b0bfaa5af81", // public debug certificate
+)
+private fun isCertMaybeInauthentic(certSHA1: String) = KNOWN_SHA1.contains(certSHA1.lowercase())

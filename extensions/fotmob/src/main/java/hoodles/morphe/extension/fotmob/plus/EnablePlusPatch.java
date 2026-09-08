@@ -5,10 +5,10 @@
 
 package hoodles.morphe.extension.fotmob.plus;
 
+import java.lang.reflect.Constructor;
+
 import app.morphe.extension.shared.Logger;
 import hoodles.morphe.extension.shared.Utils;
-
-import java.lang.reflect.Constructor;
 
 @SuppressWarnings("unused")
 public final class EnablePlusPatch {

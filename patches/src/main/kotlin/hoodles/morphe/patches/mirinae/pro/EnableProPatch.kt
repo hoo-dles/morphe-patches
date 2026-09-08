@@ -10,7 +10,7 @@ import app.morphe.patcher.patch.AppTarget
 import app.morphe.patcher.patch.Compatibility
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.all.misc.extension.ExtensionHook
-import hoodles.morphe.patches.shared.misc.extension.sharedExtensionPatch
+import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 
 internal val extensionPatch = sharedExtensionPatch(
     "mirinae",

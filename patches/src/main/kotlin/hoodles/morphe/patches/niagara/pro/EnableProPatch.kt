@@ -8,7 +8,7 @@ package hoodles.morphe.patches.niagara.pro
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patches.all.misc.fix.changepackageinstaller.changePackageInstallerPatch
-import hoodles.morphe.patches.niagara.misc.signature.spoofSignaturePatch
+import hoodles.morphe.patches.all.signature.spoofSignaturePatch
 import hoodles.morphe.patches.niagara.shared.Constants
 
 val enableProPatch = bytecodePatch(

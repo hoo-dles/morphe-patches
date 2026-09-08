@@ -11,8 +11,8 @@ import app.morphe.util.findFreeRegister
 import app.morphe.util.getReference
 import com.android.tools.smali.dexlib2.iface.instruction.OneRegisterInstruction
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
-import hoodles.morphe.patches.nomone.shared.tamper.disableAntiTamperPatch
 import hoodles.morphe.patches.nomone.shared.Constants
+import hoodles.morphe.patches.nomone.shared.tamper.disableAntiTamperPatch
 
 @Suppress("unused")
 val removeTrialLimitPatch = bytecodePatch(
