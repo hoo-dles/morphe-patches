@@ -8,7 +8,7 @@ import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 
 fun getAddProductPatch(productName: String, activityOnCreateExtensionHook: ExtensionHook = activityOnCreateExtensionHook()) = bytecodePatch {
     val sharedExtensionPatch = sharedExtensionPatch(
-        "common/revenuecat",
+        "all/revenuecat",
         activityOnCreateExtensionHook
     )
     dependsOn(sharedExtensionPatch)

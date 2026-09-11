@@ -44,7 +44,7 @@ val spoofSignaturePatch = bytecodePatch(
     description = "Spoofs the package signature of the original APK.",
     default = false
 ) {
-    dependsOn(manifestPatch, sharedExtensionPatch("common/signature"))
+    dependsOn(manifestPatch, sharedExtensionPatch("all/signature"))
 
     finalize {
         SignatureSpoofApplicationCtorFingerprint.apply {

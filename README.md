@@ -84,7 +84,7 @@
 Simply clicking [this deeplink](https://morphe.software/add-source?github=hoo-dles/morphe-patches) from a device with Morphe installed will automatically add the patches to Manager. Or, you can manually add `https://github.com/hoo-dles/morphe-patches` as a remote source in Morphe Manager.
 
 #### Help, why can't I log in with my Google account? Why doesn't Google Drive work?
-MicroG integration is needed for features that require Google Play Services. Apps that are currently supported are marked with a :earth_americas:.
+MicroG integration is needed for features that require Google Play Services. Please use the universal `MicroG integration` patch provided by this repo.
 
 #### What apk version should I use?
 Versions I have tested are defined in each patch, but they may (hopefully?) work for newer app releases. Give it a shot and open a ticket if there's issues. Patches marked with a :dart: will, almost certainly, only work with that specific version.

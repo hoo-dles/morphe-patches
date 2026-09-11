@@ -7,9 +7,9 @@ import app.morphe.patches.all.misc.extension.activityOnCreateExtensionHook
 import app.morphe.patches.all.misc.extension.sharedExtensionPatch
 
 
-fun getAddEntitlementPatch(entitlementName: String, activityOnCreateExtensionHook: ExtensionHook = activityOnCreateExtensionHook()) = bytecodePatch {
+fun getAddEntitlementPatch(entitlementName: String = "premium", activityOnCreateExtensionHook: ExtensionHook = activityOnCreateExtensionHook()) = bytecodePatch {
     val sharedExtensionPatch = sharedExtensionPatch(
-        "common/revenuecat",
+        "all/revenuecat",
         activityOnCreateExtensionHook
     )
     dependsOn(sharedExtensionPatch)

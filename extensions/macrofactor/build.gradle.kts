@@ -1,4 +1,9 @@
+android {
+    defaultConfig {
+        minSdk = 26
+    }
+}
+
 dependencies {
-    compileOnly(libs.morphe.extensions.library)
     compileOnly(project(":extensions:shared:library"))
 }
