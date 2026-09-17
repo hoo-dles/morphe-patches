@@ -5,6 +5,6 @@ android {
 }
 
 dependencies {
+    implementation(libs.annotation)
     compileOnly(project(":extensions:shared:library"))
-    implementation(libs.hiddenbypassapi)
 }
