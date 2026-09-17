@@ -1,3 +1,10 @@
+## [1.44.2-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.44.1...v1.44.2-dev.1) (2026-09-17)
+
+
+### Bug Fixes
+
+* Change `Signature spoof` to patch call sites instead of modifying PackageManager directly (support SDK 37+) ([8d8299d](https://github.com/hoo-dles/morphe-patches/commit/8d8299d64173f5bf694152d96fdbb53aa0fc184b))
+
 ## [1.44.1](https://github.com/hoo-dles/morphe-patches/compare/v1.44.0...v1.44.1) (2026-09-17)
 
 

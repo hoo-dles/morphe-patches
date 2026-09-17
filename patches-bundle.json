@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-09-17T16:34:40",
-  "description": "## [1.44.1](https://github.com/hoo-dles/morphe-patches/compare/v1.44.0...v1.44.1) (2026-09-17)\n\n\n### Bug Fixes\n\n* **Lightroom:** Fix pairip stripping and update patches to `11.5.22` ([2c1b213](https://github.com/hoo-dles/morphe-patches/commit/2c1b213cbfe3665b3d1330065c31d7f807fe7919))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.44.1/patches-1.44.1.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.44.1/patches-1.44.1.mpp.asc",
-  "version": "1.44.1"
+  "created_at": "2026-09-17T22:20:16",
+  "description": "## [1.44.2-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.44.1...v1.44.2-dev.1) (2026-09-17)\n\n\n### Bug Fixes\n\n* Change `Signature spoof` to patch call sites instead of modifying PackageManager directly (support SDK 37+) ([8d8299d](https://github.com/hoo-dles/morphe-patches/commit/8d8299d64173f5bf694152d96fdbb53aa0fc184b))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.44.2-dev.1/patches-1.44.2-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.44.2-dev.1/patches-1.44.2-dev.1.mpp.asc",
+  "version": "1.44.2-dev.1"
 }
