@@ -6,13 +6,19 @@
 package hoodles.morphe.patches.all.signature
 
 import app.morphe.patcher.Fingerprint
-import app.morphe.patcher.string
+import app.morphe.patcher.methodCall
+import com.android.tools.smali.dexlib2.Opcode
 
-object SignatureSpoofApplicationCtorFingerprint : Fingerprint (
-    definingClass = Constants.SPOOF_CLASS_SMALI_NAME,
-    name = "<clinit>",
+object GetPackageInfoFingerprint : Fingerprint (
     filters = listOf(
-        string("PACKAGE_NAME_PLACEHOLDER"),
-        string("SIGNATURE_PLACEHOLDER")
-    )
+        methodCall(
+            name = "getPackageInfo",
+            definingClass = "Landroid/content/pm/PackageManager;",
+            returnType = "Landroid/content/pm/PackageInfo;",
+            opcode = Opcode.INVOKE_VIRTUAL
+        )
+    ),
+    custom = { _, classDef ->
+        !classDef.type.startsWith("Lhoodles/morphe/extension")
+    }
 )
