@@ -1,3 +1,10 @@
+# [1.45.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.45.0-dev.1...v1.45.0-dev.2) (2026-09-21)
+
+
+### Bug Fixes
+
+* **MicroG:** Fix support for Busuu ([39796a6](https://github.com/hoo-dles/morphe-patches/commit/39796a698897f764279d7439c1f01fe5395bae1a))
+
 # [1.45.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.44.2-dev.1...v1.45.0-dev.1) (2026-09-21)
 
 
