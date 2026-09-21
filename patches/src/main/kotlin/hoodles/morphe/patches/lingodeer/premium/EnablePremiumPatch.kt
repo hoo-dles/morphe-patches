@@ -26,7 +26,7 @@ val enablePremiumPatch = bytecodePatch(
         name = "Lingodeer",
         packageName = "com.lingodeer",
         appIconColor = 0x38d06c,
-        targets = listOf(AppTarget("2.99.412"))
+        targets = listOf(AppTarget("2.99.413"))
     ))
 
     availability(combine(requireRootMount, requireArm64()))
