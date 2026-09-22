@@ -13,6 +13,6 @@ object Constants {
         name = "Smart Launcher",
         packageName = "ginlemon.flowerfree",
         appIconColor = 0x000000,
-        targets = listOf(AppTarget("6.6 build 016"))
+        targets = listOf(AppTarget("6.6 build 020"))
     )
 }
