@@ -9,13 +9,14 @@ import app.morphe.patcher.patch.rawResourcePatch
 import app.morphe.util.inputStreamFromBundledResource
 import kotlinx.serialization.json.Json
 import net.fornwall.jelf.ElfFile
+import java.io.ByteArrayInputStream
 import java.io.File
 import java.io.RandomAccessFile
 import java.nio.ByteBuffer
 import java.nio.channels.FileChannel
 import java.util.Base64
-import io.sigpipe.jbsdiff.Patch
 import java.io.ByteArrayOutputStream
+import java.util.zip.GZIPInputStream
 
 private const val apkLibsPath = "lib/arm64-v8a/"
 
@@ -93,25 +94,34 @@ fun decryptElf(
     }
 }
 
+private fun decompressGzip(compressedData: ByteArray): ByteArray {
+    ByteArrayInputStream(compressedData).use { inputStream ->
+        GZIPInputStream(inputStream).use { gzipStream ->
+            ByteArrayOutputStream().use { outputStream ->
+                gzipStream.copyTo(outputStream)
+                return outputStream.toByteArray()
+            }
+        }
+    }
+}
+
 fun patchData(
     file: File,
     offset: Long,
     size: Int,
-    base64BsDiffPatch: String
+    base64IpsPatch: String
 ) {
-    val patchBytes = Base64.getDecoder().decode(base64BsDiffPatch)
+    val zipped = Base64.getDecoder().decode(base64IpsPatch)
+    val patch = decompressGzip(zipped)
 
     RandomAccessFile(file, "rw").use { raf ->
         raf.seek(offset)
+        val data = ByteArray(size)
+        raf.readFully(data)
 
-        val dataBytes = ByteArray(size)
-        raf.readFully(dataBytes)
+        val patchedData = IpsPatcher.apply(data, patch)
 
-        ByteArrayOutputStream().use { outputStream ->
-            Patch.patch(dataBytes, patchBytes, outputStream)
-
-            raf.seek(offset)
-            raf.write(outputStream.toByteArray())
-        }
+        raf.seek(offset)
+        raf.write(patchedData)
     }
 }

@@ -1,3 +1,32 @@
+# [1.45.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.45.0-dev.1...v1.45.0-dev.2) (2026-09-21)
+
+
+### Bug Fixes
+
+* **MicroG:** Fix support for Busuu ([39796a6](https://github.com/hoo-dles/morphe-patches/commit/39796a698897f764279d7439c1f01fe5395bae1a))
+
+# [1.45.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.44.2-dev.1...v1.45.0-dev.1) (2026-09-21)
+
+
+### Bug Fixes
+
+* **Lightroom:** Remove `Bypass login` patch ([618c18c](https://github.com/hoo-dles/morphe-patches/commit/618c18c2f69957d854a5ea1e47c950b970a73285))
+
+
+### Features
+
+* **Bend:** Update support for `7.8.0` ([61bd8dc](https://github.com/hoo-dles/morphe-patches/commit/61bd8dc371ae1c802b4e2a115e1b66abed5823ea))
+* **Bunpo:** Update support for `3.23.1` ([cfb2ff7](https://github.com/hoo-dles/morphe-patches/commit/cfb2ff7e23bf260fc41128e7b41303df3d0dd9da))
+* **Lightroom:** Update support for `11.5.31` ([10bc5a4](https://github.com/hoo-dles/morphe-patches/commit/10bc5a44175791c1526127722cff6a1475ec46bc))
+* **Lingodeer:** Update support for `2.99.413` ([4a474f8](https://github.com/hoo-dles/morphe-patches/commit/4a474f8467cd276920cbcd9e49e003376476cab2))
+
+## [1.44.2-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.44.1...v1.44.2-dev.1) (2026-09-17)
+
+
+### Bug Fixes
+
+* Change `Signature spoof` to patch call sites instead of modifying PackageManager directly (support SDK 37+) ([8d8299d](https://github.com/hoo-dles/morphe-patches/commit/8d8299d64173f5bf694152d96fdbb53aa0fc184b))
+
 ## [1.44.1](https://github.com/hoo-dles/morphe-patches/compare/v1.44.0...v1.44.1) (2026-09-17)
 
 

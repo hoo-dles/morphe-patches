@@ -42,8 +42,6 @@ dependencies {
         exclude(group = "org.slf4j", module = "slf4j-api")
     }
 
-    implementation(libs.jbsdiff)
-
     compileOnly(project(":patches:stub"))
     compileOnly(libs.android.all)
     compileOnly(libs.slf4j.api)

@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.44.1",
+  "version": "1.45.0-dev.2",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -76,34 +76,6 @@
           "targets": [
             {
               "version": "1.2.75",
-              "versionCodes": null,
-              "isExperimental": false,
-              "minSdk": null,
-              "description": null
-            }
-          ]
-        }
-      ],
-      "options": []
-    },
-    {
-      "name": "Bypass login",
-      "description": "Allows app use without login. BUT breaks many features. Requirements: arm64-v8a, strict apk version",
-      "default": false,
-      "dependencies": [
-        "RawResourcePatch"
-      ],
-      "compatiblePackages": [
-        {
-          "packageName": "com.adobe.lrmobile",
-          "name": "Lightroom Mobile",
-          "description": null,
-          "apkFileType": null,
-          "appIconColor": "#001D35",
-          "signatures": null,
-          "targets": [
-            {
-              "version": "11.5.22",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -401,7 +373,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.6.3",
+              "version": "6.8.1",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -520,7 +492,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "3.21.0",
+              "version": "3.23.1",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -649,7 +621,7 @@
       "description": "Enables app features locked behind the subscription paywall. Requirements: arm64-v8a, strict apk version",
       "default": true,
       "dependencies": [
-        "BytecodePatch",
+        "RawResourcePatch",
         "BytecodePatch"
       ],
       "compatiblePackages": [
@@ -662,7 +634,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "7.6.6",
+              "version": "7.8.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -688,7 +660,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "32.30.0(1575420)",
+              "version": "32.44.1(1717099)",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1246,7 +1218,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "2.99.412",
+              "version": "2.99.413",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -2015,7 +1987,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "6.6.3",
+              "version": "6.8.1",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -2097,7 +2069,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "11.5.22",
+              "version": "11.5.31",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,

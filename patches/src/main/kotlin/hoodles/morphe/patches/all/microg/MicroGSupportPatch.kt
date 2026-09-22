@@ -159,8 +159,9 @@ val microGSupportPatch = bytecodePatch(
 
         // Return status code 0 for play service availability checks.
         listOf(
-            IsGooglePlayServicesAvailableFingerprint,
             GooglePlayUtilityFingerprint,
+            IsGooglePlayServicesAvailableFingerprint,
+            IsGooglePlayServicesAvailableProguardFingerprint,
             IsGooglePlayServicesAvailableLightFingerprint
         ).forEach {
             it.methodOrNull?.apply { returnEarly(0) }

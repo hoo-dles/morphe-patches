@@ -25,7 +25,7 @@ val enablePremiumPatch = bytecodePatch(
         name = "Bunpo",
         packageName = "com.bunpoapp",
         appIconColor = 0xfdfdfd,
-        targets = listOf(AppTarget("3.21.0"))
+        targets = listOf(AppTarget("3.23.1"))
     ))
 
     availability(requireArm64())
