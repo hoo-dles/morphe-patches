@@ -8,6 +8,7 @@ package hoodles.morphe.patches.ling.premium
 import app.morphe.patcher.patch.rawResourcePatch
 import hoodles.morphe.compatibility.Compat
 import hoodles.morphe.patches.shared.misc.hermes.hermesPatch
+import hoodles.morphe.patches.shared.misc.pairip.getStripPairipPatch
 import hoodles.morphe.util.HermesConstants.RETURN_TRUE
 
 @Suppress("unused")
@@ -17,13 +18,15 @@ val enablePremiumPatch = rawResourcePatch(
 ) {
     compatibleWith(Compat.LING)
 
+    dependsOn(getStripPairipPatch("ling"))
+
     dependsOn(hermesPatch {
 //        LoadParam r0, 1
 //        GetById   r0, r0, 1, "payments"
 //        GetById   r0, r0, 2, "isProUser"
 //        Ret       r0
         val selectIsProUser =
-            "6C 00 01 37 00 00 01 50 7B 37 00 00 02 29 7C 5C 00" to RETURN_TRUE
+            "6C 00 01 37 00 00 01 A0 9D 37 00 00 02 81 E6 5C 00" to RETURN_TRUE
 
         setOf(selectIsProUser)
     })

@@ -1,0 +1,8 @@
+{
+  "libhermes.so": {
+    "patch": "H4sIAK1bwWoC/wtwDHH2YGBwYNCQWx3+H4QZCAGmCAYJViDNAsSMUBohWcGgIABlc+AwwNXfDQDm+pbBdwAAAA=="
+  },
+  "libreactnative.so": {
+    "patch": "H4sIAK1bwWoC/wtwDHH2YGCwYHBgZIAAGI0OCMkzMDxgEGLEovgzgy5W5RxoNMImCwZuZElGFyDBA6QzGBQYCWrewCChgFPyAsIEnP5g4gBpbIBwmBMYwKYpM+ABzBPw2Mm8gWECg6MAlMfCQF3AQp6JLAEMDga4XExshPPPYOCY38YIUcC/gYGDCSrh6u8GAH4oZxZYAgAA"
+  }
+}

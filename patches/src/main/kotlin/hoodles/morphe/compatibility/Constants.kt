@@ -92,7 +92,7 @@ object Compat {
         name = "FotMob",
         packageName = "com.mobilefootie.wc2010",
         appIconColor = 0x00985F,
-        targets = listOf(AppTarget("237.17536.20260911"))
+        targets = listOf(AppTarget("238.17666.20260928"))
     )
 
     val GITHUB = Compatibility(
@@ -155,7 +155,7 @@ object Compat {
         name = "Ling",
         packageName = "com.simyasolutions.ling.universal",
         appIconColor = 0xF8485E,
-        targets = listOf(AppTarget("8.4.4"))
+        targets = listOf(AppTarget("8.9.0"))
     )
 
     val LINGODEER = Compatibility(
@@ -226,7 +226,7 @@ object Compat {
         name = "Niagara Launcher",
         packageName = "bitpit.launcher",
         appIconColor = 0x9fcdfb,
-        targets = listOf(AppTarget("1.16.24"))
+        targets = listOf(AppTarget("1.16.31"))
     )
 
     val NOMONE = Compatibility(
@@ -278,7 +278,7 @@ object Compat {
         name = "Proton VPN",
         packageName = "ch.protonvpn.android",
         appIconColor = 0x6D4AFF,
-        targets = listOf(AppTarget("5.19.43.0"))
+        targets = listOf(AppTarget("5.20.57.0"))
     )
 
     val PYDROID = Compatibility(

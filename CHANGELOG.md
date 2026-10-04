@@ -1,3 +1,24 @@
+# [1.47.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.47.0-dev.2...v1.47.0-dev.3) (2026-10-04)
+
+
+### Features
+
+* Update `Universal MicroG` support for FotMob ([8c5f249](https://github.com/hoo-dles/morphe-patches/commit/8c5f2498c5a611b677b340bfcd49a9d60d53e98b))
+
+# [1.47.0-dev.2](https://github.com/hoo-dles/morphe-patches/compare/v1.47.0-dev.1...v1.47.0-dev.2) (2026-10-04)
+
+
+### Features
+
+* **ProtonVPN:** Update patches to support `5.20.57.0` ([8f6d304](https://github.com/hoo-dles/morphe-patches/commit/8f6d3047017fdc088890d674aa287689c6690117))
+
+# [1.47.0-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.46.0...v1.47.0-dev.1) (2026-10-03)
+
+
+### Features
+
+* **Ling:** Update to `8.9.0` ([d5013e8](https://github.com/hoo-dles/morphe-patches/commit/d5013e892033f24d943ef8d4aabab3c1cb011d97))
+
 # [1.46.0](https://github.com/hoo-dles/morphe-patches/compare/v1.45.0...v1.46.0) (2026-09-30)
 
 

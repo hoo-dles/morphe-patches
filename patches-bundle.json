@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-09-30T18:17:45",
-  "description": "# [1.46.0](https://github.com/hoo-dles/morphe-patches/compare/v1.45.0...v1.46.0) (2026-09-30)\n\n\n### Bug Fixes\n\n* **`Hide app icon`:** Allow app to be launched from app info settings ([d71cda1](https://github.com/hoo-dles/morphe-patches/commit/d71cda147681ce35526f3b2f7eb3c9c21323c8f9))\n* **Duolingo:** Update support for `Enable debug mode` patch ([ee7381b](https://github.com/hoo-dles/morphe-patches/commit/ee7381bebcff21e9d24c484f8104c544ed97296e))\n* **FotMob:** Force FotMob+ toolbar logo ([77c4570](https://github.com/hoo-dles/morphe-patches/commit/77c45701d1836adbb145a73cc631d29b20b822fc))\n* **Lyfta:** Display premium UI elements as well as unlock features ([6020f74](https://github.com/hoo-dles/morphe-patches/commit/6020f74fff49aebeba8bfd0c8111afa797ba10bc))\n* **SuperChinese:** Fix signature spoofing for native binary ([a6dfeec](https://github.com/hoo-dles/morphe-patches/commit/a6dfeec6d62d6429b0182469c01cbac5ac05b8c1))\n\n\n### Features\n\n* **FotMob:** Update support for `237.17536.20260911` ([3ec4b73](https://github.com/hoo-dles/morphe-patches/commit/3ec4b73753a248bed80a8e5a467fdd6bba390e96))\n* **Lyfta:** Update support for `1.599` ([26bfde8](https://github.com/hoo-dles/morphe-patches/commit/26bfde8d231e91c74925355d280393c35b8cc4e8))\n* **Superchinese:** Add `Block launch upsell` patch ([7968b81](https://github.com/hoo-dles/morphe-patches/commit/7968b8193f38faaf442bcb69b33d9ea6e1f442ac))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.46.0/patches-1.46.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.46.0/patches-1.46.0.mpp.asc",
-  "version": "1.46.0"
+  "created_at": "2026-10-04T02:09:49",
+  "description": "# [1.47.0-dev.3](https://github.com/hoo-dles/morphe-patches/compare/v1.47.0-dev.2...v1.47.0-dev.3) (2026-10-04)\n\n\n### Features\n\n* Update `Universal MicroG` support for FotMob ([8c5f249](https://github.com/hoo-dles/morphe-patches/commit/8c5f2498c5a611b677b340bfcd49a9d60d53e98b))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.47.0-dev.3/patches-1.47.0-dev.3.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.47.0-dev.3/patches-1.47.0-dev.3.mpp.asc",
+  "version": "1.47.0-dev.3"
 }

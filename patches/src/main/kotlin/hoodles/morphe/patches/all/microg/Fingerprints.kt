@@ -34,7 +34,6 @@ internal object IsGooglePlayServicesAvailableFingerprint : Fingerprint(
 // Fingerprint when method name has been obfuscated by proguard.
 // Leaving the original because regression testing a universal patch is cumbersome...
 internal object IsGooglePlayServicesAvailableProguardFingerprint : Fingerprint(
-    accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.STATIC),
     returnType = "I",
     parameters = listOf("Landroid/content/Context;", "I"),
     strings = listOf(

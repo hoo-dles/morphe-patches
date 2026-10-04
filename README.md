@@ -6,9 +6,7 @@
 <br/>
 
 > [!NOTE]
-> Patch requests are always welcome, **but please read the [new announcement](https://github.com/hoo-dles/morphe-patches/discussions/232) before opening an issue!**
->
-> If you find this project useful and want to help support its development, consider [donating](.donate/donate.md). :pray:
+> Patch requests are always welcome, **but please read the [announcement](https://github.com/hoo-dles/morphe-patches/discussions/232) before opening an issue!**
 
 <br/>
 

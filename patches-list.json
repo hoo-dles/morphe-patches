@@ -1,6 +1,6 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "1.46.0",
+  "version": "1.47.0-dev.3",
   "patches": [
     {
       "name": "AMOLED dark theme",
@@ -419,7 +419,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "237.17536.20260911",
+              "version": "238.17666.20260928",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -449,7 +449,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "1.16.24",
+              "version": "1.16.31",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1404,6 +1404,7 @@
       "default": true,
       "category": null,
       "dependencies": [
+        "RawResourcePatch",
         "RawResourcePatch"
       ],
       "compatiblePackages": [
@@ -1416,7 +1417,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "8.4.4",
+              "version": "8.9.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -1870,7 +1871,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "5.19.43.0",
+              "version": "5.20.57.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -2034,7 +2035,9 @@
       "description": "Enables the LAN connections feature usually locked behind the Proton Plus paywall.",
       "default": true,
       "category": null,
-      "dependencies": [],
+      "dependencies": [
+        "BytecodePatch"
+      ],
       "compatiblePackages": [
         {
           "packageName": "ch.protonvpn.android",
@@ -2045,7 +2048,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "5.19.43.0",
+              "version": "5.20.57.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -2090,7 +2093,9 @@
       "description": "Enables the custom DNS feature usually locked behind the Proton Plus paywall.",
       "default": true,
       "category": null,
-      "dependencies": [],
+      "dependencies": [
+        "BytecodePatch"
+      ],
       "compatiblePackages": [
         {
           "packageName": "ch.protonvpn.android",
@@ -2101,7 +2106,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "5.19.43.0",
+              "version": "5.20.57.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
@@ -2175,7 +2180,9 @@
       "description": "Enables the split tunneling feature usually locked behind the Proton Plus paywall.",
       "default": true,
       "category": null,
-      "dependencies": [],
+      "dependencies": [
+        "BytecodePatch"
+      ],
       "compatiblePackages": [
         {
           "packageName": "ch.protonvpn.android",
@@ -2186,7 +2193,7 @@
           "signatures": null,
           "targets": [
             {
-              "version": "5.19.43.0",
+              "version": "5.20.57.0",
               "versionCodes": null,
               "isExperimental": false,
               "minSdk": null,
