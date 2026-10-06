@@ -6,6 +6,7 @@
 package hoodles.morphe.patches.lyfta.premium
 
 import app.morphe.patcher.patch.bytecodePatch
+import app.morphe.patches.all.misc.fix.changepackageinstaller.changePackageInstallerPatch
 import app.morphe.util.returnEarly
 import hoodles.morphe.compatibility.Compat
 import hoodles.morphe.patches.all.pairip.license.disableLicenseCheckPatch
@@ -16,7 +17,7 @@ val enablePremiumPatch = bytecodePatch(
 ) {
     compatibleWith(Compat.LYFTA)
 
-    dependsOn(disableLicenseCheckPatch)
+    dependsOn(disableLicenseCheckPatch, changePackageInstallerPatch())
 
     execute {
         LocalAccessStateFingerprint.method.returnEarly("premium")
