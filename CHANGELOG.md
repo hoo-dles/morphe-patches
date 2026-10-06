@@ -1,3 +1,10 @@
+## [1.47.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.47.0...v1.47.1-dev.1) (2026-10-06)
+
+
+### Bug Fixes
+
+* **Lyfta:** Spoof install source ([74c4f93](https://github.com/hoo-dles/morphe-patches/commit/74c4f93ddafbf1ede17c3856e38116ddfb3b94c8))
+
 # [1.47.0](https://github.com/hoo-dles/morphe-patches/compare/v1.46.0...v1.47.0) (2026-10-04)
 
 
