@@ -365,6 +365,13 @@ object Compat {
         targets = listOf(AppTarget("3.61.01"))
     )
 
+    val WEATHER_RADAR = Compatibility(
+        name = "Weather&Radar",
+        packageName = "de.wetteronline.wetterapp",
+        appIconColor = 0x10658E,
+        targets = listOf(AppTarget("2026.19"))
+    )
+
     val WEBSTER = Compatibility(
         name = "Merriam-Webster",
         packageName = "com.merriamwebster",
