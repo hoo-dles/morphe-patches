@@ -1,7 +1,7 @@
 {
-  "created_at": "2026-10-04T18:44:45",
-  "description": "# [1.47.0](https://github.com/hoo-dles/morphe-patches/compare/v1.46.0...v1.47.0) (2026-10-04)\n\n\n### Features\n\n* **Ling:** Update to `8.9.0` ([d5013e8](https://github.com/hoo-dles/morphe-patches/commit/d5013e892033f24d943ef8d4aabab3c1cb011d97))\n* **ProtonVPN:** Update patches to support `5.20.57.0` ([8f6d304](https://github.com/hoo-dles/morphe-patches/commit/8f6d3047017fdc088890d674aa287689c6690117))\n* Update `Universal MicroG` support for FotMob ([8c5f249](https://github.com/hoo-dles/morphe-patches/commit/8c5f2498c5a611b677b340bfcd49a9d60d53e98b))",
-  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.47.0/patches-1.47.0.mpp",
-  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.47.0/patches-1.47.0.mpp.asc",
-  "version": "1.47.0"
+  "created_at": "2026-10-06T20:38:58",
+  "description": "## [1.47.1-dev.1](https://github.com/hoo-dles/morphe-patches/compare/v1.47.0...v1.47.1-dev.1) (2026-10-06)\n\n\n### Bug Fixes\n\n* **Lyfta:** Spoof install source ([74c4f93](https://github.com/hoo-dles/morphe-patches/commit/74c4f93ddafbf1ede17c3856e38116ddfb3b94c8))",
+  "download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.47.1-dev.1/patches-1.47.1-dev.1.mpp",
+  "signature_download_url": "https://github.com/hoo-dles/morphe-patches/releases/download/v1.47.1-dev.1/patches-1.47.1-dev.1.mpp.asc",
+  "version": "1.47.1-dev.1"
 }
