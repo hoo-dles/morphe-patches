@@ -4,7 +4,7 @@ jte = "3.2.4"
 morphe-patcher = "1.14.1"
 morphe-patches-library = "1.8.0-dev.1"
 # Tracking https://github.com/google/smali/issues/100.
-slf4j-api = "2.0.18"
+slf4j-api = "2.0.20"
 smali = "d92701d947"
 agp = "9.1.0"
 annotation = "1.9.1"
