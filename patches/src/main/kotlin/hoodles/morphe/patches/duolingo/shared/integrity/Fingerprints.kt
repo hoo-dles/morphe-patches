@@ -14,9 +14,9 @@ object LoginStateFingerprint : Fingerprint(
     returnType = "V"
 )
 
+// Matches LoginFragmentViewModel method building the email login request (class name is obfuscated)
 object BasicLoginFingerprint : Fingerprint(
-    definingClass = "/LoginFragmentViewModel;",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
     parameters = listOf("Ljava/lang/String;", "Ljava/lang/String;"),
-    returnType = "/LoginRequest\$EmailLoginRequest;"
+    returnType = "Lcom/duolingo/data/signuplogin/LoginRequest\$EmailLoginRequest;"
 )

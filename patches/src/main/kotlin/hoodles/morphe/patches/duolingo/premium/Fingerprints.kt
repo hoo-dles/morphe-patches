@@ -73,5 +73,5 @@ fun getVideoCallTabCtaButtonStateFieldFingerprint(field: String) : Fingerprint {
 object EnergyConfigCtorFingerprint : Fingerprint(
     definingClass = "Lcom/duolingo/core/energy/models/EnergyConfig;",
     name = "<init>",
-    parameters = listOf("I", "I", "J", "J", "J", "I", "J")
+    parameters = listOf("I", "I", "J", "J", "J", "I", "J", "Ljava/lang/Integer;")
 )
