@@ -14,7 +14,6 @@ import com.android.tools.smali.dexlib2.Opcode
 import com.android.tools.smali.dexlib2.iface.instruction.formats.Instruction21c
 import com.android.tools.smali.dexlib2.iface.reference.FieldReference
 
-
 internal fun getExtensionPatch(appName: String) = bytecodePatch {
     extendWith("extensions/__generated__/$appName.mpe")
 

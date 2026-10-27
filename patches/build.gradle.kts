@@ -38,14 +38,10 @@ dependencies {
     implementation(libs.jelf)
 
     implementation(libs.kotlinx.serialization.json)
-    implementation(libs.native.lib.loader) {
-        // bundled version clashes with newer runtime dependency
-        exclude(group = "org.slf4j", module = "slf4j-api")
-    }
+    implementation(libs.native.lib.loader)
 
     compileOnly(project(":patches:stub"))
     compileOnly(libs.android.all)
-    compileOnly(libs.slf4j.api)
 }
 
 tasks {
