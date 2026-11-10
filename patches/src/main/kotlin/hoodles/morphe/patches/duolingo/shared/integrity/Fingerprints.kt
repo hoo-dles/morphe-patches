@@ -14,8 +14,9 @@ object LoginStateFingerprint : Fingerprint(
     returnType = "V"
 )
 
+// LoginFragmentViewModel is obfuscated since 6.104.x (e.g. j3o), so match by signature only.
+// (String, String) -> EmailLoginRequest is unique in the app.
 object BasicLoginFingerprint : Fingerprint(
-    definingClass = "/LoginFragmentViewModel;",
     accessFlags = listOf(AccessFlags.PUBLIC, AccessFlags.FINAL),
     parameters = listOf("Ljava/lang/String;", "Ljava/lang/String;"),
     returnType = "/LoginRequest\$EmailLoginRequest;"
