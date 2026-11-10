@@ -78,7 +78,7 @@ object Compat {
         name = "Duolingo",
         packageName = "com.duolingo",
         appIconColor = 0x58CC02,
-        targets = listOf(AppTarget("6.98.4"))
+        targets = listOf(AppTarget("6.104.5"), AppTarget("6.98.4"))
     )
 
     val EGGBUN = Compatibility(

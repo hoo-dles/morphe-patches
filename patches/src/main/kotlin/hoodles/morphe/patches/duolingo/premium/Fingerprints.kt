@@ -50,7 +50,7 @@ fun getFeatureFingerprint(feature: String) = Fingerprint(
     filters = listOf(
         fieldAccess(
             name = feature,
-            definingClass = "Lcom/duolingo/core/subscription/models/SubscriptionFeatures;"
+            definingClass = "Lcom/duolingo/data/subscription/models/SubscriptionFeatures;"
         ),
         methodCall(
             name = "contains",
@@ -73,5 +73,8 @@ fun getVideoCallTabCtaButtonStateFieldFingerprint(field: String) : Fingerprint {
 object EnergyConfigCtorFingerprint : Fingerprint(
     definingClass = "Lcom/duolingo/core/energy/models/EnergyConfig;",
     name = "<init>",
-    parameters = listOf("I", "I", "J", "J", "J", "I", "J")
+    // 6.98.4: (energy, maxEnergy, J, J, J, I, J). 6.104.5 appended Integer baseMaxEnergy.
+    custom = { method, _ ->
+        method.parameterTypes.map { it.toString() }.take(7) == listOf("I", "I", "J", "J", "J", "I", "J")
+    }
 )
